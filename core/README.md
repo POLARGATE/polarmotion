@@ -6,11 +6,11 @@ Command reference for `core/` and `tools/`. How the pieces fit together is in [`
 
 | Command | What it does |
 |---|---|
-| `sh plugin/skills/lemo-opuscar/scripts/setup.sh` | find, clone or update the library; prints `LIB=<path>` |
+| `sh tools/setup.sh` | check the library; prints `LIB=<path>` |
 | `… setup.sh deps` | core tier: npm packages, headless browser, `.venv` from `requirements.txt` |
-| `… setup.sh deps voice` | adds `requirements-voice.txt` (kokoro-onnx, edge-tts, faster-whisper) and the Kokoro model |
+| `… setup.sh deps voice` | adds `requirements-voice.txt` (kokoro-onnx, faster-whisper) and the Kokoro model; edge-tts only with the user's consent |
 | `… setup.sh deps music` | adds `requirements-music.txt` (numba, for `pluck.py`; `sampler.py` needs only the core) |
-| `… setup.sh demo <slug>` | adds one style's demo source and poster (to read, not to render) |
+| `… setup.sh demo <slug>` | prints where one style's demo source is (to read, not to render) |
 | `sh tools/fetch.sh voice` \| `hdri` \| `instruments <lib>` \| `instruments all` | Kokoro model · HDRIs · a sample library (`freepats`, `karoryfer`, `salamander`, `vcsl`, `vsco2ce`) |
 
 Sizes are in TECHNIQUE.md §1.
@@ -69,11 +69,11 @@ All four page tools take `--size WxH` (default `1920x1080`, even numbers) and `-
 
 | Variable | Meaning |
 |---|---|
-| `LEMO_OPUSCAR_HOME` | where `setup.sh` keeps the library (default `~/lemo-opuscar`) |
+| `POLARMOTION_HOME` | where `setup.sh` keeps the library (default `~/polarmotion`) |
 | `PLAYWRIGHT_CHROME` | a Chrome / headless-shell executable instead of Playwright's |
-| `LEMO_ANGLE` | WebGL backend (default `metal` on macOS; `default` passes none) |
+| `POLARMOTION_ANGLE` | WebGL backend (default `metal` on macOS; `default` passes none) |
 | `RENDER_SLOTS` | optional; limits concurrent full renders across processes |
-| `LEMO_COLOR=bt709` | `mux.sh` writes limited-range BT.709 instead of the default full-range output |
+| `POLARMOTION_COLOR=bt709` | `mux.sh` writes limited-range BT.709 instead of the default full-range output |
 | `WHISPER_MODEL` | Whisper model name or local folder for `asr_check.py` (same as `--model`; default `base.en` for English, `small` for Chinese, `base` otherwise) |
 | `HF_ENDPOINT` | Hugging Face mirror for the Whisper download |
 

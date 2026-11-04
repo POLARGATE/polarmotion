@@ -71,7 +71,7 @@ def main():
         if not re.fullmatch(r'[+-]\d+%', r): sys.exit(f"tts_zh.py: line '{L['id']}': rate must look like '+10%' or '-5%' (or a speed number like 1.1), got {r!r}")
         if not re.fullmatch(r'[+-]\d+Hz', p): sys.exit(f"tts_zh.py: line '{L['id']}': pitch must look like '-2Hz' or '+0Hz', got {p!r}")
     try: import edge_tts  # noqa: F401
-    except ImportError: sys.exit('tts_zh.py: edge-tts is missing: install the voice tier: sh plugin/skills/lemo-opuscar/scripts/setup.sh deps voice')
+    except ImportError: sys.exit('tts_zh.py: edge-tts is not installed: it sends the text to Microsoft. Ask the user first; then .venv/bin/python -m pip install edge-tts')
     os.makedirs(os.path.join(a.out_dir, '.cache'), exist_ok=True); dur = {}
     for n in os.listdir(os.path.join(a.out_dir, '.cache')):
         if n.endswith('.part'): os.remove(os.path.join(a.out_dir, '.cache', n))   # partial file left by an interrupted previous run

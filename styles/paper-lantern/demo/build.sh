@@ -4,7 +4,7 @@
 #                               poster and the gallery style frame
 #   sh demo/build.sh 25 30      only a span of the film (film seconds) → demo/out/cut_25-30.mp4
 # Needs the voice tier (Kokoro model, faster-whisper) and the VSCO 2 CE, VCSL and Salamander sample libraries:
-#   sh plugin/skills/lemo-opuscar/scripts/setup.sh deps voice
+#   sh tools/setup.sh deps voice
 #   sh tools/fetch.sh instruments vsco2ce; sh tools/fetch.sh instruments vcsl; sh tools/fetch.sh instruments salamander
 set -e
 HERE=$(cd "$(dirname "$0")" && pwd)                  # .../styles/paper-lantern/demo

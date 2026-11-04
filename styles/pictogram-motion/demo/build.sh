@@ -6,7 +6,7 @@
 #   WORKERS=3 sh demo/build.sh  more render workers (default 2)
 #   sh demo/build.sh 28 36      only a span of the film (film seconds) → demo/out/film-28-36.mp4
 # Needs the voice tier (Kokoro model, faster-whisper) and the VCSL, VSCO 2 CE and FreePats sample libraries:
-#   sh plugin/skills/lemo-opuscar/scripts/setup.sh deps voice
+#   sh tools/setup.sh deps voice
 #   sh tools/fetch.sh instruments vcsl; sh tools/fetch.sh instruments vsco2ce; sh tools/fetch.sh instruments freepats
 set -e
 HERE=$(cd "$(dirname "$0")" && pwd)                  # .../styles/pictogram-motion/demo

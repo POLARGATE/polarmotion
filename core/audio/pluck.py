@@ -12,7 +12,7 @@ Model: fractional delay (3rd-order Lagrange, time-varying → slides / vibrato) 
 import numpy as np
 from scipy.signal import butter, sosfilt, lfilter
 try: from numba import njit
-except ImportError: raise ImportError('pluck.py needs numba: install the music tier: sh plugin/skills/lemo-opuscar/scripts/setup.sh deps music') from None
+except ImportError: raise ImportError('pluck.py needs numba: install the music tier: sh tools/setup.sh deps music') from None
 
 try:
     from .sfx import SR

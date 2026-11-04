@@ -72,7 +72,7 @@ LIB=<library root> sh styles/paper-lantern/demo/build.sh          # fonts, voice
 LIB=<library root> sh styles/paper-lantern/demo/build.sh 40 51    # only a span of the film → demo/out/cut_40-51.mp4
 ```
 
-On a fresh clone, first: `sh plugin/skills/lemo-opuscar/scripts/setup.sh deps voice`, `sh tools/fetch.sh instruments vsco2ce`, `sh tools/fetch.sh instruments vcsl`, `sh tools/fetch.sh instruments salamander`. `demo/tools/fonts.py` downloads the two OFL fonts and subsets Noto Serif SC to the film's characters. The narration WAVs are regenerated from `demo/voices/lines.json` when missing, then checked with `asr_check.py`.
+On a fresh clone, first: `sh tools/setup.sh deps voice`, `sh tools/fetch.sh instruments vsco2ce`, `sh tools/fetch.sh instruments vcsl`, `sh tools/fetch.sh instruments salamander`. `demo/tools/fonts.py` downloads the two OFL fonts and subsets Noto Serif SC to the film's characters. The narration WAVs are regenerated from `demo/voices/lines.json` when missing, then checked with `asr_check.py`.
 
 `demo/tools/timeline.py` is the one timeline: narration starts, subtitle cues, every action's time (`HIT`: the lamp, each window, the departure, the tunnel, the stop, each window going out, the card) and the shot list. The page (`timeline.json`) and `mix.py` read it; it writes `paper-lantern.srt`. Query options: `?from=a&to=b` renders a span, `?nosub=1` hides the subtitles (for stills). About 40 s for 1 530 frames with 2 workers on an M-series Mac.
 

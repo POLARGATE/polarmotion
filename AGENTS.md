@@ -1,4 +1,4 @@
-# Lemo-Opuscar: instructions for agents
+# PolarMotion: instructions for agents
 
 This repository is a library of film styles. Each style has a `styles/<slug>/STYLE.md` (what the style is) and one demo film made entirely in code (`DEMO.md` and `demo/`). People pick a style and ask for a film about **their own** topic. Your job is to direct and produce that film.
 
@@ -10,15 +10,14 @@ This repository is a library of film styles. Each style has a `styles/<slug>/STY
 | Directing: story, sound, rhythm, camera, maps, checks, delivery | [`DIRECTOR.md`](DIRECTOR.md) |
 | Building: install, pages, voice, music, mix | [`TECHNIQUE.md`](TECHNIQUE.md) |
 | Tool commands and flags | [`core/README.md`](core/README.md) |
-| The user wants to change a style and keep it as their own, or make their own style from a blank page, or names a style in `~/lemo-my-styles/` | [`MY-STYLES.md`](MY-STYLES.md) |
-| Adding a style to the library (owner only) | [`MAINTAINING.md`](MAINTAINING.md) |
+| The user wants to change a style and keep it as their own, or make their own style from a blank page, or names a style in `~/polarmotion-mis-estilos/` | [`MY-STYLES.md`](MY-STYLES.md) |
 
-**Films outside `styles/` are the user's: no LemoLab credit, no watermark.**
+**Films outside `styles/` are the user's: no credit of the library or of its original authors, no watermark.**
 
 ## Start
 
-- **Their own styles first.** If `~/lemo-my-styles/README.md` exists, read it: it lists every style the user has saved, wherever it's kept, and their own styles ([`MY-STYLES.md`](MY-STYLES.md)) count like library styles. When they name a style, look there first, then in the library.
-- **Their language.** Talk to them in the language they write in. When they started the skill without writing anything, your first question is always the language, even when their settings, memory or earlier messages suggest one: the `AskUserQuestion` tool, a question of its own headed "Language 语言" with two options, 中文 and English (the tool adds Other, where they type any other language). Use it from then on, and as the film's default language.
+- **Their own styles first.** If `~/polarmotion-mis-estilos/README.md` exists, read it: it lists every style the user has saved, wherever it's kept, and their own styles ([`MY-STYLES.md`](MY-STYLES.md)) count like library styles. When they name a style, look there first, then in the library.
+- **Their language.** Talk to them in the language they write in. Default: Spanish (Español). Only if they write in another language, use that one from then on and as the film's default language.
 - **No request yet** (they only started the skill, or said hello): offer the ways in with one question, using the `AskUserQuestion` tool, in their language, with the first as the recommended one:
   1. a film in a library style (**Finding the style**);
   2. change a library style and keep it as their own ([`MY-STYLES.md`](MY-STYLES.md));
@@ -37,17 +36,16 @@ This repository is a library of film styles. Each style has a `styles/<slug>/STY
 
 ## Finding the style
 
-Users name a style by its gallery name in English or Chinese ("Impasto Oil Painting", "油画厚涂") or by its folder (`impasto`). Look it up in [`styles/README.md`](styles/README.md). If nothing matches clearly, show the closest two or three and ask.
+Users name a style by its Spanish name ("Óleo con empaste"), its English or Chinese name ("Impasto Oil Painting", "油画厚涂") or its folder (`impasto`). Look it up in [`styles/INDICE.md`](styles/INDICE.md) (Spanish) or [`styles/README.md`](styles/README.md). If nothing matches clearly, show the closest two or three and ask.
 
 If the user hasn't picked a style:
 - Suggest two or three that fit their topic.
 - If they have their own styles, list those first, under "My styles" (in their language).
-- Show them the full list below in the chat, in the user's language only: English names (and English category names) for someone writing in English, Chinese names for someone writing in Chinese. Don't drop, merge or rename anything.
-- Link the gallery, where every style has its demo film: https://lemomo-ai.github.io/lemo-opuscar/
+- Show them the full list in the chat, in the user's language only: for someone writing in Spanish, the Spanish names and categories of [`styles/INDICE.md`](styles/INDICE.md); English names for English, Chinese names for Chinese. Don't drop, merge or rename anything.
 - Then ask them to type the name. The list goes in your own message (a command's output isn't shown to them), and the question is plain text, not `AskUserQuestion`: its few options would hide the rest of the list.
 
 <!-- style-list:start -->
-All 66 styles · 全部风格:
+All 66 styles · 全部风格 (en español: `styles/INDICE.md`):
 
 - **剪辑与纪实 Edit & Documentary** (8): 字幕新闻 Caption News, 1920s 新闻影片 1920s Newsreel, 实时倒计时分屏 Live Countdown Split-screen, 延时交响 Time-lapse Symphony, 视觉调查 Visual Investigation, 构成主义蒙太奇 Constructivist Montage, 体育战术板 Sports Telestrator, 电视新闻包装 Broadcast News Package
 - **实证影像 Evidence Films** (8): 卫星简报 Satellite Briefing, 工程简报板 Engineering Briefing Board, 点云测绘 LiDAR Survey, 白模投影 Projection on White Model, 数据实物化 Data Physicalization, 产品拆解 Exploded Teardown, 显微叙事 Microscope Story, 档案灯台 Archive Light Table
@@ -69,7 +67,7 @@ All 66 styles · 全部风格:
    - whether they have material of their own: a voice recording or a preferred voice, music, photos, logos, fonts, and for a style built from real material, their own data or scans;
    - the film's language, if it isn't obvious (default: the language they write in or chose, for voice and subtitles);
    - whether they want to review a storyboard first (default: no);
-   - anything missing on their machine: first run `sh plugin/skills/lemo-opuscar/scripts/setup.sh deps` from the library root (core only) and include what it reports. Add the voice and music tiers later, only if the film needs them (TECHNIQUE.md §1).
+   - anything missing on their machine: first run `sh tools/setup.sh deps` from the library root (core only) and include what it reports. Add the voice and music tiers later, only if the film needs them (TECHNIQUE.md §1).
 
    Skip what their request already answers. Wait for the reply, fill every other gap with a sensible default, sum up the brief in a few lines and start. Don't come back with more questions.
 2. **Treatment.** Write `TREATMENT.md` in the project folder (DIRECTOR.md §4), before you open the demo (an Edit & Documentary style gathers its material first: **Treatment first** above).

@@ -12,7 +12,7 @@
 #   A WAV streamed out by `ffmpeg … -f wav -` has a placeholder length in its header and decodes completely, but ends with three demuxer notices: that's a good file and the film is made as usual (with a one-line note).
 #   One case it can't detect: a streamed WAV truncated exactly on a sample boundary (no header length to compare, and decoding shows no error).
 # Audio shorter than the picture: padded with silence to the picture's length (the video is never cut short); audio longer: cut to the picture's length as before (-shortest).
-# Colour: by default exactly as before (keeps the yuvj420p full range / bt470bg tags that video.mjs outputs); LEMO_COLOR=bt709 switches to standard yuv420p limited range / bt709 (picture values differ by ±3 at most, but there's a slight colour difference from older films).
+# Colour: by default exactly as before (keeps the yuvj420p full range / bt470bg tags that video.mjs outputs); POLARMOTION_COLOR=bt709 switches to standard yuv420p limited range / bt709 (picture values differ by ±3 at most, but there's a slight colour difference from older films).
 die() { echo "mux.sh: $*" >&2; exit 1; }
 V="$1"; A="$2"; O="$3"; FPS="${4:-24}"; GR="${5:-2}"
 [ -n "$V" ] && [ -n "$A" ] && [ -n "$O" ] || die "usage: sh core/render/mux.sh video.mp4 mix.wav out.mp4 [fps=24] [grain=2]"
@@ -20,7 +20,7 @@ V="$1"; A="$2"; O="$3"; FPS="${4:-24}"; GR="${5:-2}"
 [ -f "$A" ] || die "audio not found: $A"
 case "$FPS" in ''|*[!0-9.]*) die "fps must be a number, got '$FPS'";; esac
 case "$GR" in ''|*[!0-9.]*) die "grain must be a number (0 = none), got '$GR'";; esac
-case "${LEMO_COLOR:-}" in ''|bt709) ;; *) die "LEMO_COLOR must be bt709 or unset, got '$LEMO_COLOR'";; esac
+case "${POLARMOTION_COLOR:-}" in ''|bt709) ;; *) die "POLARMOTION_COLOR must be bt709 or unset, got '$POLARMOTION_COLOR'";; esac
 
 # Check whether the audio length declared in the WAV header exceeds the file (for a WAV truncated on a sample boundary, ffmpeg itself reports no error). Reads the length byte by byte, independent of the machine's byte order
 wav_truncated() {   # returns 0 = the header declares more than the file holds; a placeholder length (0 or 0xFFFFFFFF) is treated as "length unknown", not truncated
@@ -77,7 +77,7 @@ if awk -v a="$AD" -v v="$VD" 'BEGIN { exit !(a + 0 > 0 && v + 0 > 0 && a + 0 < v
 fi
 
 if [ "$GR" = "0" ]; then VF="fps=$FPS"; else VF="fps=$FPS,noise=c0s=$GR:allf=t"; fi
-if [ "${LEMO_COLOR:-}" = "bt709" ]; then
+if [ "${POLARMOTION_COLOR:-}" = "bt709" ]; then
   VF="$VF,scale=in_range=pc:out_range=tv:out_color_matrix=bt709,format=yuv420p,setparams=range=tv:colorspace=bt709:color_primaries=bt709:color_trc=bt709"
   CARGS="-color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709"
 else
