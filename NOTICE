@@ -1,0 +1,24 @@
+PolarMotion, de Polargate (https://polargate.ai)
+
+Basado en Lemo-Opuscar, de LemoLab (https://github.com/lemomo-ai/lemo-opuscar), commit bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00.
+- Código y documentación: licencia MIT, «Copyright (c) 2026 LemoLab» (ver LICENSE).
+- Estilos y demos (styles/): licencia CC BY 4.0, de LemoLab; el estilo memphis-diorama es de EianLu.
+  Cambios de Polargate: se han quitado las fotos, vídeos y audios de las demos y los pósteres; el código de cada demo queda sin cambios.
+- Tipografías: SIL OFL 1.1 (core/fonts/). Texturas de Poly Haven: CC0.
+- Muestras de instrumentos: CC0, salvo Salamander Grand Piano (CC BY 3.0) y MuldjordKit (CC BY 4.0), que piden crédito (core/audio/sampler.py, credits()).
+- Voz: Kokoro-82M (Apache 2.0) y kokoro-onnx (MIT).
+
+Los cambios de Polargate (todo lo que no es del original) se publican también con licencia MIT.
+Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+Qué descarga PolarMotion y de dónde (solo cuando la persona lo pide con `tools/setup.sh deps` o `tools/fetch.sh`):
+- Paquetes de Node (playwright-core y three) con las versiones del package-lock, desde npm.
+- El navegador sin ventana, desde el servidor de Playwright (Microsoft).
+- Paquetes de Python con versiones fijas, desde PyPI.
+- La voz Kokoro, las muestras de instrumentos y los HDRI, desde las Releases de POLARGATE/polarmotion (con sha256).
+- El modelo de Whisper para comprobar la voz, desde Hugging Face, la primera vez que se usa.
+Nada de esto viene del repositorio del autor del original.
+
+Cambios de Polargate sobre el original: no descarga ni ejecuta nada del repositorio del autor (los recursos grandes salen de
+POLARGATE/polarmotion), edge-tts no se instala por defecto, rutas y nombres propios, índice de estilos en español, voz en español,
+y fuera la galería, la promoción y las herramientas de publicación del autor.

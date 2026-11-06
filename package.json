@@ -1,0 +1,15 @@
+{
+  "name": "polarmotion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "PolarMotion, de Polargate: estilos de vídeo hechos con código, basados en Lemo-Opuscar (LemoLab, MIT).",
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "playwright-core": "^1.63.0",
+    "three": "^0.170.0"
+  }
+}
