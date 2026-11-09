@@ -16,10 +16,10 @@ PHOTOGRAPHS (Lewis Hine, 1930–31; graded to the duotone, cut out with u2net_hu
 - "Photograph of a Workman on the Framework of the Empire State Building", Lewis Hine. U.S. National Archives,
   NAID 518290 (Records of the Work Projects Administration, RG 69). Public domain.
   https://commons.wikimedia.org/wiki/File:Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg
-- "Icarus, Empire State Building", Lewis Hine, 1930. The Metropolitan Museum of Art, released under CC0 1.0
+- "Icarus, Empire State Building", 1930. The Metropolitan Museum of Art, released under CC0 1.0
   (https://creativecommons.org/publicdomain/zero/1.0/) through the Met's Open Access donation to Wikimedia Commons.
   https://commons.wikimedia.org/wiki/File:Icarus,_Empire_State_Building_MET_DP106525.jpg
-- "Empire State Building", Lewis Hine, 1930s. The Metropolitan Museum of Art, CC0 1.0 (as above).
+- "Empire State Building", 1930s. The Metropolitan Museum of Art, CC0 1.0 (as above).
   https://commons.wikimedia.org/wiki/File:Empire_State_Building_MET_DP106404.jpg
 
 DOCUMENT
@@ -34,16 +34,15 @@ SOUND
 - "WWS Rivetingmachine" by Work With Sounds / Konrad Gutkowski, licensed under CC BY 4.0
   (https://creativecommons.org/licenses/by/4.0/). https://commons.wikimedia.org/wiki/File:WWS_Rivetingmachine.ogg
   Changes: short slices, levelled.
-- "Steam Whistle at Georgia Tech" by Zeroping, CC0 1.0. https://commons.wikimedia.org/wiki/File:Steam_Whistle_at_Georgia_Tech.ogg
-- "Construction" by Dsw4, public domain. https://commons.wikimedia.org/wiki/File:Construction.ogg (ambience bed)
+- "Steam Whistle at Georgia Tech", CC0 1.0, Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Steam_Whistle_at_Georgia_Tech.ogg
+- "Construction", public domain, Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Construction.ogg (ambience bed)
 
 MUSIC
 - Original score written for this film (audio/mix.py).
 - Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
 
 VOICE
-- Narration: Kokoro-82M text-to-speech (Apache-2.0), voice am_michael, run offline with kokoro-onnx (MIT).
-- Speech check: faster-whisper (MIT).
+- Narration: synthetic voice.
 
 FONTS (SIL Open Font License 1.1; texts in fonts/; from github.com/google/fonts, fetched by tools/fonts.py)
 - Noto Sans SC, Adobe / Google (subset)
@@ -51,7 +50,7 @@ FONTS (SIL Open Font License 1.1; texts in fonts/; from github.com/google/fonts,
 - Space Mono, The Space Mono Project Authors
 
 TOOLS
-- Cut-outs: U²-Net human segmentation (u2net_human_seg, Apache-2.0; ONNX from https://github.com/danielgatis/rembg/releases),
+- Cut-outs: human-segmentation model u2net_human_seg (Apache-2.0, ONNX),
   run through onnxruntime (MIT).
 - Rendering: headless Chromium (Playwright); ffmpeg.
 

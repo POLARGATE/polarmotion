@@ -10,11 +10,10 @@ ORIGINAL (made for this demo, by code in this folder)
 - Story, characters, place names (Hollowmere, Ember Ridge, Ashfall Keep) are original.
 
 PALETTE
-- Master palette = ENDESGA 32 by ENDESGA (public palette, lospec.com/palette-list/endesga-32), used freely as a color list.
+- Master palette = ENDESGA 32 (public palette, lospec.com/palette-list/endesga-32), used freely as a color list.
 - 8-bit (13+2 colors), 4-color and "faded" palettes are custom values chosen for this film.
 
 VOICE
-- Kokoro-82M TTS (Apache-2.0), voice bm_george, via kokoro-onnx (MIT). core/tts/
-- Checked with faster-whisper base.en (MIT).
+- Synthetic narration.
 
 No third-party images, fonts, samples or recordings are used.

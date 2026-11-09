@@ -1,19 +1,19 @@
 Engineering Briefing Board — "The Ship Decides" (library demo)
 Every third-party asset in the film, with its source and licence.
 
-PHOTOGRAPHS (Wikimedia Commons; cut out at the photo's own resolution with BiRefNet, graded, and modified as noted)
+PHOTOGRAPHS (Wikimedia Commons; cut out at the photo's own resolution, graded, and modified as noted)
 - Container ship from above (kit object "ship")
   "Containerschiffe auf der Elbe zwischen Wedel und Hamburg" by BAW_Bundesanstalt für Wasserbau,
   CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
   https://commons.wikimedia.org/wiki/File:Containerschiffe_auf_der_Elbe_zwischen_Wedel_und_Hamburg_(55103130595).jpg
   Changes: rotated, cropped to the hull, background and shadow removed, colour graded.
 - Container ship, side view (kit objects "ship_side", "print_ship")
-  "Ship Harrison (1)" by Tvabutzku1234, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
+  "Ship Harrison (1)", CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
   https://commons.wikimedia.org/wiki/File:Ship_Harrison_(1).jpg
   Changes: the ship's name, hull markings and the container operators' logos wiped with a median filter so that
   no lettering is readable; cut out, colour graded; also shown uncut (lettering wiped) as a pinned print.
 - Beam bridge (kit object "beam")
-  "Kiiminkiriver Bridge 20100705" by Estormiz, public domain (PD-self)
+  "Kiiminkiriver Bridge 20100705", public domain (PD-self)
   https://commons.wikimedia.org/wiki/File:Kiiminkiriver_Bridge_20100705.JPG
   Changes: cut out, desaturated.
 - Arch bridge (kit objects "arch", "print_arch")
@@ -48,8 +48,7 @@ FONTS (SIL Open Font License 1.1; texts in kit/fonts/; all from Google Fonts, fe
 - IBM Plex Mono, IBM
 
 VOICE
-- Narration: Kokoro-82M text-to-speech (Apache-2.0), voice af_heart, run offline with kokoro-onnx (MIT).
-- Speech check: faster-whisper (MIT).
+- Narration: synthetic voice.
 
 MUSIC AND SOUND
 - Original score and procedural sound design written for this film (audio/mix.py).
@@ -59,7 +58,7 @@ MUSIC AND SOUND
   trombone, tuba, horn, tubular bells, glockenspiel, vibraphone)
 
 TOOLS
-- Segmentation: BiRefNet-general (MIT; ONNX export from https://github.com/danielgatis/rembg/releases), run through onnxruntime (MIT).
+- Segmentation: matting model BiRefNet-general (MIT, ONNX), run through onnxruntime (MIT).
 - Rendering: headless Chromium (Playwright); ffmpeg.
 
 FACTS

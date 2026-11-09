@@ -24,7 +24,7 @@ PHOTOS
 - "Hasan Ali Kaldırım 2013 1.jpg" by Thomas Rodenbücher, via Wikimedia Commons, licensed under CC BY 2.0
   (https://creativecommons.org/licenses/by/2.0/). https://commons.wikimedia.org/wiki/File:Hasan_Ali_Kald%C4%B1r%C4%B1m_2013_1.jpg
   Changes: cropped and placed in a polaroid frame.
-- "Vodafone Park, Istanbul (from outside).jpg" by Olos88, via Wikimedia Commons, CC0.
+- "Vodafone Park, Istanbul (from outside).jpg", via Wikimedia Commons, CC0.
   https://commons.wikimedia.org/wiki/File:Vodafone_Park,_Istanbul_(from_outside).jpg — cropped to 16:9, darkened.
 
 MUSIC & SOUND (original score in tools/mix.py, sampled instruments through core/audio/sampler.py)
@@ -37,8 +37,7 @@ MUSIC & SOUND (original score in tools/mix.py, sampled instruments through core/
   with core/audio/sfx.py
 
 VOICE
-- Kokoro-82M (hexgrad), voice bm_george, Apache License 2.0; run locally via kokoro-onnx (MIT) through core/tts/tts.py.
-  Speech check: faster-whisper base.en (MIT; OpenAI Whisper weights, MIT).
+- Synthetic narration.
 
 FACTS
 - Score, date, venue, goal times and how each goal was scored: beIN SPORTS Türkiye (video description and

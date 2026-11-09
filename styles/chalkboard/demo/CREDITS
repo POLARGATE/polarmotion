@@ -19,14 +19,13 @@ FONTS (SIL Open Font License 1.1; licence texts in fonts/; not in git, build.sh 
   the subtitles use (fonts/wenkai-sub.woff2); the full font is used only on the check page. fonts/OFL-LXGWWenKai.txt
 
 VOICE
-- Chinese: Edge TTS (Microsoft), zh-CN-XiaoxiaoNeural, +15 %. English version: en-US-AvaNeural, +10 %.
-  Through the library's core/tts/tts_zh.py; checked with core/tts/asr_check.py (faster-whisper, MIT; Whisper models, MIT).
+- Synthetic narration (Chinese; English version), through the library's core/tts/tts_zh.py.
 
 SOUND
 - Chalk recordings from Wikimedia Commons, cut into grains by tools/foley_lib.py (foley/lib):
-  - "chalk-on-chalkboard" by fattirewhitey (freesound.org/people/fattirewhitey/sounds/264944; Commons file
+  - "chalk-on-chalkboard" (freesound.org, sound 264944; Commons file
     "264944 chalk-on-chalkboard.wav") — CC0 1.0.
-  - "Chalkboard-writing.ogg" by Tomproberts (Commons) — CC0 1.0.
+  - "Chalkboard-writing.ogg" (Commons) — CC0 1.0.
   - "WWS Chalk.ogg" by Work With Sounds / La Fonderie, provided by Work With Sounds in cooperation with Wikimedia
     Sverige (Commons) — CC BY 4.0 (creativecommons.org/licenses/by/4.0). Cut into grains, filtered and layered.
 - Music samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library

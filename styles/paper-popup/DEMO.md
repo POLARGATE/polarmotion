@@ -52,7 +52,7 @@ Depth of field (`post.js`): CoC in pixels, max 14, 64-tap golden-angle spiral ga
 
 ## Score structure
 
-- **Narration**: one warm storyteller, Kokoro `af_bella`, speed 0.9, en-us; 15 short lines (2–9 s), written like a picture book ("The cardboard hills. The paper sun on its wooden stick."). Lines pronounced differently from how they are displayed live in `tts/lines.json` (e.g. "Swish Swash Sea" without the hyphen; "..." instead of "…"); displayed text lives in `story.js VO`. Trim silence at 1 % of peak (+10 ms head, +100 ms tail). Every line checked with whisper (`asr.py`, `words.py` for word times to sync gags).
+- **Narration**: one warm storyteller, voice `af_bella`, speed 0.9, en-us; 15 short lines (2–9 s), written like a picture book ("The cardboard hills. The paper sun on its wooden stick."). Lines pronounced differently from how they are displayed live in `tts/lines.json` (e.g. "Swish Swash Sea" without the hyphen; "..." instead of "…"); displayed text lives in `story.js VO`. Trim silence at 1 % of peak (+10 ms head, +100 ms tail). Every line checked with the speech check (`asr.py`, `words.py` for word times to sync gags).
 - **Character blips**: bubbles type at 30 chars/s, a blip every second letter; Pip = square wave, bright pitches (C6-ish), Crumple = low 180–240 Hz, Fold = triangle wave.
 - **Music**: three Kevin MacLeod tracks (CC BY 4.0), edited in `music/edit.py`: *Dreamy Flashback* (0–16.2 s, fade out 1.6 s) for the real desk; *Jaunty Gumption* from 15.4 s for the whole paper world, with **one bar-aligned internal jump cut** (73.21 s → 102.79 s of the track, 0.42 s crossfade) chosen by `music/jump.py`/`jump2.py` (beat-synced chroma + MFCC self-similarity, cut length a multiple of 4 beats) so that the song's real ending lands at 104.22 s — the instant Pip jumps off the page; *Heartwarming* from its 39.38 s mark at 104.8 s (×1.15) for the real world and the end card.
 - **Sound effects**, all synthesized in `mix.py` from `events.json` (250 events exported by `render.mjs events`): book creak + thump, pop-up pops (sine sweep + paper crinkle), page swish, door squeak, boing, hops, footsteps (tiny taps + crinkle on each walk half-cycle), paper roll, "!" bang, stomps, NICE/GREAT arpeggios, sparkles (bells), poof, paper folding, whoosh, splash, whale spout, slat clacks, star tinks, lamp switch + warm chord, landing skid. Per-type gains in the `G` table.
@@ -95,7 +95,7 @@ Depth of field (`post.js`): CoC in pixels, max 14, 64-tap golden-angle spiral ga
 
 `drawEnd`, from 123.4 s, over the live desk shot: title in Lilita One 96 px gold (y 170), Chinese title (y 262), italic "The End?" popping in (y 350), then from 127.6 s the sign-off fades in (the asset credits live in `demo/CREDITS`, not on screen); fade to black over the last 1.5 s.
 
-The sign-off **"Polargate · PolarMotion"** belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card. In the demo it sits centred under "The End?" at y 430: Fredoka 600 36 px, cream `#fffaf0` fill with a 7 px `rgba(30,20,14,.75)` outline (it lies over the cream backdrop page, so the outline is what makes it read), fading in with the asset credits at 127.6 s, never covering the characters.
+The sign-off **"Polargate · PolarMotion"** belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card. In the demo it sits centred under "The End?" at y 430: Fredoka 600 36 px, cream `#fffaf0` fill with a 7 px `rgba(30,20,14,.75)` outline (it lies over the cream backdrop page, so the outline is what makes it read), fading in at 127.6 s, never covering the characters.
 
 ## Pitfalls tied to this demo
 
@@ -126,7 +126,7 @@ styles/paper-popup/demo/
   hud.js      2D overlay: subtitles, bubbles, chapter banners, NICE/GREAT, "!", end card, blip times
   render.mjs  stills / events / video (N workers → out/seg_*.mp4)    serve.mjs  static server
   tts/        lines.json + gen.py (all lines) / gen1.py (selected lines) → voices/*.wav + dur.json
-  asr.py words.py   whisper check / word timestamps      music/edit.py  score.wav    mix.py  mix.wav
+  asr.py words.py   speech check / word timestamps       music/edit.py  score.wav    mix.py  mix.wav
   mux.sh      segments + mix → ../paper-popup.mp4        make_srt.mjs  → ../paper-popup.srt
 ```
 
@@ -138,11 +138,11 @@ D=styles/paper-popup/demo; PY=.venv/bin/python
 (cd $D && node fetch_fonts.mjs)
 #    download the three MP3s from incompetech.com into $D/music/, then convert to 48 kHz WAV:
 for f in Dreamy_Flashback Jaunty_Gumption Heartwarming; do ffmpeg -y -i $D/music/$f.mp3 -ar 48000 -ac 2 $D/music/$f.wav; done
-# 1. voice (Kokoro model is shared from core/tts/): all lines, or only some
+# 1. voice (voice model is shared from core/tts/): all lines, or only some
 $PY $D/tts/gen.py af_bella            # → voices/v01..v15.wav + voices/dur.json
 $PY $D/tts/gen1.py v04 v07            # regenerate selected lines
 # 2. proof-listen
-$PY $D/asr.py; $PY $D/words.py        # whisper transcript / word timestamps for gag sync
+$PY $D/asr.py; $PY $D/words.py        # speech-check transcript / word timestamps for gag sync
 # 3. timeline: edit story.js (VO start times use voices/dur.json), then check stills
 node $D/render.mjs stills 6.5 30 61.8 82.6 118     # → demo/stills/t_*.jpg (STILLS_DIR=out/x to redirect)
 # 4. score (only when the edit points change)
