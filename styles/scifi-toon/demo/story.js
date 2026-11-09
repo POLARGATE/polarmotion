@@ -71,6 +71,6 @@ export const CUES = [
 ];
 
 export const CREDITS = [
-  'Original score & sound effects synthesized in code (numpy) · Voices: Kokoro TTS (Apache-2.0)',
+  'Original score & sound effects synthesized in code (numpy)',
   'Fonts: Baloo 2, Titan One, Bungee, VT323 — Google Fonts, SIL OFL 1.1',
 ];

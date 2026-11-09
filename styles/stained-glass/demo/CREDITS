@@ -5,7 +5,7 @@ Story, melody and characters are original.
 
 Narration: Kokoro TTS (kokoro-onnx, voice bf_alice), Apache-2.0.
 Music: original score written in code with the repo sampler (core/audio/sampler.py).
-Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library (Versilian Studios).
+Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
 Foley: synthesized in mix.py (glass modes, crack, lead creak, air, stone hall), no recordings.
 
 Fonts (SIL Open Font License 1.1):

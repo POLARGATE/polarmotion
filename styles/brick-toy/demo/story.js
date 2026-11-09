@@ -59,5 +59,5 @@ export const shotAt = t => SHOTS.find(s => t >= s[0] && t < s[1]) || SHOTS[SHOTS
 
 export const CREDITS = [
   'Music: “Monkeys Spinning Monkeys”, “Heroic Age” — Kevin MacLeod (incompetech.com), CC BY 4.0',
-  'HDRI, wood & props: Poly Haven, CC0 · Voice: Kokoro TTS',
+  'HDRI, wood & props: Poly Haven, CC0',
 ];

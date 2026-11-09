@@ -801,7 +801,7 @@ function shotEnd(t) {
   ctx.fillStyle = C.line; ctx.fillRect(x, 816, 1620, 1);
   [['新闻来源：Google · Meta · Korea Herald · Bloomberg · Euronews', 'e5'], ['数据：韩国交易所 · 讲话原文：欧盟委员会', 'e5b'],
    ['配乐采样 VSCO 2 CE、VCSL（CC0）· 地图 Natural Earth（公有领域）', 'e6'], ['字体 Noto Sans SC、Barlow Condensed、IBM Plex Mono（OFL）', 'e6b'],
-   ['配音：豆包语音合成 2.0（解说小明）', 'e7'], ['机房、晶圆背景为 AI 生成示意图', 'e7b']].forEach(([s, id], i) => text(s, x, 854 + i * 31, F.sc7(20), C.grey, 'left', 0, id));
+   ['机房、晶圆背景为 AI 生成示意图', 'e7b']].forEach(([s, id], i) => text(s, x, 854 + i * 31, F.sc7(20), C.grey, 'left', 0, id));
   ctx.globalAlpha = 1;
   // Station logo
   const la = m(39.3, 39.6); ctx.globalAlpha = la;

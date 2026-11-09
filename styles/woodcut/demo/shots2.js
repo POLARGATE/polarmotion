@@ -459,7 +459,7 @@ export function register(SHOTS, H) {
       m.font = '400 38px "IM Fell English SC"'; m.fillText('PolarMotion', 924, 640);
       m.font = '400 34px "IM Fell English"'; m.fillText('Polargate · PolarMotion', 924, 690);
       m.font = 'italic 400 24px "IM Fell English"'; m.fillStyle = `rgba(0,0,0,${b})`;
-      m.fillText('Voice: Kokoro (am_onyx) · Samples: VS Chamber Orchestra CE & VCSL, CC0 (Versilian Studios)', 924, 764);
+      m.fillText('Samples: VS Chamber Orchestra CE & VCSL (CC0)', 924, 764);
       m.fillText('Type: IM Fell English, SIL OFL (Igino Marini) · Walnut table: Poly Haven, CC0 · everything else carved in code', 924, 798);
       m.restore();
     }, { seed: 61, noCap: true });

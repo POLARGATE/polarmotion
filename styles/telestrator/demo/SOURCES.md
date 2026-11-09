@@ -28,7 +28,7 @@ Both pieces of match footage come from **the same CC BY release by the same righ
 | What | Source / licence |
 |---|---|
 | Match facts (score, goal times, date, stadium, how the goals were scored) | See `FACTS.md`: beIN SPORTS official highlights description, beinsports.com.tr match report, Habertürk match report, Hürriyet Daily News (facts, re-typeset) |
-| Commentary transcript | Transcribed by this film's author from the `kald` source audio (assisted by Whisper medium); words that can't be made out are given as an ellipsis |
+| Commentary transcript | Transcribed for this film from the `kald` source audio (speech-to-text, checked by hand); words that can't be made out are given as an ellipsis |
 | Shot data | Frames counted by this film's author at 25 fps (ball received F035, strike F056, in the net ≈F078); strike distances converted with a perspective matrix computed from the penalty-area lines in each picture (`tools/homography.py`, residual ≤ 6 px) |
 | Changes (required by CC BY to be indicated) | `kald`, `summary`: edited, reversed, slow motion and freeze frames, split screen, perspective flattening, 1.5× scale-up, deblocking and grading, overlaid tactics graphics and programme package (bug and score bar cover the original logo and web address); `hak`: cropped and placed in a Polaroid frame |
 | English narration | Kokoro TTS (`core/tts/tts.py`, voice `bm_george`), checked line by line with ASR |

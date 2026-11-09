@@ -179,9 +179,9 @@ export function endCard(g, t) {
   g.font = '400 24px Josefin'; if ('letterSpacing' in g) g.letterSpacing = '3px'; g.fillStyle = C.ivory; g.fillText('Polargate · PolarMotion', 960, 590);
   D.gline(g, [[760, 625], [1160, 625]], { w: 1.2 });
   g.font = '400 21px Josefin'; if ('letterSpacing' in g) g.letterSpacing = '1px'; g.fillStyle = C.ivoryD;
-  ['Original score & sound: PolarMotion · Voices: Kokoro (bm_fable, am_puck)',
+  ['Original score & sound: PolarMotion',
     'Piano: “Salamander Grand Piano V3” by Alexander Holm, CC BY 3.0',
-    'Samples (CC0): Versilian Studios VSCO 2 CE & VCSL, Karoryfer Samples',
+    'Samples (CC0): VSCO 2 CE, VCSL, Karoryfer Samples',
     'Fonts (OFL): Limelight · Poiret One · Josefin Sans · Italiana'].forEach((s, i) => g.fillText(s, 960, 680 + i * 38));
   g.restore();
   D.vignette(g, 1920, 1080, .5);

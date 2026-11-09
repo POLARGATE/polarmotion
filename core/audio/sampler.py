@@ -178,10 +178,10 @@ ALIASES = {'strings': 'violins', 'cello': 'cellos', 'viola': 'violas', 'double_b
            'cymbal': 'crash', 'tamtam': 'gong', 'celesta': 'glockenspiel'}
 
 LIC = {
-    'vsco2ce': ('VS Chamber Orchestra: Community Edition (Versilian Studios)', 'CC0 1.0', ''),
-    'vcsl': ('Versilian Community Sample Library (Versilian Studios)', 'CC0 1.0', ''),
+    'vsco2ce': ('VS Chamber Orchestra: Community Edition', 'CC0 1.0', ''),
+    'vcsl': ('Versilian Community Sample Library', 'CC0 1.0', ''),
     'freepats': ('FreePats project (freepats.zenvoid.org)', 'CC0 1.0', ''),
-    'karoryfer': ('Karoryfer Samples / sfzinstruments', 'CC0 1.0', ''),
+    'karoryfer': ('Karoryfer Samples', 'CC0 1.0', ''),
     'salamander': ('Salamander Grand Piano V3 by Alexander Holm', 'CC BY 3.0',
                    'Piano: "Salamander Grand Piano V3" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)'),
     'muldjord': ('MuldjordKit by Lars Muldjord (FreePats version)', 'CC BY 4.0',

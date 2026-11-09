@@ -442,7 +442,7 @@ function endCard(g, t, cam) {
   E.setType(g, 'Polargate  ·  PolarMotion', L, 12, { size: 30, font: 'Newsreader', weight: 400, color: P.ink, progress: p(70.2) });
   const cr = ['Data: NASA GISS Surface Temperature Analysis (GISTEMP v4), global land–ocean, June–August',
     'anomaly vs 1951–80, public domain. 2026 value preliminary, retrieved 2026-09-26.',
-    'Fonts: Newsreader, Caveat, IBM Plex Mono (SIL OFL) · Voice: Kokoro-82M, af_alloy (Apache-2.0)',
+    'Fonts: Newsreader, Caveat, IBM Plex Mono (SIL OFL)',
     'Music, sound and pictures: original, made in code.'];
   cr.forEach((s, i) => E.setType(g, s, L, 62 + i * 26, { size: 16, color: P.inkSoft, progress: p(70.6 + i * .15) }));
   const hf = seg(k, 71.6, 73.0);

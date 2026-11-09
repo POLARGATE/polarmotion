@@ -1000,7 +1000,7 @@ function buildAll() {
     const credit = el('g', {}, g);
     el('rect', { x: -700, y: -130, width: 1400, height: 260, rx: 40, fill: K.cream, ...SO }, credit);
     txt(credit, '本片由 PolarMotion 全程代码生成', { x: 0, y: -18, 'font-size': 60, 'font-family': F.sans, 'font-weight': 900, fill: K.ol, 'text-anchor': 'middle' });
-    txt(credit, '（它也在这条时间线上）', { x: 0, y: 68, 'font-size': 48, 'font-family': F.sans, 'font-weight': 900, fill: K.claude, 'text-anchor': 'middle' });
+    txt(credit, '（每一帧都是代码画的）', { x: 0, y: 68, 'font-size': 48, 'font-family': F.sans, 'font-weight': 900, fill: K.claude, 'text-anchor': 'middle' });
     ev(at(59), 'end');
     const castG = el('g', {}, g);
     const cast = ['llama', 'gemini', 'gpt', 'claude', 'deepseek'].map((k, i) => { const w = el('g', {}, castG); return { w, c: CAST[k](w), x: 180 + i * 185 }; });

@@ -248,7 +248,7 @@ export async function build() {
   credit('Whiteboard Explainer', 1330, 50);
   credit('PolarMotion', 1420, 50, { color: INK.orange });
   credit('Polargate · PolarMotion', 1510, 50);
-  credit('voice: Kokoro (bm_george)  ·  lettering: EMS Tech (OFL)', 1600, 30);
+  credit('lettering: EMS Tech (OFL)', 1600, 30);
   credit('samples: VSCO 2 CE, VCSL, FreePats (CC0)', 1650, 30);
   const crT0 = 103.3;
   D(K, cr, crT0, crT0 + 2.8, { minGap: .01, maxGap: .04 });

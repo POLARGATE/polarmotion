@@ -79,6 +79,6 @@ export const SHOTS = [
 export const shotAt = t => SHOTS.find(s => t >= s[0] && t < s[1]) || SHOTS[SHOTS.length - 1];
 
 export const CREDITS = [
-  'Music, sound & 3D: original, generated in code · Voice: Kokoro TTS (af_sky)',
+  'Music, sound & 3D: original, generated in code',
   'Fonts: Josefin Sans, Quicksand (SIL OFL)',
 ];

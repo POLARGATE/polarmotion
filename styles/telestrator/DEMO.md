@@ -64,7 +64,7 @@ Times in seconds; segment boundaries in `demo/timeline.json`. Clip `a` = the Com
 
 ## End card
 
-From 49.6 s, held to 54.1 then cut to black with the picture: "定格" (150 px), "Freeze Frame" (yellow), a thin rule, "SPORTS TELESTRATOR · 体育战术板", "Polargate · PolarMotion", then five lines of credits: the broadcaster's CC BY video and its Commons cut with title and licence, the changes made, the CC BY photo, the CC BY drum kit, and the CC0 sources with the voice. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+From 49.6 s, held to 54.1 then cut to black with the picture: "定格" (150 px), "Freeze Frame" (yellow), a thin rule, "SPORTS TELESTRATOR · 体育战术板", "Polargate · PolarMotion", then five lines of credits: the broadcaster's CC BY video and its Commons cut with title and licence, the changes made, the CC BY photo, the CC BY drum kit, and the CC0 sources. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

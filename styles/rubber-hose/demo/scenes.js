@@ -591,7 +591,7 @@ export function shotEnd(t) {
   g.font = '40px "IM Fell English SC"'; g.fillText('Polargate · PolarMotion', 960, 722);
   g.restore();
   g.save(); g.fillStyle = '#F4F1EA'; g.strokeStyle = 'rgba(10,10,8,.85)'; g.lineWidth = 5; g.font = '22px "IM Fell English SC"'; g.textAlign = 'center';
-  const cr = ['Original score & sound made in code  ·  Samples: VSCO 2 CE, VCSL (CC0)  ·  Voice: Kokoro TTS', 'Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), CC BY 4.0  ·  Fonts: Shrikhand, Limelight, IM Fell English SC (OFL)'];
+  const cr = ['Original score & sound made in code  ·  Samples: VSCO 2 CE, VCSL (CC0)', 'Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), CC BY 4.0  ·  Fonts: Shrikhand, Limelight, IM Fell English SC (OFL)'];
   cr.forEach((s, i) => { g.strokeText(s, 960, 960 + i * 32); g.fillText(s, 960, 960 + i * 32); }); g.restore();
   // iris opens out of black
   const r = 1250 * eo(seg(t, K.end, K.end + .45));

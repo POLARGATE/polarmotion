@@ -103,7 +103,7 @@ From 47.5 s, held six seconds:
 4. "POLAR AI NEWS · 电视新闻包装 BROADCAST NEWS PACKAGE".
 5. "Polargate · PolarMotion".
 6. The large plate and wordmark on the right.
-7. Six lines: news sources; data and speech sources; CC0 samples and public-domain map data; OFL fonts; the Doubao voice; the two AI-generated plates.
+7. Six lines: news sources; data and speech sources; CC0 samples and public-domain map data; OFL fonts; the two AI-generated plates.
 
 There is no CC BY material in this film. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card. No mascot, no watermark.
 

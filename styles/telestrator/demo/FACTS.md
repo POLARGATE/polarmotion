@@ -27,7 +27,7 @@ On-screen text is Chinese (some of it bilingual); it is quoted as it appears, wi
 | 3 | Freeze-frame labels: 右路送进来 · 门前推射 (in from the right · close-range finish); 扎伊茨 (Zajc) | As above | As above | As above |
 | 4 | Split screen: A 主机位 (main camera) / B 反打高机位 (reverse high camera); 任意球 · 门前头球 (free kick · header in front of goal); 萨迪克 (Sadık) | "Sixty-one. Free kick, Sadık heads it in." | Free kick, header | S2 ("serbest vuruşta çok iyi yükselen Sadık"), S4 ("header"), S1 (61′) |
 | 5 | VAR ✓ 进球有效 · CHECKED FOR A FOUL · GOAL STANDS; score bar 3–1 → 3–2 | "VAR checks for a foul. The goal stands." | VAR was consulted over a disputed foul; goal given | S3 |
-| 6 | Transcript of the source commentary "Hasan Ali… vurdu — GOL!" | — | The commentator's own words | F (transcribed with the help of Whisper medium, checked by hand; the second word is unclear and given as an ellipsis) |
+| 6 | Transcript of the source commentary "Hasan Ali… vurdu — GOL!" | — | The commentator's own words | F (transcribed with speech-to-text, checked by hand; the second word is unclear and given as an ellipsis) |
 | 7 | 解围没解远；3 号从画外插上 (the clearance doesn't go far; No. 3 runs in from out of frame) | "Watch the clearance. It's only half cleared." | The picture | F |
 | 8 | 无人上抢 (nobody closes him down) | "Hasan Ali arrives. Nobody steps out." | The picture (the two nearest defenders don't step forward) | F |
 | 9 | Stopwatch 0.84 s; 禁区线 (edge of the box); 禁区外 一脚打门 (first-time shot from outside the box); 26 号封堵 (No. 26 blocks) | "Under a second to set it, and hit it." | Ball received F035 → strike F056 = 21 frames ÷ 25 fps = 0.84 s | F1 |
