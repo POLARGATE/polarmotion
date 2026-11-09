@@ -113,7 +113,7 @@ A short film whose job is to show the style working, not a full production:
 - **Every row of `CHANGES.md` is clearly on screen** at least once, and the native move appears once.
 - Music and sound effects, no voice and no subtitles unless the user asks (a voice is a separate test).
 - Treatment: one structure is enough (no three candidates). No storyboard. DIRECTOR.md's counts are written for longer films: at this length one real silence and three kinds of camera move are enough.
-- **Checks**, as for any film: DIRECTOR.md §11, with its one fix round (no LemoLab sign-off in the film).
+- **Checks**, as for any film: DIRECTOR.md §11, with its one fix round (no library or AI sign-off in the film).
 
 Then save it into `style/`:
 
@@ -135,5 +135,5 @@ Only a kept style is theirs: listed when the skill starts, and found by name.
 ## 7. Revise or use it
 
 - **Not right yet**: change `STYLE.md` and `CHANGES.md`, then render the style frame and the demo film again and replace `demo/` and `DEMO.md`. Change only what the user asks.
-- **Using it**: find it through `~/polarmotion-mis-estilos/README.md`. Read its `STYLE.md` in place of a library `STYLE.md` and follow the normal workflow in `AGENTS.md`, treatment first, at the style's default size unless the user asks for another. For techniques, read the style's own `DEMO.md` and `demo/` first, then the base's (`$LIB/styles/<based_on>/DEMO.md`). The demo film is one example: never reuse its story, shots or timeline. The films are the user's: no credit of the library or of its original authors, no watermark.
+- **Using it**: find it through `~/polarmotion-mis-estilos/README.md`. Read its `STYLE.md` in place of a library `STYLE.md` and follow the normal workflow in `AGENTS.md`, treatment first, at the style's default size unless the user asks for another. For techniques, read the style's own `DEMO.md` and `demo/` first, then the base's (`$LIB/styles/<based_on>/DEMO.md`). The demo film is one example: never reuse its story, shots or timeline. The films are the user's: no credit of the library or of an AI, no watermark.
 - **After a library update**: if the base `STYLE.md` changed since `library_version`, mention it once and offer to bring the useful fixes into their copy. Don't change their style without asking.

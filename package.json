@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "PolarMotion, de Polargate: estilos de vídeo hechos con código, basados en Lemo-Opuscar (LemoLab, MIT).",
+  "description": "PolarMotion, de Polargate: estilos de vídeo hechos con código.",
   "engines": {
     "node": ">=20"
   },

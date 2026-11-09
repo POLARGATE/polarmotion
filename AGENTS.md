@@ -12,7 +12,7 @@ This repository is a library of film styles. Each style has a `styles/<slug>/STY
 | Tool commands and flags | [`core/README.md`](core/README.md) |
 | The user wants to change a style and keep it as their own, or make their own style from a blank page, or names a style in `~/polarmotion-mis-estilos/` | [`MY-STYLES.md`](MY-STYLES.md) |
 
-**Films outside `styles/` are the user's: no credit of the library or of its original authors, no watermark.**
+**Films outside `styles/` are the user's: no credit of the library or of an AI, no watermark.**
 
 ## Start
 

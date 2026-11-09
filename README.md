@@ -16,6 +16,6 @@ Después pide a Claude, con tus palabras: «Hazme un vídeo de 30 segundos en es
 - Hace falta Node 20 o superior, ffmpeg 7 o superior y Python 3.11 a 3.13. Lo demás lo instala `sh tools/setup.sh deps` cuando tú lo dices.
 - Los recursos grandes (voz, instrumentos, texturas) se descargan de este repositorio, con su comprobación sha256: `sh tools/fetch.sh`.
 
-## Créditos
+## Licencia
 
-Basado en [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar), de LemoLab, con licencia MIT (código) y CC BY 4.0 (estilos y demos), a partir del commit `bebbbe1aa92a`. Detalle de licencias y cambios en [`NOTICE`](NOTICE) y [`LICENSE`](LICENSE).
+Código con licencia MIT; estilos y demos con licencia CC BY 4.0. Autores, licencias y cambios, en [`NOTICE`](NOTICE) y [`LICENSE`](LICENSE).

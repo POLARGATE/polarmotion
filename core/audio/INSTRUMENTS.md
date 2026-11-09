@@ -106,10 +106,10 @@ add(buf, P.pluck('shamisen', 'C4', .6, .8, buzz=.7), 2, .8, .3)
 
 | Library | Folder | Licence | What the credits must say |
 |---|---|---|---|
-| VS Chamber Orchestra: Community Edition (Versilian Studios, github.com/sgossner/VSCO-2-CE) | `instruments/vsco2ce/` | **CC0 1.0** | Not required; the author would like credit to "Versilian Studios / Sam Gossner" (the pipe organ is by Ivy Audio / Simon Dalzell) |
-| Versilian Community Sample Library (github.com/sgossner/VCSL) | `instruments/vcsl/` | **CC0 1.0** | Not required |
+| VS Chamber Orchestra: Community Edition (Versilian Studios) | `instruments/vsco2ce/` | **CC0 1.0** | Not required; the author would like credit to "Versilian Studios / Sam Gossner" (the pipe organ is by Ivy Audio / Simon Dalzell) |
+| Versilian Community Sample Library (Versilian Studios) | `instruments/vcsl/` | **CC0 1.0** | Not required |
 | FreePats (freepats.zenvoid.org): classical guitar, ukulele, clean electric guitar, fingered electric bass, kalimba, hang, accordion, glass harp, old piano, bagpipe, world percussion | `instruments/freepats/<name>/` | **CC0 1.0** | Not required |
-| Karoryfer Samples (github.com/sfzinstruments): erhu aliexpress-erhu, jazz double bass Sneakybass, alto sax Weresax | `instruments/karoryfer/` | **CC0 1.0** | Not required |
+| Karoryfer Samples: erhu aliexpress-erhu, jazz double bass Sneakybass, alto sax Weresax | `instruments/karoryfer/` | **CC0 1.0** | Not required |
 | **Salamander Grand Piano V3** (Alexander Holm; FreePats FLAC version) | `instruments/salamander/` | **CC BY 3.0** | **Required whenever you use `piano`** ↓ |
 | **MuldjordKit** (Lars Muldjord; FreePats version) | `instruments/freepats/muldjord_kit/` | **CC BY 4.0** | **Required whenever you use `drum_kit`** ↓ |
 
@@ -342,6 +342,6 @@ core/audio/
     karoryfer/          erhu / Sneakybass / Weresax  74 MB
 ```
 
-Source links: VSCO 2 CE https://github.com/sgossner/VSCO-2-CE · VCSL https://github.com/sgossner/VCSL · Salamander https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html · FreePats https://freepats.zenvoid.org/ · Karoryfer https://github.com/sfzinstruments (aliexpress-erhu / karoryfer.sneakybass / karoryfer.weresax)
+Source links: VSCO 2 CE and VCSL (Versilian Studios) · Salamander https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html · FreePats https://freepats.zenvoid.org/ · Karoryfer Samples (aliexpress-erhu / karoryfer.sneakybass / karoryfer.weresax)
 
 Availability: the sample libraries must be downloaded first (`sh tools/fetch.sh instruments <lib>`, see the top of this file). When a library that hasn't been downloaded is used, `sampler` raises an error naming the command to run. `sampler.py` needs only the core-tier Python packages; `pluck.py` needs numba (`setup.sh deps music`).
