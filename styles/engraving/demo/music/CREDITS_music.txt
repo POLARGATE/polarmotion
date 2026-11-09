@@ -1,3 +1,1 @@
-Original score for "The Honeybee, Plate VII" (Copperplate Engraving demo, PolarMotion), composed in code (music/score.py).
-Instruments: harpsichord; violin, violins, violas, cellos, contrabass (pizzicato and arco).
-Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library
+Music and sound: original, made in code.

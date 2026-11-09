@@ -661,10 +661,9 @@ def info(nm=None):
 
 
 def credits(names):
-    """From the instrument names used, return the attribution lines the end CREDITS need (CC BY ones are required; CC0 ones listed as thanks)"""
-    need, thanks = [], set()
+    """From the instrument names used, return the attribution lines the end CREDITS need: only the CC BY ones, which the licence requires (CC0 packs need no credit, so none is written)"""
+    need = []
     for n in names:
         n = ALIASES.get(n, n); l = _lic(n)
         if LIC[l][2]: need.append(LIC[l][2])
-        else: thanks.add(LIC[l][0])
-    return list(OrderedDict.fromkeys(need)) + ([f'Samples (CC0): {", ".join(sorted(thanks))}'] if thanks else [])
+    return list(OrderedDict.fromkeys(need))

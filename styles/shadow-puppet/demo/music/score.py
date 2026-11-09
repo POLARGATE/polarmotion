@@ -290,7 +290,7 @@ for n, a, b in cues:
 r, _ = seg_stats(34.83, 36.85); print('静场 34.83-36.85 RMS', round(r, 1), 'dB', 'OK' if r < -70 else 'FAIL')
 r, _ = seg_stats(50.5, 50.7); print('醒木留空 50.5-50.7 RMS', round(r, 1), 'dB')
 used = ['gong2', 'sus_cymbal', 'crash', 'woodblock', 'frame_drum', 'bass_drum', 'log_drum', 'erhu', 'oboe', 'cellos', 'contrabass']
-open(os.path.join(HERE, 'credits.txt'), 'w').write('\n'.join(S.credits(used)) + '\n')
+open(os.path.join(HERE, 'credits.txt'), 'w').write('\n'.join(S.credits(used) or ['Music and sound: original, made in code.']) + '\n')
 print('\n'.join(S.credits(used)))
 for k in stems:
     x = stems[k].mean(1) * g

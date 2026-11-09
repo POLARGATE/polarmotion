@@ -442,8 +442,7 @@ json.dump({'sr': SR, 'dur': DUR, 'keys': KEY}, open(os.path.join(HERE, 'score.js
 USED = ['contrabass', 'cellos', 'cellos_spic', 'contrabass_pizz', 'violas', 'log_drum', 'woodblock', 'frame_drum',
         'gran_cassa', 'timpani', 'gong', 'tubular_bells', 'hand_chimes']
 open(os.path.join(HERE, 'CREDITS.txt'), 'w').write(
-    'The Bell Founder - original score (woodcut demo)\n\n' + '\n'.join(S.credits(USED)) +
-    '\nAnvil: original numpy modal synthesis (styles/woodcut/demo/music/score.py), no samples.\n')
+    '\n'.join(S.credits(USED) or ['Music and sound: original, made in code.']) + '\n')
 
 # ============================================================================
 # self-check

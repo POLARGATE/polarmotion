@@ -47,7 +47,7 @@ sf.write('cue.wav', mix, SR)
 | `chord(inst, pitches, dur, vel, strum=0)` | Chord (mono); `strum>0` delays each note in turn (arpeggio / strum) |
 | `render(events, dur=None, master=True)` | Score → stereo. Events are tuples `(t, inst, pitch, dur, vel, pan[, gain])` or dicts (may carry `release`/`attack`/`var`) |
 | `room(x, size=.5, mix=.2, predelay=.015, damp=.5)` | Convolution reverb with a decorrelated exponentially decaying noise IR; `size` 0–1 → RT60 0.4–3.4 s; returns (N,2) of the same length |
-| `credits(names)` | From the list of instruments you used, generates the end-credit CREDITS lines (the required CC BY wording + CC0 acknowledgements) |
+| `credits(names)` | From the list of instruments you used, generates the end-credit CREDITS lines (only the CC BY wording the licence requires; CC0 packs need no credit) |
 | `info(name=None)` / `instruments(fam=None)` | Prints an overview / lists names (`fam` takes 弦乐 strings / 木管 woodwinds / 铜管 brass / 打击 percussion / 键盘 keyboards / 拨弦 plucked / 民族 folk) |
 | `midi(p)` / `hz(p)` / `name(m)` / `seed(n)` | Note-name utilities; `seed` fixes the round-robin randomness (same call order → same result) |
 | `build_index(names=None, force=False)` | Rescans the samples and rebuilds `index.json` (only needed if samples were swapped or added; ~15 s; needs librosa: `requirements-dev.txt`) |
@@ -125,7 +125,7 @@ If you use `drum_kit`, write this in CREDITS exactly:
 Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 ```
 
-Suggested (for the CC0 parts, optional, one line is enough): `Samples (CC0): VSCO 2 CE & VCSL, FreePats, Karoryfer Samples`.
+The CC0 packs need no credit line, so none is written.
 Easiest: `print('\n'.join(S.credits(['piano', 'cellos', 'drum_kit'])))` generates them automatically. `pluck.py` is pure synthesis, with no licence requirements.
 
 Processing applied to the samples (all within what the licences allow): the VSCO/VCSL/Karoryfer WAVs were converted **losslessly** to FLAC (verified identical sample by sample); for Salamander only 5 of the 16 velocity layers are kept (v2/v6/v10/v13/v16); the photos in the FreePats packs (some CC BY-NC) were deleted, keeping only audio and sfz/notes.
