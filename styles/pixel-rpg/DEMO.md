@@ -62,7 +62,7 @@ Adapting any topic: find the **game system** hidden in it. A product launch is a
 ## Palette & props
 
 - **Resolution & scaling**: native 320×180 indexed framebuffer (`Uint8Array` of palette indices). Present through a **lookup table** (index → RGB) and scale ×6 nearest-neighbour. Everything, including text, is drawn in the framebuffer. Camera moves are **integer pixels**; each parallax layer rounds its own offset.
-- **Master palette**: ENDESGA-32 (`#be4a2f #d77643 #ead4aa #e4a672 #b86f50 #733e39 #3e2731 #a22633 #e43b44 #f77622 #feae34 #fee761 #63c74d #3e8948 #265c42 #193c3e #124e89 #0099db #2ce8f5 #ffffff #c0cbdc #8b9bb4 #5a6988 #3a4466 #262b44 #181425 #ff0044 #68386c #b55088 #f6757a #e8b796 #c28569`), plus **protected duplicates** (scarf red `#e43b44/#a22633/#f6757a`, crystal cyan `#2ce8f5/#0099db/#ffffff/#124e89`) that no palette effect touches.
+- **Master palette**: a public 32-colour palette (`#be4a2f #d77643 #ead4aa #e4a672 #b86f50 #733e39 #3e2731 #a22633 #e43b44 #f77622 #feae34 #fee761 #63c74d #3e8948 #265c42 #193c3e #124e89 #0099db #2ce8f5 #ffffff #c0cbdc #8b9bb4 #5a6988 #3a4466 #262b44 #181425 #ff0044 #68386c #b55088 #f6757a #e8b796 #c28569`), plus **protected duplicates** (scarf red `#e43b44/#a22633/#f6757a`, crystal cyan `#2ce8f5/#0099db/#ffffff/#124e89`) that no palette effect touches.
 - **Color-depth tables** (all computed from the master palette):
   - *16-bit*: identity.
   - *8-bit*: nearest of 15 colors `#000000 #fcfcfc #a4a4b8 #58587c #1c2c8c #3c7cfc #94e0fc #b8141c #fc7454 #fcb81c #8c4c1c #2c9c2c #fcd8a8 #0c4c18 #4c2410`. It needs a dark green and a dark brown, or night grass turns blue.

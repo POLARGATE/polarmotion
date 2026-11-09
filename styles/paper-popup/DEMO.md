@@ -63,7 +63,7 @@ Depth of field (`post.js`): CoC in pixels, max 14, 64-tap golden-angle spiral ga
 
 **Scale (metres):** book page 0.44 × 0.30 (`BW`, `BD`), page block height `PG` = 0.0175. Pip is `H = 0.036` tall, Crumple 0.042, the paper plane 0.052 long, the whale 0.10 wide, the boat 0.062. Hills 0.2–0.26 wide, trees 0.05–0.16 tall. Camera near plane 0.004 m.
 
-**The desk:** walnut table, desk lamp, teacup, alarm clock, pencil, potted plant (library models in `core/assets/polyhaven/`); `lythwood_lounge_2k.hdr` as environment and background (blurriness .22, yaw 2.3), walnut veneer (`#c9a88a` tint, env .8), a procedural pencil. The book: hardcover 44 × 30 cm, spine on the far side, the cover swings to 90° and stands behind the page as a painted sky.
+**The desk:** walnut table, desk lamp and teacup (library models in `core/assets/polyhaven/`), alarm clock and potted plant (demo models); `lythwood_lounge_2k.hdr` as environment and background (blurriness .22, yaw 2.3), walnut veneer (`#c9a88a` tint, env .8), a procedural pencil. The book: hardcover 44 × 30 cm, spine on the far side, the cover swings to 90° and stands behind the page as a painted sky.
 
 **Cut-paper finish** (`paper.js finishCut(art, border, o)`), 16+ angles on three rings (r, .66r, .33r): grey cardboard edge `#b9ad9c`, border + 2.5 px, offset 1.5 px down; off-white border `#fffdf7`, 12–16 px (static props 14 px at 5200 px/m, characters 16 px); 512 px grain texture at alpha .5–.85.
 

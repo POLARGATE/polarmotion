@@ -2,7 +2,7 @@
 export const W = 320, H = 180, SCALE = 6;
 export const T = 255;                      // transparent
 
-// —— Main palette: ENDESGA-32 (0–31) + protected colours (32+, the fade tables leave them alone) ——
+// —— Main palette: a public 32-colour palette (0–31) + protected colours (32+, the fade tables leave them alone) ——
 const HEX = [
   '#be4a2f', '#d77643', '#ead4aa', '#e4a672', '#b86f50', '#733e39', '#3e2731', '#a22633',
   '#e43b44', '#f77622', '#feae34', '#fee761', '#63c74d', '#3e8948', '#265c42', '#193c3e',
