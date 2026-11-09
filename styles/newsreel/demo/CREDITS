@@ -38,7 +38,7 @@ FONTS (SIL Open Font License 1.1; licence texts in fonts/)
 - Limelight (Nicole Fally / Sorkin Type), Oswald (Vernon Adams et al.), Noto Sans SC and Noto Serif SC (Adobe / Google).
 
 VOICE
-- Kokoro-82M (kokoro-onnx, Apache 2.0), a blend of the voices am_liam (0.6) and bm_george (0.4).
+- Synthetic narration (a blend of two voices).
 
 MUSIC AND SOUND
 - Original score and foley written for this film (core/audio/sampler.py, pluck.py, sfx.py).

@@ -16,7 +16,7 @@ Sound effects
 - All foley synthesized in code (mix.py, core/audio/sfx.py)
 
 Voice
-- Kokoro TTS v1.0 (Apache-2.0), voice bm_lewis
+- Synthetic narration.
 
 Fonts (SIL Open Font License 1.1, license files in fonts/)
 - Shrikhand (Jonny Pinhorn), Limelight (Nicole Fally / Sorkin Type), IM Fell English SC (Igino Marini)

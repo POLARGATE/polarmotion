@@ -54,7 +54,7 @@ Times in seconds; segment boundaries in `demo/timeline.json`. Clip `a` = the Com
 - Shot map: stab on the cut, a timpani roll building under the flatten, a second stab when the board settles, glockenspiel B–D–E as the three rows land, then half-time groove.
 - Slate and end card: big chord, horns and cellos held in E minor, two glockenspiel strokes, fade with the picture.
 - Natural sound: the broadcaster's commentary and crowd at full level in live play, a low-passed crowd bed under freezes, the goal roars aligned to the goal frames.
-- Voice: Kokoro `bm_george`, 8 lines at speed 1.1; names spelled for the voice ("Zayits", "Saduk"), real spelling in the subtitles.
+- Voice: `bm_george`, 8 lines at speed 1.1; names spelled for the voice ("Zayits", "Saduk"), real spelling in the subtitles.
 
 ## Palette & props
 
@@ -72,7 +72,7 @@ From 49.6 s, held to 54.1 then cut to black with the picture: "定格" (150 px),
 demo/
   index.html              the page: segments, one function per format, tracking keyframes (TRK), GOALS, TEXTS for readcheck
   timeline.json           segments (clip, source frame ranges) and voice lines — shared by page, .srt and mix
-  audio/lines.json        narration (Kokoro, with phonetic names and expected ASR)
+  audio/lines.json        narration (synthetic voice, with phonetic names and expected ASR)
   tools/fetch_sources.sh  downloads raw/ (~55 MB: Commons clip and photos, the broadcaster's CC BY video via uvx yt-dlp)
   tools/prep.sh           clips → 1920 JPEG sequences a/ b/ c/ (deblock, lanczos 1.5×, unsharp, grade), photos, match sound
   tools/pitch.json        pitch points per shot frame     tools/homography.py   → assets/pitch.json (matrices, shot positions)

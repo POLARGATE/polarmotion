@@ -19,8 +19,7 @@ FONTS (SIL Open Font License 1.1; subsets fetched from the Google Fonts CSS2 API
 - JetBrains Mono — JetBrains
 
 VOICE
-- Kokoro-82M (Apache-2.0), voice af_heart, run offline through kokoro-onnx (MIT) by core/tts/tts.py.
-  Speech check: faster-whisper (MIT) with the Whisper small.en model (MIT).
+- Synthetic narration.
 
 MUSIC AND SOUND (original score and procedural foley in demo/mix.py)
 - Samples (CC0): VS Chamber Orchestra: Community Edition — horn, trombone, timpani, bass drum, cellos;

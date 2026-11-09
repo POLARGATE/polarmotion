@@ -35,7 +35,7 @@ Original guqin score (`demo/music/score.py`), F-gong pentatonic (F G A C D), cue
 
 Foley specific to this film: sword draw (scabbard scrape + long thin metallic ring, cut before the second silence), the cut (tearing air + river roar + low boom). The sword ring and a single drip are the only sounds allowed inside the silences; the ambience hard-cuts into the first silence.
 
-Voice: calm British narrator, Kokoro `bm_george`, lang `en-gb`, speed .82–.86, 4–6 lines. Music ducked ~8 dB under voice, ambience ducked too: a river roar under a line made whisper hear "Halfway" as "This way". Every line checked with whisper and again on the final mix.
+Voice: calm British narrator, voice `bm_george`, lang `en-gb`, speed .82–.86, 4–6 lines. Music ducked ~8 dB under voice, ambience ducked too: a river roar under a line made the speech check hear "Halfway" as "This way". Every line checked with the speech check and again on the final mix.
 
 ## Palette & props
 

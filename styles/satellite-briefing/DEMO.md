@@ -62,7 +62,7 @@ Mix (in `mix.py`): stem gains frozen (music 10 dB under the voice while it speak
 - Marks #F2F5F6 with dark halos; the reading amber #FFBE55; the printed map: paper #ECE2CB, sea #8CB5DB, coast ink #1A3B6B, graticule in a faded red-brown, the serif name in #1F3F6B on the page and #D6EAFF over the sand.
 - The North Aral water returns to a lifted true colour inside a 0.75° circle; nothing else in the analysis layer is coloured.
 - Props: the printed map (Natural Earth historic-lake polygon as a distance field, rivers, two town dots), six measured shorelines (1977–2025), the North Aral rings (2001, 2009), the Kok-Aral dike traced on the 2025 image, the Muynak range line.
-- Narrator: Kokoro `bf_emma`, speeds 0.9–1.0.
+- Narrator: `bf_emma`, speeds 0.9–1.0.
 
 ## End card
 
@@ -89,4 +89,4 @@ demo/
 - Checks it runs: `asr_check.py` with `small.en` (the base model hears "sea" as "C"), cue grid, subtitle single-line widths measured with the real fonts (widest line 578 px against 1100 px), `readcheck.mjs`, motion per second (no stretch over 1 s below 0.6 mean pixel change; the slowest second of the film is 1.06), the impact ranking.
 - Plates: region mosaics 3917 × 2652 at ~190 m for six years; detail plates at ~32–40 m for the landing, Muynak and Kok-Aral; Blue Marble world (4096 × 2048) and Central Asia. All sampled in one shader pass; memory about 1 GB of textures per render worker.
 - Demo-specific pitfalls: the 1977 Landsat 2 mosaic needs nearest-neighbour resampling, dropout-row repair, streak cleaning at 12° on land and one L1GS scene to close a hole in the north-west bay; the 1989 scene of path 161 on 16 August carries a dust plume across the sea and is excluded (`exclude` in `tools/plates_spec.json`); a dike-bounded polder 10–15 km west of Muynak has a straight edge that can read as a seam: it is dimmed while the port is centred and slides out of frame before the range line; the water masks need contour pieces along plate borders removed or a straight line appears in the North Aral; the map's place names other than 咸海 were dropped because a dive gives them less than the reading time they need.
-- Kokoro adds a breathy syllable after "Someone kept it."; `tools/voicefix.py` trims it before the speech check.
+- The TTS adds a breathy syllable after "Someone kept it."; `tools/voicefix.py` trims it before the speech check.

@@ -45,7 +45,7 @@ Motion numbers: 90 BPM (chosen because a 1/32 note is exactly 2 frames at 24 fps
 - Score arc: sparse, tender early points → a steady middle → accelerating subdivision as the notes densify → rush → silence → the last point alone → the whole → the morph → the first note again.
 - Silences: 1.0 s true digital silence before the last point (all layers); 0.67 s near-silence before the empty cell. The first sounds after them: the last tap plus its note, then the first stroke of the empty cell.
 - Mix: music −11 dB and cicadas −6 dB under the voice; narration SNR in the 300–4000 Hz band 8.6–16 dB; −14 LUFS, grain 0.
-- Voice: Kokoro `af_alloy`, speed 0.92, 5 lines, never over the rush, the silence or the morph. Whisper writes numbers as digits: `asr` set to "For 50 years…" and "…turned 100…".
+- Voice: `af_alloy`, speed 0.92, 5 lines, never over the rush, the silence or the morph. The speech check writes numbers as digits: `asr` set to "For 50 years…" and "…turned 100…".
 - The baby's laugh was replaced by one music-box note.
 
 ## Palette & props
@@ -77,8 +77,8 @@ styles/dataviz/demo/
 1. Download the dataset and write the extractor. Print every fact the narration will claim.
 2. Write `timeline.js` (grid plus year → beat map) before any drawing.
 3. Build `engine.js`, then `film.js`, and render gate frames from the real engine (`node core/render/still.mjs … --range`).
-4. `sh demo/build.sh` rebuilds everything from scratch in about 2 minutes: extract → TTS → whisper → words → events → score → cuecheck (107 cues, max 0.03 ms) → mix → subtitles → render (1200 frames, ~30 s with 2 workers) → mux (−14 LUFS, grain 0) → styleframe and poster.
-5. Review: a 1 s contact sheet from the final mp4 twice (offset by 0.25 s), 0.1 s strips of the break, the cut and the morph, per-line whisper on the final mix, and a sample-accurate silence check.
+4. `sh demo/build.sh` rebuilds everything from scratch in about 2 minutes: extract → TTS → speech check → words → events → score → cuecheck (107 cues, max 0.03 ms) → mix → subtitles → render (1200 frames, ~30 s with 2 workers) → mux (−14 LUFS, grain 0) → styleframe and poster.
+5. Review: a 1 s contact sheet from the final mp4 twice (offset by 0.25 s), 0.1 s strips of the break, the cut and the morph, per-line speech check on the final mix, and a sample-accurate silence check.
 
 Pitfalls tied to this demo: GISTEMP has J-D and D-N before the seasonal columns, so the column is selected by header name (`JJA`). A frame break rescaled after 0.17 s was invisible. Right-aligned notes: the pencil hop takes 16 % of the text phase. `pencilStroke`, `dashedCell` and `dataDot` set `globalAlpha` themselves. In tracking shots the world-space title was cut by the frame edge. At 32nd-note density the pencil body lay across fresh dots.
 

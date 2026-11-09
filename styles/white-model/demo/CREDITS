@@ -27,8 +27,7 @@ FONTS (SIL Open Font License 1.1, licence texts in fonts/; subset with the Googl
 - IBM Plex Mono — IBM (instruments, years, coordinates)
 
 VOICE
-- Kokoro-82M (hexgrad), voice bm_george, Apache License 2.0; run locally via kokoro-onnx (MIT) through the library's
-  core/tts/tts.py. Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).
+- Synthetic narration.
 
 MUSIC & SOUND
 - Original score and sound design, written for this film in mix.py: synthesis in numpy (projector fan hum, room tone,

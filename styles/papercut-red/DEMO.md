@@ -59,7 +59,7 @@ Music ducks ~8–9 dB under the voice; downbeats avoid the first word of a line.
 
 Foley specific to this film: Nian's cardboard steps (55 Hz + low noise, each with a ~6 px frame shake), his breathing (low-passed noise), a dazzled whimper (an erhu sample pitched down and low-passed); candles out ("puff") and lit (match + whoomp); fireworks = rising whistle + boom + crackle + falling scraps; a long paper peel at dawn; two bird chirps.
 
-Voice: a warm grandmother telling the story on New Year's Eve, Kokoro `af_sarah`, speed 0.9, five lines:
+Voice: a warm grandmother telling the story on New Year's Eve, voice `af_sarah`, speed 0.9, five lines:
 
 | id | Start | Text |
 |---|---|---|
@@ -69,7 +69,7 @@ Voice: a warm grandmother telling the story on New Year's Eve, Kokoro `af_sarah`
 | L5 | 35.2 | Crackle, bang! And away ran Nian. |
 | L6 | 38.6 | That is why, every New Year, we still paste red paper on our windows. |
 
-Whisper hears "Nian" as "Nyan"/"Nion", the correct pronunciation of nián, so it is registered as an `asr` alias in `lines.json`.
+The speech check hears "Nian" as "Nyan"/"Nion", the correct pronunciation of nián, so it is registered as an `asr` alias in `lines.json`.
 
 ## Palette & props
 
@@ -109,7 +109,7 @@ styles/papercut-red/demo/
 2. `.venv/bin/python core/tts/tts.py lines.json voices` → `core/tts/asr_check.py` until all OK.
 3. `node core/render/events.mjs` → `music/score.py` → `mix.py` → `subs.py`.
 4. `node core/render/video.mjs styles/papercut-red/demo --fps 24 --workers 3` (1176 frames, ~30 s).
-5. `sh core/render/mux.sh out/video24.mp4 mix.wav papercut-red.mp4 24 0`, then `check_final.py` (per-line whisper on the final mix + blackdetect).
+5. `sh core/render/mux.sh out/video24.mp4 mix.wav papercut-red.mp4 24 0`, then `check_final.py` (per-line speech check on the final mix + blackdetect).
 Or simply `sh styles/papercut-red/demo/build.sh`.
 
 Engine traps: `put()` uses `setTransform`, so it ignores an enclosing `translate`: pass absolute matrices. Test-mode pages must not throw to stop the module (the render harness exits on any page error): guard the `window.render` assignment instead. Engine numbers as used: paper grain mottling ±7 % at ~130 px; edge wobble ≈ 0.35 units; `sawRow`, `sawEdge`, `crescent` / `crescentRows`, `swirl` / `doubleSwirl`, `cloudCut`, `rosette`, `plum`, `coin` in `motifs.js`; half-res bloom blurs; smoothing turned the houses into bread loaves.

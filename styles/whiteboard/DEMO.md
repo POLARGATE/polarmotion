@@ -90,7 +90,7 @@ The demo's end card is written under the title in the same hand (`demo/film.js`,
 - **Punctuation vanishes**: a font period is a 1 px stroke. Render sub-width strokes as dots.
 - **Labels half-cut by a push-in** look sloppy: a label must be either fully in or fully out of every shot it appears in.
 - **Motion blur with few sub-frames** strobes text. Step ≤ 4 px between sub-frames.
-- **British voice + US phonemes**: Kokoro `bm_george` with `lang: en-us` said "clocks" like "Clarks". Use `en-gb` for British voices; check with `medium.en`.
+- **British voice + US phonemes**: voice `bm_george` with `lang: en-us` said "clocks" like "Clarks". Use `en-gb` for British voices; check with `medium.en`.
 - Keep eraser paths off labels you want to keep (it wiped half of "orbit" once).
 
 ## Engine reference

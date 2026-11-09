@@ -10,7 +10,7 @@ Fonts (SIL Open Font License 1.1; licences in fonts/, files fetched by tools/fet
   Outfit — Rodrigo Fuenzalida / Google Fonts
   Noto Sans SC — Adobe / Google
 
-Voice: Kokoro-82M v1.0 (hexgrad, Apache-2.0) via kokoro-onnx, voice bf_emma. Checked with faster-whisper (MIT), model base.en.
+Voice: synthetic narration.
 
 Music (original score, music/compose.py) and sound (procedural foley and ambience, mix.py):
   guitar_nylon, accordion, world_perc (darbuka) — FreePats project (freepats.zenvoid.org), CC0

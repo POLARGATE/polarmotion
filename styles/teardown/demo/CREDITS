@@ -26,8 +26,7 @@ MUSIC (original score, demo/mix.py; samples via the library's core/audio/sampler
   electric bass, hi-hat, claves. Kick, foley and room tone are synthesised in code.
 
 VOICE
-- Kokoro-82M (hexgrad), voice am_michael, Apache License 2.0; run locally via kokoro-onnx (MIT) through core/tts/tts.py.
-  Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).
+- Synthetic narration.
 
 SOFTWARE
 - three.js r170 (MIT); the library's core/three/post.js, core/lib.js, core/render/*, core/audio/*.

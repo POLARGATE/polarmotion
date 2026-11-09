@@ -57,7 +57,7 @@ Adapting any topic: find the **game system** hidden in it. A product launch is a
 - **Foley**, all synthesized and bit-crushed to the scene's era: cursor/select blips, text blips (the companion's are higher and 5-bit), stone footsteps with echo, fire crackle, ward shimmer (triangle arpeggio), charge (rising square + noise), blast (swept low-pass noise + 48 Hz thump, crushed to 6-bit), HP tick-down, KO blink, **bit-drop** per palette step (lower and coarser each time), save ticks, door grind (brown noise + AM creak), torch ignite, reverse swell.
 - **One organic sound**: the hero's breath before the door, band-passed noise and not crushed. It makes him human at the last moment.
 - **Silence**: after the blast (true zero, echo tails cut too) and the beat before the present.
-- **Voice**: Kokoro `bm_george` at speed 0.9, first person, 5 short lines. Duck the music ~−7.5 dB under the voice (60 ms attack, 350 ms release). Mix to −14 LUFS, **grain 0**.
+- **Voice**: voice `bm_george` at speed 0.9, first person, 5 short lines. Duck the music ~−7.5 dB under the voice (60 ms attack, 350 ms release). Mix to −14 LUFS, **grain 0**.
 
 ## Palette & props
 
@@ -97,7 +97,7 @@ Adapting any topic: find the **game system** hidden in it. A product launch is a
 - Hair drawn as a smooth dome reads as a helmet. Back hair with alternating single pixels reads as sawtooth noise; use 2–3 big spikes. A cream tunic reads as bare skin. A staff held in the front hand crosses the face in side view; hold it in the back hand behind the body. A back-mounted sword crossed the front of the torso; use a hip scabbard.
 - A dark plank door reads as a jail. Use recessed panels with bevels lit from the upper left, studs, ring handles and a tympanum. A bug drew the closed door's centre seam as light.
 - **Negative modulo**: `Math.floor(t*12) % 4` is negative when a phase offset makes `t` negative, and it indexed `undefined`. Use `((n % m) + m) % m`.
-- **Homophones**: whisper hears "inn" as "in". Accept it through the `asr` field; the subtitle disambiguates.
+- **Homophones**: The speech check hears "inn" as "in". Accept it through the `asr` field; the subtitle disambiguates.
 - The dialog box covers the bottom 25%. Put the floor line at y 128 so standing characters stay above it.
 - For a match cut on a protected color, compute both screen positions. The demo's scarf is at (197, 104) in both eras.
 

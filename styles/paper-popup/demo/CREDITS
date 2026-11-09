@@ -26,11 +26,8 @@ MUSIC — Kevin MacLeod (incompetech.com), Creative Commons Attribution 4.0 (CC 
     wooden_lounge_2k.hdr https://polyhaven.com/a/wooden_lounge
   (lythwood_lounge, walnut, desk lamp and tea set are byte-identical to core/assets/polyhaven/.)
 
-VOICE — Kokoro TTS
-  - Model Kokoro-82M (hexgrad), Apache-2.0 — https://huggingface.co/hexgrad/Kokoro-82M
-  - Runtime kokoro-onnx (thewh1teagle), MIT — model files shared from core/tts/ (kokoro-v1.0.onnx, voices-v1.0.bin)
-  - Voice: af_bella, speed 0.9, en-us
-  - Proof-listening: faster-whisper base.en (MIT)
+VOICE
+  - Synthetic narration.
 
 FONTS — Google Fonts, all SIL Open Font License 1.1 (downloaded by fetch_fonts.mjs into fonts/, CJK subset)
   - Fredoka (subtitles, bubbles, sign)          - Lilita One (cover, chapter banners, NICE!/GREAT!, end title)

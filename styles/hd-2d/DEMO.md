@@ -38,7 +38,7 @@ Rules: always look *down* on the world (never eye level); every camera path is a
 
 ## Score structure
 
-- **Voices (Kokoro via `core/tts/tts.py`)**: narrator `af_heart`, speed .82–.90 (slow, storybook); the quest-giver `bm_george`, speed .84, low-passed at 7 kHz in the mix so he sits "in the world". 7 narrated lines + 1 dialogue line, each 1–5.4 s. Check with `core/tts/asr_check.py`; put invented names in the `asr` field (`Graywater`, `Ren`, `whisper would`), otherwise whisper flags them.
+- **Voices (TTS via `core/tts/tts.py`)**: narrator `af_heart`, speed .82–.90 (slow, storybook); the quest-giver `bm_george`, speed .84, low-passed at 7 kHz in the mix so he sits "in the world". 7 narrated lines + 1 dialogue line, each 1–5.4 s. Check with `core/tts/asr_check.py`; put invented names in the `asr` field (`Graywater`, `Ren`, `whisper would`), otherwise whisper flags them.
 - **Music**: one licensed track, edited to picture: Scott Buckley, *Precipice* (CC BY 4.0), cut by `music/edit.py` into five sections (intro pad → **0.8 s breath when the lighthouse dies** → continuous build through forest and storm → **hard stop into a reverb tail at 42.0 when the flame nearly dies**, only the intro pad under it → the composer's own build → **its D→G♭ key-change downbeat placed at 53.500 s = ignition**, located automatically by the steepest < 250 Hz onset (error < 5 ms) → jump to the final E♭ arrival for the title). All cut points are in `music/CUES.md`. Pick one piece whose own arc matches the story; cut inside it rather than stitching tracks.
 - **Ambience & foley (`mix.py`, synthesized with `core/audio/sfx.py`)**: per-set beds with crossfaded gain curves (harbour waves + rope creaks, brazier crackle, forest crickets + leaves, storm rain + wind with a gust swell), and events: lamp-out "fwoomp" 12.3, match strike 16.15, UI chime on the dialogue box 17.3, footsteps from `sfx_events.json` (wood / dirt / stone), thunder 0.25 s after each flash, wind whoosh at the gust, two heartbeats in the silence, the ignition boom (42 Hz drop + air + high shimmer) at 53.5, six small bells as the ships light up.
 - **Mix**: each voice line compressed and RMS-matched; buses levelled to voice −17, music −21, ambience −30, foley −27 dB RMS; music ducks ~2.2 dB under voice, then a **per-line auto-duck** pulls music + ambience to ≈10 dB under each line (only down, never up; the script prints the achieved gap per line, 7–14 dB in the demo); `tanh` soft-clip; final loudness by `core/render/mux.sh` (two-pass loudnorm −14 LUFS, TP −1.2).
@@ -105,7 +105,7 @@ PY=.venv/bin/python; D=styles/hd-2d/demo
 # 0. fresh clone: voices/*.wav, music/score.wav and mix.wav are git-ignored (rebuilt below); if music/src/ is empty, fetch the source
 curl -L -o $D/music/src/sb_precipice.mp3 https://www.scottbuckley.com.au/library/wp-content/uploads/2021/01/sb_precipice.mp3
 
-# 1. voices (Kokoro) + whisper check → voices/*.wav, dur.json, words.json
+# 1. voices + speech check → voices/*.wav, dur.json, words.json
 $PY core/tts/tts.py $D/lines.json $D/voices
 $PY core/tts/asr_check.py $D/lines.json $D/voices      # demo: 1 expected DIFF (n1 "Graywater" → "gray water")
 

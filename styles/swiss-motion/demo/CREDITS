@@ -13,5 +13,4 @@ Music samples:
 - Glockenspiel: Versilian Community Sample Library, CC0 1.0
 - Arpeggio synth, square lead, glide: numpy synthesis (original)
 
-Voice: Kokoro-82M (Apache-2.0) via kokoro-onnx, voice af_sarah.
-Speech check: faster-whisper (MIT).
+Voice: synthetic narration.

@@ -14,7 +14,7 @@ FONTS (SIL Open Font License 1.1, licence texts in fonts/)
 - IBM Plex Mono — IBM
 
 VOICE
-- Kokoro-82M (hexgrad), voice af_alloy, Apache License 2.0; run locally via kokoro-onnx.
+- Synthetic narration.
 
 MUSIC & SOUND
 - Original score and all sound effects synthesized in numpy (music/score.py, mix.py). No samples, except:

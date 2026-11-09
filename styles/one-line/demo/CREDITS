@@ -10,5 +10,5 @@ Music: original score (music/score.py), rendered with core/audio/sampler.py
   Samples (CC0 1.0): VS Chamber Orchestra: Community Edition (cellos, cellos_pizz)
                      and Versilian Community Sample Library (hand_chimes)
 
-Voice: Kokoro TTS (Apache-2.0), voice am_liam; verified with faster-whisper.
+Voice: synthetic narration.
 Sound effects: synthesized in mix.py (pen on paper, tap, ink bloom, room tone).

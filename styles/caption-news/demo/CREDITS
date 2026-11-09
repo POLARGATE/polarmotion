@@ -40,7 +40,7 @@ SOUND
 - Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, CC BY 4.0
 - Other instruments: VS Chamber Orchestra: Community Edition, Versilian Community Sample
   Library, FreePats (electric bass) — CC0 1.0. Score and foley composed for this film (audio/mix.py, core/audio/sfx.py).
-- Voice: Kokoro TTS (kokoro-onnx, Apache 2.0), voice af_bella.
+- Voice: synthetic narration.
 
 FONTS (SIL Open Font License 1.1, subsets in fonts/ with the licence texts)
 - Noto Sans SC (Google), weights 500 and 900.

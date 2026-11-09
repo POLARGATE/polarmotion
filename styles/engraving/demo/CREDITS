@@ -10,7 +10,7 @@ Synthesised in mix.py with numpy / core/audio/sfx.py: burin scrape and plate rin
 paper peel, granular hatching, pen scratch, water drop, wet brush, tissue rustle, room tone.
 
 VOICE
-Kokoro-82M (Apache-2.0) via kokoro-onnx, voice bm_fable (en-gb).
+Synthetic narration.
 
 FONTS (SIL Open Font License 1.1, OFL.txt in fonts/)
 Bodoni Moda (engraved roman capitals and italics) · Pinyon Script (copperplate script notes and subtitles).

@@ -59,7 +59,7 @@ Every shot change is a UI expand / collapse; no fades, no blank frames.
 - **Layers**: ambience (quiet room + computer fan and a 6.8 kHz coil whine that grow through the mess, **held back until the last voice-over line ends**), foley (cursor tick, low-profile keys, return, notification glass, file plop, photo flick, window whoosh, glitch accents, storage buzz, stacking thumps, the press "doom" = felt mallet + 55→40 Hz sine drop, grid tick, felt ticks, light-sweep shimmer, digit grains, CRT-off), music.
 - **Silences**: 15.0–16.0 s is **digital zero on every track** (the screen paused); the first sound after it is the press. 33.0–34.0 s is near-silence (−60 dB room); the first sound after it is the cursor tick, the same sound as frame 1.
 - **J / L cuts**: a muffled crowd of notifications fades in under the close-up before the pull-back (J); the press chord rings into the reveal (L); the light shimmer starts 0.4 s before the light (J); the number chord rings into the breath (L).
-- **Voice**: Kokoro `af_kore`, speed 0.95, confident and restrained: short declaratives. Music ducks −8 dB and foley −4 dB under voice.
+- **Voice**: voice `af_kore`, speed 0.95, confident and restrained: short declaratives. Music ducks −8 dB and foley −4 dB under voice.
 
 ## Palette & props
 
@@ -101,7 +101,7 @@ styles/dark-keynote/demo/
 ```
 1. Write `timeline.js` (grid, pattern, voices, key times) → `node tools/dump_timeline.mjs` → hand `timeline.json` + the cue map to a music sub-agent. Draw in parallel.
 2. Build the engine and the product window first (they are the style frames), then the mess generator from the note tables, then the collapse.
-3. `sh demo/build.sh` rebuilds everything: TTS → whisper → score → events → cue check → mix → srt → render → mux (−14 LUFS, grain 0).
+3. `sh demo/build.sh` rebuilds everything: TTS → speech check → score → events → cue check → mix → srt → render → mux (−14 LUFS, grain 0).
 4. Review with `node core/render/still.mjs demo --range 0.5:42:1` + `sheet.py` at least twice, plus frame strips of the collapse and the press.
 
 Pitfalls tied to this demo's props:

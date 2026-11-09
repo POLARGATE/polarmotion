@@ -48,8 +48,8 @@ The voice reads one line per cue; Chinese and English start at the same moments,
 | 10 | 它们的保护级别，也终于从易危，降到了近危。 | Their status finally eased, from Vulnerable to Near Threatened. |
 | 11 | 虽然不再算作濒危物种了，但这群雪地里的精灵，依然需要人们的守护。 | No longer counted as endangered, these spirits of the snow still need people to look after them. |
 
-- English (the library demo): edge-tts `en-US-AvaNeural`, `+10%`; lines 1, 4, 5, 6 and 9 at `+25%`. In the spoken version only (`say` in `demo/lines_en.json`), line 1 drops "still", line 6 drops "Think back to", line 9 drops "had" and reads the number as "one thousand nine hundred twenty-seven", line 5 gets a pause after "daybreak".
-- Chinese: edge-tts `zh-CN-XiaoxiaoNeural`, `+25%`.
+- English (the library demo): voice `en-US-AvaNeural`, `+10%`; lines 1, 4, 5, 6 and 9 at `+25%`. In the spoken version only (`say` in `demo/lines_en.json`), line 1 drops "still", line 6 drops "Think back to", line 9 drops "had" and reads the number as "one thousand nine hundred twenty-seven", line 5 gets a pause after "daybreak".
+- Chinese: voice `zh-CN-XiaoxiaoNeural`, `+25%`.
 - Line starts (s): 1.0, 5.4, 11.11, 19.6, 24.6, 29.2, 34.2, 38.5, 41.9, 46.3, 52.0 (`VO` in `demo/timeline.js`, before the bridge slow-down; `window.EV` and the subtitles carry them through it).
 
 ## Score structure

@@ -8,7 +8,7 @@ Fonts
 - Ma Shan Zheng — Copyright 2018 The Ma Shan Zheng Project Authors, SIL Open Font License 1.1 (fonts/OFL-MaShanZheng.txt)
 
 Voice
-- Kokoro TTS v1.0 (Apache-2.0), voice am_michael
+- Synthetic narration.
 
 Music samples (all CC0 1.0, via core/audio/sampler.py; instruments: gong2, sus_cymbal, crash, woodblock, frame_drum, bass_drum, log_drum, erhu, oboe, cellos, contrabass)
 - Karoryfer Samples (aliexpress-erhu)

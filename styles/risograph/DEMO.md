@@ -35,7 +35,7 @@ Original light **bossa nova**, D major, 120 BPM (1 bar = 2 s, so cuts land on ev
 
 Foley: the riso machine at every plate arrival (paper feed "shhk" + drum "ka-chunk"; motor and paper rub at the end; a soft paper landing at 39.5). Bicycle bell (two inharmonic partials ~2.1 / 3.4 kHz, 5 fast strikes per ring), freewheel ticks, brake squeal. Bread crust crunch (dense tiny band-passed clicks). Pigeon wings (short band-passed noise bursts), coo (gliding 300–400 Hz tone). Water lapping.
 
-Voice: relaxed male narrator, Kokoro `am_adam`, speed 0.95, 5 short lines at 5.6, 9.0, 21.7, 28.3, 32.8, each verified with whisper. Music ducks −8 dB under voice; −14 LUFS; mux grain 0.
+Voice: relaxed male narrator, voice `am_adam`, speed 0.95, 5 short lines at 5.6, 9.0, 21.7, 28.3, 32.8, each verified with the speech check. Music ducks −8 dB under voice; −14 LUFS; mux grain 0.
 
 ## Palette & props
 
@@ -68,7 +68,7 @@ styles/risograph/demo/
 ```
 
 1. Design the plates first: what the one-ink frame looks like and what each plate adds. The model sheet (`?sheet=1&v=2`, [`demo/stills/modelsheet_v2.jpg`](demo/stills/modelsheet_v2.jpg)) has a "plates = story" row: the same character with 1, 2, 3 plates via `S.mask`.
-2. `sh styles/risograph/demo/build.sh` rebuilds everything: TTS → whisper → score → events → mix → SRT → render (960 frames, ~2–4 min with 3 workers) → mux → style frame, poster, model sheet.
+2. `sh styles/risograph/demo/build.sh` rebuilds everything: TTS → speech check → score → events → mix → SRT → render (960 frames, ~2–4 min with 3 workers) → mux → style frame, poster, model sheet.
 3. Review: `node core/render/still.mjs styles/risograph/demo --range 0:40:1.5` + `core/render/sheet.py`; key actions at 0.2 s steps; the encoded film at 100 % and 50 % for moiré.
 
 Encoding: PNG frames → lossless intermediate (qp 0, yuv444) → one encode at crf 16 `-tune grain` (~280 MB for 40 s); crf 20 without `-tune grain` is ~120 MB and still clean at 1080p and 50 %. Per-frame jitter + per-frame streaks had pushed x264 to 900 MB.

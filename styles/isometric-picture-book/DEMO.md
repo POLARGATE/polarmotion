@@ -55,8 +55,8 @@ Thirteen lines, each starting with its shot (the start times below); the subtitl
 | V12 | 47.07 | 这是2012年，研究人员找来七十二名乘客做过的真实测试。 | This was a real test, run in 2012 with 72 passengers. |
 | V13 | 51.85 | 原来登机慢，根本不是因为人多，而是把所有人都堵在了同一段过道上。 | Boarding is slow not because of crowds, but because everyone is stuck in the same stretch of aisle. |
 
-- Chinese (the library film): edge-tts `zh-CN-XiaoxiaoNeural`, rate +25 %. The line lengths are written into `VO_DUR` in `film.js`, which builds the 14 shots from them.
-- English (`build.sh en`): edge-tts `en-US-AvaNeural`, rate +10 % (V02 and V08 at +25 %, V06 at +20 % to fit their shots), each line starting with its Chinese line; same picture, score and subtitles.
+- Chinese (the library film): voice `zh-CN-XiaoxiaoNeural`, rate +25 %. The line lengths are written into `VO_DUR` in `film.js`, which builds the 14 shots from them.
+- English (`build.sh en`): voice `en-US-AvaNeural`, rate +10 % (V02 and V08 at +25 %, V06 at +20 % to fit their shots), each line starting with its Chinese line; same picture, score and subtitles.
 - Spoken-only spellings (`say`, the subtitle text is unchanged): V05 has short pauses so 相邻 and 全挤 are clear; V12 reads the year as 二零一二年 (English: "twenty twelve"); English V02 has two short pauses. Speech check: `asr_check.py` with the medium Whisper models; `asr` fields give Whisper's spelling where it writes digits (6分54秒, 3分36秒, 2012, 72) and where it hears 全挤 as the near-homophone 拳击.
 
 ## Score structure

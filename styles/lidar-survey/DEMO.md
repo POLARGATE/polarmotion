@@ -57,7 +57,7 @@ Mix (in `mix.py`): music −10 dB under the voice and ducked ~5 dB while it spea
 - Background #05080A; canopy ramp #1F3F35 → #5C9A7A → #E2F3DC by height above ground (0–28 m), intensity on value; ground returns #C8B38C; surface #BDB5A6 lit from azimuth 315°, 26° up; fronts #D4FFF0; accent #FFB347 (walls, readings, section); chart green #83C495.
 - Props: the 2016 NAIP photo draped on a 1 m canopy surface; 4,789,797 returns; a 0.5 m ground model; 22 walls traced by hand on a local relief model and snapped to the crests (`demo/data/walls_traced.json` → `walls.json`); wall C's cross-section (`data/profile_C.json`).
 - The survey window: x < 235 m (east of it are a gravel lane and houses, kept as dim unpeeled points).
-- Narrator: Kokoro `bm_george`, speed 1.0.
+- Narrator: `bm_george`, speed 1.0.
 
 ## End card
 
@@ -79,7 +79,7 @@ demo/
   FACTS.md, CREDITS, stills/styleframe.jpg
 ```
 
-- `sh demo/build.sh` takes about 5 minutes on Apple silicon (the picture renders in ~30 s with 3 workers; Kokoro and the Whisper check take most of the rest). With no data yet, or `FETCH=1`, it first fetches and builds the data (~3 minutes, ~350 MB in `assets/raw/`).
+- `sh demo/build.sh` takes about 5 minutes on Apple silicon (the picture renders in ~30 s with 3 workers; TTS and the speech check take most of the rest). With no data yet, or `FETCH=1`, it first fetches and builds the data (~3 minutes, ~350 MB in `assets/raw/`).
 - Fonts (Barlow Condensed, IBM Plex Mono, Noto Sans SC) are not in git: `tools/fonts.py` fetches them from github.com/google/fonts when missing and subsets the CJK font. The data tools run in a private venv (`assets/raw/.venv`: laspy, lazrs, scikit-image, fonttools) that build.sh creates.
 - Checks it runs: `asr_check.py` with `small.en` (0 mismatches), cue overlap from real voice durations, cue grid, subtitle single-line widths with the real fonts (widest 595 px against 1100 px), `readcheck.mjs`, motion per second (no flat stretch > 1 s, no cut-like jump).
 - Data notes: the EPT copy is Web Mercator; everything is converted to a local metric frame around 41.8875° N, 72.1960° W. The provider's class 1 mixes vegetation and buildings; low vegetation just above the ground survives a cut at 0 m, so the plane finishes at −6 m. The ground model is triangulated from class-2 returns (1.3 M) at 0.5 m.

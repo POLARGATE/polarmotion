@@ -80,7 +80,7 @@ Times in seconds; cuts and wipes on the 120 BPM grid (beat 0 = 1.5 s).
 - **Story ③:** pizzicato and horns only, soft air under the map, typewriter ticks as the letters fill. After the ENFORCING stamp (33.9) only cellos, contrabass and a horn hold a low E.
 - **Story ④:** lifts to G major with a brass stab and a glockenspiel figure.
 - **Recap and end card:** a glockenspiel note per tick, then a timpani roll into an E-major tutti on the end card.
-- **Voice:** Doubao TTS 2.0, voice 解说小明 2.0 (`zh_male_jieshuoxiaoming_uranus_bigtts`), eight lines, `speech_rate` 0–15.
+- **Voice:** synthetic narration from an online service, voice 解说小明 2.0 (`zh_male_jieshuoxiaoming_uranus_bigtts`), eight lines, `speech_rate` 0–15.
   - It is the closest of the three male 2.0 voices tried (云舟 `m191`, 大壹 `dayi`, 解说小明) to a brisk broadcast read. It reads briskly, in a steady mid-low register.
   - Spoken text in `vo/lines.json` writes numbers as Chinese words (`say`); the strap and subtitles keep the digits.
   - Speech-to-text hears 海力士 as 海利市 and 都柏林 as 督伯林 (same sounds); those lines carry the expected transcript in their `asr` field.
@@ -117,10 +117,10 @@ demo/
   data/                   KOSPI daily closes (CSV + raw API responses)
   assets/plates/          the two illustrative plates (AI-generated JPEGs, committed; the build stops if one is missing)
   tools/prep.py           plate grade (duotone) → assets/plate_*.jpg + Natural Earth → Europe projection (EU members as shapes, all other land merged, no borders)
-  tools/tts_doubao.py     optional Doubao TTS client (reads DOUBAO_API_KEY from the environment; caches takes)
+  tools/tts_doubao.py     optional online TTS client (reads DOUBAO_API_KEY from the environment; caches takes)
   tools/fonts.sh          OFL subsets for every character in main.js
   tools/subs.py           CUES → ../news-package.srt
-  tools/gen_plates.sh, gen_image.py   make new plates with the Codex CLI (optional; see STYLE.md §10)
+  tools/gen_plates.sh, gen_image.py   make new synthetic plates (optional; see STYLE.md §10)
   tools/footage.py        footage finder with licence logging (not needed here)
   FACTS.md, SOURCES.md, CREDITS
 ```
@@ -144,7 +144,7 @@ Where the moves live in `main.js`:
 
 1. Fonts.
 2. Plates and map.
-3. Voice: Doubao if `DOUBAO_API_KEY` is set. Otherwise it uses existing `vo/*.wav`, or stops and points to Kokoro.
+3. Voice: the online service if `DOUBAO_API_KEY` is set. Otherwise it uses existing `vo/*.wav`, or stops and points to the local voice (`core/tts/`).
 4. Speech check.
 5. Reading check.
 6. Events.
@@ -154,7 +154,7 @@ Where the moves live in `main.js`:
 10. `.srt`.
 11. Poster and styleframe (18.4 s, the broken threshold with its readout).
 
-The voice is optional equipment: with no Doubao key, write the same lines for Kokoro (`core/tts/tts.py`, a `zf_*`/`zm_*` voice with `"lang": "cmn"`) and retime `VO_AT` and `CUES` from the new `words.json`.
+The voice is optional equipment: with no `DOUBAO_API_KEY`, write the same lines for the local voice (`core/tts/tts.py`, a `zf_*`/`zm_*` voice with `"lang": "cmn"`) and retime `VO_AT` and `CUES` from the new `words.json`.
 
 ### Demo-specific choices and pitfalls
 

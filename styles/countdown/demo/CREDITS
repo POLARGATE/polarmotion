@@ -42,9 +42,8 @@ FONTS (SIL Open Font License 1.1; texts in fonts/; fetched by tools/fetch_fonts.
 - Noto Sans SC, Adobe / Google (subset to the film's characters)
 
 VOICE
-- Narrator (two lines): Kokoro-82M text-to-speech (Apache-2.0), voice bf_emma, run offline with kokoro-onnx (MIT).
+- Narrator (two lines): synthetic voice.
   Every other voice in the film is NASA's broadcast audio.
-- Speech checks and word timings: faster-whisper (MIT).
 
 MUSIC AND SOUND
 - Original score and procedural sound design written for this film (audio/mix.py).

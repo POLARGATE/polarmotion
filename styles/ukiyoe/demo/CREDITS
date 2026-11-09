@@ -9,7 +9,7 @@ Music       Original score (music/score.py). Shamisen = physical model (core/aud
             "claves" (FreePats world percussion, CC0 1.0).
             Samples (CC0): VSCO 2 CE & VCSL, FreePats — with thanks.
 Sound FX    Synthesized in code (mix.py + core/audio/sfx.py). No recordings.
-Voice       Kokoro TTS v1.0 (kokoro-onnx), Apache-2.0 — voice am_adam.
+Voice       Synthetic narration.
 Fonts       Shippori Mincho B1 (FONTDASU), Yuji Syuku (Kinuta Font Factory) — Google Fonts, SIL Open Font License 1.1.
             fonts/ holds the unmodified latin subset and text= kanji subsets served by fonts.gstatic.com.
 Reference   Grammar studied (not copied): Katsushika Hokusai "Thirty-six Views of Mount Fuji", Utagawa Hiroshige

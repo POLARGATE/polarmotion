@@ -11,7 +11,7 @@ Fonts (SIL Open Font License 1.1; licence texts in fonts/, files fetched by tool
 - Noto Sans SC — Google / Adobe (OFL)
 
 Voice
-- Kokoro-82M v1.0 (hexgrad, Apache-2.0) via kokoro-onnx (MIT), voice bf_emma. Checked with faster-whisper (MIT), model base.en.
+- Synthetic narration.
 
 Music and sound
 - Original score and foley (mix.py): numpy/scipy synthesis plus sampled instruments.

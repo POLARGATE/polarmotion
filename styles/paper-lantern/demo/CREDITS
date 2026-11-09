@@ -6,9 +6,7 @@ are drawn by src/ (Canvas2D paper layers + three.js renderer). No photos, footag
 The line and its stations are fiction (see FACTS.md).
 
 Narration
-- Kokoro TTS (kokoro-onnx, model Kokoro-82M v1.0, voice bm_george), Apache License 2.0
-  https://github.com/thewh1teagle/kokoro-onnx · https://huggingface.co/hexgrad/Kokoro-82M
-  Generated offline with core/tts/tts.py and checked with core/tts/asr_check.py (faster-whisper base.en, MIT).
+- Synthetic narration, generated offline with core/tts/tts.py.
 
 Music (written for this film, played on sampled instruments by core/audio/sampler.py)
 - Piano: "Salamander Grand Piano V3" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)

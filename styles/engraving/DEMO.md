@@ -53,7 +53,7 @@ Three layers: room tone (a quiet workroom with a faint clock on copper; paper ro
 - **Score**: harpsichord + string quartet, 96 BPM, D major. `music/score.py` reads `events.json`: each detail section (A long / B tilt / C pull-back) is written once and placed where the film puts it; the outro shifts with the end of the details, so any number of details gets a matching score. Under narration the melody sits an octave up, out of the voice's band. Engraving sections are **all pizzicato** (the burin's small precise cuts), density growing pass by pass; each roundel = a high "ting" as the ring is scribed, a rising line as it flies, a low pizz as it lands. Before the colour: a run that stops dead, then **true silence** (1.25 s). The colour is the first time the strings use the bow. The final plate lands on a V–I cadence.
 - **Silences**: 2.0–2.5 s (burin lifted, before the press thump and the downbeat) and 25.0–26.25 s (before the first drop of water).
 - **Foley as built**: burin = band-passed hiss (2.6–9 kHz) with chatter clicks and a faint plate resonance (1.18/2.31/3.47 kHz); swarf = tiny 5–9 kHz pings; lift = metallic tick; press = low roller rumble (J-cut 0.35 s early) and a thump; peel = dense paper crackle; hatching = granular micro-scratches whose density rises with each pass; ring = circular scribe; burnish = soft rub; roundel flight = paper whoosh; landing = paper tap; letters = dotted ticks; notes = pen scratch at ~4 Hz strokes; colour = a falling water "plip" then a wet brush swish per region; end card = tissue rustle (J-cut).
-- **Narrator**: Kokoro `bm_fable` (en-gb), speed 0.92, a gentle naturalist; music ducked to ~50 % under him (the bowed strings duck least).
+- **Narrator**: voice `bm_fable` (en-gb), speed 0.92, a gentle naturalist; music ducked to ~50 % under him (the bowed strings duck least).
 
 ### Score form, bar by bar
 
@@ -125,7 +125,7 @@ Pitfalls tied to this demo's props:
 - **Two renders of the same demo folder collide**: `video.mjs` writes its segments to `<demo>/out/`, so render the main and alt films one after the other.
 - **Burin skew**: 30° read as poking beside the line; 0.22 rad fixed it.
 - **Leaders** hugging a wing read as crossing it until routed with ≥ 34 px clearance.
-- "Apis mellifera": Kokoro says it acceptably but whisper can't transcribe it; the line uses the `asr` field.
+- "Apis mellifera": The TTS says it acceptably but the speech check can't transcribe it; the line uses the `asr` field.
 
 ## content.json fields
 
@@ -144,10 +144,10 @@ Pitfalls tied to this demo's props:
 | `caption` | string | ≤ 50 characters | must stay readable ≥ chars/12 + 1 s inside the 4.4 s final plate |
 | `signature.left/right` | string | short | — |
 | `nat_size_label` | string | ≤ 16 characters | — |
-| `voice.voice`, `voice.speed`, `voice.lines[]` | Kokoro voice, 0.8–1.0, `{id, text, asr?}` | ids: `title`, `d1`…`dN`, `close` | a line longer than its section overlaps the next one; keep d-lines ≤ 4.5 s |
+| `voice.voice`, `voice.speed`, `voice.lines[]` | TTS voice, 0.8–1.0, `{id, text, asr?}` | ids: `title`, `d1`…`dN`, `close` | a line longer than its section overlaps the next one; keep d-lines ≤ 4.5 s |
 | `end.film_title`, `end.style_name`, `end.credits[]` | strings | credits ≤ 3 lines of ≤ 35 characters | longer lines break the end card's reading time |
 
-Steps: edit (or copy) the JSON → `sh styles/engraving/demo/build.sh my_content.json` (TTS + whisper check, events, score re-placed from the events, mix, cue check, subtitles, frames). To keep the main film untouched, `sh styles/engraving/demo/tools/build_alt.sh my_content.json` builds everything in `demo/out/alt/` instead (the demo's `content_alt.json`, 2 details, 35.6 s, passes the cue check).
+Steps: edit (or copy) the JSON → `sh styles/engraving/demo/build.sh my_content.json` (TTS + speech check, events, score re-placed from the events, mix, cue check, subtitles, frames). To keep the main film untouched, `sh styles/engraving/demo/tools/build_alt.sh my_content.json` builds everything in `demo/out/alt/` instead (the demo's `content_alt.json`, 2 details, 35.6 s, passes the cue check).
 
 Minimal example:
 

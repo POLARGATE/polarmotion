@@ -54,7 +54,7 @@ Mix (`demo/mix.py`): stems set against the voice's active RMS (music −10.9 dB,
 - Lights: warm key #FFF1DC from the left at ~35°, 4096 shadow map; cool rims #B9D2FF / #C6DBFF from behind-right and front-right; HDRI `photo_studio_loft_hall` at 0.8 for reflections.
 - The puck: brass, r 0.64, engraved (dark patina) "2025 · ×1.86 · 太阳能 ÷ 风电" with a tick ring.
 - Type: Inter 200/300 for numbers, Noto Sans SC 500 for labels, verdicts and subtitles, JetBrains Mono for years and units, Noto Serif SC 600 for the title. Ink #1C1D20, accent #D4521C.
-- Narrator: Kokoro `af_heart`, speed 0.95.
+- Narrator: `af_heart`, speed 0.95.
 
 ## End card
 

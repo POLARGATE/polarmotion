@@ -53,11 +53,11 @@ No cuts anywhere: the whole film is one painted sheet.
 
 ## Score structure
 
-- **Voice**: Kokoro (`kokoro-onnx`, model `core/tts/kokoro-v1.0.onnx`), voice **`af_heart`**, **speed 0.93**, `lang en-us` — warm, unhurried documentary read. Trim to 1 % of peak with 10 ms head / 100 ms tail. Numbers are spelled out in the TTS text ("two hundred and fifty millimetres") and written as digits in the subtitles. 13 lines, one per beat of the story, 1.7–7.4 s each.
-- **Check**: `asr.py` transcribes every line with faster-whisper `base.en`; all 13 read back correctly (only spelling variants: "millimeters", "Red Center", "1%").
+- **Voice**: synthetic voice **`af_heart`**, **speed 0.93**, `lang en-us` — warm, unhurried documentary read. Trim to 1 % of peak with 10 ms head / 100 ms tail. Numbers are spelled out in the TTS text ("two hundred and fifty millimetres") and written as digits in the subtitles. 13 lines, one per beat of the story, 1.7–7.4 s each.
+- **Check**: `asr.py` transcribes every line (speech check); all 13 read back correctly (only spelling variants: "millimeters", "Red Center", "1%").
 - **Music**: Scott Buckley — *Wildflowers* (CC BY 4.0). The 322 s track is cut to 117.8 s with **one beat-aligned jump**: `analyze.py` (librosa beat track, 103.4 BPM, 502 beats; chroma + MFCC beat-synchronous self-similarity) → `jump.py` ranks jump pairs whose result lands at 100–128 s → chosen pair beat 85 (61.23 s) → beat 437 (265.61 s), chroma similarity 0.915, 4-beat phase aligned, 0.18 s equal-power crossfade starting 60 ms before the beat (`edit.py`). The picture's beat constants come from the same `wf_beats.json`.
 - **SFX**: all synthesised in `mix.py` (numpy/scipy): paper brush rustle (band-passed noise, 9 Hz tremolo, panned sweep), a thump for the sun stamp, desert wind, 46 budgie chirps, 14 raindrop plinks timed to the mulga drops, fire roar + crackle, rising rain, two eastern whipbird calls, a mist swell and a quiet map-fire crackle. Short convolution reverb from a filtered noise IR.
-- **Mix** (`mix.py`): voice → 48 kHz, 90 Hz high-pass, RMS compressor (−24 dB, 3:1). **Kokoro's peak-to-RMS is ~17 dB**, so a **5 ms look-ahead peak limiter** (ceiling = speech RMS + 11 dB) runs *before* the level match; then voice RMS = music RMS + 8 dB during speech; music ducks ×0.62 (≈ −4 dB) under voice with a 0.3 s smoothed envelope; mix normalised to 0.89 peak. Final loudness in `mux.sh`: single-pass `loudnorm=I=-14:TP=-1` → −14.2 LUFS, −1.0 dBFS peak.
+- **Mix** (`mix.py`): voice → 48 kHz, 90 Hz high-pass, RMS compressor (−24 dB, 3:1). **The voice's peak-to-RMS is ~17 dB**, so a **5 ms look-ahead peak limiter** (ceiling = speech RMS + 11 dB) runs *before* the level match; then voice RMS = music RMS + 8 dB during speech; music ducks ×0.62 (≈ −4 dB) under voice with a 0.3 s smoothed envelope; mix normalised to 0.89 peak. Final loudness in `mux.sh`: single-pass `loudnorm=I=-14:TP=-1` → −14.2 LUFS, −1.0 dBFS peak.
 
 ## Palette & props
 
@@ -97,7 +97,7 @@ Plant colour sets live in `plants.js` `COL` (straw, mulga, salt, gum, gold, ash,
 - **Top-level `const` order → `READY` never set**: all five scripts share one global scope. If initialisation touches a `const` before its declaration (e.g. `CLOUDS`, `PAPER_IMG`) the async init throws, `window.READY` stays false and every screenshot times out after 60 s. Do all building inside the async init in `main.js`, and read `[pageerror]` lines in the render log.
 - **Determinism**: `mk()` consumes the global RNG. Any stroke created inside `render(t)` must be wrapped in `withSeed(seed, …)` (sun, HUD swatches, animals, flames, legend rows) or be pre-built in `build()`; otherwise frames depend on render history and parallel workers disagree.
 - **Performance**: drawing thousands of strokes per frame is too slow. Cache each finished plant as a sprite (`sprite()`); only plants whose progress is < 1 (being painted) or burning are drawn stroke by stroke.
-- **Kokoro voice is very peaky** (~17 dB peak-to-RMS): matching RMS alone either buries the voice or clips it — limit first, then match.
+- **The synthetic voice is very peaky** (~17 dB peak-to-RMS): matching RMS alone either buries the voice or clips it — limit first, then match.
 - **Beat-locked animation**: keep the score's beat grid (`wf_beats.json`) as the source for `BEAT0`/`BEAT`; if the music edit changes, re-derive them.
 - **CJK subset**: new Chinese subtitle characters render in a fallback font until you re-run `node fetch_fonts.mjs` (it subsets Noto Serif SC to the characters in `scene.js` + `main.js`).
 - **`mix.py` parses `scene.js`** with the regex `\['(v\d\d)', ([\d.]+),` to place the voice lines — keep the `VO` rows in exactly that form.
@@ -114,7 +114,7 @@ styles/watercolor/demo/
   scene.js        VO table, layers, zones, camera, world build, wash strips, landscape drawing, animals, fire, rain, notes
   main.js         canvas, map (deep time), mist, HUD, subtitles, title/end card, render(t), async init → READY
   aus.js          coastline rings (from extract_aus.mjs)   paper.jpg (paper.py)   fonts/ + fonts.css (fetch_fonts.mjs)
-  tts/lines.json  voice script   tts/gen.py  Kokoro   asr.py  whisper check   voices/  v01–v13.wav + dur.json
+  tts/lines.json  voice script   tts/gen.py  voice    asr.py  speech check    voices/  v01–v13.wav + dur.json
   music/          prep.sh (source files) · analyze.py · lag.py · jump.py · edit.py → score.wav
   mix.py          SFX + voice + music → mix.wav      render.mjs  stills / video / part     mux.sh  → ../watercolor.mp4
 ```
@@ -123,7 +123,7 @@ All commands from the repo root, Python = `.venv/bin/python`:
 
 ```sh
 D=styles/watercolor/demo
-# 1. voice (13 lines, ~10 s) and whisper check
+# 1. voice (13 lines, ~10 s) and speech check
 .venv/bin/python $D/tts/gen.py                 # → $D/voices/v01..v13.wav + dur.json  (OUT=dir to write elsewhere)
 .venv/bin/python $D/asr.py                     # prints each transcript; compare with tts/lines.json
 #    copy the durations into the VO table in scene.js (id, start, dur, en, zh) and set the start times

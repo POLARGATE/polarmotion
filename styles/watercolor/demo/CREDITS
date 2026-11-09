@@ -8,9 +8,7 @@ MUSIC
   Credited in this file (the end card carries no third-party credits).
 
 VOICE
-  Kokoro-82M text-to-speech (hexgrad/Kokoro-82M, Apache License 2.0), run locally with
-  kokoro-onnx (thewh1teagle/kokoro-onnx, MIT). Voice "af_heart", speed 0.93. Model files: core/tts/.
-  Transcription check: faster-whisper (SYSTRAN, MIT) with the OpenAI Whisper "base.en" model (MIT).
+  Synthetic narration, speed 0.93.
 
 MAP DATA
   Coastline: Natural Earth 1:50m admin-0 countries (public domain, default view), via world-atlas 2.0.2

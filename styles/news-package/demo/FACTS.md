@@ -51,7 +51,7 @@ On-screen text and voice-over are Chinese; they are quoted as they appear, with 
 | M4 | Runs on two Mac Studios (M5 Ultra); 512 GB each; "≈ 1 TB 统一内存" (≈ 1 TB unified memory) | Same | "Muse Spark Open is the first model in its class to run on your desktop using two Apple M5 Ultra Mac Studios…"; "Apple's unified memory architecture lets the M5 Ultra's integrated GPU use up to 512 GB per Mac Studio"; "The result is two Mac Studios behave like one supercomputer with a terabyte of unified memory." | Primary. Mac Studio is set in type only, no logo |
 | — | Not reported | — | The revenue threshold in the licence, third-party benchmark scores and the claim that the Hugging Face repository appeared earlier are found only in secondary sources | — |
 
-## Voice-over, line by line (Chinese, Doubao TTS; `vo/lines.json`)
+## Voice-over, line by line (Chinese, synthetic voice; `vo/lines.json`)
 
 The voice-over lines are quoted in the original Chinese, with an English translation.
 

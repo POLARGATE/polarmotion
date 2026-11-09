@@ -5,7 +5,7 @@ Music        Original score, generated in code (music/score.py). See music/CREDI
              Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
              Samples (CC0): Karoryfer Samples, VS Chamber Orchestra: Community Edition and Versilian Community Sample Library
 Sound FX     Synthesized in code (mix.py + core/audio/sfx.py). No recorded samples.
-Voice        Kokoro-82M TTS (kokoro-onnx), Apache-2.0 — voice am_michael, speed 0.94.
+Voice        Synthetic narration.
 Fonts        Oleo Script (Soytutype), Alfa Slab One (JM Solé), Jost (indestructible type*) — SIL Open Font License 1.1, files + licences in fonts/.
 Product      "Pip" and "Mo" are fictional products. No real brand, product, logo or trademark appears.
 Style        Grammar learned from 1950s UPA limited animation, 1950s classroom films and mid-century illustration (Charley Harper, Mary Blair).

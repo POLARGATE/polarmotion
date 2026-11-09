@@ -9,8 +9,7 @@ Fonts (SIL Open Font License 1.1, license files in fonts/):
 - Ma Shan Zheng — Ma Shan Zheng, fonts/OFL-MaShanZheng.txt  (glyph "水" used only as a skeleton reference for the brush-written character; stroke centrelines were traced by hand)
 - Zhi Mang Xing — Wei Zhimang, fonts/OFL-ZhiMangXing.txt  (downloaded for comparison, not used in the film)
 
-Voice: Kokoro-82M (Apache-2.0), voice bm_george, via kokoro-onnx.
-Speech check: faster-whisper base.en (MIT).
+Voice: synthetic narration.
 
 Music (original score, music/score.py):
 - Guqin: physical-model plucked string, core/audio/pluck.py (synthesis, no samples)

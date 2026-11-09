@@ -74,9 +74,9 @@ Frame so the subject is at least 1/3 of the frame height at key moments (the han
 - **Three layers:**
   - **Ambience beds**, one per station and crossfaded: hill wind, leaves and birds; harbour, gulls and a crane beeper; sea swells; city hum; café murmur; morning sparrows (the same bird synth as the hill, pitched up).
   - **Foley by material:** fibre snap for the stem, a fleshy thud for the cherry in the palm, granular rattles for cherries on the mesh, grains pouring into jute, inharmonic steel partials for container doors and landings, a burlap tear, drum rumble with rotation, dry crack pops, grinder whine plus crunch, a tamp thock, a ceramic plink and a pitch-rising pour.
-  - **Music**, ducked about 8 dB under the voice. Ambience is ducked 7 dB and birds are muted while the narrator speaks: a bird chirp at the end of a word made whisper hear "travels" for "travel".
+  - **Music**, ducked about 8 dB under the voice. Ambience is ducked 7 dB and birds are muted while the narrator speaks: a bird chirp at the end of a word made the speech check hear "travels" for "travel".
 - **Sound transitions:** a J-cut of harbour noise 0.6 s before the port appears, the roaster drum 0.6 s before its walls open, and an L-cut of the horn tail into the city. In the final pull-back, each station plays one kalimba note.
-- **Voice:** Kokoro `bf_alice` at 0.88–1.0, six short lines, every one whisper-verified on the dry take and again in the final mix.
+- **Voice:** voice `bf_alice` at 0.88–1.0, six short lines, every one speech-checked on the dry take and again in the final mix.
 
 ## Palette & props
 
@@ -115,7 +115,7 @@ Frame so the subject is at least 1/3 of the frame height at key moments (the han
 - **The time jump inside the dive:** the ship teleports from mid-ocean to the destination dock while only beans fill the frame. Draw the bean field **in screen space, anchored on the tracked bean** and scaled by k; its layout then does not depend on the ship's heading, and the jump is invisible.
 - **Giant world geometry behind hero close-ups:** at k = 600 a shrub is a green disc the size of the frame. Skip shrubs above k = 120 and paint a flat backdrop behind the hero layer, fading with it.
 - **The pull-out passing through a crane** gives one ugly frame of a giant boom. Fade tall objects in by zoom (`alpha = clamp((80 − k)/40)`).
-- **whisper and ambience hiss:** a continuous leaf rustle (2.5–7 kHz) after a word turns "travel" into "travels". Keep high-band beds very low under dialogue.
+- **Speech check and ambience hiss:** a continuous leaf rustle (2.5–7 kHz) after a word turns "travel" into "travels". Keep high-band beds very low under dialogue.
 - **A machine drawn as a white box with a red roof reads as a house.** Use steel greys, a dark front panel, cups on top and a portafilter handle.
 - In zsh a failed glob aborts an `&&` chain, so run shell loops through `bash -c`.
 
@@ -133,7 +133,7 @@ styles/iso-infographic/demo/
 ```
 1. Write `timeline.js` and the cue map first. Draw the board as a square in world units (S = 240). Lay out the Z route, then the stations.
 2. Build the station scenes, reviewing each at its zoom with `?k=…&cx=…&cy=…` stills. Render the two hero close-ups on their own (`?test=hero`, `?test=hero&end=1`) until they match.
-3. `sh demo/build.sh` rebuilds everything in about 2 minutes: TTS → whisper → score → events → cue check → mix → srt → render (1,411 frames in about 35 s with 2 workers) → mux (−14 LUFS, grain 0) → final whisper → stills.
+3. `sh demo/build.sh` rebuilds everything in about 2 minutes: TTS → speech check → score → events → cue check → mix → srt → render (1,411 frames in about 35 s with 2 workers) → mux (−14 LUFS, grain 0) → final whisper → stills.
 4. Review with `bash demo/tools/review.sh out/revN 6 $(seq 0.3 1 58.3)` at least twice, plus frame strips of the dive, the snap-out, the landing and the pour taken from the muxed mp4.
 
 ## Engine reference

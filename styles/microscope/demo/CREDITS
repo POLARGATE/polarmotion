@@ -29,8 +29,7 @@ FONTS (SIL Open Font License 1.1, licence texts in fonts/; Chinese fonts subset 
 - IBM Plex Mono — IBM (instruments, pixel counts, credit line)
 
 VOICE
-- Kokoro-82M (hexgrad), voice af_heart, Apache License 2.0; run locally via kokoro-onnx (MIT) through the
-  library's core/tts/tts.py. Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).
+- Synthetic narration.
 
 MUSIC AND SOUND (original score and foley, made in code for this film: mix.py)
 - Sampled instruments through core/audio/sampler.py, all CC0 1.0:

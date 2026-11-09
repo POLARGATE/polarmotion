@@ -18,7 +18,7 @@ Voices
 - macOS built-in system voices via the `say` command (Samantha, Fred, Zarvox, Junior, Kathy, Ralph, Superstar), pitch-shifted with ffmpeg (asetrate/atempo). 40 short English shouts listed in voices/lines*.txt.
 - LICENCE EXCEPTION: these voice recordings (voices/*.wav and the shouts in game-show.mp4) are NOT covered by the
   library's CC BY 4.0 licence for demo films. Apple licenses its system voices for personal, non-commercial use on
-  macOS. We plan to re-voice the shouts with Kokoro (core/tts/). In your own film, use Kokoro or a voice you have
+  macOS. We plan to re-voice the shouts with the library's synthetic voice (core/tts/). In your own film, use that or a voice you have
   the right to use, never these files. See DEMO.md "Rights & facts".
 
 Music & sound

@@ -58,8 +58,8 @@ There is no score. The sound design as built for the demo:
 
 - **No score.** Only what the tape would have recorded.
 - **Fluorescent bed**: 120 Hz + harmonics (1, .55, .42, .22, .16, .06 at ×1…×7), a buzzy band-passed square component, a faint ~9 kHz ballast whine, random bad-tube "zzz" bursts; gated by the same light curve as the picture; +3 dB closer in small rooms.
-- **PA**: calm corporate voice (Kokoro `af_bella`, speed 0.82–0.84) through a "ceiling speaker": band-pass ~310–3500 Hz, cone resonance around 1.3 kHz, tanh saturation, room reverb — keep it dry enough for whisper to transcribe (too much reverb made "night shift" into "my church"). Original two-note chime (vibraphone E5→C5) before every rule; after the time jump both chime and voice drift flat with tape wow.
-- **Operator**: 3–4 short lines (`am_michael`), low level, proximity bass, a breath/air layer following the voice envelope, compressed. Kokoro cannot truly whisper — "speaking quietly" is the goal. Close-mic breathing whose rate follows the fear curve; held breath then one long exhale.
+- **PA**: calm corporate voice (voice `af_bella`, speed 0.82–0.84) through a "ceiling speaker": band-pass ~310–3500 Hz, cone resonance around 1.3 kHz, tanh saturation, room reverb — keep it dry enough for whisper to transcribe (too much reverb made "night shift" into "my church"). Original two-note chime (vibraphone E5→C5) before every rule; after the time jump both chime and voice drift flat with tape wow.
+- **Operator**: 3–4 short lines (`am_michael`), low level, proximity bass, a breath/air layer following the voice envelope, compressed. The synthetic voice cannot truly whisper — "speaking quietly" is the goal. Close-mic breathing whose rate follows the fear curve; held breath then one long exhale.
 - **Diegetic hold music**: an original easy-listening loop (here 88 BPM F major, vibraphone melody, clean-guitar comps on 2 & 4, finger bass), band-passed and drowned in reverb as if through walls, read with a slowing tape-speed curve (1.00 → 0.97 → 0.89) and growing wow. It cuts out during blackouts and dies at the silence, never to return.
 - **Foley**: damp-carpet steps (60–85 Hz thud + small wet 0.9–2.6 kHz squelch), cloth rustles on turns, camcorder clack + motor on REC on/off, zoom servo whine, AF motor ticks, ballast "tink" + arc buzz on each flicker, a barely audible drag overhead, door latch + stick-slip hinge creak + air push.
 - **Silence is the climax**: one full second of digital zero (including tails) when the exit appears; caption `[SILENCE]`. The only allowed scare is soft: all ballasts restriking at once with a low thunk when sound returns.
@@ -104,7 +104,7 @@ styles/backrooms/demo/
 ```
 
 1. `node core/render/still.mjs styles/backrooms/demo <t…> [--q nosub=1|raw=1|sheet=1]` — review stills.
-2. `sh styles/backrooms/demo/build.sh` — TTS → whisper → music → events → mix → whisper on processed voices → render (1433 frames ≈ 80 s with 3 workers) → mux (−14 LUFS) → SRT → poster/styleframe.
+2. `sh styles/backrooms/demo/build.sh` — TTS → speech check → music → events → mix → speech check on processed voices → render (1433 frames ≈ 80 s with 3 workers) → mux (−14 LUFS) → SRT → poster/styleframe.
 
 ### Pitfalls we hit
 
@@ -117,6 +117,6 @@ styles/backrooms/demo/
 - Legs from primitives look like tubes; show only shoe toes (extruded footprint outline with bevel, lighter sole, laces).
 - Emissive red at ×3 never reached the bloom threshold (luminance of pure red is low); use ×9.
 - Normalising a filtered chime by the *pre-filter* peak blew the PA bus up by 16 dB — normalise by the processed signal.
-- Heavy PA reverb destroys intelligibility; check every processed line with whisper and the full mix too.
+- Heavy PA reverb destroys intelligibility; check every processed line with the speech check and the full mix too.
 - Time-compressing a finished timeline: write keyframes in "original" time and map them through one piecewise-linear warp `W()`; remember to warp any hard-coded times elsewhere.
 - VHS noise makes files big: CRF 24 → ~47 MB for 60 s.

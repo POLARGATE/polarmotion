@@ -43,7 +43,7 @@ Stops (hard silence including reverb tails) on the lock-eyes beat, on the suspen
 
 Foley specific to this film (all synthesised): porcelain = hard inharmonic partials (~2.7 / 4.2 / 6.3 kHz) + tiny transient; thick mug = lower, duller partials; sugar = high woodblock + sparse crunch; clock = 18 Hz hammer on two bells; toaster = click, eighth-note ticks, bell + spring "boing"; water = filtered noise + rising blips, drain slurp, bubble bed; rubber = sawtooth creak through a band-pass.
 
-Voice: an old radio announcer calling the action like a horse race (Kokoro `bm_lewis`, speed 1.0), 7 short lines ("Seven a.m., folks!" … "Good night, folks!"). Chain: HP 260 Hz / LP 4.6 kHz, tanh saturation, a short room, compression. Music ducked ~8 dB under the voice. Optical pass: band-limit 110 Hz–6.2 kHz, wow 0.6 Hz, flutter 7 Hz.
+Voice: an old radio announcer calling the action like a horse race (voice `bm_lewis`, speed 1.0), 7 short lines ("Seven a.m., folks!" … "Good night, folks!"). Chain: HP 260 Hz / LP 4.6 kHz, tanh saturation, a short room, compression. Music ducked ~8 dB under the voice. Optical pass: band-limit 110 Hz–6.2 kHz, wow 0.6 Hz, flutter 7 Hz.
 
 ## Palette & props
 
@@ -76,7 +76,7 @@ styles/rubber-hose/demo/
   ui.js      title lettering, announcer title card        sheet.js   model sheets (?mode=sheet / ?mode=kitchen)
   music/score.py  original big-band score (VSCO 2 CE / VCSL samples via core/audio/sampler.py, banjo via pluck.py)
   mix.py     foley synthesis + radio-voice chain + ducking + optical-track aging
-  build.sh   one-command rebuild (≈9 min, mostly TTS/whisper/sample loading; frames render in ~50 s)
+  build.sh   one-command rebuild (≈9 min, mostly TTS/speech check/sample loading; frames render in ~50 s)
 ```
 
 1. Write the bar grid first (`story.js`), then the cue map; score to it (a forked sub-agent can write `music/score.py` in parallel from `story.js` + the cue list).
@@ -89,7 +89,7 @@ styles/rubber-hose/demo/
 Or simply `sh styles/rubber-hose/demo/build.sh`.
 
 Pitfalls tied to this demo:
-- **Kokoro heard "bitter" as "better"** after an ellipsis (`is... bitter!`). "And boy, is this coffee bitter!" passes. Check every line with whisper; also check the final mp4 (whisper writes "7am" / "they're": normalise before comparing).
+- **The TTS said "bitter" as "better"** after an ellipsis (`is... bitter!`). "And boy, is this coffee bitter!" passes. Check every line with the speech check; also check the final mp4 (the speech check writes "7am" / "they're": normalise before comparing).
 - The cube read as a tall box in pure front view: elevation ~0.26 and a slight 3/4 turn for expressions.
 - A far shot of the plate-xylophone and of the dance climax kills both gags: shoot them medium / medium-full.
 - A kicking leg drawn behind the mug body was hidden by the handle: kick outward past the silhouette.

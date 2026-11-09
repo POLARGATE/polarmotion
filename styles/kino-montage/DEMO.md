@@ -43,7 +43,7 @@ Times in seconds (120 BPM: beat 0.5, bar 2.0).
 | 16 | 48.75–56.00 | result composition | the finished tower in a slanted window (camera tilts up it), *Icarus* in a tilted frame, red wedge; "410 天", "102 层", "1931.5.1 开放 · 比计划提前近一个月"; "410" restamped on red at 53.6 | heaviest hit at 48.75 |
 | 17 | 56.00–60.00 | end card | see below | held 4 s |
 
-Narration (Kokoro `am_michael`, eleven short lines) and bilingual subtitles: 5.15, 8.9, 12.75, 16.4, 19.4, 23.6, 28.2, 32.0, 37.6, 49.0, 53.6 s (`VO` in `index.html`; cues exported from the same table).
+Narration (voice `am_michael`, eleven short lines) and bilingual subtitles: 5.15, 8.9, 12.75, 16.4, 19.4, 23.6, 28.2, 32.0, 37.6, 49.0, 53.6 s (`VO` in `index.html`; cues exported from the same table).
 
 ## Score structure
 
@@ -70,7 +70,7 @@ demo/
   tools/fetch_sources.sh  download raw/ from SOURCES.jsonl       tools/kit_env.sh  python with onnxruntime + u2net model
   tools/footage.py    search / fetch / record archive material   tools/cq.py      Commons queries
   tools/final_asr.py  speech check on the final mix              tools/rhythm_report.py  flat windows, cuts, hit alignment
-  audio/lines.json    narration (Kokoro)                         audio/mix.py     score, foley, voice, ambience, master
+  audio/lines.json    narration (synthetic voice)                audio/mix.py     score, foley, voice, ambience, master
   FACTS.md · CREDITS · SOURCES.md / SOURCES.jsonl · stills/styleframe.jpg
 ```
 

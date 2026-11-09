@@ -49,7 +49,7 @@ Times in seconds; every cut on the 120 BPM half-beat grid.
 - Foley (procedural, `audio/mix.py` from `events.json`): chunk slams, counter rattles, whooshes into cards, highlighter squeaks, the camera shutter on the freeze, a stamp on "+6%", pops, map ticks, a riser into the map push, paper on each card.
 - Natural sound: the swarm's own audio (Сарапулов, CC BY 4.0) low under the hook, alone under the freeze (J-cut 0.3 s before it), and under the verdict and end card.
 - Mix: music about 10 dB under the voice and ducked; under speech the music also loses 1.2–5 kHz (the consonant band) — without it, speech-to-text heard "colonies" as "collins" in the full mix; −14.1 LUFS integrated.
-- Voice: Kokoro `af_bella`, 12 lines, speed 1.0–1.17; numbers spelled out in the TTS text, digits in the captions.
+- Voice: `af_bella`, 12 lines, speed 1.0–1.17; numbers spelled out in the TTS text, digits in the captions.
 
 ## Palette & props
 
@@ -67,7 +67,7 @@ From 54.5 s, held five seconds over the blurred, darkened hive entrance: "蜜蜂
 demo/
   index.html, main.js     the page: SHOTS, one function per format, sync draw + lazy frame loading, TEXTS for readcheck
   timeline.json           captions (zh chunks + en), voice starts, silences, hits — shared by page, .srt and mix
-  audio/lines.json        narration (Kokoro)            audio/mix.py   score, foley, voice, natural sound, mix
+  audio/lines.json        narration (synthetic voice)  audio/mix.py   score, foley, voice, natural sound, mix
   tools/fetch_sources.sh  downloads raw/ (~410 MB; Commons, USDA, Natural Earth) and extracts the swarm audio
   tools/prep.sh           footage → 30 fps JPEGs at display size (crop, lanczos, unsharp, delogo), report page, photos, map
   tools/map_prep.py       Natural Earth states → Albers-projected polygons

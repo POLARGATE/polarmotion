@@ -13,8 +13,8 @@ FONTS (SIL Open Font License 1.1, licence texts in fonts/; not in git, build.sh 
   fonts/OFL-Newsreader.txt
 
 NARRATION
-- Text written for this film (lines.json, lines_en.json). Voices synthesised with Microsoft edge-tts
-  (zh-CN-XiaoxiaoNeural; en-US-AvaNeural for the English version), an online service: check Microsoft's terms before
+- Text written for this film (lines.json, lines_en.json). Synthetic narration (Chinese; English
+  for the English version) from an online service: check its terms before
   commercial use. build.sh generates them; the audio is not in git.
 
 MUSIC & SOUND

@@ -72,8 +72,8 @@ On-screen text is bilingual; it is quoted as it appears (Chinese / English). Chi
 
 ## §T Transcription and timing measurements
 - T0 (film 32.5 s): the jump of the broadcast picture's countdown bug from T−0:00:32 to 31 + the word-level time of the commentary's "booster" (film 32.70); the two agree.
-- "GLS, go for ALS." (film 0.40): Whisper base.en / small hear it as "go for your left", and medium drops the line; it is judged to be "go for ALS" from the F2 T−33 milestone (GLS sends "go for automated launch sequencer") and the commentary that follows immediately, "Great call-out. The rocket is on its own." The time actually called out in the source audio is T−32.1 (the milestone table gives the planned T−33); the checklist marks the two separately.
-- "RS-25 engines lit": Whisper sometimes hears "lift"; NASA's official transcript (F3) has "lit".
+- "GLS, go for ALS." (film 0.40): the small speech-check models hear it as "go for your left", and the medium one drops the line; it is judged to be "go for ALS" from the F2 T−33 milestone (GLS sends "go for automated launch sequencer") and the commentary that follows immediately, "Great call-out. The rocket is on its own." The time actually called out in the source audio is T−32.1 (the milestone table gives the planned T−33); the checklist marks the two separately.
+- "RS-25 engines lit": The speech check sometimes hears "lift"; NASA's official transcript (F3) has "lit".
 - "Good roll, pitch." / "Roger, roll, pitch." at film 46.40 / 49.78 (T+13.9 / +17.3); "Houston, now controlling…" at film 53.78 (T+21.3).
 - Timing of the vehicle camera (CAM 3): the burned-in timer jumps from "001-04:17:27.3" to "002-00:00:01.0"; the "002" segment reaches zero at source 34.8 s, taken as T0. The broadcast soundtrack that comes with the same file is about 1 s off the picture, so its sound is not used for timing.
 - The control room (CAM 2) has no clock to sync to; it is labelled "同一时段 SAME WINDOW · 未逐帧同步" (not frame-synced).

@@ -9,8 +9,7 @@ FONTS (SIL Open Font License 1.1; not in git, build.sh downloads it from github.
   characters the film prints (fonts/NotoSerifSC-700.woff2). Licence text: fonts/OFL-NotoSerifSC.txt
 
 NARRATION
-- Microsoft edge-tts (online neural voices): en-US-AvaNeural for the English version, zh-CN-XiaoxiaoNeural for the Chinese
-  one. The text is the film's own (lines_en.json, lines_zh.json).
+- Synthetic narration from an online service, English and Chinese versions. The text is the film's own (lines_en.json, lines_zh.json).
 
 MUSIC & SOUND
 - Original score and sound design written for this film in audio.py: synthesis in numpy through the library's

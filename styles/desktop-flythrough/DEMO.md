@@ -31,7 +31,7 @@ Four stops on one desk: your phone, the compress card, the server tower, your fr
 
 ## Voice-over
 
-Fourteen lines, Chinese, voiced with edge-tts `zh-CN-XiaoxiaoNeural` at `+15 %` (line 5 at `+8 %`), checked line by line with Whisper; 0.8 s lead, 0.3–0.6 s between lines. Subtitles: one cue per line, Chinese over English ([`desktop-flythrough.srt`](desktop-flythrough.srt)).
+Fourteen lines, Chinese, voiced with `zh-CN-XiaoxiaoNeural` at `+15 %` (line 5 at `+8 %`), checked line by line with the speech check; 0.8 s lead, 0.3–0.6 s between lines. Subtitles: one cue per line, Chinese over English ([`desktop-flythrough.srt`](desktop-flythrough.srt)).
 
 | # | Start | 中文 | English |
 |---|---|---|---|

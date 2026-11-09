@@ -42,7 +42,7 @@ Original numpy score (`demo/music/score.py`), **120 BPM, minor key**. Sub drone 
 
 Foley as used: shimmer per sweep, lid friction, magnetic clicks, an air puff per exploded part, and on the snap a cluster of six clicks 15 ms apart + the inharmonic glass chord.
 
-Voice: Kokoro `am_michael`, speed 0.86–0.88, 3–4 very short lines. "Aura." alone was misheard as Laura / Dora, so the line became "Meet Aura." Music ducked −12 dB and foley −6 dB under the voice. The 808 peaks left no headroom and loudnorm fell back to dynamic mode (−13.7 LUFS); limiting the drop peaks ~3 dB in the mix fixed it. Grain 0 in mux.
+Voice: `am_michael`, speed 0.86–0.88, 3–4 very short lines. "Aura." alone was misheard as Laura / Dora, so the line became "Meet Aura." Music ducked −12 dB and foley −6 dB under the voice. The 808 peaks left no headroom and loudnorm fell back to dynamic mode (−13.7 LUFS); limiting the drop peaks ~3 dB in the mix fixed it. Grain 0 in mux.
 
 ## Palette & props
 

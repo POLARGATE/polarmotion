@@ -40,8 +40,7 @@ FONTS (SIL Open Font License 1.1; subsets from Google Fonts, fetched by tools/fo
 - Source Serif 4 (Adobe)
 
 VOICE
-- Narration: Kokoro-82M text-to-speech (Apache-2.0), voice am_michael, run offline with kokoro-onnx (MIT).
-- Speech check: faster-whisper (MIT).
+- Narration: synthetic voice.
 
 MUSIC AND SOUND
 - Original score and procedural sound design written for this film (audio/mix.py).

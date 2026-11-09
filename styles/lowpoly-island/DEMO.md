@@ -40,7 +40,7 @@ Camera settings used: azimuth 45° by default, elevation **30°** (build), **33�
 - Growth scheduled on the 16th grid: tiles on halves → quarters → eighths.
 - The boat's answering bell sits in a rest of the melody, filling the gap when the beam finds it.
 - **Foley** (`mix.py`): as in STYLE.md §7, plus gulls by day (downward-gliding FM chirps), windmill creak, crickets from dusk; the dock plank knock and lighthouse-ring stone thunk, glass tink for the lamp room, whump + hum on ignition. Floors: second knock 0.21 s after the first.
-- **Voice**: Kokoro `af_sky` (clear, gentle female), speed 0.86–0.92, 5 short lines. "Sea" was heard as "C" in a film about notes, so the narration says "ocean".
+- **Voice**: voice `af_sky` (clear, gentle female), speed 0.86–0.92, 5 short lines. "Sea" was heard as "C" in a film about notes, so the narration says "ocean".
 - **Mix**: voice compressed, ~10 dB over the music; music ducked −8 dB under the voice; −14 LUFS; grain 0.
 
 ## Palette & props

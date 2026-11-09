@@ -8,8 +8,7 @@ Font
 - Inter Tight (variable) — Tim Brown / Rasmus Andersson, SIL Open Font License 1.1 — https://fonts.google.com/specimen/Inter+Tight
 
 Voice
-- Kokoro-82M TTS (voice am_michael) — Apache-2.0 — https://huggingface.co/hexgrad/Kokoro-82M (kokoro-onnx runtime, MIT)
-- faster-whisper (base.en) used for verification only — MIT
+- Synthetic narration.
 
 Libraries
 - three.js r170 — MIT (MeshPhysicalMaterial transmission/dispersion, Reflector, RectAreaLight, UnrealBloomPass)

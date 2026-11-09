@@ -53,7 +53,7 @@ Instrument recipes (reusable):
 
 Foley specific to this film: baren rub with a ~9 Hz circular modulation, hollow bridge steps, wind chime partials 2.36 / 5.15 / 7.98 kHz, field trickle, rain bed with drops, sea swell every ~4 s, lark chirps, geese, a kite's *pii-hyoro* on the last view.
 
-Voice: calm male storyteller, first person, 5 short lines (Kokoro `am_adam`, speed 0.84–0.88). Music ducked ~−8 dB under voice (−10 dB on the last line), ambience ~−4 dB. Subtitle hold in this demo: ≥ max(1.8 s, voice + 0.75 s).
+Voice: calm male storyteller, first person, 5 short lines (voice `am_adam`, speed 0.84–0.88). Music ducked ~−8 dB under voice (−10 dB on the last line), ambience ~−4 dB. Subtitle hold in this demo: ≥ max(1.8 s, voice + 0.75 s).
 
 ## Palette & props
 

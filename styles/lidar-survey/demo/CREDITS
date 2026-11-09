@@ -37,8 +37,7 @@ FONTS (SIL Open Font License 1.1, licence texts in fonts/)
   All fonts are fetched by tools/fonts.py when missing (they are not in git).
 
 VOICE
-- Kokoro-82M (hexgrad), voice bm_george, Apache License 2.0; run locally via kokoro-onnx (MIT) through the
-  library's core/tts/tts.py. Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).
+- Synthetic narration.
 
 MUSIC AND SOUND
 - Original score and sound design, synthesised in mix.py (numpy/scipy) on the film's timeline.

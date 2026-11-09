@@ -53,7 +53,7 @@ Timeline (built from content): hook 4 bars, each step ≥ 3 bars (from its voice
 - **Ambience:** warm room tone (low-passed brown noise, about −42 dB) and a very quiet mantel-clock tick on the half-note grid. In the payoff, Pip's motor hum (a band-passed saw with a slow LFO plus brush hiss) takes over.
 - **Foley in this film:** the box (creak, flap thumps a semitone apart, a swish into a slap), the plug click, floor scrapes for the dock, stamps for every medallion, slide whistles for the 50 cm arrows, rising pips for "connected", pen scratches as each room's route draws, the ink line peeling off paper, an iris "shhk".
 - **Mix:** narration compressed on top, music ducks 8 dB under it, foley unducked, −14 LUFS, true peak −1.2. `tools/cuecheck.py` found 0 hits off the half-beat grid.
-- **Narrator:** calm classroom authority. The demo uses Kokoro `am_michael` at 0.94. `bm_george` was tried: whisper heard "dock" as "dark" in his British vowel. Keep lines to one clause: "Step one. Set the dock against a wall."
+- **Narrator:** calm classroom authority. The demo uses voice `am_michael` at 0.94. `bm_george` was tried: The speech check heard "dock" as "dark" in his British vowel. Keep lines to one clause: "Step one. Set the dock against a wall."
 
 ## Palette & props
 
@@ -89,7 +89,7 @@ After the lockup, inside the iris circle: film title, style name, `Polargate · 
 ## Build notes
 
 1. `demo/content.json` holds every word, number, colour, the voice and the payoff plan. `python3 demo/tools/lines.py` turns it into `lines.json`.
-2. Kokoro (`core/tts/tts.py`) → `voices/` + `dur.json`; `asr_check.py` until every line is OK (step numbers are compared as digits).
+2. The TTS (`core/tts/tts.py`) → `voices/` + `dur.json`; `asr_check.py` until every line is OK (step numbers are compared as digits).
 3. The timeline is built from content (see Shots): hook 4 bars, each step ≥ 3 bars (from its voice length), the last step 2 bars, then payoff 3, tip 2, lockup 3 and end 2 bars at 132 BPM. Three steps = 22 bars = 40.0 s.
 4. The score (`music/score.py`, forked to a sub-agent with the cue map) → `score.wav`, stems and `hits.json`.
 5. `core/render/events.mjs` exports the same event times the pictures use. `tools/cuecheck.py` checks every hit against the half-beat grid and the score (0 off in the demo). `mix.py` builds foley, voice, ducking and the three silences.
@@ -131,10 +131,10 @@ Everything readable and every colour comes from `demo/content.json`. The page re
 | `tip.label/text/icon/line` | strings | text ≤ 40 chars | Header shrinks; the ribbon widens |
 | `outro.line` / `outro.cta` | string | cta ≤ 48 chars | CTA shrinks to 20 px |
 | `palette` | object | `paper, ink, product, productDark, accent, hook, steps[], tip` | Missing keys fall back to the demo palette |
-| `voice` | object | Kokoro `id`, `speed` | — |
+| `voice` | object | voice `id`, `speed` | — |
 | `film` | object | `name, style, credits` | End card |
 
-**Steps to swap (technical check):** edit `content.json` → `sh demo/build.sh` (it rebuilds lines, voice + whisper check, events, mix, captions, video). The score is written for 22 bars; if your step count changes the length, rerun the music sub-agent with the new section table, or keep 3 steps.
+**Steps to swap (technical check):** edit `content.json` → `sh demo/build.sh` (it rebuilds lines, voice + speech check, events, mix, captions, video). The score is written for 22 bars; if your step count changes the length, rerun the music sub-agent with the new section table, or keep 3 steps.
 
 **Minimal example** (only what changes):
 ```json

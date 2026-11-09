@@ -54,7 +54,7 @@ The camera is one continuous move: keyframes of composition centre, zoom, a few 
 - Write the score to the drawing: key notes on the marks and corners (the grip closes on the tonic, each kite corner is a pluck, the highest note is the first touch of the two noses, eyelashes of the last eye are the last three notes). Line fast = short notes; line stopped = one long note fading into silence.
 - **Silence is literal**: zero the music bus including reverb tails during the stop; drop room tone to 15 %.
 - **The pen on paper is the most important sound**: synthesized from the pen speed track — band-passed noise (bright 2.2–7.5 kHz when fast, dull 0.7–2.4 kHz when slow), random paper-fibre ticks with density ∝ speed, amplitude ∝ (v/520)^0.5, panned with the nib's screen position; broken up by the dry-brush gaps in old age; lighter and jerkier for the child. Plus a wooden tap on the first touch, a barely audible wet swell for the blot, a tiny rub at the handoff.
-- **Voice**: warm, retrospective male narrator (Kokoro `am_liam`, speed 0.84; high-passed at 85 Hz, low-passed at 7.2 kHz to soften it). 5–6 short lines that leave space for the line. Place them by whisper word timestamps so key words land on picture beats ("holding **on**" on the grip, "**goes** on" when the pen resumes). Music ducks ≈ 5 dB and the pen ≈ 4 dB under voice. Loudness −14 LUFS, **grain 0** (the paper texture is in the render).
+- **Voice**: warm, retrospective male narrator (voice `am_liam`, speed 0.84; high-passed at 85 Hz, low-passed at 7.2 kHz to soften it). 5–6 short lines that leave space for the line. Place them by speech-check word timestamps so key words land on picture beats ("holding **on**" on the grip, "**goes** on" when the pen resumes). Music ducks ≈ 5 dB and the pen ≈ 4 dB under voice. Loudness −14 LUFS, **grain 0** (the paper texture is in the render).
 
 ## Palette, props & the reverse-designed face
 
@@ -99,7 +99,7 @@ The camera is one continuous move: keyframes of composition centre, zoom, a few 
 - **Thin lines at the reveal.** Clamp the width zoom (see "Palette, props & the reverse-designed face").
 - **Hand shadows as separate translucent shapes** double-darken where fingers overlap — composite each hand as one layer.
 - **Titles collide with the vignette as the camera moves.** Check the title against every frame of its window, not just the first.
-- **Whisper mishears**: "Sometimes it stops" was heard as "But sometimes it stops" and "Your turn." as "Your turns" — rephrase ("Sometimes the line stops.", "Your turn now.") rather than fight it.
+- **The speech check mishears**: "Sometimes it stops" was heard as "But sometimes it stops" and "Your turn." as "Your turns" — rephrase ("Sometimes the line stops.", "Your turn now.") rather than fight it.
 - **zsh**: `=====` as an echo separator is expanded; heavy machine load makes `still.mjs` slow — the page supports `?cams=` / `?camt=` to render many views in one browser session.
 
 ## Build notes

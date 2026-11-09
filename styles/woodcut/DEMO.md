@@ -52,7 +52,7 @@ Demo action timings: hammer lean-back 4 frames → strike 2 frames → settle + 
 - **Foley of this film**, all synthesised: knife into wood, chips, brayer tack, paper air, baren rasp, the wet peel; brass by size (pot = low, wide; keys and ring = high, pure); clay scrape and smash; bellows leather + air; molten bubbles, pour roar, hiss into the mould; the bell as a modal model (hum 0.5, prime 1, tierce 1.2, quint 1.5, nominal 2, 2.5, 3, 4 with their own decays and beating) + two valley echoes.
 - **Two real silences**: 29.7–32.3 s (−40 dB distant wind only; the first sound after it is the compass lid's *click*) and 44.3–47.3 s (**digital silence**, measured −91 dB; the first sound after it is the bell, the loudest moment of the film).
 - **J/L cuts**: fire crackle enters before the hands shot; outdoor wind carries into the workshop muffled; wind leads the peel into the belfry; the bell's tail runs under the end card.
-- **Mix**: music ducks ~8 dB under voice (6 dB after the bell) and 4 dB under key foley. **Foley ducks too** (−5 dB, −9 dB under a line that shares its beats with metal hits). Narrator: Kokoro `am_onyx` at 0.88, 4 lines.
+- **Mix**: music ducks ~8 dB under voice (6 dB after the bell) and 4 dB under key foley. **Foley ducks too** (−5 dB, −9 dB under a line that shares its beats with metal hits). Narrator: `am_onyx` at 0.88, 4 lines.
 
 ## Palette & props
 
@@ -80,7 +80,7 @@ styles/woodcut/demo/
 ```
 1. Write `timeline.json` (grid + cue keys) and the cue table first; hand them to a music sub-agent; draw in parallel.
 2. Build the engine and one style frame before any story. Get the carve + print look right on a still.
-3. `sh demo/build.sh` rebuilds everything: TTS → whisper → score → events → cue check → mix → srt → render (4 workers ≈ 45 s for 1404 frames) → mux (−14 LUFS, grain 6, CRF 28) → whisper on the film → styleframe / poster / engine example.
+3. `sh demo/build.sh` rebuilds everything: TTS → speech check → score → events → cue check → mix → srt → render (4 workers ≈ 45 s for 1404 frames) → mux (−14 LUFS, grain 6, CRF 28) → speech check on the film → styleframe / poster / engine example.
 4. Review twice with 1–2 fps contact sheets from the film itself, plus full-size frames of every key action (peel, smash, crack, rays, bell pull-back, end card).
 
 Pitfalls tied to this demo's props:
@@ -89,7 +89,7 @@ Pitfalls tied to this demo's props:
 - **The first bell** turned into zig-zag chevrons from short hatch segments with a tonal sine wobble; fixed with long cuts and one broad highlight band.
 - **Steam from the mould** drawn on top read as flames; moved behind the subject.
 - **Lazily cached strokes** (`X.coatFolds || []`) broke determinism across render workers.
-- **Metal gift hits masked the narrator** (whisper heard "is had" for "it had"). Foley has to duck under voice too. Pan the offending hit away from centre.
+- **Metal gift hits masked the narrator** (the speech check heard "is had" for "it had"). Foley has to duck under voice too. Pan the offending hit away from centre.
 - **File size**: fine hatching + per-impression ink noise + grain 6 made a 58 s film 326 MB at CRF 19. Re-encode at CRF 28 with `-tune grain`: 93 MB, and no visible difference at a 1:1 crop.
 - The structure tensor NaN came from the box blur leaving tiny negative sums in flat areas.
 - `still.mjs` can fail when many renders run at once. Retry up to 3 times.

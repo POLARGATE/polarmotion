@@ -9,7 +9,7 @@ Fonts (SIL Open Font License 1.1, licence files in demo/fonts/)
 - Share Tech Mono — Carrois Apostrophe
 
 Voice
-- Kokoro TTS v1.0 (hexgrad/Kokoro-82M, Apache-2.0), voice af_heart, via kokoro-onnx
+- Synthetic narration.
 
 Music
 - Original composition, synthesised in numpy (demo/music/score.py). No samples.

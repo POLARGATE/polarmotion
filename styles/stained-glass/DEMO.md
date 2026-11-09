@@ -67,7 +67,7 @@ Original score (`demo/music/score.py`), medieval / plainchant feel, **D Dorian**
 
 Foley specific to this film: the ember's quiet crackle, far pigeons in the vault, the dove's wings, sword and shield clashes. Music ducked ~9 dB under the voice; timpani and heavy glass hits avoid word onsets.
 
-Voice: Kokoro `bf_alice`, speed .86–.88, "like a nun telling an old story", 8 short lines (`demo/lines.json`). Whisper heard "knight" as "night": the expected transcription goes in the line's `asr` field.
+Voice: `bf_alice`, speed .86–.88, "like a nun telling an old story", 8 short lines (`demo/lines.json`). The speech check heard "knight" as "night": the expected transcription goes in the line's `asr` field.
 
 ## Palette & props
 

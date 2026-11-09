@@ -21,9 +21,7 @@ Fonts (SIL Open Font License 1.1; woff2 latin subsets from Google Fonts, license
   fonts/OFL-CormorantGaramond.txt
 
 Voices
-- Kokoro-82M (Apache-2.0) via kokoro-onnx; model files in core/tts/ (kokoro-v1.0.onnx, voices-v1.0.bin).
-  Voices: af_heart (narrator), bm_george (the Old Keeper).
-- Speech check: faster-whisper base.en (MIT).
+- Synthetic narration (narrator, the Old Keeper).
 
 Sound effects and ambience
 - Synthesized in mix.py with core/audio/sfx.py (noise, filters, envelopes). No recorded samples.

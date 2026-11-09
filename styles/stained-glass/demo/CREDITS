@@ -3,7 +3,7 @@ The Dragon of the East Window — a Stained Glass film (Polargate · PolarMotion
 All images, characters, glass, lead, stone and light are drawn procedurally in code (no image assets).
 Story, melody and characters are original.
 
-Narration: Kokoro TTS (kokoro-onnx, voice bf_alice), Apache-2.0.
+Narration: synthetic voice.
 Music: original score written in code with the repo sampler (core/audio/sampler.py).
 Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
 Foley: synthesized in mix.py (glass modes, crack, lead creak, air, stone hall), no recordings.

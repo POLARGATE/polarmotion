@@ -7,7 +7,7 @@ three.js (MIT), loaded from the library's node_modules.
 Fonts (SIL Open Font License 1.1; licence texts in fonts/; downloaded by build.sh from github.com/google/fonts):
   Instrument Sans (fonts/InstrumentSans.ttf), IBM Plex Mono Medium and SemiBold, Noto Sans SC (subset to the characters on screen, fonts/NotoSansSC-sub.ttf).
 
-Voice-over: Microsoft neural text-to-speech via edge-tts, zh-CN-XiaoxiaoNeural (Chinese) and en-US-AvaNeural (English); an online service, check Microsoft's terms before commercial use.
+Voice-over: synthetic narration (Chinese and English) from an online service; check its terms before commercial use.
 
 Music samples (CC0 1.0, no attribution required; acknowledged): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
   Instruments: marimba, vibraphone, glockenspiel, contrabass, contrabass pizz, cellos, cellos pizz, violas, violins pizz, horn, timpani, suspended cymbal, claps, shaker. Fetched with tools/fetch.sh.

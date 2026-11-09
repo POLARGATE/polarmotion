@@ -35,7 +35,7 @@ Silences: music cut dead on the collapse, leaving room tone and a ticking clock;
 
 Foley specific to this film: ignition boom and rocket roar; radio chatter with Quindar beeps.
 
-Voice: warm British storyteller, Kokoro `bm_george`, speed ~0.9, 4–6 short lines; mission control is `am_adam` through a radio filter (band-pass 380–2800 Hz + soft saturation) with Quindar beeps. Every line verified with whisper. Voice compressed, music ducked ~40 % under voice, −14 LUFS.
+Voice: warm British storyteller, voice `bm_george`, speed ~0.9, 4–6 short lines; mission control is `am_adam` through a radio filter (band-pass 380–2800 Hz + soft saturation) with Quindar beeps. Every line verified with the speech check. Voice compressed, music ducked ~40 % under voice, −14 LUFS.
 
 ## Palette & props
 

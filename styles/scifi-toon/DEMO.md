@@ -46,7 +46,7 @@ Ways we sketched to turn other topics into an errand (for reference only):
 - **One motif per universe**, each a separate cue whose **first beat is the cut**: bouncy tuba + wobbly lead + slide whistle (jelly), brushed swing jazz with vibes (mug), 1-second stingers over a four-on-the-floor pulse (montage), elevator bossa with Karplus–Strong nylon guitar (the "normal" world), warm Rhodes + theremin "aah" (relief), rising tremolo strings (panic).
 - Silences: music (and reverb tails) hard-cut on the jelly reveal insert and for the 2+ s cold pause after "decaf"; only fluorescent hum + clock ticks remain.
 - Foley used: portal open/hum/close, swirl whoosh per wipe, pop/boing on spit-out and landing, glorp/squish/blink for the slime creature, straw slurp, teeth chomp, pigeon coo, shop bell, bubble bloops, blink "blip", remote click-beep.
-- Voices: deadpan genius = Kokoro `am_onyx`, speed 0.82–0.9, light saturation + 180 Hz bump; sidekick = Kokoro `am_eric`, speed 1.1–1.15, presence boost; a tiny creature = Kokoro `af_sky` pitched +7 semitones for one or two words. Cast by generating test lines and measuring median f0 / pitch variance. Music ducked ~−7 dB under dialogue; master −14 LUFS.
+- Voices: deadpan genius = voice `am_onyx`, speed 0.82–0.9, light saturation + 180 Hz bump; sidekick = voice `am_eric`, speed 1.1–1.15, presence boost; a tiny creature = voice `af_sky` pitched +7 semitones for one or two words. Cast by generating test lines and measuring median f0 / pitch variance. Music ducked ~−7 dB under dialogue; master −14 LUFS.
 - The final bass note sits on D2: a sustained D1 (37 Hz) was only rumble on laptop speakers.
 
 ## Palette & props
@@ -77,7 +77,7 @@ styles/scifi-toon/demo/
   story.js    single source of truth: VO start times, shots, wipes, tags, key beats, music cues
   main.js     acting per shot, cameras, wipes, tags, subtitles, title, end card, window.EV
   lines.json  script (tts text, subtitle text, speaker, voice, pitch, cut)
-  voice.py    per-character processing + lip-sync envelopes   asr.py   padded whisper check
+  voice.py    per-character processing + lip-sync envelopes   asr.py   padded speech check
   music/score.py  synthesized score from the cue list        mix.py   foley + voices + ducking + ambience
   srt.mjs  build.sh  sheet.sh (contact sheets)  strip.sh (consecutive-frame strips)  levels.py (stem meters)
 ```
@@ -89,6 +89,6 @@ styles/scifi-toon/demo/
 5. `sh demo/build.sh` reproduces everything: TTS → voices → events → score → mix → SRT → render (1380 frames ≈ 15 s with 4 workers) → mux at −14 LUFS. Full rebuild ≈ 1 minute on an M-series Mac.
 
 Pitfalls tied to this demo:
-- Kokoro + whisper: the name "Pim" in a deep voice read as "Pam"; "Gary" worked. "b-broken" was read as "be broken"; "buh, buh-broken", "Wh, wh, why" worked. "decaf" came out "D-cuff"; "dee-caf" was reliable.
+- TTS + speech check: the name "Pim" in a deep voice read as "Pam"; "Gary" worked. "b-broken" was read as "be broken"; "buh, buh-broken", "Wh, wh, why" worked. "decaf" came out "D-cuff"; "dee-caf" was reliable.
 - A springy portal (lib `spring`) overshot to ~135 % and swallowed the actors.
 - Creatures placed behind the shop counter vanished; they were moved so face and upper body show.

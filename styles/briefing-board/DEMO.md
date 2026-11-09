@@ -46,7 +46,7 @@ Judgement frames widen 1,768 → 1,945 → 2,361 → 3,205 board px (28 % → 50
 - Foley (procedural, `audio/mix.py`): felt-tip squeaks scaled to stroke length, nib taps, magnet clacks pitched per pier, two pin clacks after every landing, suction pops, print landings (board thump + paper slap, heavier for the suspension), the steel ruler's ring, eraser felt, rubber stamp, ship horn (far and near), diesel rumble, water lapping, whooshes, room tone with distant traffic.
 - J-cuts: the horn at 5.75 before the top-down ship is seen; the horn at 32.0 before the side-view ship comes out from behind the tower. L-cuts: the eraser over the move into the bench; the reveal horn over the whole pull-back.
 - Mix: music about 9 dB under the voice and ducked; foley ducked under speech; room tone (air conditioning on the right, traffic through the window on the left) about 20 dB under the voice and never ducked; silences gated to that room tone; −14 LUFS integrated.
-- Voice: Kokoro `af_heart`, nine lines; numbers spelled out for TTS and written as digits in the subtitles.
+- Voice: `af_heart`, nine lines; numbers spelled out for TTS and written as digits in the subtitles.
 
 ## Palette & props
 
@@ -71,7 +71,7 @@ demo/
                         redraw_suspension.py, repair_hangers.py, clean_lettering.py, ship_anchors.py,
                         make_print.py, rebuild_objects.sh; fetch_fonts.py, fetch_sources.py, kit_env.sh
   scenes/_gen_film.py   the film as data → scenes/film.json, audio/cues.json
-  audio/lines.json      narration (Kokoro)          audio/mix.py   score, foley, voice, mix
+  audio/lines.json      narration (synthetic voice)audio/mix.py   score, foley, voice, mix
   tools/                camcheck.mjs + camplot.py, rescheck.mjs, subcheck.mjs, cuecheck.py, rhythm_report.py, final_asr.py
   sources/              candidates/candidates.json (every photo looked at: URL, author, licence, evidence;
                         the six used ones with sha256); photos, masks and derived/ are downloaded or rebuilt

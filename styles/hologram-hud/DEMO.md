@@ -40,7 +40,7 @@ Motion numbers: the target box starts at 1.9× the rest-pose bounding box, at 30
 - No drums on part 1, + hats on part 2, + claps and the arpeggio up an octave on part 3. Regroup decelerates (16ths → 8ths → one quarter gliding down). One beat of true silence. Drop at ignition (808-style sine glide + 7-voice wide saw chord). Half-time under the lockup. The arpeggio is removed note by note under the end card.
 - Silences: the half beat before the first lock (only the room hum remains; the lock hit is the first sound after it) and one full beat of true zero before ignition.
 - Detect blips D–F–A; amber confirm = D6 + A6 + E7. J/L-cuts: the motor whine starts 0.4 s before the whip lands on the motor, the hydraulic hiss 0.4 s before the brake lock; hum and chord tail carry over the scan-erase into the end card.
-- Voice: Kokoro `af_heart`, speed 1.0 (`af_nicole` was too breathy and slow: 7.0 s against 4.4 s for the same line). Music ducks −16.5 dB and foley −15 dB under the voice, with a 0.5 s max-filter hold; only the first 0.2 s of lock / confirm hits escape.
+- Voice: `af_heart`, speed 1.0 (`af_nicole` was too breathy and slow: 7.0 s against 4.4 s for the same line). Music ducks −16.5 dB and foley −15 dB under the voice, with a 0.5 s max-filter hold; only the first 0.2 s of lock / confirm hits escape.
 
 ## Palette & props
 
@@ -74,7 +74,7 @@ styles/hologram-hud/demo/
 1. Write the model generator (parts → pieces with explode vectors; `internal`, `hot`, `box:false`, `anchor`, `center`, `tagDir`), then `content.json`.
 2. `tools/export.mjs` dumps `events.json` / `timeline.json` / subtitles. Hand `timeline.json` and the cue map to a music sub-agent while you animate.
 3. Review stills (`node core/render/still.mjs <demo> t… [--q content=…]`) and 1 s contact sheets, twice, plus strips around every lock, whip, silence and ignition.
-4. `sh demo/build.sh` rebuilds everything: model → TTS → whisper → export → score → cuecheck → mix → srt → render (~45 s for 936 frames with 2 workers; whip frames cost 5×) → mux (−14 LUFS, grain 0) → final whisper check.
+4. `sh demo/build.sh` rebuilds everything: model → TTS → speech check → export → score → cuecheck → mix → srt → render (~45 s for 936 frames with 2 workers; whip frames cost 5×) → mux (−14 LUFS, grain 0) → final speech check.
 
 Pitfalls met in this build:
 - Scrolling the interlace with `setTransform(…, offset)` and then `destination-in` cleared everything outside the shifted rect → `offset % patternHeight`, or the fills vanish after the first second.
@@ -98,9 +98,9 @@ Every word, number, colour and the model come from `demo/content.json`; the code
 | `tagline` | string | ≤ 60 chars | Auto-wraps at 420 px and shrinks to 20 px |
 | `model` | path | a model JSON (below) | Any size: it is normalised. Parts named in `callouts[].part` must exist |
 | `hue`, `accent` | 0–360 | any | The whole film re-themes |
-| `voice` | `{id, speed}` | a Kokoro voice | Check with whisper |
+| `voice` | `{id, speed}` | a TTS voice | Check with the speech check |
 | `intro_vo`, `outro_vo`, `callouts[].vo` | string | intro ≤ 5 s spoken; part 1 ≤ 4.8 s; other parts ≤ 3.5 s | Subtitles are clamped to the next line; longer lines overlap the next lock |
-| `*_vo_asr` / `callouts[].vo_asr` | string | optional | What whisper should hear (digits etc.) |
+| `*_vo_asr` / `callouts[].vo_asr` | string | optional | What the speech check should hear (digits etc.) |
 | `callouts[]` | array | **2–5** items: `part`, `label` (≤ 24 chars), `value` (≤ 6 chars), `unit` (≤ 4), `detail` (≤ 40, optional), `vo` | Part 1 gets 3 bars, the others 2 bars each. More than 5 won't fit the rail |
 | `footer.weight`, `footer.price` | `{label, value, unit}` | value ≤ 7 chars | Auto-fits down to 40 px |
 | `footer.cta` | string | ≤ 34 chars | Auto-fits down to 14 px |
@@ -108,7 +108,7 @@ Every word, number, colour and the model come from `demo/content.json`; the code
 
 Parts in the model can set `tagDir: -1` so the lockup hotspot chip sits to the left of its ring.
 
-The check, from the repo root (voice, whisper check, score, cue check, mix, subtitles, render and mux for the other content):
+The check, from the repo root (voice, speech check, score, cue check, mix, subtitles, render and mux for the other content):
 ```
 CONTENT=content_alt.json NAME=kite sh styles/hologram-hud/demo/build.sh
 ```
