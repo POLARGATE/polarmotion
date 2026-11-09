@@ -51,7 +51,7 @@ Staging in pane IV: close-ups at 1.3–2.3× on a 300-unit lancet; knight lower-
 
 ## Score structure
 
-Original score (`demo/music/score.py`), medieval / plainchant feel, **D Dorian** (the raised 6th, B♮, gives the colour), 80 BPM for the metred cues. Instruments: `recorder`, `organ_soft` / `organ` / `organ_pedal`, `harp`, `hand_chimes`, `tubular_bells`, `timpani`, `glass` (water glass, "the light"), `glockenspiel` (dust glints, rare). All CC0 (VSCO 2 CE / VCSL / FreePats). Bus reverb `room(size=.8, mix≈.3)`; the bell alone at `size≈.95`.
+Original score (`demo/music/score.py`), medieval / plainchant feel, **D Dorian** (the raised 6th, B♮, gives the colour), 80 BPM for the metred cues. Instruments: `recorder`, `organ_soft` / `organ` / `organ_pedal`, `harp`, `hand_chimes`, `tubular_bells`, `timpani`, `glass` (water glass, "the light"), `glockenspiel` (dust glints, rare). All sampled. Bus reverb `room(size=.8, mix≈.3)`; the bell alone at `size≈.95`.
 
 | Cue | Time | Tempo | Orchestration | Sync |
 |---|---|---|---|---|
@@ -67,7 +67,7 @@ Original score (`demo/music/score.py`), medieval / plainchant feel, **D Dorian**
 
 Foley specific to this film: the ember's quiet crackle, far pigeons in the vault, the dove's wings, sword and shield clashes. Music ducked ~9 dB under the voice; timpani and heavy glass hits avoid word onsets.
 
-Voice: Kokoro `bf_alice`, speed .86–.88, "like a nun telling an old story", 8 short lines (`demo/lines.json`). Whisper heard "knight" as "night": the expected transcription goes in the line's `asr` field.
+Voice: `bf_alice`, speed .86–.88, "like a nun telling an old story", 8 short lines (`demo/lines.json`). The speech check heard "knight" as "night": the expected transcription goes in the line's `asr` field.
 
 ## Palette & props
 
@@ -82,11 +82,11 @@ Voice: Kokoro `bf_alice`, speed .86–.88, "like a nun telling an old story", 8 
 
 ## End card
 
-The carved inscription on the stone string course changes from *THE DRAGON OF THE EAST WINDOW* to *STAINED GLASS* and *LEMOLAB × CLAUDE OPUS 5.5* (Cinzel 600, incised and gilded, revealed by the sweep light); the camera pushes in so the credit line is ≥ 30 px, and a thin blue dawn ray touches pane I. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The carved inscription on the stone string course changes from *THE DRAGON OF THE EAST WINDOW* to *STAINED GLASS* and *POLARGATE · POLARMOTION* (Cinzel 600, incised and gilded, revealed by the sweep light); the camera pushes in so the credit line is ≥ 30 px, and a thin blue dawn ray touches pane I. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Rights
 
-Original story, characters, window design and score. References (see STYLE.md header) were studied for grammar only; no Chartres window subject or religious imagery is reproduced. Samples are CC0; fonts are OFL (see `demo/CREDITS`).
+Original story, characters, window design and score. References (see STYLE.md header) were studied for grammar only; no Chartres window subject or religious imagery is reproduced. Fonts are OFL (see `demo/CREDITS`).
 
 ## Build notes
 

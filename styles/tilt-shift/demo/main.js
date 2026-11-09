@@ -391,7 +391,7 @@ function hud(t, tq, clock, Wn) {
     g.fillStyle = 'rgba(255,255,255,.9)'; g.fillRect(x + 90, y + 176, w - 180, 3);
     g.font = '700 34px Overpass'; g.fillText('TILT-SHIFT  MINIATURE', W / 2, y + 222);
     tlIcon(x + 50, y + 124, 1.1, 2); tlIcon(x + w - 72, y + 124, 1.1, 2);
-    g.font = '600 30px Overpass'; g.fillStyle = '#fff'; g.fillText('LemoLab × Claude Opus 5.5', W / 2, y + h + 70);
+    g.font = '600 30px Overpass'; g.fillStyle = '#fff'; g.fillText('Polargate · PolarMotion', W / 2, y + h + 70);
     g.restore();
   }
 }

@@ -49,7 +49,7 @@ window.render = t => {
     g.setTransform(1, 0, 0, 1, 0, 0);
     text('SUNDAY RIDE', 968, 196, '800 170px Bricolage', [0, 0, 1], 'center', 'alphabetic', 6);
     over(() => text('SUNDAY RIDE', 956, 190, '800 170px Bricolage', [.9, 0, 0], 'center', 'alphabetic', 6));
-    text('RISOGRAPH PRINT  ·  LemoLab × Claude Opus 5.5', 960, 258, '600 32px Jost', [1, 0, 0], 'center', 'alphabetic', 6);
+    text('RISOGRAPH PRINT  ·  Polargate · PolarMotion', 960, 258, '600 32px Jost', [1, 0, 0], 'center', 'alphabetic', 6);
   }
   print(plate, o);
 };

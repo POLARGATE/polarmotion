@@ -1,11 +1,11 @@
 #!/bin/sh
-# PolarMotion (Polargate): comprueba la biblioteca e instala sus paquetes. Basado en el setup.sh de Lemo-Opuscar (LemoLab, MIT).
+# PolarMotion (Polargate): comprueba la biblioteca e instala sus paquetes.
 #   sh tools/setup.sh                  ¿está lista? Imprime LIB=<ruta> en la última línea
 #   sh tools/setup.sh deps [voice] [music]
 #                                      instala: core = paquetes de Node (versiones del package-lock), navegador sin ventana y Python core;
 #                                      voice = voz Kokoro (inglés y español) y comprobación de voz; music = pluck.py (numba)
 #   sh tools/setup.sh demo <slug>      ruta del código de la demo de un estilo (solo para leer técnicas)
-# No descarga ni actualiza nada del repositorio del autor. La biblioteca la clona la skill Haz reels en una versión fija.
+# No descarga ni actualiza la biblioteca: la clona la skill Haz reels en una versión fija.
 set -e
 LIB=$(cd "$(dirname "$0")/.." && pwd -P)
 

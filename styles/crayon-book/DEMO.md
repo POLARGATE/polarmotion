@@ -56,7 +56,7 @@ Foley specific to this film: sheep landing = felt puff; tossing = blanket swish;
 
 Mix: music −7 dB under narration, +4 dB for the wordless song; music-box and glockenspiel stems +3 dB with a gentle 3–7 kHz lift.
 
-Voice: Kokoro `af_heart`, speed 0.86–0.90 (v3 re-voice: `bf_emma` read too bright and hard), 6–8 short lines. Chain: high-pass 75 Hz → **compress first** (thr 0.2, 2.5:1, 8 ms / 140 ms) → low shelf +1.5 dB @220 Hz, −2 dB dip @3.2 kHz, **high shelf −4 dB @6 kHz** → split-band de-esser (4.8–10 kHz, 4:1) → per-line RMS match → warm near-field reverb (12 ms pre-delay, early reflections, 0.7 s low-passed tail, wet ~−17 dB). Music ducks ~7 dB and foley ~4 dB under it; voice ~7–10 dB over the bed. "Goodnight, Moon" was avoided as a famous-book phrase ("Night, night." instead).
+Voice: `af_heart`, speed 0.86–0.90 (v3 re-voice: `bf_emma` read too bright and hard), 6–8 short lines. Chain: high-pass 75 Hz → **compress first** (thr 0.2, 2.5:1, 8 ms / 140 ms) → low shelf +1.5 dB @220 Hz, −2 dB dip @3.2 kHz, **high shelf −4 dB @6 kHz** → split-band de-esser (4.8–10 kHz, 4:1) → per-line RMS match → warm near-field reverb (12 ms pre-delay, early reflections, 0.7 s low-passed tail, wet ~−17 dB). Music ducks ~7 dB and foley ~4 dB under it; voice ~7–10 dB over the bed. "Goodnight, Moon" was avoided as a famous-book phrase ("Night, night." instead).
 
 ## Palette & props
 
@@ -71,7 +71,7 @@ Voice: Kokoro `af_heart`, speed 0.86–0.90 (v3 re-voice: `bf_emma` read too bri
 
 Title: hand-lettered on the page in two lines in a corner (Gaegu Bold), written on letter by letter while the colours are scribbled in. Subtitles: Patrick Hand 54 px, indigo crayon.
 
-End card: the next page of the book — "The End" (Gaegu Bold), a small crescent doodle, the style name and credit in Patrick Hand. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+End card: the next page of the book — "The End" (Gaegu Bold), a small crescent doodle, the style name and credit in Patrick Hand. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

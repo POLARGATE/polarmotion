@@ -6,7 +6,7 @@ Demo: *Seven Milliseconds · 七毫秒* (60 s, Chinese voice-over, bilingual sub
 
 ## Story & structure
 
-Power made deep in the mountains of Sichuan reaches Jiangsu, 2,000 km away, in seven milliseconds. A Chinese voice (edge-tts Xiaoxiao, +20%) tells it as a friend would: household power swings back and forth (alternating current); sent that far it would be lost on the way; so a converter station turns it into one-way direct current; it races 2,080 km in 7 ms; at the other end it is turned back, stepped down level by level and sent to a wall socket; inside a phone charger a tiny bridge rectifier does the same job as the giant in the converter station, on the same circuit principle, with 400 million times less power. Every line has a subtitle (Chinese over English, bottom safe area); the board itself only prints the voice's key words and numbers (交流电 / AC, 损耗 / LOSS, 换流站, 直流电, 2,080 公里, 7 毫秒, 降压, 充电器, 整流桥, 同一个电路原理, 功率差 4 亿倍). Facts: [`demo/FACTS.md`](demo/FACTS.md).
+Power made deep in the mountains of Sichuan reaches Jiangsu, 2,000 km away, in seven milliseconds. A Chinese voice (synthetic voice, +20%) tells it as a friend would: household power swings back and forth (alternating current); sent that far it would be lost on the way; so a converter station turns it into one-way direct current; it races 2,080 km in 7 ms; at the other end it is turned back, stepped down level by level and sent to a wall socket; inside a phone charger a tiny bridge rectifier does the same job as the giant in the converter station, on the same circuit principle, with 400 million times less power. Every line has a subtitle (Chinese over English, bottom safe area); the board itself only prints the voice's key words and numbers (交流电 / AC, 损耗 / LOSS, 换流站, 直流电, 2,080 公里, 7 毫秒, 降压, 充电器, 整流桥, 同一个电路原理, 功率差 4 亿倍). Facts: [`demo/FACTS.md`](demo/FACTS.md).
 
 Native moves spent: flow becomes current (dam), pulse-path explainer (the whole film), AC vs DC told by the shape of the light (bus close-up, loss board, Butuo), the map is a board (corridor), matched step-down (four cuts), plunge through a hole (socket → charger), detail callout (verdict), nested boards (closing pull-out).
 
@@ -25,11 +25,11 @@ Native moves spent: flow becomes current (dam), pulse-path explainer (the whole 
 | 9 | 34.6–42.1 | 而当你插上手机充电器时… | out of the charger's pin: the whole charger (plug, fuse, bridge, capacitor, transformer, USB-C), 充电器 / CHARGER; push in to the bridge: 整流桥, 交流 → 直流 | reverse out, hold, push | |
 | 10 | 42.1–52.9 | 说出来你可能不信… / 只不过… | detail callout: Butuo's bridge beside DB1 at the same size; 换流站; "=" and 同一个电路原理 at 47.6; 功率差 4 亿倍 at 49.4 | locked | verdict held 5.4 s before "=" |
 | 11 | 52.9–54.5 | 你手机里的每一格电… | one pull-out from the charger to the whole board, the main line glowing | log zoom | |
-| 12 | 54.5–60 | — | the whole board on a desk, noon window light; title block: 七毫秒 / SEVEN MILLISECONDS, LemoLab × Claude Opus 5.5 | slow push, 2° turn | end card |
+| 12 | 54.5–60 | — | the whole board on a desk, noon window light; title block: 七毫秒 / SEVEN MILLISECONDS, Polargate · PolarMotion | slow push, 2° turn | end card |
 
 ## Voice-over
 
-Chinese voice, edge-tts `zh-CN-XiaoxiaoNeural` at +20% (`demo/voice/lines.json`); each line starts at the time below, and its subtitle (Chinese over English) comes and goes with it. The English version (`sh demo/build.sh en`) speaks the English subtitle lines with `en-US-AvaNeural` at +10% (a few lines faster, up to +25%), starting at the same moments (`demo/voice_en/lines.json`; where a spoken line is shorter than its subtitle, the `say` field holds what is spoken).
+Chinese voice, voice `zh-CN-XiaoxiaoNeural` at +20% (`demo/voice/lines.json`); each line starts at the time below, and its subtitle (Chinese over English) comes and goes with it. The English version (`sh demo/build.sh en`) speaks the English subtitle lines with `en-US-AvaNeural` at +10% (a few lines faster, up to +25%), starting at the same moments (`demo/voice_en/lines.json`; where a spoken line is shorter than its subtitle, the `say` field holds what is spoken).
 
 | # | Start | Chinese | English |
 |---|---|---|---|
@@ -55,7 +55,7 @@ Mask greens #05190F / #1C6A44 / #4AA977, gold #D9B25B, bare-copper dam bar #C978
 
 ## End card
 
-The board's own title block, top right of the corridor board, plotted at 54.8: 七毫秒 (≈ 75 px) / SEVEN MILLISECONDS; at 56.0 the row LemoLab × Claude Opus 5.5 (≈ 25 px caps); REV A / SHEET 1 OF 1 in its corner. No voice after 57.0; held to 60.0 under the window light. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The board's own title block, top right of the corridor board, plotted at 54.8: 七毫秒 (≈ 75 px) / SEVEN MILLISECONDS; at 56.0 the row Polargate · PolarMotion (≈ 25 px caps); REV A / SHEET 1 OF 1 in its corner. No voice after 57.0; held to 60.0 under the window light. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

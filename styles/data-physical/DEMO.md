@@ -54,11 +54,11 @@ Mix (`demo/mix.py`): stems set against the voice's active RMS (music −10.9 dB,
 - Lights: warm key #FFF1DC from the left at ~35°, 4096 shadow map; cool rims #B9D2FF / #C6DBFF from behind-right and front-right; HDRI `photo_studio_loft_hall` at 0.8 for reflections.
 - The puck: brass, r 0.64, engraved (dark patina) "2025 · ×1.86 · 太阳能 ÷ 风电" with a tick ring.
 - Type: Inter 200/300 for numbers, Noto Sans SC 500 for labels, verdicts and subtitles, JetBrains Mono for years and units, Noto Serif SC 600 for the title. Ink #1C1D20, accent #D4521C.
-- Narrator: Kokoro `af_heart`, speed 0.95.
+- Narrator: `af_heart`, speed 0.95.
 
 ## End card
 
-Left third over the turning dial: 两条螺旋 (Noto Serif SC), *Two Spirals*, a rule, `DATA PHYSICALIZATION · 数据实物化`, `LemoLab × Claude Opus 5.5`; above it the accent line with its leader to the puck; the data source stays in the top-right corner from the crane on. 4.6 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Left third over the turning dial: 两条螺旋 (Noto Serif SC), *Two Spirals*, a rule, `DATA PHYSICALIZATION · 数据实物化`, `Polargate · PolarMotion`; above it the accent line with its leader to the puck; the data source stays in the top-right corner from the crane on. 4.6 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -76,7 +76,7 @@ demo/
   FACTS.md, CREDITS, stills/styleframe.jpg
 ```
 
-- Needs `setup.sh deps voice` (Kokoro and faster-whisper; the Whisper `small.en` model downloads on the first check). `build.sh` fetches what git doesn't hold, only when missing: the studio HDRI (`sh tools/fetch.sh hdri`, 12 MB), the Kokoro model (`fetch.sh voice`), the sample libraries `vsco2ce`, `vcsl`, `freepats` (`fetch.sh instruments <lib>`, ~1 GB together), and the font subsets (`tools/fonts.mjs` from the Google Fonts CSS2 API, OFL: Noto Sans SC, Noto Serif SC, Inter, JetBrains Mono) whenever a `.woff2` named in `fonts.css` is missing. The walnut veneer textures are in git (`core/assets/polyhaven/`), the data CSVs in `demo/data/`.
+- Needs `setup.sh deps voice` (kokoro-onnx and faster-whisper; the `small.en` speech-check model downloads on the first check). `build.sh` fetches what git doesn't hold, only when missing: the studio HDRI (`sh tools/fetch.sh hdri`, 12 MB), the voice model (`fetch.sh voice`), the sample libraries the score uses (`fetch.sh instruments <lib>`, ~1 GB together), and the font subsets (`tools/fonts.mjs` from the Google Fonts CSS2 API, OFL: Noto Sans SC, Noto Serif SC, Inter, JetBrains Mono) whenever a `.woff2` named in `fonts.css` is missing. The walnut veneer textures are in git (`core/assets/polyhaven/`), the data CSVs in `demo/data/`.
 - `sh demo/build.sh` takes about 7 minutes on Apple silicon; the picture (945 frames, 2× supersampled, acrylic transmission) is ~55 s with 3 workers, the speech check most of the rest.
 - Checks it runs: `asr_check.py` (small.en, 7/7), subtitle single-line widths with the real fonts (widest 836 px against 1100 px), `readcheck.mjs` (all pass), `holdcheck.py` (2014 pair held 2.77 s, 2020/2021 held 2.67 s before their verdicts).
 - Demo-specific pitfalls: aluminium and clear acrylic first read as the same white plates, so the acrylic got a teal tint and attenuation and the aluminium full metalness; long warm shadows turned the far aluminium brown until the two cool rims were added; the 2014 and 2020/2021 reading columns collided with the verdict plate until they were kept below y = 430; the 2025 stack sat behind the subtitle strip until the crane's target was dropped below the top; the top-view puck engraving reads upright only with yaw π/2 + 0.30 for this camera.

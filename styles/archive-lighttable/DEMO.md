@@ -59,11 +59,11 @@ Mix (in `mix.py`): music about 11 dB under the voice before ducking, ducked a fu
 - Table #F7F9FB with a brushed-aluminium frame and a dark desk (#0E0F11); ink #15171A; signal orange #FF5A1F; caption plates rgba(14,15,17,0.74).
 - Props (all Library of Congress, true scale, 5000 world units = 7 in): telegram (LC-USZ62-65459 / mcc.061), Dayton Herald clipping (LC-USZ62-70686), first-flight negative (LC-DIG-ppprs-00626), fourth-flight negative (LC-DIG-ppprs-00629), 14 December negative (LC-DIG-ppprs-00610).
 - The loupe: 2.5×, lens radius 1000 world units (≈ 1.4 in).
-- Narrator: Kokoro `bm_george`, speeds 0.92–1.0.
+- Narrator: `bm_george`, speeds 0.92–1.0.
 
 ## End card
 
-Over the pulled-back table, bottom left: 差两秒 (Noto Serif SC), *Two Seconds Short*, a signal-orange rule, `ARCHIVE LIGHT TABLE` 档案灯台, `LemoLab × Claude Opus 5.5`; the archive index on the right. 3.7 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Over the pulled-back table, bottom left: 差两秒 (Noto Serif SC), *Two Seconds Short*, a signal-orange rule, `ARCHIVE LIGHT TABLE` 档案灯台, `Polargate · PolarMotion`; the archive index on the right. 3.7 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -82,6 +82,6 @@ demo/
   FACTS.md, CREDITS, stills/styleframe.jpg
 ```
 
-- `sh demo/build.sh` takes about 4 minutes on Apple silicon (the picture renders in about 40 s with 4 workers; the master pass is the slowest step). From a clean clone it first fetches what git does not hold: the fonts from Google Fonts (`tools/fonts.py`), the Kokoro model and the salamander, vsco2ce and vcsl sample libraries (`tools/fetch.sh`), and about 100 MB of Library of Congress scans, which `tools/prep.py` turns into textures (about 25 s). `FETCH=1` forces the fonts and scans again.
-- Checks it runs: `asr_check.py` with `small.en` (two lines carry an `asr` field: Whisper writes "17th, 1903" for the spoken date and hears "four flights" as "for flights"), the cue grid, subtitle single-line widths measured with the real fonts (widest 648 px against 1500 px), `readcheck.mjs`.
+- `sh demo/build.sh` takes about 4 minutes on Apple silicon (the picture renders in about 40 s with 4 workers; the master pass is the slowest step). From a clean clone it first fetches what git does not hold: the fonts from Google Fonts (`tools/fonts.py`), the voice model and the sample libraries (`tools/fetch.sh`), and about 100 MB of Library of Congress scans, which `tools/prep.py` turns into textures (about 25 s). `FETCH=1` forces the fonts and scans again.
+- Checks it runs: `asr_check.py` with `small.en` (two lines carry an `asr` field: The speech check writes "17th, 1903" for the spoken date and hears "four flights" as "for flights"), the cue grid, subtitle single-line widths measured with the real fonts (widest 648 px against 1500 px), `readcheck.mjs`.
 - Demo-specific pitfalls: loc.gov item pages sit behind a Cloudflare challenge, so the catalogue records come from the Library's SRU server (`lx2.loc.gov:210/lcdb`) and the files from `tile.loc.gov`; in the first-flight plate the sky can be unmixed exactly against a smooth membrane, but the sand cannot, so below the horizon only strong marks are cut (lower wing, skids, struts; a vertical-line filter catches thin struts) and the rest stays on the ground; the fourth-flight scan is low in contrast and gets its own levels in the positive; the clipping is a low-resolution copy, so the camera never pushes past about 0.66 zoom on it.

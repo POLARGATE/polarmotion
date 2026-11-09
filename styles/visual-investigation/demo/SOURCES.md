@@ -25,8 +25,8 @@ National Archives catalogue entry for NARA 518856: https://catalog.archives.gov/
 | What | Source | Licence |
 |---|---|---|
 | Fonts Noto Sans SC, Noto Serif SC, IBM Plex Mono, Source Serif 4 | Google Fonts, subset to the characters used in the film (tools/fonts.py) | SIL OFL 1.1 |
-| English narration | Kokoro-82M (core/tts/tts.py, voice am_michael) | Apache-2.0 |
-| Score samples | VS Chamber Orchestra: Community Edition, Versilian Community Sample Library (core/audio/sampler.py) | CC0 1.0 |
+| English narration | synthetic voice (core/tts/tts.py, voice am_michael) | — |
+| Score samples | sampled instruments (core/audio/sampler.py) | — |
 | Sound effects | Synthesised in numpy (audio/mix.py) | Made for this film |
 
 Checked but not used: Hearst News of the Day (NARA 342-USAF-18247, a commercial newsreel, licence unclear), British Pathé and various YouTube / stock mirrors, Periscope Film, Prelinger's "Hindenburg Explodes" (producer unknown), AP / INS / Wide World agency photos (Commons marks them PD, but on the grounds of "not renewed", which is uncertain), Herb Morrison's WLS radio recording (copyright in the recording unclear).

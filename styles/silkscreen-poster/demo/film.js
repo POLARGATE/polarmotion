@@ -395,7 +395,7 @@ export function texts(t) {
   const [key, o, en, zh, st] = city;
   if (en && (!o || sp(t, o.header) >= 1) && !(s.n >= 10 && t >= HOME.card1[0])) for (const b of headerBoxes(SC[key], { text: en, zh })) push(b.id, b.text, world(b.box));
   if (!(t >= HOME.card1[0])) for (const b of stubBoxes(st.rows)) if (b.p >= 1 && !b.live) push(b.id, b.text, z(b.box));
-  if (t >= HOME.card2[0] + HOME.card2[1]) for (const [id, text, y0, y1] of [['card-title', 'THE LONG WAY HOME', 260, 450], ['card-zh', '绕远路回家', 460, 510], ['card-style', 'SILKSCREEN TRAVEL POSTER', 580, 616], ['card-style-zh', '丝印旅行海报', 626, 662], ['card-sign', 'LemoLab × Claude Opus 5.5', 730, 762]]) push(id, text, z([1340, y0, 1830, y1]));
+  if (t >= HOME.card2[0] + HOME.card2[1]) for (const [id, text, y0, y1] of [['card-title', 'THE LONG WAY HOME', 260, 450], ['card-zh', '绕远路回家', 460, 510], ['card-style', 'SILKSCREEN TRAVEL POSTER', 580, 616], ['card-style-zh', '丝印旅行海报', 626, 662], ['card-sign', 'Polargate · PolarMotion', 730, 762]]) push(id, text, z([1340, y0, 1830, y1]));
   return out;
 }
 // camera only (for texts): same maths as shotsLater, no drawing

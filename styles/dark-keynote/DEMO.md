@@ -54,12 +54,12 @@ Every shot change is a UI expand / collapse; no fades, no blank frames.
 ## Score structure
 
 - **Music first**: `timeline.js` holds the tempo grid (**120 BPM**), the 12-note pattern and the note tables of all voices (phasing is computed there as a time warp). The picture spawns elements from the same tables. `tools/cuecheck.py` checks the key cues and that every spawned element sits on a score note.
-- **Score (original, minimalist)**: marimba (voice 1, on grid) + hard-mallet vibraphone (voice 2, unison, then phasing ahead; slightly detuned and brighter at the peak) + glockenspiel (voice 3, drifting the other way) + a numpy pad (A drone that gains G#/D# dissonance and rises) + a low sine pulse (eighths → sixteenths) + a quiet noise shaker. At the press all voices land on **one A major 9 chord**, the bowed vibraphone carries it into the reveal (L-cut), then one clean pattern plays, and in the breath the pattern subtracts notes bar by bar until one quarter note is left. Samples: VCSL (CC0).
+- **Score (original, minimalist)**: marimba (voice 1, on grid) + hard-mallet vibraphone (voice 2, unison, then phasing ahead; slightly detuned and brighter at the peak) + glockenspiel (voice 3, drifting the other way) + a numpy pad (A drone that gains G#/D# dissonance and rises) + a low sine pulse (eighths → sixteenths) + a quiet noise shaker. At the press all voices land on **one A major 9 chord**, the bowed vibraphone carries it into the reveal (L-cut), then one clean pattern plays, and in the breath the pattern subtracts notes bar by bar until one quarter note is left.
 - **Sound families**: the mess sounds are scattered (every notification pitched ±45 cents off, random pans, a different timbre per source). Tidy's sounds are one family: felt ticks and glass taps, all in A major pentatonic, centred. The 264 landing taps form one in-key shimmer.
 - **Layers**: ambience (quiet room + computer fan and a 6.8 kHz coil whine that grow through the mess, **held back until the last voice-over line ends**), foley (cursor tick, low-profile keys, return, notification glass, file plop, photo flick, window whoosh, glitch accents, storage buzz, stacking thumps, the press "doom" = felt mallet + 55→40 Hz sine drop, grid tick, felt ticks, light-sweep shimmer, digit grains, CRT-off), music.
 - **Silences**: 15.0–16.0 s is **digital zero on every track** (the screen paused); the first sound after it is the press. 33.0–34.0 s is near-silence (−60 dB room); the first sound after it is the cursor tick, the same sound as frame 1.
 - **J / L cuts**: a muffled crowd of notifications fades in under the close-up before the pull-back (J); the press chord rings into the reveal (L); the light shimmer starts 0.4 s before the light (J); the number chord rings into the breath (L).
-- **Voice**: Kokoro `af_kore`, speed 0.95, confident and restrained: short declaratives. Music ducks −8 dB and foley −4 dB under voice.
+- **Voice**: voice `af_kore`, speed 0.95, confident and restrained: short declaratives. Music ducks −8 dB and foley −4 dB under voice.
 
 ## Palette & props
 
@@ -80,13 +80,13 @@ Every shot change is a UI expand / collapse; no fades, no blank frames.
 
 ## End card
 
-**Title card** = the cursor typing the film title in the close-up, with a small mono overline `TIDY · A LAUNCH FILM`. **End card** = the typed tagline plus, left-aligned beneath it: film title, "a launch film for Tidy, a fictional app", style name, `Lemo-Opuscar`, `LemoLab × Claude Opus 5.5`, credits. Then everything fades except the cursor, which blinks twice and goes out.
+**Title card** = the cursor typing the film title in the close-up, with a small mono overline `TIDY · A LAUNCH FILM`. **End card** = the typed tagline plus, left-aligned beneath it: film title, "a launch film for Tidy, a fictional app", style name, `Polargate · PolarMotion`, "All UI, music and sound are original" (the font credits live in `demo/CREDITS`). Then everything fades except the cursor, which blinks twice and goes out.
 
-The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Rights
 
-Tidy is fictional. Every interface element is original and drawn in code; no real OS chrome, app layout, font, logo or melody from the reference films is used. Samples: VCSL (CC0); fonts OFL (see `demo/CREDITS`).
+Tidy is fictional. Every interface element is original and drawn in code; no real OS chrome, app layout, font, logo or melody from the reference films is used. Fonts are OFL (see `demo/CREDITS`).
 
 ## Build notes
 
@@ -101,7 +101,7 @@ styles/dark-keynote/demo/
 ```
 1. Write `timeline.js` (grid, pattern, voices, key times) → `node tools/dump_timeline.mjs` → hand `timeline.json` + the cue map to a music sub-agent. Draw in parallel.
 2. Build the engine and the product window first (they are the style frames), then the mess generator from the note tables, then the collapse.
-3. `sh demo/build.sh` rebuilds everything: TTS → whisper → score → events → cue check → mix → srt → render → mux (−14 LUFS, grain 0).
+3. `sh demo/build.sh` rebuilds everything: TTS → speech check → score → events → cue check → mix → srt → render → mux (−14 LUFS, grain 0).
 4. Review with `node core/render/still.mjs demo --range 0.5:42:1` + `sheet.py` at least twice, plus frame strips of the collapse and the press.
 
 Pitfalls tied to this demo's props:

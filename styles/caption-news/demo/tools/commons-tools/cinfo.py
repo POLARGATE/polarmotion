@@ -1,6 +1,6 @@
 """Look up size, licence, author and description for several Commons files at once (fewer requests, avoids 429). Usage: python3 cinfo.py titles.txt"""
 import json, sys, time, re, urllib.request, urllib.parse
-UA = "lemo-opuscar/1.0 (https://github.com/lemomo-ai/lemo-opuscar)"
+UA = "PolarMotion/1.0 (https://github.com/POLARGATE/polarmotion)"
 titles = [l.strip() for l in open(sys.argv[1]) if l.strip()]
 g = lambda m, k: re.sub("<[^>]+>", "", m.get(k, {}).get("value", "")).strip()
 for i in range(0, len(titles), 40):

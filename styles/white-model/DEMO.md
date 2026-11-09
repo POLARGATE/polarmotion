@@ -57,12 +57,12 @@ Mix (`demo/mix.py`): music balanced to sit 10 dB under the voice while it speaks
 - Model #F3F3F1 (roughness 0.88), plate water inlay (0.10, 0.13, 0.17) satin, plinth #17181A; room background a dark radial gradient.
 - Layers: pre-1940 #FFA13D; 1940–64 #2A46FF; 1965–89 #2F98FF; 1990–2009 #6FDCFF; 2010–25 #E6FBFF; height ramp #1A1440 → #5A35D6 → #E2509A → #FFE7C4; projected shade #1C2C66; sun #FFD9AD; shadow trace fill (0.10, 0.22, 0.65) with a pale edge; newer shaded roofs #BFF3FF.
 - Props: the model (3DBAG LOD1.3, BAG construction years), BGT water and bridge decks, the 2 m heightfield noon shadow of Zalmhaven I, the sun table for 21 Dec 2025 at 51.914° N, 4.484° E.
-- Narrator: Kokoro `bm_george`, speeds 0.95–1.08.
+- Narrator: `bm_george`, speeds 0.95–1.08.
 - Real places and buildings appear as data; this is not an official film of the City of Rotterdam or of any building's owner.
 
 ## End card
 
-Over the white model as the house lights return, a left block: 被炸平的城市怎样长回来 (Noto Sans SC 500, 64 px), *How a Flattened City Grew Back* (Inter Tight 200), an amber rule, `白模投影 · PROJECTION ON WHITE MODEL`, `3DBAG · BAG · BGT · 鹿特丹市档案馆`, `LemoLab × Claude Opus 5.5`. 35.7–40.0 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Over the white model as the house lights return, a left block: 被炸平的城市怎样长回来 (Noto Sans SC 500, 64 px), *How a Flattened City Grew Back* (Inter Tight 200), an amber rule, `白模投影 · PROJECTION ON WHITE MODEL`, `Polargate · PolarMotion` (the data sources live in `demo/CREDITS`). 35.7–40.0 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -82,6 +82,6 @@ demo/
   FACTS.md, CREDITS, stills/styleframe.jpg
 ```
 
-- `sh demo/build.sh` takes about 4 minutes on Apple silicon (picture ~60 s with 4 workers; TTS and the Whisper check most of the rest). `FETCH=1` re-downloads the data (~55 MB).
+- `sh demo/build.sh` takes about 4 minutes on Apple silicon (picture ~60 s with 4 workers; TTS and the speech check most of the rest). `FETCH=1` re-downloads the data (~55 MB).
 - Checks it runs: `asr_check.py` with `small.en` (British spellings "centre", "metres" set in the `asr` fields), cue grid, single-line subtitle widths with the real fonts (widest 618 px against 1500 px), `readcheck.mjs`, motion per second (no flat stretch; the jumps at 2.0, 2.6 and 35.6 s are the lights and the lamp), the impact ranking. `tools/finalasr.py` checks every narration line on the final mix.
 - Demo-specific pitfalls: the 3DBAG WFS returns all LOD1.3 parts in one request at `count=20000` for this box (13,345 features); parts are kept only when fully inside the crop, which leaves a clean street margin at the plate edge. The heightfield shadow counts a roof as shaded when its tallest part's centroid cell is under the tower's shadow height (2 m grid); the 16 roofs are listed in `stats.json` with distances 262–734 m. Zalmhaven's 3DBAG roof (203.0 m above ground, 70th percentile of the highest part) matches the published roof height; the 12 m mast is not in the model. GTAO is faded out after the lamp strikes because it bands on the wide grazing views.

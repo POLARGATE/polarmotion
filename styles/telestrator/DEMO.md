@@ -6,7 +6,7 @@ Demo: *Freeze Frame* (定格, 54.4 s) · `telestrator.mp4` · source in [`demo/`
 
 Istanbul, 25 February 2019: Beşiktaş lead Fenerbahçe 3–0 at half-time; Fenerbahçe score three in twelve minutes and draw 3–3. A fictional analysis show, *定格 FREEZE FRAME*, takes the comeback apart goal by goal, each goal with its own technique and the score bar flipping 3–0 → 3–1 → 3–2 → 3–3: the 55th-minute goal frozen mid-play on the pass from the right; the 61st-minute header frozen in two camera angles side by side, then stamped by the VAR check; the 67th-minute equaliser — the decisive one — watched live, rewound and frozen three times (the half-cleared ball, nobody stepping out, a strike 0.84 s after receiving, from outside the box), then seen from the reverse replay. Finally the strike frame flattens into a top-down board where all three shooting positions land: two from close range, one from 27 metres. A data card repeats the counted numbers; the hero's minute and name close it.
 
-This is an unofficial fan analysis made from real broadcast footage released under CC BY by the broadcaster itself (beIN SPORTS Türkiye, on its verified YouTube channel; one clip via Wikimedia Commons), a CC BY photo and a CC0 photo. The show is fictional; beIN SPORTS, the clubs and the league did not make or endorse it. Every fact is quoted in [`demo/FACTS.md`](demo/FACTS.md); the licence check is in [`demo/SOURCES.md`](demo/SOURCES.md).
+This is an unofficial fan analysis made from real broadcast footage released under CC BY by the broadcaster itself (beIN SPORTS Türkiye, on its verified YouTube channel; one clip via Wikimedia Commons), a CC BY photo and a second, freely licensed photo. The show is fictional; beIN SPORTS, the clubs and the league did not make or endorse it. Every fact is quoted in [`demo/FACTS.md`](demo/FACTS.md); the licence check is in [`demo/SOURCES.md`](demo/SOURCES.md).
 
 The CC BY rests on the broadcaster's own licence statement on YouTube (checked 2026-10-21; evidence in `demo/tools/license-evidence.json`); we cannot see the rights chain from league and clubs to broadcaster. Hosting the film here with full attribution is what the licence allows, but re-uploads to video platforms may still be matched by Content ID. A film made in this style for your own topic should use your own footage, or footage whose licence you have checked the same way.
 
@@ -54,7 +54,7 @@ Times in seconds; segment boundaries in `demo/timeline.json`. Clip `a` = the Com
 - Shot map: stab on the cut, a timpani roll building under the flatten, a second stab when the board settles, glockenspiel B–D–E as the three rows land, then half-time groove.
 - Slate and end card: big chord, horns and cellos held in E minor, two glockenspiel strokes, fade with the picture.
 - Natural sound: the broadcaster's commentary and crowd at full level in live play, a low-passed crowd bed under freezes, the goal roars aligned to the goal frames.
-- Voice: Kokoro `bm_george`, 8 lines at speed 1.1; names spelled for the voice ("Zayits", "Saduk"), real spelling in the subtitles.
+- Voice: `bm_george`, 8 lines at speed 1.1; names spelled for the voice ("Zayits", "Saduk"), real spelling in the subtitles.
 
 ## Palette & props
 
@@ -64,7 +64,7 @@ Times in seconds; segment boundaries in `demo/timeline.json`. Clip `a` = the Com
 
 ## End card
 
-From 49.6 s, held to 54.1 then cut to black with the picture: "定格" (150 px), "Freeze Frame" (yellow), a thin rule, "SPORTS TELESTRATOR · 体育战术板", "LemoLab × Claude Opus 5.5", then five lines of credits: the broadcaster's CC BY video and its Commons cut with title and licence, the changes made, the CC BY photo, the CC BY drum kit, and the CC0 sources with the voice. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+From 49.6 s, held to 54.1 then cut to black with the picture: "定格" (150 px), "Freeze Frame" (yellow), a thin rule, "SPORTS TELESTRATOR · 体育战术板", "Polargate · PolarMotion", then one small line at y 700, "Unofficial fan analysis" (the full CC BY credits live in `demo/CREDITS`). The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -72,7 +72,7 @@ From 49.6 s, held to 54.1 then cut to black with the picture: "定格" (150 px),
 demo/
   index.html              the page: segments, one function per format, tracking keyframes (TRK), GOALS, TEXTS for readcheck
   timeline.json           segments (clip, source frame ranges) and voice lines — shared by page, .srt and mix
-  audio/lines.json        narration (Kokoro, with phonetic names and expected ASR)
+  audio/lines.json        narration (synthetic voice, with phonetic names and expected ASR)
   tools/fetch_sources.sh  downloads raw/ (~55 MB: Commons clip and photos, the broadcaster's CC BY video via uvx yt-dlp)
   tools/prep.sh           clips → 1920 JPEG sequences a/ b/ c/ (deblock, lanczos 1.5×, unsharp, grade), photos, match sound
   tools/pitch.json        pitch points per shot frame     tools/homography.py   → assets/pitch.json (matrices, shot positions)
@@ -83,6 +83,6 @@ demo/
   FACTS.md, SOURCES.md, SOURCES.jsonl, CREDITS
 ```
 
-`sh demo/build.sh` (library set up with `setup.sh deps voice music`, sample packs freepats / vsco2ce / vcsl, and `uv`): sources → frames → homographies → fonts → voice + speech check → cues → reading check → render (1,632 frames, 30 fps) → mix → .srt → master (−14 LUFS, grain 2) → poster and styleframe (13.6 s, the dual-angle freeze) → final checks. `?dbg=1` paints the tracked points; `?nosub=1` hides subtitles.
+`sh demo/build.sh` (library set up with `setup.sh deps voice music`, sample packs from `sh tools/fetch.sh instruments all`, and `uv`): sources → frames → homographies → fonts → voice + speech check → cues → reading check → render (1,632 frames, 30 fps) → mix → .srt → master (−14 LUFS, grain 2) → poster and styleframe (13.6 s, the dual-angle freeze) → final checks. `?dbg=1` paints the tracked points; `?nosub=1` hides subtitles.
 
 Demo-specific choices and pitfalls: the first two goals come from the broadcaster's full summary, which turned out to be the source of the Commons clip (its file page cites the video), so all footage is one CC BY release; the Commons page has no licence-review stamp, so the licence was checked on the video page itself (verified channel, CC BY field), see `demo/SOURCES.md`. Sources disagree on the first goal's assist (Valbuena vs Dirar), so the film names neither and shows "No. 17 from the right"; the official goal list (55′ / 61′ / 67′) wins over match reports that say 62′ and 66′. A "far corner" claim in one report contradicts the footage, so the third goal's corner is not mentioned. The split-screen windows first slid in unclipped and showed the broadcaster's URL for a few frames; each window is now clipped to its slice in source coordinates. The VAR stamp first landed before the ball crossed the line; the segment was lengthened so it lands after F057. Record card, shot map, data card and end card were lengthened (not slowed) until every row they carry passes the reading check.

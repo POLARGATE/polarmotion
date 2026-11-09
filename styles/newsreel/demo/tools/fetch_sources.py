@@ -8,7 +8,7 @@ import io, json, urllib.request, zipfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent
-UA = "Mozilla/5.0 (Macintosh) lemo-opuscar-demo/1.0"
+UA = "Mozilla/5.0 (Macintosh) polarmotion-demo/1.0"
 get = lambda u: urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA}), timeout=300).read()
 
 for line in (HERE / "SOURCES.jsonl").read_text().splitlines():

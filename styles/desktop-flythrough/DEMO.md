@@ -31,7 +31,7 @@ Four stops on one desk: your phone, the compress card, the server tower, your fr
 
 ## Voice-over
 
-Fourteen lines, Chinese, voiced with edge-tts `zh-CN-XiaoxiaoNeural` at `+15 %` (line 5 at `+8 %`), checked line by line with Whisper; 0.8 s lead, 0.3–0.6 s between lines. Subtitles: one cue per line, Chinese over English ([`desktop-flythrough.srt`](desktop-flythrough.srt)).
+Fourteen lines, Chinese, voiced with `zh-CN-XiaoxiaoNeural` at `+15 %` (line 5 at `+8 %`), checked line by line with the speech check; 0.8 s lead, 0.3–0.6 s between lines. Subtitles: one cue per line, Chinese over English ([`desktop-flythrough.srt`](desktop-flythrough.srt)).
 
 | # | Start | 中文 | English |
 |---|---|---|---|
@@ -62,11 +62,11 @@ Paper mat #e2e8f5 with dots #c4cde3 on light oak; cards and screens near-white, 
 
 ## End card
 
-Over the closing wide view, under the title card in the middle of the desk, from 57.0 s: LemoLab × Claude Opus 5.5 in a light plate at the subtitle position, to the end, over the held final chord. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Over the closing wide view, under the title card in the middle of the desk, from 57.0 s: Polargate · PolarMotion in a light plate at the subtitle position, to the end, over the held final chord. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
-- `sh styles/desktop-flythrough/demo/build.sh` (Chinese voice, the library demo) or `… build.sh en` (English voice): fonts (downloaded from Google Fonts and subset) → voice (`core/tts/tts_zh.py`, checked with `core/tts/asr_check.py`) → `audio/vo_timeline.py` (writes `src/vo.js` and `vo/timeline.json`) → events and camera speed → `audio/compose.py` → `audio/foley.py` → `audio/mix.py` → `core/render/video.mjs` → `core/render/mux.sh` → `readcheck.mjs` → poster and style frame. The voice step needs the internet (edge-tts). `tools/subset.py` runs before the voice here only because `src/vo.js` is committed; a new film subsets after `vo_timeline.py`.
+- `sh styles/desktop-flythrough/demo/build.sh` (Chinese voice, the library demo) or `… build.sh en` (English voice): fonts (downloaded from Google Fonts and subset) → voice (`core/tts/tts_zh.py`, checked with `core/tts/asr_check.py`) → `audio/vo_timeline.py` (writes `src/vo.js` and `vo/timeline.json`) → events and camera speed → `audio/compose.py` → `audio/foley.py` → `audio/mix.py` → `core/render/video.mjs` → `core/render/mux.sh` → `readcheck.mjs` → poster and style frame. The voice step needs the internet (online voice service). `tools/subset.py` runs before the voice here only because `src/vo.js` is committed; a new film subsets after `vo_timeline.py`.
 - Code: `index.html` → `src/main.js` (page contract, speed-capped shutter, `TEXTS`) → `src/film.js` (cards, tower, props, cast, timeline cued to the voice, sound events, reading boxes) and `src/shots.js` (camera keys); `src/captions.js` (subtitles, sign-off, `?nosub=1` for clean stills).
 - Reading time: `TEXTS` reports the title tent, the two sizes on the compress card, the server's name, the banner, 网慢, the two size tags, the closing title and the sign-off; subtitle cues follow the voice.
 - Pitfalls of these props: name plates show only in the wide shots; badges stay 3.4 s and leave before the camera moves on; the cat waits beside the photo bubble, not under the subtitle bar; the eraser sits clear of the closing title card.

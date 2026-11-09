@@ -296,9 +296,9 @@ function instruments(c, t) {
   }
   // source, top right
   const ca = a;
-  ctx.save(); ctx.font = '400 20px PM'; const cw = Math.ceil(ctx.measureText('全切片扫描 Ventana DP 200 · PathAI · CC0').width) + 44; ctx.restore();
+  ctx.save(); ctx.font = '400 20px PM'; const cw = Math.ceil(ctx.measureText('全切片扫描 · 公开数据集').width) + 44; ctx.restore();
   panel(W - 56 - cw, 40, cw, 46, ca, 12);
-  text('全切片扫描 Ventana DP 200 · PathAI · CC0', W - 56 - cw / 2, 70, '400 20px PM', 'rgba(248,247,244,0.82)', { align: 'center', alpha: ca });
+  text('全切片扫描 · 公开数据集', W - 56 - cw / 2, 70, '400 20px PM', 'rgba(248,247,244,0.82)', { align: 'center', alpha: ca });
 }
 
 // ------------------------------------------------------------------ subtitles (one zh line, one en line, never wrapped)
@@ -460,8 +460,8 @@ function card(c, t) {
   line([[x + 4, y + 104], [x + 4 + 520 * rl, y + 104]], 'rgba(24,27,31,0.55)', null, 1.4, a);
   const b = a * ss(seg(t, T.card + 0.35, T.card + 0.75));
   text('MICROSCOPE STORY · 显微叙事', x + 4, y + 146, '500 22px PM', 'rgba(24,27,31,0.8)', { alpha: b, id: 'c3' });
-  text('LemoLab × Claude Opus 5.5', x + 4, y + 184, '400 24px BC', 'rgba(24,27,31,0.8)', { alpha: b, id: 'c4' });
-  text('数据：Ventana-1 · PathAI · CC0', x + 4, y + 220, '400 20px SC', 'rgba(24,27,31,0.6)', { alpha: b, id: 'c5' });
+  text('Polargate · PolarMotion', x + 4, y + 184, '400 24px BC', 'rgba(24,27,31,0.8)', { alpha: b, id: 'c4' });
+  text('数据：公开全切片数据集', x + 4, y + 220, '400 20px SC', 'rgba(24,27,31,0.6)', { alpha: b, id: 'c5' });
 }
 
 // ------------------------------------------------------------------ sound and cue events (mix.py reads these)

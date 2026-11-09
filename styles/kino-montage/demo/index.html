@@ -446,7 +446,7 @@ function S7(t) {
     const cw = txt(null, String(n).padStart(4, '0'), 1210, 920, { font: 'Osw', size: 230, fill: PAPER, ls: 6 }).w;
     txt(null, '人', 1210 + cw + 18, 850, { size: 72, fill: PAPER });
     txt(null, 'MEN', 1210 + cw + 20, 905, { font: 'Osw', wt: 600, size: 34, fill: PAPER, ls: 3 });
-    tag(kind === 'clip' || kind === 'st' ? FILM : 'PHOTO · LEWIS HINE 1930–31', 70, 60);
+    tag(kind === 'clip' || kind === 'st' ? FILM : 'PHOTO · 1930–31', 70, 60);
     return;
   }
   // multiple exposure: the steel field from above, workers printed over it, and the answer
@@ -479,7 +479,7 @@ function S7(t) {
     txt('m40e', 'UP TO ABOUT 4,000 IN ONE DAY', 40 - o2, 845, { font: 'Osw', wt: 500, size: 34, fill: PAPER, bg: INK, pad: 8, ls: 3 });
   }
   tag(SRC, 1878, 40, { align: 'right', bg: RED });
-  tag('PHOTOS · LEWIS HINE 1930–31 · ' + FILM, 1878, 72, { align: 'right' });
+  tag('PHOTOS · 1930–31 · ' + FILM, 1878, 72, { align: 'right' });
 }
 
 // ============================================================ S8 35.5–43.25: the brochure's scale drawing -----------
@@ -639,16 +639,12 @@ function S11(t) {
   }
   cx.restore();
   tag(FILM, 1600, 1050, { align: 'right' });
-  tag('PHOTO · LEWIS HINE, "ICARUS, EMPIRE STATE BUILDING" 1930', 1878, 900, { align: 'right' });
+  tag('PHOTO · "ICARUS, EMPIRE STATE BUILDING" 1930', 1878, 900, { align: 'right' });
 }
 
 // ============================================================ S12 56–60: end card -----------------------------------
 const CREDITS = [
-  'FILM  Empires of Steel (American Bridge Co. / Pathescope, 1930–31) · public domain · Internet Archive',
-  'PHOTOS  Lewis Hine, 1930–31 · U.S. National Archives (public domain) · The Metropolitan Museum of Art (CC0)',
-  'DOCUMENT  What Everybody Wants to Know About Empire State (Empire State, Inc., 1931) · Columbia University Libraries · public domain',
-  'SOUND  "WWS Rivetingmachine" by Work With Sounds / Konrad Gutkowski · CC BY 4.0',
-  'Unofficial film from public archives · fonts OFL · samples CC0',
+  'Unofficial film from public archives',
 ];
 function S12(t) {
   cx.fillStyle = PAPER; cx.fillRect(0, 0, W, H);
@@ -662,7 +658,7 @@ function S12(t) {
   cx.fillStyle = RED; cx.fillRect(90, 380, 720 * eo(seg(t, T.end + .1, T.end + .4)), 5);
   txt('es', '构成主义蒙太奇', 90, 460, { size: 50, wt: 700, fill: INK });
   txt('ese', 'CONSTRUCTIVIST MONTAGE', 92, 510, { font: 'Osw', wt: 500, size: 32, fill: INK, ls: 5 });
-  txt('eby', 'LemoLab × Claude Opus 5.5', 90, 600, { font: 'Osw', wt: 600, size: 42, fill: RED, ls: 2 });
+  txt('eby', 'Polargate · PolarMotion', 90, 600, { font: 'Osw', wt: 600, size: 42, fill: RED, ls: 2 });
   CREDITS.forEach((s, i) => txt(null, s, 90, 700 + i * 36, { font: 'Mono', size: 18, fill: INK }));
 }
 

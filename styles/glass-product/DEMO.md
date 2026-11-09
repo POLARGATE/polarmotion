@@ -42,7 +42,7 @@ Original numpy score (`demo/music/score.py`), **120 BPM, minor key**. Sub drone 
 
 Foley as used: shimmer per sweep, lid friction, magnetic clicks, an air puff per exploded part, and on the snap a cluster of six clicks 15 ms apart + the inharmonic glass chord.
 
-Voice: Kokoro `am_michael`, speed 0.86–0.88, 3–4 very short lines. "Aura." alone was misheard as Laura / Dora, so the line became "Meet Aura." Music ducked −12 dB and foley −6 dB under the voice. The 808 peaks left no headroom and loudnorm fell back to dynamic mode (−13.7 LUFS); limiting the drop peaks ~3 dB in the mix fixed it. Grain 0 in mux.
+Voice: `am_michael`, speed 0.86–0.88, 3–4 very short lines. "Aura." alone was misheard as Laura / Dora, so the line became "Meet Aura." Music ducked −12 dB and foley −6 dB under the voice. The 808 peaks left no headroom and loudnorm fell back to dynamic mode (−13.7 LUFS); limiting the drop peaks ~3 dB in the mix fixed it. Grain 0 in mux.
 
 ## Palette & props
 
@@ -58,7 +58,7 @@ Voice: Kokoro `am_michael`, speed 0.86–0.88, 3–4 very short lines. "Aura." a
 
 ## End card
 
-The title stays; credits (style name, `LemoLab × Claude Opus 5.5`) fade in at the bottom over a soft dark gradient while the camera pulls back to make room; fade to black in the last 0.6 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The title stays; credits (style name, `Polargate · PolarMotion`) fade in at the bottom over a soft dark gradient while the camera pulls back to make room; fade to black in the last 0.6 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Rights
 

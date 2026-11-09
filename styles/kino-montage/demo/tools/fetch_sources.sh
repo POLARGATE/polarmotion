@@ -3,7 +3,7 @@
 # Serial and patient: Wikimedia Commons rate-limits shared IPs (HTTP 429) and serves the photos as
 # standard-width thumbnails (1920 px); the Internet Archive files are the originals.
 cd "$(dirname "$0")/.." && mkdir -p raw
-UA="LemoOpuscar/1.0 (film style library; footage for a public-domain demo)"
+UA="PolarMotion/1.0 (film style library; footage for a public-domain demo)"
 python3 - <<'PY' | while read -r f u; do
 import json
 for l in open('SOURCES.jsonl'):

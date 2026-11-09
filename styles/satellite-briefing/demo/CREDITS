@@ -1,4 +1,4 @@
-The Map Still Says Sea (地图上还写着海) — Satellite Briefing (Lemo-Opuscar) · LemoLab × Claude Opus 5.5
+The Map Still Says Sea (地图上还写着海) — Satellite Briefing · Polargate · PolarMotion
 
 No AI-generated images, no stock footage, no Google/Bing/Esri/Mapbox basemaps. Every pixel of ground is a
 public-domain satellite image; every line is drawn in code. Exact download URLs (one per request, with the
@@ -21,9 +21,8 @@ IMAGERY (burned-in credit, bottom right, whole film: "影像 Landsat · USGS/NAS
   grey, water masks and shorelines derived from the imagery. The credits above still apply.
 
 VECTORS
-- Natural Earth, ne_10m_lakes_historic ("Aral Sea", historic extent) and ne_10m_rivers_lake_centerlines (Amu Darya,
-  Syr Darya) — the printed-map layer (paper, waterlines and graticule are drawn in the shader). Public domain.
-  https://github.com/nvkelso/natural-earth-vector
+- The printed-map layer: the Aral Sea's historic extent and the Amu Darya and Syr Darya centrelines from public map
+  data; paper, waterlines and graticule are drawn in the shader.
 
 FACTS
 - See FACTS.md: NASA Earth Observatory, USGS EROS Earthshots, NASA MODIS gallery, World Bank (Feature Story 2008;
@@ -36,8 +35,7 @@ FONTS (SIL Open Font License 1.1, licence texts in fonts/; Chinese fonts subset 
 - Noto Serif SC — Google / Adobe (the map layer and the title)
 
 VOICE
-- Kokoro-82M (hexgrad), voice bf_emma, Apache License 2.0; run locally via kokoro-onnx (MIT) through the
-  library's core/tts/tts.py. Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).
+- Synthetic narration.
 
 MUSIC & SOUND
 - Original score and sound design, written for this film in mix.py: synthesis in numpy (pulse bass, FM telemetry
@@ -46,6 +44,4 @@ MUSIC & SOUND
   timpani, concert bass drum, gran cassa, tam-tam (reversed), gong, suspended cymbal (bowed, stick, crescendo,
   reversed hit), clash cymbals, closed hi-hat, vibraphone, bowed vibraphone, glass harp, French horn (sustain and
   staccato), trombone (sustain and staccato), tuba (sustain and staccato).
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian
-  Studios), Versilian Community Sample Library (Versilian Studios).
 - Procedural helpers (click, whoosh, creak, compress, limit) from the library's core/audio/sfx.py.

@@ -1,4 +1,4 @@
-The Story of Chinese Characters (汉字的故事) — Chalkboard (Lemo-Opuscar) · LemoLab × Claude Opus 5.5
+The Story of Chinese Characters (汉字的故事) — Chalkboard · Polargate · PolarMotion
 
 IMAGES, FOOTAGE, MODELS
 - None. The classroom wall, boards, frame, tray, clock, chalk and wet streak are drawn in code (js/stage.js, js/chalk.js,
@@ -19,19 +19,13 @@ FONTS (SIL Open Font License 1.1; licence texts in fonts/; not in git, build.sh 
   the subtitles use (fonts/wenkai-sub.woff2); the full font is used only on the check page. fonts/OFL-LXGWWenKai.txt
 
 VOICE
-- Chinese: Edge TTS (Microsoft), zh-CN-XiaoxiaoNeural, +15 %. English version: en-US-AvaNeural, +10 %.
-  Through the library's core/tts/tts_zh.py; checked with core/tts/asr_check.py (faster-whisper, MIT; Whisper models, MIT).
+- Synthetic narration (Chinese; English version), through the library's core/tts/tts_zh.py.
 
 SOUND
 - Chalk recordings from Wikimedia Commons, cut into grains by tools/foley_lib.py (foley/lib):
-  - "chalk-on-chalkboard" by fattirewhitey (freesound.org/people/fattirewhitey/sounds/264944; Commons file
-    "264944 chalk-on-chalkboard.wav") — CC0 1.0.
-  - "Chalkboard-writing.ogg" by Tomproberts (Commons) — CC0 1.0.
   - "WWS Chalk.ogg" by Work With Sounds / La Fonderie, provided by Work With Sounds in cooperation with Wikimedia
     Sverige (Commons) — CC BY 4.0 (creativecommons.org/licenses/by/4.0). Cut into grains, filtered and layered.
-- Music samples (CC0): VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library
-  (Versilian Studios) — marimba, pizzicato contrabass, vibraphone. Downloaded with sh tools/fetch.sh instruments
-  vsco2ce | vcsl.
+- Music: sampled marimba, pizzicato contrabass, vibraphone.
 - Guqin: physical model (core/audio/pluck.py). Panel roll, felt wipe, corridor bell, room tone: synthesised in audio.py.
 
 FACTS

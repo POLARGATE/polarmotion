@@ -22,7 +22,7 @@ renderer.setPixelRatio(SSAA); renderer.setSize(1920, 1080, false);
 renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.VSMShadowMap;
 renderer.toneMapping = THREE.NoToneMapping; renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
 const pipe = new Pipe(renderer, 1920, 1080, SSAA);
-await Promise.all([document.fonts.load('40px NotoSerifSC', '车夜'), document.fonts.load('700 40px NotoSerifSC', '车'), document.fonts.load('600 40px Cormorant', 'Lemo'), document.fonts.load('700 40px Cormorant', 'PINE')]);
+await Promise.all([document.fonts.load('40px NotoSerifSC', '车夜'), document.fonts.load('700 40px NotoSerifSC', '车'), document.fonts.load('600 40px Cormorant', 'Polar'), document.fonts.load('700 40px Cormorant', 'PINE')]);
 
 const live = new Map();
 function get(i) { if (!live.has(i)) live.set(i, BUILD[plan[i].id]({ H: TL.HIT, sign: Q.get('sign10') === '1', T0: plan[i].start, dur: plan[i].end - plan[i].start })); return live.get(i); }

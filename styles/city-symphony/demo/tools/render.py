@@ -348,7 +348,7 @@ def texts(t, f):
         L.text('q_cn', x0, y0, '我也曾在人群里。', font(F_SC, 60, 300), INK, .1, fd(0))
         L.text('q_en', x0 + 4, y0 + 104, '…I WAS ONE OF A CROWD,', font(F_LAT, 20), INK, .16, fd(.08))
         L.text('q_src', x0 + 4, y0 + 152, 'WALT WHITMAN, LEAVES OF GRASS, 1860', font(F_LAT, 14), SODIUM, .22, fd(.12))
-    # 6 end slate (the darkened dawn shot keeps running). The small credit text is written in full but not reported to readcheck (end credit line, see DEMO.md)
+    # 6 end slate (the darkened dawn shot keeps running). It carries no third-party credit lines (see demo/CREDITS)
     if t >= SLATE:
         u = t - SLATE; out = min(1, max(0, (DUR - .02 - t) / .15))
         fd = lambda t0: min(1, max(0, (u - t0) / .15)) * out
@@ -358,22 +358,14 @@ def texts(t, f):
         L.rect([x0 + 2, 350, x0 + 2 + int(640 * ease(u / .5)), 351], SODIUM, out)
         L.text('s_style_cn', x0, 376, '延时交响', font(F_SC, 26, 350), INK, .14, fd(.05))
         L.text('s_style_en', x0 + 132, 384, 'TIME-LAPSE SYMPHONY', font(F_LAT, 15), DIM, .3, fd(.05))
-        L.text('s_lemo', x0, 432, 'LemoLab × Claude Opus 5.5', font(F_SC, 24, 400), INK, .04, fd(.1))
+        L.text('s_sign', x0, 432, 'Polargate · PolarMotion', font(F_SC, 24, 400), INK, .04, fd(.1))
         fc = font(F_SC, 16, 380); y = 530
         for k, line in enumerate(CREDIT_LINES):
             L.text(f's_cr{k}', x0, y + k * 29, line, fc, (196, 190, 180), .01, fd(.1), final=False)
     return L, sh
 
 
-CREDIT_LINES = [
-    'Footage under CC BY 3.0 (creativecommons.org/licenses/by/3.0) or CC BY 2.0 (creativecommons.org/licenses/by/2.0), cut, retimed, cropped and colour-graded:',
-    'Scott Herder, “New York in Motion” (2018), CC BY 3.0 · David Schwab, “Time-lapse of New York City skyline July 2023”, CC BY 3.0',
-    'Longfellow Films, “Empty New York city” (2020), CC BY 3.0 · Joe Cavallini, “DIS:CONNECTED – NYC DURING COVID-19” (2020), CC BY 3.0',
-    '350.org, “Aerial Footage – People\'s Climate March” (2014), CC BY 3.0 · Branded Cities, “Earth Hour Set At Times Square” (2019), CC BY 3.0',
-    'Steven Kelley, “42nd Time Lapse” (2012), CC BY 2.0 · Jason Eppink, “steel beams | N over the Manhattan Bridge” (2012), CC BY 2.0',
-    'Sunny Ripert, “5 seconds of Times Square” (2010), CC BY 2.0',
-    'Public domain: Library of Congress (Highsmith; Edison 1899) · NASA ISS047 (Tim Kopra) · U.S. Marine Corps / DVIDS (Fleet Week 2016) · Internet Archive (Whitman 1860)',
-]
+CREDIT_LINES = []   # no third-party credits on screen; the full CC BY attributions live in demo/CREDITS
 
 
 # ───────── compositing ─────────

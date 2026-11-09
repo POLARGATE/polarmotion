@@ -66,15 +66,15 @@ Demo motion numbers: exploded parts leave one every ~0.055 of the progress on ei
   - The catch resolves to G on the downbeat.
   - Rain uses harp and harpsichord arpeggios.
   - A short full cadence lands on the stamp, and the theme returns in augmentation for the end card.
-  - Rendered with `core/audio/sampler.py`: VCSL harpsichord and harp, VSCO 2 CE bassoon, strings and spiccato.
+  - Rendered with `core/audio/sampler.py`: sampled harpsichord, harp, bassoon, strings and spiccato.
 - **Foley follows materials**:
   - Paper: roll unroll crackle and slap, T-square wood slide, technical pen scratch (2–6 kHz grain, length = stroke length), lettering (bursts of short strokes), compass squeak, hatching (13 strokes/s).
   - Brass and wood: part clicks (3.1 / 5.2 kHz resonances), escapement ticks, chain rattle, bellows breath, wind-down ticks that slow by ×1.35.
   - The magic moment: soft paper "puffs" on the two breaths, a noise swell, nothing else.
   - Water: soft damped pats per drop plus a light rain bed.
   - Rubber stamp thump, pen cap click at the very end.
-- **Voice**: dry-humoured British engineer reading his own design notes, Kokoro `bm_daniel`, `lang en-gb`, speed 0.9. Five or six short lines. Keep the climax voiceless.
-- **Mix**: music ducks to ~0.36 under voice and foley ducks by half. Whooshes low-passed at 2.5 kHz (they masked "bellows" in whisper). −14 LUFS. `mux.sh` grain 4 (the paper grain is in the image already).
+- **Voice**: dry-humoured British engineer reading his own design notes, voice `bm_daniel`, `lang en-gb`, speed 0.9. Five or six short lines. Keep the climax voiceless.
+- **Mix**: music ducks to ~0.36 under voice and foley ducks by half. Whooshes low-passed at 2.5 kHz (they masked "bellows" in the speech check). −14 LUFS. `mux.sh` grain 4 (the paper grain is in the image already).
 
 ## Palette & props
 
@@ -107,7 +107,7 @@ Demo motion numbers: exploded parts leave one every ~0.055 of the progress on ei
 
 ## End card
 
-**End card**: the title block. The last row is lettered in: STYLE: BLUEPRINT / DRAWN BY: LemoLab × Claude Opus 5.5. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+**End card**: the title block. The last row is lettered in: STYLE: BLUEPRINT / DRAWN BY: Polargate · PolarMotion. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -120,7 +120,7 @@ styles/blueprint/demo/
   film.js     the whole timeline (108 BPM grid): cameras, acting, subtitles, sound events
   main.js     page entry (?frame=1|2|3 gate frames, ?nosub, ?poster)
   mix.py      foley + voice + music ducking       music/score.py  original score (sampler)
-  tools/      subs.mjs (SUBS → subs.json), check_mix.py (whisper on the final mix)
+  tools/      subs.mjs (SUBS → subs.json), check_mix.py (speech check on the final mix)
 ```
 
 1. `node core/render/still.mjs styles/blueprint/demo --range 0:46:1.5` then `sheet.py` to review. Iterate per section.
@@ -142,5 +142,5 @@ styles/blueprint/demo/
 - **The payoff must be big.** The first cut had the flower as a small clump in the lower third, which undersold the emotional return. Give the payoff object ~1/3 of frame height, centred, drawn stroke by stroke (stem → leaves → one petal per beat), with visible stains around it. Keep subtitles off it.
 - **A caught object shows through the net.** Don't paint the net over it wholesale: fill the bag below the front rim with the object's body, then draw mesh and front rim on top, and skip the back rim.
 - `sfx.thump()` is 0.35 s long: pad before adding to longer buffers.
-- Whisper reads "Figure one" as "Figure 1": use an `asr` field in `lines.json`.
+- The speech check reads "Figure one" as "Figure 1": use an `asr` field in `lines.json`.
 - **A stray file at the repo root**: always write with absolute paths inside your style dir.

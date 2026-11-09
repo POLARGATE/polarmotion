@@ -48,7 +48,7 @@ Not flat paper-cut animation (here: depth, backlight, cast shadows), not shadow 
 - **Everything moves like paper on a stick**: layers slide (x/y), rotate about a pivot, scale in from 0 along one axis ("written out"), or light up. No squash and stretch, no morphing, no bending.
 - **Figures are optional.** A film can tell its story with lit windows, vehicles, lamps and objects, and have no figure at all. When it has figures, they are jointed silhouettes: a body sheet + separate limb sheets anchored at the joint; animate rotation only.
 - **Light cues are the big motion**: the source, then each layer's translucency in a ~0.4 s stagger, then windows, then flicker (`1 + .06·sin(7.3t)·sin(3.1t)`).
-- **Hard action lands on spoken words** (use whisper word timings): an object slams, a character flashes, a light arc grows on its word.
+- **Hard action lands on spoken words** (use speech-check word timings): an object slams, a character flashes, a light arc grows on its word.
 - Hand-held micro-drift on the camera (~0.6 mm) keeps a locked frame alive. Render on ones at 30 fps; never step.
 
 ## 6. Camera grammar
@@ -77,7 +77,7 @@ Framing: the story layer in focus, foreground and far layers soft; box edges ful
 - **Silence**: the lamp switched off — all sound but a room tone drops out, then returns with the light.
 - **Mix character**: voice compressed and forward (RMS ~−18 dB), music underneath with ~5–6 dB of ducking under speech, foley low (−24…−34 dB), peak-limited, final at −14 LUFS.
 - **Options**: a new instrument entering when the film changes place; one foley sound per light cue; a music hand-over solved backwards so a swell lands on the line that matters.
-- **Voice**: warm, a storyteller at a table, not an announcer. Proof every line with whisper; for Chinese polyphonic characters feed TTS a homophone and keep the real text for subtitles.
+- **Voice**: warm, a storyteller at a table, not an announcer. Proof every line with the speech check; for Chinese polyphonic characters feed TTS a homophone and keep the real text for subtitles.
 
 ## 8. Native moves
 

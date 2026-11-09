@@ -12,10 +12,10 @@ export async function overlayReady() {
   await Promise.all(['500 40px Cinzel', '700 40px Cinzel', 'italic 500 40px "Cormorant Garamond"', '600 40px "Cormorant Garamond"', '500 40px "Cormorant Garamond"'].map(f => document.fonts.load(f)));
   DURS = await (await fetch('voices/dur.json')).json();
 }
-export const CREDIT = { music: 'Music: “Precipice” by Scott Buckley — scottbuckley.com.au (CC BY 4.0)   ·   Voices: Kokoro TTS' };
-// End credits: on by default; ?nocredit=1 turns them off (the end then keeps only the music and voice credits)
+export const CREDIT = { music: '' };   // no third-party credit on screen; the music attribution lives in demo/CREDITS
+// End credits: on by default; ?nocredit=1 turns them off (the end then carries no credit line)
 const SHOW_TEAM = !new URLSearchParams(location.search).has('nocredit');
-CREDIT.team = 'LemoLab × Claude Opus 5.5';
+CREDIT.team = 'Polargate · PolarMotion';
 
 // Thin gold line + diamond ornament
 function ornament(cx, y, w, a) {

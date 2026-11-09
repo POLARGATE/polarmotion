@@ -47,7 +47,7 @@ sf.write('cue.wav', mix, SR)
 | `chord(inst, pitches, dur, vel, strum=0)` | Chord (mono); `strum>0` delays each note in turn (arpeggio / strum) |
 | `render(events, dur=None, master=True)` | Score → stereo. Events are tuples `(t, inst, pitch, dur, vel, pan[, gain])` or dicts (may carry `release`/`attack`/`var`) |
 | `room(x, size=.5, mix=.2, predelay=.015, damp=.5)` | Convolution reverb with a decorrelated exponentially decaying noise IR; `size` 0–1 → RT60 0.4–3.4 s; returns (N,2) of the same length |
-| `credits(names)` | From the list of instruments you used, generates the end-credit CREDITS lines (the required CC BY wording + CC0 acknowledgements) |
+| `credits(names)` | From the list of instruments you used, generates the end-credit CREDITS lines (only the CC BY wording the licence requires; CC0 packs need no credit) |
 | `info(name=None)` / `instruments(fam=None)` | Prints an overview / lists names (`fam` takes 弦乐 strings / 木管 woodwinds / 铜管 brass / 打击 percussion / 键盘 keyboards / 拨弦 plucked / 民族 folk) |
 | `midi(p)` / `hz(p)` / `name(m)` / `seed(n)` | Note-name utilities; `seed` fixes the round-robin randomness (same call order → same result) |
 | `build_index(names=None, force=False)` | Rescans the samples and rebuilds `index.json` (only needed if samples were swapped or added; ~15 s; needs librosa: `requirements-dev.txt`) |
@@ -106,10 +106,10 @@ add(buf, P.pluck('shamisen', 'C4', .6, .8, buzz=.7), 2, .8, .3)
 
 | Library | Folder | Licence | What the credits must say |
 |---|---|---|---|
-| VS Chamber Orchestra: Community Edition (Versilian Studios, github.com/sgossner/VSCO-2-CE) | `instruments/vsco2ce/` | **CC0 1.0** | Not required; the author would like credit to "Versilian Studios / Sam Gossner" (the pipe organ is by Ivy Audio / Simon Dalzell) |
-| Versilian Community Sample Library (github.com/sgossner/VCSL) | `instruments/vcsl/` | **CC0 1.0** | Not required |
+| VS Chamber Orchestra: Community Edition | `instruments/vsco2ce/` | **CC0 1.0** | Not required |
+| Versilian Community Sample Library | `instruments/vcsl/` | **CC0 1.0** | Not required |
 | FreePats (freepats.zenvoid.org): classical guitar, ukulele, clean electric guitar, fingered electric bass, kalimba, hang, accordion, glass harp, old piano, bagpipe, world percussion | `instruments/freepats/<name>/` | **CC0 1.0** | Not required |
-| Karoryfer Samples (github.com/sfzinstruments): erhu aliexpress-erhu, jazz double bass Sneakybass, alto sax Weresax | `instruments/karoryfer/` | **CC0 1.0** | Not required |
+| Karoryfer Samples: erhu aliexpress-erhu, jazz double bass Sneakybass, alto sax Weresax | `instruments/karoryfer/` | **CC0 1.0** | Not required |
 | **Salamander Grand Piano V3** (Alexander Holm; FreePats FLAC version) | `instruments/salamander/` | **CC BY 3.0** | **Required whenever you use `piano`** ↓ |
 | **MuldjordKit** (Lars Muldjord; FreePats version) | `instruments/freepats/muldjord_kit/` | **CC BY 4.0** | **Required whenever you use `drum_kit`** ↓ |
 
@@ -125,7 +125,7 @@ If you use `drum_kit`, write this in CREDITS exactly:
 Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 ```
 
-Suggested (for the CC0 parts, optional, one line is enough): `Samples (CC0): Versilian Studios VSCO 2 CE & VCSL, FreePats, Karoryfer Samples`.
+The CC0 packs need no credit line, so none is written.
 Easiest: `print('\n'.join(S.credits(['piano', 'cellos', 'drum_kit'])))` generates them automatically. `pluck.py` is pure synthesis, with no licence requirements.
 
 Processing applied to the samples (all within what the licences allow): the VSCO/VCSL/Karoryfer WAVs were converted **losslessly** to FLAC (verified identical sample by sample); for Salamander only 5 of the 16 velocity layers are kept (v2/v6/v10/v13/v16); the photos in the FreePats packs (some CC BY-NC) were deleted, keeping only audio and sfz/notes.
@@ -342,6 +342,6 @@ core/audio/
     karoryfer/          erhu / Sneakybass / Weresax  74 MB
 ```
 
-Source links: VSCO 2 CE https://github.com/sgossner/VSCO-2-CE · VCSL https://github.com/sgossner/VCSL · Salamander https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html · FreePats https://freepats.zenvoid.org/ · Karoryfer https://github.com/sfzinstruments (aliexpress-erhu / karoryfer.sneakybass / karoryfer.weresax)
+Sources: VSCO 2 CE and VCSL · Salamander https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html · FreePats https://freepats.zenvoid.org/ · Karoryfer Samples (aliexpress-erhu / karoryfer.sneakybass / karoryfer.weresax)
 
 Availability: the sample libraries must be downloaded first (`sh tools/fetch.sh instruments <lib>`, see the top of this file). When a library that hasn't been downloaded is used, `sampler` raises an error naming the command to run. `sampler.py` needs only the core-tier Python packages; `pluck.py` needs numba (`setup.sh deps music`).

@@ -22,7 +22,7 @@ T = 1024
 def get(url):
     for k in range(5):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'lemo-opuscar-film/1.0'}), timeout=120) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'polarmotion-film/1.0'}), timeout=120) as r:
                 return r.read()
         except Exception:
             if k == 4:

@@ -133,7 +133,7 @@ function drawOverlay(t) {
   // identity, top-left
   const ia = OV.env(t, .3, T.end - .2, .6, .4);
   txt('id1', '鹿特丹市中心 · 1:1000 白模', 96, 92, 'sc5', 24, '#f2f4f6', ia, { ls: 2, shadow: 10 });
-  txt('id2', `${ST.centre_wgs[1].toFixed(3)}°N  ${ST.centre_wgs[0].toFixed(3)}°E  ·  3DBAG / BAG / BGT`, 96, 124, 'mono', 18, 'rgba(225,230,236,.66)', ia, { ls: 1 });
+  txt('id2', `${ST.centre_wgs[1].toFixed(3)}°N  ${ST.centre_wgs[0].toFixed(3)}°E`, 96, 124, 'mono', 18, 'rgba(225,230,236,.66)', ia, { ls: 1 });
 
   // 01 before 1940
   readout(t, T.lamp + .9, T.g1 - .1, { id: 'r1', idx: '01', name: '战前', big: String(Math.round(ST.pre1940_area_share * 100)), unit: '%', col: PAL.amber,
@@ -159,7 +159,7 @@ function drawOverlay(t) {
   // 03 height
   const o100 = B.reduce((s, b) => s + b.over100, 0), o100new = B[3].over100 + B[4].over100;
   readout(t, T.hgt0 + .1, T.dark + .35, { id: 'r3', idx: '03', name: '高度', big: String(o100new), unit: `/${o100}`, col: PAL.hgt[2],
-    label: '百米高楼，1990 后建', note: '3DBAG 激光实测',
+    label: '百米高楼，1990 后建', note: '激光实测',
     legend: (X, Y, a) => {
       g.save(); g.globalAlpha = a; const gr = g.createLinearGradient(X, 0, X + 300, 0);
       [[0, PAL.hgt[0]], [.15, PAL.hgt[1]], [.4, PAL.hgt[2]], [1, PAL.hgt[3]]].forEach(([k, c]) => gr.addColorStop(k, c));

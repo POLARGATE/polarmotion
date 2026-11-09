@@ -29,18 +29,18 @@ Lens settings as used: aperture ~500–700 for close-ups, ~800 for mediums, ~400
 
 ## Score structure
 
-Two Kevin MacLeod tracks (CC BY 4.0), edited to the picture by `demo/music/edit.py`: "Monkeys Spinning Monkeys" (playful, cut on bars) for building, the same theme returning quietly for the rebuild, "Heroic Age" as the orchestral swell for the climax. The edit makes the climax hit land on ignition and the final chord land on the end card (bar-aligned jumps, chroma similarity at the joins). `story.js` times are aligned to the music bars.
+Two licensed tracks (CC BY 4.0; credits in `demo/CREDITS`), edited to the picture by `demo/music/edit.py`: "Monkeys Spinning Monkeys" (playful, cut on bars) for building, the same theme returning quietly for the rebuild, "Heroic Age" as the orchestral swell for the climax. The edit makes the climax hit land on ignition and the final chord land on the end card (bar-aligned jumps, chroma similarity at the joins). `story.js` times are aligned to the music bars.
 
 Silences: music cut dead on the collapse, leaving room tone and a ticking clock; music pulled out again before the climax, with a low heartbeat drum under the countdown.
 
 Foley specific to this film: ignition boom and rocket roar; radio chatter with Quindar beeps.
 
-Voice: warm British storyteller, Kokoro `bm_george`, speed ~0.9, 4–6 short lines; mission control is `am_adam` through a radio filter (band-pass 380–2800 Hz + soft saturation) with Quindar beeps. Every line verified with whisper. Voice compressed, music ducked ~40 % under voice, −14 LUFS.
+Voice: warm British storyteller, voice `bm_george`, speed ~0.9, 4–6 short lines; mission control is `am_adam` through a radio filter (band-pass 380–2800 Hz + soft saturation) with Quindar beeps. Every line verified with the speech check. Voice compressed, music ducked ~40 % under voice, −14 LUFS.
 
 ## Palette & props
 
 - Classic brick palette: red `#c91a09`, blue `#0055bf`, yellow `#f2cd37`, green `#237841`, white `#f2f2ee`, black `#1b2a34`, plus orange, light/dark grey, tan, azure. Bevel radius 0.06; baseplate matte green (it turned cyan with full clearcoat).
-- Set: walnut desk (Poly Haven `american_walnut_veneer`), `photo_studio_loft_hall` HDRI, tea set (teapot mountain, cup), pencil, books (the moon), desk lamp (the sun). Key light `#fff4e8` from upper left; softboxes key front-left, cool rim behind, one over the finale set. GTAO radius ~3.5 studs, scale 2.5. Grade: contrast +0.26, saturation ×1.1, slightly cool.
+- Set: walnut desk (`american_walnut_veneer`), `photo_studio_loft_hall` HDRI, tea set (teapot mountain, cup), pencil, books (the moon), desk lamp (the sun). Key light `#fff4e8` from upper left; softboxes key front-left, cool rim behind, one over the finale set. GTAO radius ~3.5 studs, scale 2.5. Grade: contrast +0.26, saturation ×1.1, slightly cool.
 - The astronaut: 1×1 columns for legs, a 2×2 brick torso, round-brick arms, a round 2×2 helmet with a curved visor panel.
 - The rocket, fire (translucent orange/yellow round plates jittered every frame), smoke (white round bricks that grow and roll outward), the moon (grey round plates with crater tiles).
 - Subtitles: a dark rounded pill `rgba(18,20,26,.62)` centred 150 px above the bottom, Fredoka 600 46 px white, a small yellow 2×1 brick icon on the left. Radio lines get a red brick icon and a "MISSION CONTROL" tag.
@@ -48,7 +48,7 @@ Voice: warm British storyteller, Kokoro `bm_george`, speed ~0.9, 4–6 short lin
 
 ## End card
 
-The darkened final wide, the title (Fredoka 700), a brick icon, "BRICK TOY · LEMO-OPUSCAR" in yellow, the "LemoLab × Claude Opus 5.5" line and the asset credits. That sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card (remove the line drawn in `main.js` if you adapt it).
+The darkened final wide, the title (Fredoka 700), a brick icon, "BRICK TOY" in yellow, the "Polargate · PolarMotion" line; the asset credits live in `demo/CREDITS`. That sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (remove the line drawn in `main.js` if you adapt it).
 
 ## Build notes
 

@@ -1,5 +1,5 @@
 Time-lapse Symphony — "One Day in New York" (library demo)
-Every third-party asset in the film, with its source and licence. Full per-second usage: SOURCES.md / SOURCES.jsonl.
+Third-party material in the film, with its source and licence. Full per-second usage: SOURCES.md / SOURCES.jsonl.
 Unofficial film; no person, institution or rights holder named here endorses it.
 
 FOOTAGE · CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) and CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
@@ -42,22 +42,6 @@ ARCHIVE FILM · public domain
   Public domain: published in the US before 1931. Changes: excerpt 23.4–26.4 s, slowed to 0.75× with frame crossfades,
   light denoise and sharpening, centre-cropped to a half-frame panel. Not restored, not colourised.
 
-FOOTAGE · public domain
-- "Parade of Ships B-Roll - Fleet Week NYC 2016", U.S. Marine Corps, DVIDS https://www.dvidshub.net/video/465706/parade-ships-b-roll
-  via https://commons.wikimedia.org/wiki/File:Parade_of_Ships_B-Roll_-_Fleet_Week_NYC_2016.webm  (PD-USMC: work of the
-  U.S. federal government; LicenseReview passed). Downloaded excerpt 100–200 s; used: Lower Manhattan and the Empire State
-  Building seen from the water.
-
-PHOTOGRAPHS · public domain
-- "ISS-47 New York City at night" (ISS047), NASA, photographed by astronaut Tim Kopra. Public domain (NASA).
-  https://commons.wikimedia.org/wiki/File:ISS-47_New_York_City_at_night.jpg
-- Carol M. Highsmith Archive, Library of Congress (dedicated to the public domain by the photographer):
-  "Concourse clock at Grand Central Station, New York, New York" (LCCN2011634940)
-  "Interior, Grand Central Station, New York, New York" (LCCN2010630085)
-  "Times Square, New York, New York" (LCCN2011635107)
-  "Times Square, which is actually triangular, in New York, New York" (LCCN2011632416)
-  via Wikimedia Commons (pages listed in SOURCES.md). Changes: cropped to 16:9, slow pushes, colour-graded.
-
 TEXT · public domain
 - Walt Whitman, "Crossing Brooklyn Ferry", Leaves of Grass (Boston: Thayer and Eldridge, 1860), p. 380, section 6.
   Scan: University of California Libraries / Internet Archive (NOT_IN_COPYRIGHT)
@@ -70,11 +54,10 @@ DATA (facts, not licensed material; see FACTS.md)
 - Times Square Alliance, market research page (2024 daily pedestrians).
 
 MUSIC
-- Original score (tools/music.py), played with sampled instruments, CC0 1.0:
-  VS Chamber Orchestra: Community Edition (Versilian Studios) — organ, organ pedal, strings, winds, horn, percussion;
-  Versilian Community Sample Library (Versilian Studios) — glockenspiel, bowed vibraphone, concert bass drum, cymbal.
+- Original score (tools/music.py), played with sampled instruments: organ, organ pedal, strings, winds, horn,
+  percussion, glockenspiel, bowed vibraphone, concert bass drum, cymbal.
 
 FONTS · SIL Open Font License 1.1 (fonts/OFL-*.txt)
 - Michroma (Vernon Adams), Noto Sans SC (Adobe / Google).
 
-Library demo sign-off on the end card: "LemoLab × Claude Opus 5.5" (library demos only).
+Library demo sign-off on the end card: "Polargate · PolarMotion" (library demos only).

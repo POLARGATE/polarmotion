@@ -1,5 +1,5 @@
 // burin.js — a line engine for copperplate engraving in Canvas 2D.
-// Adapted from the Opuscar 98 set engine (copied, not imported) and extended for this library:
+// Grew out of an earlier set engine (copied, not imported) and extended for this library:
 //   * every stroke keeps its place in the engraver's cutting order, so any drawing can be "cut" line by line
 //     (Ink.schedule + Ink.draw(ctx, t));
 //   * formTone(): any closed shape + a light direction → a modelled tone field (distance-field "pillow");

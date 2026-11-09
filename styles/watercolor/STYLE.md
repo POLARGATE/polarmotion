@@ -69,7 +69,7 @@ Framing: generous paper margins; one hero subject per view with its note; labels
 - **Music**: acoustic and gentle: felt piano, fingerpicked guitar, woodwinds, light strings, glockenspiel, kalimba, soft pads. A licensed track can be edited with beat-aligned jumps; the picture can then take its beat grid.
 - **Foley made from the scene's matter**: a paper brush rustle for each painting-in (band-passed noise, light tremolo, a panned sweep); pencil scratch for notes; a soft thump for a stamp; page flips; nature beds and creatures of the subject (birds, wind, rain plinks, water, insects, fire crackle).
 - **Silence**: the brush lifted: music out, only paper and room; it frames a single painted moment.
-- **Mix character**: voice forward (RMS a few dB over the music), music ducked ~4 dB under voice with a smoothed envelope, a short soft reverb, final −14 LUFS. Kokoro voices are peaky (~17 dB peak-to-RMS): limit before level-matching.
+- **Mix character**: voice forward (RMS a few dB over the music), music ducked ~4 dB under voice with a smoothed envelope, a short soft reverb, final −14 LUFS. The synthetic voices are peaky (~17 dB peak-to-RMS): limit before level-matching.
 - **Voice**: warm, unhurried documentary read, one line per idea.
 
 ## 8. Native moves

@@ -84,7 +84,7 @@ export function buildStage() {
     end: plaque(1180, 420, [
       { text: 'SHADOW PUPPETRY', font: '700 104px "Cormorant Garamond"', y: -64, ls: 10, size: 104 },
       { text: 'Hou Yi Shoots the Suns', font: 'italic 600 48px "Cormorant Garamond"', y: 40, size: 48 },
-      { text: 'LemoLab × Claude Opus 5.5', font: '600 40px "Cormorant Garamond"', y: 128, ls: 4, size: 40 }], 0)
+      { text: 'Polargate · PolarMotion', font: '600 40px "Cormorant Garamond"', y: 128, ls: 4, size: 40 }], 0)
   };
   return P;
 }

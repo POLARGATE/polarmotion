@@ -1,4 +1,4 @@
-"""Score (original, written in Glass-style minimalist repetition, no existing melody used): VSCO 2 CE / VCSL real samples (CC0).
+"""Score (original, written in Glass-style minimalist repetition, no existing melody used): real sampled instruments.
 Development: minimalist repetition (eighth-note arpeggios) → acceleration (triplets against eighths, staccato woodwinds) → grid section, sixteenth-note tutti → brake (arpeggios all stop, long chords)
       → restart (eighths → triplets → sixteenths) → climax flashback → hard stop (dry signal cut in one stroke, only the reverb left) → coda long chord.
 Every cut lands on a beat from here (timeline.py is the single source of timing). Usage: python tools/music.py audio/music.wav"""

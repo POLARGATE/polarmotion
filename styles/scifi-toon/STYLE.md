@@ -93,7 +93,7 @@ A menu: use the ones your story needs.
 ## 9. Pitfalls of the medium
 
 - TTS reads hyphen stutters as words: write syllables ("buh, buh-broken"); respell words it mangles; pick names that survive a low voice.
-- Whisper mis-hears very short clips unless padded with ~0.6 s of silence.
+- The speech check mis-hears very short clips unless padded with ~0.6 s of silence.
 - A real interruption: generate the interrupted line *longer* than needed and truncate the audio where the other voice cuts in.
 - A springy overshoot swallows the actors: gentle back-ease.
 - Food and liquids need cues (surface detail, drips, steam) or they read as other objects.
@@ -104,7 +104,7 @@ A menu: use the ones your story needs.
 
 ## 10. Engine
 
-In `demo/`: `toon.js` (vector engine: matrix stack, screen-space boil, constant line width, flat shading), `chars.js` (parametric eyes, mouths, hands, noodle limbs), `worlds.js` (one function per world, creatures, the portal), `voice.py` (per-character processing + lip-sync envelopes), `asr.py` (padded whisper check), `music/score.py` (synthesized score from a cue list), `levels.py` (stem meters), `sheet.sh` / `strip.sh` (contact sheets, consecutive-frame strips). New shapes: build them with `toon.js` in world space; the stroke goes through the screen-space boil at constant weight.
+In `demo/`: `toon.js` (vector engine: matrix stack, screen-space boil, constant line width, flat shading), `chars.js` (parametric eyes, mouths, hands, noodle limbs), `worlds.js` (one function per world, creatures, the portal), `voice.py` (per-character processing + lip-sync envelopes), `asr.py` (padded speech check), `music/score.py` (synthesized score from a cue list), `levels.py` (stem meters), `sheet.sh` / `strip.sh` (contact sheets, consecutive-frame strips). New shapes: build them with `toon.js` in world space; the stroke goes through the screen-space boil at constant weight.
 
 ## 11. Variation space
 

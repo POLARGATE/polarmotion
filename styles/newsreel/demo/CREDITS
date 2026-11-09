@@ -1,5 +1,5 @@
 1920s Newsreel — "Knock-Knee Alert" (library demo)
-Every third-party asset in the film, with its source and licence. An unofficial film made from real
+Third-party material in the film, with its source and licence. An unofficial film made from real
 archive material; no newsreel company, studio or brand is imitated ("THE SPOTLIGHT NEWS" is invented).
 
 ARCHIVE FILM (U.S. National Archives, Ford Motor Company Film Collection; Internet Archive FedFlix copies,
@@ -31,16 +31,14 @@ RECORDING
   Used: the last ~12.9 s (last chorus and ending), sped up 1.06% to sit on the film's 200 BPM grid.
 
 MAP
-- Natural Earth, 1:110m admin-1 states and provinces (public domain), https://www.naturalearthdata.com
-  Projected (Albers) and drawn in code.
+- US states: public-domain map data, projected (Albers) and drawn in code.
 
 FONTS (SIL Open Font License 1.1; licence texts in fonts/)
 - Limelight (Nicole Fally / Sorkin Type), Oswald (Vernon Adams et al.), Noto Sans SC and Noto Serif SC (Adobe / Google).
 
 VOICE
-- Kokoro-82M (kokoro-onnx, Apache 2.0), a blend of the voices am_liam (0.6) and bm_george (0.4).
+- Synthetic narration (a blend of two voices).
 
 MUSIC AND SOUND
 - Original score and foley written for this film (core/audio/sampler.py, pluck.py, sfx.py).
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian
-  Studios), Versilian Community Sample Library (Versilian Studios). Banjo: physical model (core/audio/pluck.py).
+- Banjo: physical model (core/audio/pluck.py).

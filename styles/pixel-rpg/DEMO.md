@@ -57,12 +57,12 @@ Adapting any topic: find the **game system** hidden in it. A product launch is a
 - **Foley**, all synthesized and bit-crushed to the scene's era: cursor/select blips, text blips (the companion's are higher and 5-bit), stone footsteps with echo, fire crackle, ward shimmer (triangle arpeggio), charge (rising square + noise), blast (swept low-pass noise + 48 Hz thump, crushed to 6-bit), HP tick-down, KO blink, **bit-drop** per palette step (lower and coarser each time), save ticks, door grind (brown noise + AM creak), torch ignite, reverse swell.
 - **One organic sound**: the hero's breath before the door, band-passed noise and not crushed. It makes him human at the last moment.
 - **Silence**: after the blast (true zero, echo tails cut too) and the beat before the present.
-- **Voice**: Kokoro `bm_george` at speed 0.9, first person, 5 short lines. Duck the music ~−7.5 dB under the voice (60 ms attack, 350 ms release). Mix to −14 LUFS, **grain 0**.
+- **Voice**: voice `bm_george` at speed 0.9, first person, 5 short lines. Duck the music ~−7.5 dB under the voice (60 ms attack, 350 ms release). Mix to −14 LUFS, **grain 0**.
 
 ## Palette & props
 
 - **Resolution & scaling**: native 320×180 indexed framebuffer (`Uint8Array` of palette indices). Present through a **lookup table** (index → RGB) and scale ×6 nearest-neighbour. Everything, including text, is drawn in the framebuffer. Camera moves are **integer pixels**; each parallax layer rounds its own offset.
-- **Master palette**: ENDESGA-32 (`#be4a2f #d77643 #ead4aa #e4a672 #b86f50 #733e39 #3e2731 #a22633 #e43b44 #f77622 #feae34 #fee761 #63c74d #3e8948 #265c42 #193c3e #124e89 #0099db #2ce8f5 #ffffff #c0cbdc #8b9bb4 #5a6988 #3a4466 #262b44 #181425 #ff0044 #68386c #b55088 #f6757a #e8b796 #c28569`), plus **protected duplicates** (scarf red `#e43b44/#a22633/#f6757a`, crystal cyan `#2ce8f5/#0099db/#ffffff/#124e89`) that no palette effect touches.
+- **Master palette**: a public 32-colour palette (`#be4a2f #d77643 #ead4aa #e4a672 #b86f50 #733e39 #3e2731 #a22633 #e43b44 #f77622 #feae34 #fee761 #63c74d #3e8948 #265c42 #193c3e #124e89 #0099db #2ce8f5 #ffffff #c0cbdc #8b9bb4 #5a6988 #3a4466 #262b44 #181425 #ff0044 #68386c #b55088 #f6757a #e8b796 #c28569`), plus **protected duplicates** (scarf red `#e43b44/#a22633/#f6757a`, crystal cyan `#2ce8f5/#0099db/#ffffff/#124e89`) that no palette effect touches.
 - **Color-depth tables** (all computed from the master palette):
   - *16-bit*: identity.
   - *8-bit*: nearest of 15 colors `#000000 #fcfcfc #a4a4b8 #58587c #1c2c8c #3c7cfc #94e0fc #b8141c #fc7454 #fcb81c #8c4c1c #2c9c2c #fcd8a8 #0c4c18 #4c2410`. It needs a dark green and a dark brown, or night grass turns blue.
@@ -86,7 +86,7 @@ Adapting any topic: find the **game system** hidden in it. A product launch is a
   - types with the voice; ▼ when done.
 - **Skins follow the era**: 4-color light box with dark text at 160×90; 8-bit black box with white frame and an 8-bit portrait; 16-bit/present blue (it fades with the present and turns vivid when color returns).
 - Battle messages go in a thin top window. Every box stays ≥ 1.8 s and ≥ voice + 0.6 s. The next box cuts the previous one. The `.srt` is exported from the same `window.SUBS` array.
-- **Title**: two lines, 2× font, 8-neighbour ink outline, white→silver→steel gradient by row, Bayer-dissolved in and out. **End card**: gold title, blinking `▶ CONTINUE`, style name, `LemoLab × Claude Opus 5.5`, and the red scarf drifting across once. The LemoLab sign-off belongs to this library's demo only: a user's film carries no LemoLab credit and no copy of this card.
+- **Title**: two lines, 2× font, 8-neighbour ink outline, white→silver→steel gradient by row, Bayer-dissolved in and out. **End card**: gold title, blinking `▶ CONTINUE`, style name, `Polargate · PolarMotion`, and the red scarf drifting across once. The library sign-off belongs to this library's demo only: a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Pitfalls we hit (demo record)
 
@@ -97,7 +97,7 @@ Adapting any topic: find the **game system** hidden in it. A product launch is a
 - Hair drawn as a smooth dome reads as a helmet. Back hair with alternating single pixels reads as sawtooth noise; use 2–3 big spikes. A cream tunic reads as bare skin. A staff held in the front hand crosses the face in side view; hold it in the back hand behind the body. A back-mounted sword crossed the front of the torso; use a hip scabbard.
 - A dark plank door reads as a jail. Use recessed panels with bevels lit from the upper left, studs, ring handles and a tympanum. A bug drew the closed door's centre seam as light.
 - **Negative modulo**: `Math.floor(t*12) % 4` is negative when a phase offset makes `t` negative, and it indexed `undefined`. Use `((n % m) + m) % m`.
-- **Homophones**: whisper hears "inn" as "in". Accept it through the `asr` field; the subtitle disambiguates.
+- **Homophones**: The speech check hears "inn" as "in". Accept it through the `asr` field; the subtitle disambiguates.
 - The dialog box covers the bottom 25%. Put the floor line at y 128 so standing characters stay above it.
 - For a match cut on a protected color, compute both screen positions. The demo's scarf is at (197, 104) in both eras.
 

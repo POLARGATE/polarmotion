@@ -4,7 +4,7 @@ One example among many. Don't reuse its story, arc, shots, props or timings.
 
 Demo: *21 Keys, Opened* 《二十一键》 (38.75 s) · `teardown.mp4` · source in [`demo/`](demo/)
 
-One half of the open-source Corne v4 split keyboard (foostan/crkbd, CC BY 4.0 / MIT), built from the project's own KiCad board, switch-plate file, case STEP, bill of materials and build guide. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English below). Every number on screen and in the voice is in [`demo/FACTS.md`](demo/FACTS.md). The project's name and logo are not shown in the picture (only in the end-card credit line); the chip and part numbers are component designations from the BOM, and no package top carries a marking. This is an unofficial film made from the project's published files; the Corne project and its author (foostan) did not make or endorse it.
+One half of an open-source split keyboard (CC BY 4.0 / MIT; attribution in NOTICE and `demo/CREDITS`), built from its own KiCad board, switch-plate file, case STEP, bill of materials and build guide. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English below). Every number on screen and in the voice is in [`demo/FACTS.md`](demo/FACTS.md). The project's name and logo are not shown in the picture (the CC BY attribution lives in `demo/CREDITS` and NOTICE); the chip and part numbers are component designations from the BOM, and no package top carries a marking. This is an unofficial film made from the project's published files; the project's authors did not make or endorse it.
 
 ## Story & structure
 
@@ -54,11 +54,11 @@ Mix (`demo/mix.py`): voice compressed and about 8–10 dB over the music while i
 
 - Ground #34363a → #0d0e10; ink #f1efe9; accent #ff6b3d (labels' indices, dimension lines, the 1.5u key, the switch stems).
 - Keycaps: off-white #d9d4c9, grey #686c73 on the outer column and thumbs, the 1.5u thumb key orange; uniform-height sculpted profile drawn in code. Switches: cross-stem generic (14 mm bottom, 15.6 mm top housing), drawn in code. Plate black FR-4 with a warm core edge; board green mask, gold pads; brass hex spacers; dark screws; anodised-look case (the files do not name a material; the look is a render choice).
-- Narrator: Kokoro `am_michael`, speed 0.95.
+- Narrator: `am_michael`, speed 0.95.
 
 ## End card
 
-二十一键 (Noto Sans SC 500), *21 Keys, Opened* (Inter Light), `产品拆解 · EXPLODED TEARDOWN`, `CAD：foostan/crkbd · CC BY 4.0`, `LemoLab × Claude Opus 5.5`, an orange rule; the closed keyboard drifting on the right. 5 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+二十一键 (Noto Sans SC 500), *21 Keys, Opened* (Inter Light), `产品拆解 · EXPLODED TEARDOWN`, `Polargate · PolarMotion`, an orange rule; the closed keyboard drifting on the right. 5 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -79,6 +79,6 @@ demo/
   FACTS.md, CREDITS, stills/styleframe.jpg
 ```
 
-- `sh demo/build.sh` takes about 3 minutes on Apple silicon (picture about 60 s with 4 workers). In a clean clone it first rebuilds what git does not carry: `data/case.bin` and `data/pcb.json` from the CAD at the pinned commit (network, and npm for a temporary occt-import-js), the fonts from Google Fonts, and any missing library pack (HDRI, Kokoro, the vcsl / freepats / vsco2ce samples). `FETCH=1` forces the CAD and fonts.
-- Checks it runs: `asr_check.py` with `small.en` (two lines carry the words Whisper writes: "RP 2040", "19.05 millimeters"), subtitle single-line widths with the real fonts (widest 552 px against 1500), `readcheck.mjs` (all 19 texts pass), `motioncheck.py` (no one-frame black tiles; motion per second).
-- Demo-specific pitfalls: the v4 board file is a panel with breakaway tabs, so the board outline is the 3x6 plate outline inset 0.4 mm (the plate's 21 cutouts sit 0.4 mm off the switch footprints, measured, and corrected); the case STEP has y up and must be flipped and shifted onto the board (offsets in `tools/step2mesh.mjs`), checked by the four screw holes; the project logo footprint is skipped at extraction; the Kokoro voice reads "RP2040" badly, so the spoken text says "R P twenty forty".
+- `sh demo/build.sh` takes about 3 minutes on Apple silicon (picture about 60 s with 4 workers). In a clean clone it first rebuilds what git does not carry: `data/case.bin` and `data/pcb.json` from the CAD at the pinned commit (network, and npm for a temporary occt-import-js), the fonts from Google Fonts, and any missing library pack (HDRI, voice model, the sample packs the score uses). `FETCH=1` forces the CAD and fonts.
+- Checks it runs: `asr_check.py` with `small.en` (two lines carry the words the speech check writes: "RP 2040", "19.05 millimeters"), subtitle single-line widths with the real fonts (widest 552 px against 1500), `readcheck.mjs` (all 19 texts pass), `motioncheck.py` (no one-frame black tiles; motion per second).
+- Demo-specific pitfalls: the v4 board file is a panel with breakaway tabs, so the board outline is the 3x6 plate outline inset 0.4 mm (the plate's 21 cutouts sit 0.4 mm off the switch footprints, measured, and corrected); the case STEP has y up and must be flipped and shifted onto the board (offsets in `tools/step2mesh.mjs`), checked by the four screw holes; the project logo footprint is skipped at extraction; the voice reads "RP2040" badly, so the spoken text says "R P twenty forty".

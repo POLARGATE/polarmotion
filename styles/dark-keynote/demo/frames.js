@@ -26,6 +26,6 @@ export function poster(g) {
   if (g.letterSpacing !== undefined) g.letterSpacing = '0px';
   E.caret(g, 960 + w / 2 + 26, 132, 104, {});
   g.font = E.font(24, 500, 'mono'); g.fillStyle = E.PAL.dim; if (g.letterSpacing !== undefined) g.letterSpacing = '4px';
-  g.fillText('A LAUNCH FILM FOR TIDY  ·  DARK TECH KEYNOTE  ·  LEMO-OPUSCAR', 960, 232); if (g.letterSpacing !== undefined) g.letterSpacing = '0px';
+  g.fillText('A LAUNCH FILM FOR TIDY  ·  DARK TECH KEYNOTE', 960, 232); if (g.letterSpacing !== undefined) g.letterSpacing = '0px';
   g.textAlign = 'left'; E.vignette(g, 0.4);
 }

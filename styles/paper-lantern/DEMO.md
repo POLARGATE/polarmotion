@@ -4,7 +4,7 @@ One example among many. Don't reuse its story, arc, shots, props or timings.
 
 Demo: *The Last Night Train* 《末班夜车》 (51.0 s, 1920×1080, 30 fps) · `paper-lantern.mp4` · source in [`demo/`](demo/) · engine: three.js 0.170 (WebGL, SSAA 2×, VSM soft shadows, custom DoF + bloom compositor), Canvas2D-drawn paper layers, headless Chrome frame capture.
 
-An old night train makes its last run. At a snowy mountain halt its windows light up car by car and it pulls away over a curved viaduct; it runs alongside a pine forest past three small halts; it goes into a long tunnel and the picture blinks to black; it comes out in a river valley where the town lights its windows as it passes; it slows along the sea cliffs; at the seaside terminus its windows go out one by one, the last one last, and the station lamp stays on. No figures: the story is told by the train, its lit windows, the stations and the light. English narration (Kokoro `bm_george`) with Chinese and English subtitles. The line and its stations are fiction ([`demo/FACTS.md`](demo/FACTS.md)).
+An old night train makes its last run. At a snowy mountain halt its windows light up car by car and it pulls away over a curved viaduct; it runs alongside a pine forest past three small halts; it goes into a long tunnel and the picture blinks to black; it comes out in a river valley where the town lights its windows as it passes; it slows along the sea cliffs; at the seaside terminus its windows go out one by one, the last one last, and the station lamp stays on. No figures: the story is told by the train, its lit windows, the stations and the light. English narration (voice `bm_george`) with Chinese and English subtitles. The line and its stations are fiction ([`demo/FACTS.md`](demo/FACTS.md)).
 
 ## Story & structure
 
@@ -43,7 +43,7 @@ Film time; dissolves are 0.6 s.
 - Flute tune over the harp on the viaduct and again by the river; strings tremolo in D minor into the tunnel, cut to silence for the blink; an open D major chord with a harp sweep on the way out; solo violin and strings at the sea; harp and strings under the end card.
 - Foley: snow wind, river, sea, room tone; lamp clicks, horn (two detuned saws, band-passed), brake hiss, wheel clacks and rumble, whooshes in and out of the tunnel, paper for the ticket. Everything stops during the blink.
 - Mix (`demo/mix.py`): voice compressed, RMS −18 dB; music ducked 5 dB under speech with a 300 Hz–4 kHz dip; peak-limited; `core/render/mux.sh` to −14 LUFS, true peak −1.2 dB.
-- Instruments from VSCO 2 CE, VCSL (CC0) and Salamander Grand Piano (CC BY 3.0) through `core/audio/sampler.py`.
+- Sampled instruments and the Salamander Grand Piano (CC BY 3.0) through `core/audio/sampler.py`.
 
 ## Palette & props
 
@@ -55,7 +55,7 @@ Film time; dissolves are 0.6 s.
 ## Titles, subtitles & end card
 
 - Subtitles: one Chinese line (Noto Serif SC 500, 40 px) over one English line (Cormorant Garamond 600, 42 px), warm off-white, 64 px from the bottom, on the dark front band, with a faint dark band (`#sub .band`). `demo/tools/subcheck.py` measures the ground under every cue: 98 % or more of the non-text pixels are dark in this film. The last line stays to the end.
-- End card: a paper ticket on a thread drops from above at 47.5 s, overshoots and swings to rest. Main panel: a route line `FROM PINE HALT → TO SEA END`, the title (English largest, then 末班夜车), a rule, the style name 纸雕灯影 / Paper-cut Lightbox, and `LemoLab × Claude Opus 5.5` on its own line; notched corners, a punched hole top left, a perforated stub with a red 车 stamp. The sign-off belongs to the library's own demos: a user's film carries no LemoLab credit and no copy of this card.
+- End card: a paper ticket on a thread drops from above at 47.5 s, overshoots and swings to rest. Main panel: a route line `FROM PINE HALT → TO SEA END`, the title (English largest, then 末班夜车), a rule, the style name 纸雕灯影 / Paper-cut Lightbox, and `Polargate · PolarMotion` on its own line; notched corners, a punched hole top left, a perforated stub with a red 车 stamp. The sign-off belongs to the library's own demos: a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Pitfalls we hit
 
@@ -72,7 +72,7 @@ LIB=<library root> sh styles/paper-lantern/demo/build.sh          # fonts, voice
 LIB=<library root> sh styles/paper-lantern/demo/build.sh 40 51    # only a span of the film → demo/out/cut_40-51.mp4
 ```
 
-On a fresh clone, first: `sh tools/setup.sh deps voice`, `sh tools/fetch.sh instruments vsco2ce`, `sh tools/fetch.sh instruments vcsl`, `sh tools/fetch.sh instruments salamander`. `demo/tools/fonts.py` downloads the two OFL fonts and subsets Noto Serif SC to the film's characters. The narration WAVs are regenerated from `demo/voices/lines.json` when missing, then checked with `asr_check.py`.
+On a fresh clone, first: `sh tools/setup.sh deps voice`, `sh tools/fetch.sh instruments all`. `demo/tools/fonts.py` downloads the two OFL fonts and subsets Noto Serif SC to the film's characters. The narration WAVs are regenerated from `demo/voices/lines.json` when missing, then checked with `asr_check.py`.
 
 `demo/tools/timeline.py` is the one timeline: narration starts, subtitle cues, every action's time (`HIT`: the lamp, each window, the departure, the tunnel, the stop, each window going out, the card) and the shot list. The page (`timeline.json`) and `mix.py` read it; it writes `paper-lantern.srt`. Query options: `?from=a&to=b` renders a span, `?nosub=1` hides the subtitles (for stills). About 40 s for 1 530 frames with 2 workers on an M-series Mac.
 

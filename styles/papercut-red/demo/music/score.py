@@ -269,7 +269,7 @@ for k in out:
 mix *= g
 sf.write(os.path.join(HERE, 'score.wav'), mix, SR)
 json.dump(KEY, open(os.path.join(HERE, 'score.json'), 'w'), indent=1)
-open(os.path.join(HERE, 'CREDITS.txt'), 'w').write('\n'.join(S.credits(['dan_tranh', 'dan_tranh_trem', 'erhu', 'flute', 'woodblock', 'gong2', 'frame_drum'])) + '\nPipa: physical-model plucked string (core/audio/pluck.py), original synthesis.\n')
+open(os.path.join(HERE, 'CREDITS.txt'), 'w').write('\n'.join(S.credits(['dan_tranh', 'dan_tranh_trem', 'erhu', 'flute', 'woodblock', 'gong2', 'frame_drum']) or ['Original score, played on sampled instruments.']) + '\n')
 
 # ---------- self-check ----------
 db = lambda x: 20 * np.log10(np.sqrt(np.mean(x ** 2)) + 1e-12)

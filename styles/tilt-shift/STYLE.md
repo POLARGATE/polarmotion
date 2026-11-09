@@ -63,7 +63,7 @@ Framing: stay high; the sharp band carries the subject; vehicles and people stay
 - **Techniques, as options**: world events gate the notes of a fixed phrase skeleton (vehicles crossing a line, lights changing, crowds moving each trigger an instrument), with a base fill rate so the phrase stays audible; tuned horns or bells voiced as chords; a tape-stop (varispeed down, voices dropping out) into silence when time slows; single notes for single events in a rest; phasing two identical lines apart; a music-box version of the theme for the smallest scale.
 - **Sound follows speed**: in time-lapse, music first with a faint granular "sped-up world" hiss, clacks and relay clicks. At real speed the world turns suddenly real: idling engines, distant traffic, birds, small voices, footsteps. On release, engines rev and wind rises.
 - **Silence** is the moment real time arrives: cut the music, keep one or two real sounds.
-- **Voice**: relaxed, few short lines, music ducked ~8 dB. Verify every line with whisper; write numbers as words and put digits in the `asr` field. Master to −14 LUFS.
+- **Voice**: relaxed, few short lines, music ducked ~8 dB. Verify every line with the speech check; write numbers as words and put digits in the `asr` field. Master to −14 LUFS.
 
 ## 8. Native moves
 

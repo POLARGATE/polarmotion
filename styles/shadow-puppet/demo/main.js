@@ -245,7 +245,7 @@ function render(t) {
       drawRods(tr, r.rods, r.rods.map((q, j) => [q[0] - (140 - j * 40) * .78, q[1] + 600]), 2, .7);
       drawFrame(fr, C, .8); drawAudience(fr, .95, 2);
       fr.save(); fr.textAlign = 'center'; fr.fillStyle = '#e9cf9c'; fr.font = '700 64px "Cormorant Garamond"'; fr.letterSpacing = '10px'; fr.fillText('HOU YI SHOOTS THE SUNS', 960, 66);
-      fr.font = 'italic 600 30px "Cormorant Garamond"'; fr.letterSpacing = '2px'; fr.fillStyle = '#c9a26a'; fr.fillText('a shadow puppet tale  ·  Shadow Puppetry  ·  LemoLab × Claude Opus 5.5', 960, 108); fr.restore();
+      fr.font = 'italic 600 30px "Cormorant Garamond"'; fr.letterSpacing = '2px'; fr.fillStyle = '#c9a26a'; fr.fillText('a shadow puppet tale  ·  Shadow Puppetry  ·  Polargate · PolarMotion', 960, 108); fr.restore();
       GL.render(trc, frc, { lamps: [[SUNPOS[0][0], SUNPOS[0][1] - 10, 1, .95]], cam, expo: 1.75, sigB: 700, sigC: 120, amb: .3, vign: .45, sat: 1.1, contrast: .15, bloom: .3 }); return;
     }
     if (TEST === 'frame') { const o = testMod.styleFrame(tr, fr, qs.get('f') || 'ten'); GL.render(trc, frc, { ...o, time: t }); return; }

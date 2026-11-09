@@ -372,12 +372,10 @@ export function makeFilm(C, model, dur) {
     ctx.font = `600 30px ${U.FONT.ui}`; ctx.letterSpacing = '6px'; ctx.fillStyle = T.line(0.9 * seg(u, 0.4, 0.8));
     ctx.fillText('SCI-FI HOLOGRAM HUD', W / 2, 490); ctx.letterSpacing = '0px';
     ctx.fillStyle = T.line(0.6 * seg(u, 0.4, 0.8)); ctx.fillRect(W / 2 - 180, 525, 360, 1.5);
-    ctx.font = `500 34px ${U.FONT.ui}`; ctx.fillStyle = T.hi(0.95 * seg(u, 0.8, 1.2));
-    ctx.fillText('Lemo-Opuscar', W / 2, 590);
     ctx.font = `22px ${U.FONT.mono}`; ctx.fillStyle = T.line(0.85 * seg(u, 1.0, 1.4));
-    ctx.fillText('LemoLab × Claude Opus 5.5', W / 2, 636);
+    ctx.fillText('Polargate · PolarMotion', W / 2, 590);
     ctx.font = `20px ${U.FONT.mono}`; ctx.fillStyle = T.dim(0.9 * seg(u, 1.3, 1.7));
-    (C.credits || []).forEach((l, i) => ctx.fillText(l, W / 2, 720 + i * 32));
+    (C.credits || []).forEach((l, i) => ctx.fillText(l, W / 2, 674 + i * 32));
     ctx.restore();
   }
 

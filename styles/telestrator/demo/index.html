@@ -433,7 +433,6 @@ function notes(t) {
     X.letterSpacing = '0px'; X.fillStyle = 'rgba(11,15,20,0.62)'; X.font = `500 26px ${F_ZH}`; X.fillText('3 号 · 左后卫', 0, 246);
     X.fillStyle = 'rgba(255,212,0,0.85)'; X.save(); X.rotate(-.08); X.fillRect(-70, -318, 140, 40); X.restore();
     X.restore();
-    X.save(); X.globalAlpha = pk2 * .8; X.fillStyle = 'rgba(244,241,232,0.75)'; X.font = `500 18px ${F_ZH}`; X.textAlign = 'right'; X.fillText('照片 2013 · Thomas Rodenbücher · CC BY 2.0', 1860, 1050); X.restore();
   }
 }
 let NOTE84 = { x: 640, w: 230, y: 420 };
@@ -467,13 +466,9 @@ async function endSlate(t) {
   marker(wob([[118, 470], [760, 462]], 2, 31), seg(t, T0 + .4, T0 + .75), COL.ink, 12);
   bugTop('ana', 1); bugScore({ fb: 3, min: '67′', g: 1 }, 1);   // also covers the broadcaster logo and URL watermark in the footage
 }
-// Shared end card: title (Chinese + English) → hairline → style name → credit → small footage credits. All text is in place before card.t0+0.52 and holds until t1−0.3 before fading out (holds 2.58 s)
+// Shared end card: title (Chinese + English) → hairline → style name → sign-off → one small disclaimer line (the asset credits live in demo/CREDITS). All text is in place before card.t0+0.52 and holds until t1−0.3 before fading out (holds 2.58 s)
 const CREDITS = [
-  'Match footage: beIN SPORTS Türkiye, “Beşiktaş 3 - 3 Fenerbahçe | Maç Özeti | 2018/19” (YouTube) and its Wikimedia Commons cut, CC BY 3.0',
-  '   edited, reversed, slowed and frozen, colour-graded, graphics added; the broadcaster’s logo and URL are covered',
-  'Player photo: Thomas Rodenbücher, via Wikimedia Commons, CC BY 2.0 — cropped',
-  'Drums: “MuldjordKit” by Lars Muldjord (drumgizmo.org), FreePats version, CC BY 4.0',
-  'CC0: stadium photo by Olos88 · samples FreePats, VSCO 2 CE, VCSL · Voice: Kokoro TTS · unofficial fan analysis'
+  'Unofficial fan analysis'
 ];
 async function endCard(t) {
   const s = S('card'), T0 = s.t0, out = seg(t, s.t1 - .3, s.t1);
@@ -493,10 +488,10 @@ async function endCard(t) {
   X.globalAlpha = a3; X.fillStyle = 'rgba(255,255,255,0.92)'; X.font = `600 30px ${F_C}`; X.letterSpacing = '4px';
   X.fillText('SPORTS TELESTRATOR', x0, 590); const sw = X.measureText('SPORTS TELESTRATOR').width;
   X.letterSpacing = '2px'; X.font = `500 28px ${F_ZH}`; X.fillText('·  体育战术板', x0 + sw + 14, 589);
-  X.letterSpacing = '1px'; X.fillStyle = 'rgba(255,255,255,0.8)'; X.font = `500 26px ${F_ZH}`; X.fillText('LemoLab × Claude Opus 5.5', x0, 640);
+  X.letterSpacing = '1px'; X.fillStyle = 'rgba(255,255,255,0.8)'; X.font = `500 26px ${F_ZH}`; X.fillText('Polargate · PolarMotion', x0, 640);
   const a4 = A(.3, .52);
   X.globalAlpha = a4; X.letterSpacing = '0px'; X.font = `500 21px ${F_ZH}`; X.fillStyle = 'rgba(255,255,255,0.76)';
-  CREDITS.forEach((c, i) => { X.fillText(c, x0, 846 + i * 34); const w = X.measureText(c).width; if (x0 + w > 1360) console.warn('credit line too wide:', i, Math.round(w)); });
+  CREDITS.forEach((c, i) => { X.fillText(c, x0, 700 + i * 34); const w = X.measureText(c).width; if (x0 + w > 1360) console.warn('credit line too wide:', i, Math.round(w)); });
   X.restore();
   if (out > 0) { X.fillStyle = `rgba(0,0,0,${eio(out)})`; X.fillRect(0, 0, W, H); }   // last 0.3 s: fade to black together with the picture
 }
@@ -884,7 +879,7 @@ window.TEXTS = t => {
   }
   if (s.id === 'notes') [['接球 → 起脚 0.84 秒', .3], ['起脚 → 入网 ≈0.9 秒', .6], ['12 分钟扳平', .9]].forEach(([txt, d], i) => { if (lt > d + .55) R('n' + i, txt, 150, 260 + i * 190, 1300, 440 + i * 190); });
   if (s.id === 'end' && lt > .4) R('e67', '67′', 110, 170, 560, 450);
-  if (s.id === 'card' && lt > .55 && t < s.t1 - .3) { R('cT', '定格', 116, 270, 420, 430); R('cE', 'Freeze Frame', 122, 440, 560, 510); R('cS', 'SPORTS TELESTRATOR · 体育战术板', 122, 556, 760, 600); R('cL', 'LemoLab × Claude Opus 5.5', 122, 612, 520, 650); }
+  if (s.id === 'card' && lt > .55 && t < s.t1 - .3) { R('cT', '定格', 116, 270, 420, 430); R('cE', 'Freeze Frame', 122, 440, 560, 510); R('cS', 'SPORTS TELESTRATOR · 体育战术板', 122, 556, 760, 600); R('cL', 'Polargate · PolarMotion', 122, 612, 520, 650); }
   return out;
 };
 function netPulse(t, G) {

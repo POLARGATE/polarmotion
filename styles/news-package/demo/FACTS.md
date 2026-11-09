@@ -1,4 +1,4 @@
-# Facts and sources ·《本周 AI 四件事 The Week in AI》 (Lemo AI News, week 42)
+# Facts and sources ·《本周 AI 四件事 The Week in AI》 (Polar AI News, week 42)
 
 Checked on 2026-10-21 (each source below was checked page by page; wherever a primary source could be found it was added; event details reported by a single source only are kept off screen and out of the voice-over).
 Before the last render, the table below was compared item by item against `vo/lines.json` (Chinese voice-over) and the `STRAP` / `ROWS` / `CUES` and per-shot on-screen text in `main.js`. A line-by-line check of the voice-over is at the end.
@@ -51,25 +51,25 @@ On-screen text and voice-over are Chinese; they are quoted as they appear, with 
 | M4 | Runs on two Mac Studios (M5 Ultra); 512 GB each; "≈ 1 TB 统一内存" (≈ 1 TB unified memory) | Same | "Muse Spark Open is the first model in its class to run on your desktop using two Apple M5 Ultra Mac Studios…"; "Apple's unified memory architecture lets the M5 Ultra's integrated GPU use up to 512 GB per Mac Studio"; "The result is two Mac Studios behave like one supercomputer with a terabyte of unified memory." | Primary. Mac Studio is set in type only, no logo |
 | — | Not reported | — | The revenue threshold in the licence, third-party benchmark scores and the claim that the Hugging Face repository appeared earlier are found only in secondary sources | — |
 
-## Voice-over, line by line (Chinese, Doubao TTS; `vo/lines.json`)
+## Voice-over, line by line (Chinese, synthetic voice; `vo/lines.json`)
 
 The voice-over lines are quoted in the original Chinese, with an English translation.
 
 | Line | Voice-over | Facts |
 |---|---|---|
-| v1 | 这里是 Lemo AI 新闻，本周 AI 四件事。 (This is Lemo AI News: four things in AI this week.) | — |
+| v1 | 这里是 Polar AI 新闻，本周 AI 四件事。 (This is Polar AI News: four things in AI this week.) | — |
 | v2 | 谷歌向全部开发者开放了 Gemini 4 Argon，入门价每百万输入 token 2 美元，12 月起翻倍。 (Google has opened Gemini 4 Argon to all developers; the introductory price is 2 dollars per million input tokens, doubling from December.) | G1, G2, G3, G4 ($2 → $4, from 1 December) |
 | v3 | 在首尔，韩国综合股价指数单日跌超 7.5%，较 9 月高点跌去两成多，跌入熊市。 (In Seoul, the Kospi fell more than 7.5% in a day, more than a fifth below its September high, into a bear market.) | K1, K3, K4 |
 | v4 | 三星和 SK 海力士单日都跌了 9% 以上。 (Samsung and SK hynix both fell more than 9% in a day.) | K6 |
 | v5 | 欧盟 AI 办公室向 OpenAI 和 Anthropic 发出问询，据欧洲新闻台报道。 (The EU AI Office has sent requests for information to OpenAI and Anthropic, Euronews reports.) | E1 |
 | v6 | 维尔库宁在都柏林说：AI 办公室已开始执行这些规则。 (Virkkunen said in Dublin: the AI Office has started enforcing these rules.) | E4, E5 (the quotation is the Chinese sense of the speech's wording) |
 | v7 | Meta 开放了 Muse Spark Open 的权重。总参数 8160 亿，每个 token 只激活 420 亿，两台 Mac Studio 就能跑。 (Meta has released the weights of Muse Spark Open. 816 billion parameters in total, only 42 billion active per token, and it runs on two Mac Studios.) | M1, M2, M4 |
-| v8 | 本周就到这里。这里是 Lemo AI 新闻。 (That's all for this week. This is Lemo AI News.) | — |
+| v8 | 本周就到这里。这里是 Polar AI 新闻。 (That's all for this week. This is Polar AI News.) | — |
 
 ## Non-news elements in the picture
 
 | Element | Note |
 |---|---|
-| Server-room and wafer backgrounds | Illustrative empty shots generated with Codex image_gen, used only as backgrounds; while on screen they carry "ILLUSTRATION / 示意 · AI 生成画面" (illustration · AI-generated image) in the top-left corner throughout; they do not represent any real place, company or event |
-| LEMO logo, LEMO AI NEWS | LemoLab's own channel brand |
+| Server-room and wafer backgrounds | Illustrative empty shots, AI-generated, used only as backgrounds; while on screen they carry "ILLUSTRATION / 示意 · AI 生成画面" (illustration · AI-generated image) in the top-left corner throughout; they do not represent any real place, company or event |
+| POLAR logo, POLAR AI NEWS | An invented channel |
 | Company and product names | Google, OpenAI, Anthropic, Samsung, SK hynix, Meta and Mac Studio are set in type only, no logos |

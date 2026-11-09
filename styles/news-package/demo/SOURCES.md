@@ -17,17 +17,16 @@ This film uses no third-party footage or photographs. Everything on screen is dr
 | Asset | Source | Licence | Notes |
 |---|---|---|---|
 | Country outlines (Europe) | Natural Earth 1:50m Admin 0, via world-atlas 2.0.2 `countries-50m.json` (https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json), projected in `tools/prep.py`: only the 27 EU member states are kept as separate shapes (Cyprus as the whole island, Åland inside Finland); all other land is merged into one shape with no borders | public domain (Natural Earth); world-atlas package ISC | `assets/europe.json` |
-| `assets/plates/plate_datacenter.jpg`, `assets/plates/plate_wafer.jpg` (committed) | Codex CLI image_gen, prompts in `tools/gen_plates.sh` (generated 2026-10-19, saved as JPEG q88) | AI-generated illustrations; no text, logos, people or real places | graded duotone by `tools/prep.py` into `assets/plate_*.jpg` (build output); tagged "ILLUSTRATION / 示意 · AI 生成画面" whenever on screen. A generated conference hall was made too and left out: it would read as the Dublin venue |
-| Charts, maps, documents, quote card, spec card, stamps, LEMO plate | drawn in `main.js` | — | LEMO AI NEWS is LemoLab's own brand |
+| `assets/plates/plate_datacenter.jpg`, `assets/plates/plate_wafer.jpg` (committed) | Synthetic illustrations, prompts in `tools/gen_plates.sh` (generated 2026-10-19, saved as JPEG q88) | AI-generated illustrations; no text, logos, people or real places | graded duotone by `tools/prep.py` into `assets/plate_*.jpg` (build output); tagged "ILLUSTRATION / 示意 · AI 生成画面" whenever on screen. A generated conference hall was made too and left out: it would read as the Dublin venue |
+| Charts, maps, documents, quote card, spec card, stamps, POLAR plate | drawn in `main.js` | — | POLAR AI NEWS is an invented channel |
 
 ## Sound
 
 | Asset | Source | Licence |
 |---|---|---|
-| Orchestral samples | VS Chamber Orchestra: Community Edition, Versilian Studios / Sam Gossner (github.com/sgossner/VSCO-2-CE) | CC0 1.0 |
-| Percussion and glockenspiel samples | Versilian Community Sample Library (github.com/sgossner/VCSL) | CC0 1.0 |
+| Score | sampled instruments (`core/audio/sampler.py`) | — |
 | Foley | synthesised in code (`core/audio/sfx.py`) | — |
-| Voice | Doubao TTS 2.0 (Volcengine seed-tts-2.0), voice 解说小明 2.0 `zh_male_jieshuoxiaoming_uranus_bigtts`, via `tools/tts_doubao.py` (your own API key) | Volcengine service terms |
+| Voice | Synthetic narration from an online service, voice 解说小明 2.0 `zh_male_jieshuoxiaoming_uranus_bigtts` (your own API key) | that service's terms |
 
 ## Fonts
 

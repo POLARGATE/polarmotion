@@ -150,8 +150,8 @@ function hud(t) {
     titleBlock(t, T.end, 372, a, false);
     g.save(); g.globalAlpha = ss(seg(t, T.end + .5, T.end + 1.2)); hexIcon(W / 2, 668, 20, '#ffc676');
     g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#ffd89a'; g.font = '600 30px "Josefin Sans"';
-    const p = spaced('LOW-POLY ISLAND  ·  LEMO-OPUSCAR', W / 2, 738, 6); [...'LOW-POLY ISLAND  ·  LEMO-OPUSCAR'].forEach((ch, i) => { g.textAlign = 'left'; g.fillText(ch, p[i], 738); });
-    g.textAlign = 'center'; g.fillStyle = 'rgba(255,255,255,.9)'; g.font = '500 30px Quicksand'; g.fillText('LemoLab × Claude Opus 5.5', W / 2, 794);
+    const p = spaced('LOW-POLY ISLAND', W / 2, 738, 6); [...'LOW-POLY ISLAND'].forEach((ch, i) => { g.textAlign = 'left'; g.fillText(ch, p[i], 738); });
+    g.textAlign = 'center'; g.fillStyle = 'rgba(255,255,255,.9)'; g.font = '500 30px Quicksand'; g.fillText('Polargate · PolarMotion', W / 2, 794);
     g.font = '500 20px Quicksand'; g.fillStyle = 'rgba(255,255,255,.62)'; CREDITS.forEach((c, i) => g.fillText(c, W / 2, H - 92 + i * 30));
     g.restore();
   }

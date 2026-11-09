@@ -55,8 +55,8 @@ Motion as used in the demo:
 - **Score**: original funk/pop fusion. Drum kit with 16th hats and ghost notes, **synthesized slap bass** (additive pluck + band-passed thumb noise + 1.8–6.5 kHz pop + octave jumps and slides), stacked brass stabs (trumpet_stac + alto sax + trombone_stac), and a vibraphone+piano "e-piano". Drums and bass run through the whole film. On top, one **colour instrument per style**: xylophone (crayon), guqin harmonics and bends (ink), square beeps (ASCII), vibes and sax (riso), pulse arpeggio (pixel), muted trumpet (blueprint), claves and dry piano (Swiss). Each speed-up gets a rising brass run, and the key rises a whole step each round.
 - **Real silences**: 1 beat before the first sneeze, the last-life stage (heartbeat only), and the boss close-up (heartbeat + the same guqin note as the first dust mote). The biggest hit comes right after the longest silence.
 - **Foley follows the medium**: rubber squeak + air for the crayon pump, a wet splat and drips for ink, teletype clicks and a relay for ASCII, a paper thump and crunch for riso, bit-crushed noise for pixel, ratchet teeth and a stamp thunk for blueprint, a hollow bonk and small rubber boings for Swiss. Home-stage sounds: spring-loaded crown click, glass crack plus bouncing clinks for a lost life, card flips, slot-reel whirr, sparse sampled claps.
-- **Voices**: host = Kokoro `am_fenrir` (it had the widest pitch range of the voices tested), speed 1.05–1.15. The host shouts every command 0.1 s *after* the stab so the brass doesn't mask the word. Hero = `af_bella` pitched +2.5 semitones, only "Oh no." plus the "ah… ah…" and sneeze, which are treated as SFX and exempt from whisper checks. Duck the music about 11 dB and the foley about 6 dB under voice.
-- **Single-word commands in Kokoro**: "Pump!" comes out as "Pompey" and "Zip!" as "Zipper", because a vowel tail is added. Generate "Pump, now!" and cut at the end of the first word from whisper timestamps (`tools/trim_cmd.py`).
+- **Voices**: host = voice `am_fenrir` (it had the widest pitch range of the voices tested), speed 1.05–1.15. The host shouts every command 0.1 s *after* the stab so the brass doesn't mask the word. Hero = `af_bella` pitched +2.5 semitones, only "Oh no." plus the "ah… ah…" and sneeze, which are treated as SFX and exempt from speech checks. Duck the music about 11 dB and the foley about 6 dB under voice.
+- **Single-word commands in the TTS**: "Pump!" comes out as "Pompey" and "Zip!" as "Zipper", because a vowel tail is added. Generate "Pump, now!" and cut at the end of the first word from speech-check timestamps (`tools/trim_cmd.py`).
 
 ## Palette & props
 
@@ -89,7 +89,7 @@ Motion as used in the demo:
 - Other lines use a **gold rounded card** with a 7 px ink outline and a hard shadow, Lilita One 50 px, a small stopwatch icon (host) or helmet icon (hero), placed above the fuse in games. It pops in over 2 steps at 12 fps. Hold ≥ max(1.8 s, speech + 0.6 s), and never during a big banner.
 - The title card is the home-stage marquee lighting up letter by letter (FIVE-SECOND ASTRONAUT / A MICROGAME FRENZY).
 
-The end card sits inside the TV: title, style name and "LemoLab × Claude Opus 5.5", with hero and host. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The end card sits inside the TV: title, style name and "Polargate · PolarMotion", with hero and host. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -104,7 +104,7 @@ styles/microgame/demo/
 ```
 1. Write `timeline.js` (tempo grid), then the cue table, then hand the grid and cue table to a music sub-agent. Draw in parallel with it.
 2. Build the home style and characters first, then **one `sceneX(g, lt)` per medium**. Review each with `?scene=g_x.sceneX` stills.
-3. `sh demo/build.sh` rebuilds everything: TTS → trim → whisper → score → events → cue check → mix → srt → render (~25 s for 1436 frames) → mux (−14 LUFS, grain 0), about 1.5 minutes in total.
+3. `sh demo/build.sh` rebuilds everything: TTS → trim → speech check → score → events → cue check → mix → srt → render (~25 s for 1436 frames) → mux (−14 LUFS, grain 0), about 1.5 minutes in total.
 4. Review with `bash demo/tools/review.sh out/revN 6 $(seq 0.5 1 59.5)` at least twice, plus frame strips of every key action.
 
 ### Pitfalls we hit
@@ -118,5 +118,5 @@ styles/microgame/demo/
 - Uploading a 2D canvas without `UNPACK_FLIP_Y` means v = 0 is the canvas top; sample with `p/R`.
 - Command tags pile up (LAND IT! + PULL! in the same corner). Secondary commands should fly out, not tag.
 - A white impact flash at 100 % reads as a blank frame; cap it at 60 %.
-- whisper often mishears 0.2 s command words inside a dense mix, even at +16 dB SNR. Verify them per clip, and measure SNR in the 300–4 kHz band for the mix.
+- The speech check often mishears 0.2 s command words inside a dense mix, even at +16 dB SNR. Verify them per clip, and measure SNR in the 300–4 kHz band for the mix.
 - A zsh `$T` list doesn't word-split. Use the bash review helper `tools/review.sh`.

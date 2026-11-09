@@ -6,8 +6,8 @@ Shape: Beijing (bars 0-5, guitar waltz) → Istanbul (6-8, darbuka joins) → Pa
 → silence → the clamp (bar 16 beat 3, 27.78 s) → the way home (17-21, guitar in eighths, harmonica joins) → the snap (bar 22, 36.67 s,
 the loudest downbeat) → home (22-29, harmonica tune, the last F chord rings out).
 
-Instruments (all CC0): guitar_nylon, accordion, world_perc (FreePats); jazz_bass (Karoryfer Sneakybass);
-glockenspiel, harmonica, snare2 taps, shaker, cajon (VCSL); sus_cymbal (VSCO 2 CE).
+Instruments (all sampled): guitar_nylon, accordion, world_perc, jazz_bass,
+glockenspiel, harmonica, snare2 taps, shaker, cajon, sus_cymbal.
 Run from the library root:  .venv/bin/python styles/silkscreen-poster/demo/music/compose.py   → music/score.wav (+ music/stems/)."""
 import sys, os, json
 HERE = os.path.dirname(os.path.abspath(__file__)); D = os.path.dirname(HERE)

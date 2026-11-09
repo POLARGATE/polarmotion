@@ -68,7 +68,7 @@ Why this route, for this story: the title typed as a file the machine opens made
   - **Beeps**: a square-wave error beep, a lower one for the final error, and a 1 kHz BEL for the reply.
   - **Particles**: particle landings as clusters of tiny 2–6 kHz ticks.
   - **Room tone**: a fan bed with 120 Hz hum and a **very quiet** 15.7 kHz flyback whine (about −50 dBFS before loudness normalization).
-- **Voice**: the machine's log, read by Kokoro `am_echo` at speed 0.8. Process it with 16% ring modulation at 52 Hz, a 6 ms comb (0.22), a 140–7000 Hz band-pass and soft saturation. Whisper still reads it 5/5. Use 4–6 short lines. Under the voice the music is ducked about −8 dB. The master is −14 LUFS with no grain (the noise lives in the picture).
+- **Voice**: the machine's log, read by voice `am_echo` at speed 0.8. Process it with 16% ring modulation at 52 Hz, a 6 ms comb (0.22), a 140–7000 Hz band-pass and soft saturation. The speech check still reads it 5/5. Use 4–6 short lines. Under the voice the music is ducked about −8 dB. The master is −14 LUFS with no grain (the noise lives in the picture).
 
 ## Palette & props
 
@@ -83,7 +83,7 @@ Why this route, for this story: the title typed as a file the machine opens made
 
 ## End card
 
-Typed over the final room shot (`ASCII / CRT TERMINAL`, `LemoLab × Claude Opus 5.5`), followed by the CRT power-off. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Typed over the final room shot (`ASCII / CRT TERMINAL`, `Polargate · PolarMotion`), followed by the CRT power-off. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -98,7 +98,7 @@ styles/ascii-crt/demo/
 ```
 
 1. `node core/render/still.mjs styles/ascii-crt/demo --range 33.4:37.4:0.2` renders frames of any section; `?frame=earth|fractal|base|poster` renders single tests; `?nosub=1` renders without the LOG strip.
-2. `sh styles/ascii-crt/demo/build.sh` goes from zero to the finished film: TTS, voice FX, whisper, score, events, mix, SRT, render (1435 frames in about 50 s with 3 workers), mux, styleframe, poster.
+2. `sh styles/ascii-crt/demo/build.sh` goes from zero to the finished film: TTS, voice FX, speech check, score, events, mix, SRT, render (1435 frames in about 50 s with 3 workers), mux, styleframe, poster.
 
 Pitfalls tied to this demo's props:
 

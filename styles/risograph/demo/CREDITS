@@ -7,7 +7,7 @@ Fonts (SIL Open Font License 1.1)
 - Bricolage Grotesque — Mathieu Triay — fonts/Bricolage.ttf, license fonts/Bricolage-OFL.txt — https://github.com/google/fonts/tree/main/ofl/bricolagegrotesque
 
 Voice
-- Kokoro-82M (Apache-2.0) via kokoro-onnx, voice am_adam — core/tts/
+- Synthetic narration.
 
 Music
 - Original bossa nova score, synthesized in numpy/numba (Karplus–Strong nylon guitar and upright bass, additive vibraphone, whistle, filtered-noise percussion) — music/score.py. No samples used.

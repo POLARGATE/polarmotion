@@ -178,10 +178,10 @@ ALIASES = {'strings': 'violins', 'cello': 'cellos', 'viola': 'violas', 'double_b
            'cymbal': 'crash', 'tamtam': 'gong', 'celesta': 'glockenspiel'}
 
 LIC = {
-    'vsco2ce': ('VS Chamber Orchestra: Community Edition (Versilian Studios)', 'CC0 1.0', ''),
-    'vcsl': ('Versilian Community Sample Library (Versilian Studios)', 'CC0 1.0', ''),
+    'vsco2ce': ('VS Chamber Orchestra: Community Edition', 'CC0 1.0', ''),
+    'vcsl': ('Versilian Community Sample Library', 'CC0 1.0', ''),
     'freepats': ('FreePats project (freepats.zenvoid.org)', 'CC0 1.0', ''),
-    'karoryfer': ('Karoryfer Samples / sfzinstruments', 'CC0 1.0', ''),
+    'karoryfer': ('Karoryfer Samples', 'CC0 1.0', ''),
     'salamander': ('Salamander Grand Piano V3 by Alexander Holm', 'CC BY 3.0',
                    'Piano: "Salamander Grand Piano V3" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)'),
     'muldjord': ('MuldjordKit by Lars Muldjord (FreePats version)', 'CC BY 4.0',
@@ -661,10 +661,9 @@ def info(nm=None):
 
 
 def credits(names):
-    """From the instrument names used, return the attribution lines the end CREDITS need (CC BY ones are required; CC0 ones listed as thanks)"""
-    need, thanks = [], set()
+    """From the instrument names used, return the attribution lines the end CREDITS need: only the CC BY ones, which the licence requires (CC0 packs need no credit, so none is written)"""
+    need = []
     for n in names:
         n = ALIASES.get(n, n); l = _lic(n)
         if LIC[l][2]: need.append(LIC[l][2])
-        else: thanks.add(LIC[l][0])
-    return list(OrderedDict.fromkeys(need)) + ([f'Samples (CC0): {", ".join(sorted(thanks))}'] if thanks else [])
+    return list(OrderedDict.fromkeys(need))

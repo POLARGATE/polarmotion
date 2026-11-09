@@ -1,6 +1,6 @@
 """Score, foley, beds and voice for 《差两秒》 -> out/mix.wav (+ out/stems/*.wav).
 Reads out/timeline.json (tools/export.mjs) and voice/out/*.wav. Run from anywhere: python mix.py
-Score: 90 BPM, B minor -> D major. Felt piano (Salamander), strings (VSCO 2 CE), glass and bowed vibraphone (VCSL)
+Score: 90 BPM, B minor -> D major. Felt piano (Salamander), sampled strings, glass and bowed vibraphone
 for the loupe and the readings; contrabass only on the arrival chord. Foley: light-table ballast hum and starter,
 the loupe on glass, paper, the measuring ticks, a pen stroke for the verdict. Beds: hum on the table, wind and surf
 inside the photographs."""

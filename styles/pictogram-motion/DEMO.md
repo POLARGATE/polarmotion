@@ -4,7 +4,7 @@ One example among many. Don't reuse its story, arc, shots, props or timings.
 
 Demo: *Left Behind* 《被落下的伞》 (50.0 s, 1920×1080, 24 fps) · `pictogram-motion.mp4` · source in [`demo/`](demo/)
 
-A yellow umbrella is left on a city bus on a rainy morning. All day in the sun nobody needs it; at the end of the line it joins 312 other lost umbrellas on the depot's shelf. At rush hour the storm comes back, the depot opens every shelf, and 313 umbrellas go back out into the rain. The hero is an object, not a person: the cast is an umbrella, a bus, doors, stop signs, a clock, clouds, sun, moon, lightning, a lost-property sign and footprints, all built from the same round-capped geometry as the grid pattern. English narration (Kokoro `bf_emma`) with Chinese and English subtitles. Line 4, the street names, the depot and the number 313 are fiction.
+A yellow umbrella is left on a city bus on a rainy morning. All day in the sun nobody needs it; at the end of the line it joins 312 other lost umbrellas on the depot's shelf. At rush hour the storm comes back, the depot opens every shelf, and 313 umbrellas go back out into the rain. The hero is an object, not a person: the cast is an umbrella, a bus, doors, stop signs, a clock, clouds, sun, moon, lightning, a lost-property sign and footprints, all built from the same round-capped geometry as the grid pattern. English narration (voice `bf_emma`) with Chinese and English subtitles. Line 4, the street names, the depot and the number 313 are fiction.
 
 ## Story & structure
 
@@ -52,7 +52,7 @@ Narration (English voice, subtitles Chinese over English, one cue per line):
 | 37.4 | Three hundred and thirteen umbrellas went back out into the rain. |
 | 44.3 | Lost on a sunny day. Found on a rainy one. |
 
-77 words in 31.5 s of speech (2.44 words/s; per-line Kokoro speed 0.66–0.84). Every line passes `asr_check.py` (the time is checked as Whisper writes it, "742"). Captions hold at least the line + 0.6 s (shortest 3.24 s); numbers are spelled out for the voice and written as digits in the captions.
+77 words in 31.5 s of speech (2.44 words/s; per-line voice speed 0.66–0.84). Every line passes `asr_check.py` (the time is checked as the speech check writes it, "742"). Captions hold at least the line + 0.6 s (shortest 3.24 s); numbers are spelled out for the voice and written as digits in the captions.
 
 ## Score structure
 
@@ -84,14 +84,14 @@ Type: Inter Tight 900 titles (150–270 px, −0.02 em), Noto Sans SC 900 second
 
 ## End card
 
-Navy pattern whose rows stop one by one, the yellow umbrella opening on its stage disc, and the type sliding up from 46.5 s, fully in place from about 47.5 s to 50.0 s: LEFT BEHIND / 被落下的伞, a hairline, PICTOGRAM MOTION 象形运动图形, and "LemoLab × Claude Opus 5.5". The last narration line runs under it at the bottom until 49.05 s. The sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Navy pattern whose rows stop one by one, the yellow umbrella opening on its stage disc, and the type sliding up from 46.5 s, fully in place from about 47.5 s to 50.0 s: LEFT BEHIND / 被落下的伞, a hairline, PICTOGRAM MOTION 象形运动图形, and "Polargate · PolarMotion". The last narration line runs under it at the bottom until 49.05 s. The sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build
 
 `sh styles/pictogram-motion/demo/build.sh` (`WORKERS=3` for more render workers, `VOICE=1` to regenerate the narration, `sh demo/build.sh 28 36` for a span).
 
-- Needs the voice tier and three sample libraries: `sh tools/setup.sh deps voice`, `sh tools/fetch.sh instruments vcsl`, `… vsco2ce`, `… freepats`. The three fonts are fetched into `demo/fonts/` on the first run (`tools/fetch_fonts.sh`).
-- Steps: narration (`voice/lines.json` → Kokoro → `out/voice/`, `asr_check.py`), captions (`tools/cues.py`: line starts in `voice/vo.json` + clip lengths → `voice/cues.js` and `../pictogram-motion.srt`; it refuses a caption shorter than max(1.8 s, line + 0.6 s)), events, picture, `mix.py`, `mux.sh`, readcheck, poster and the gallery style frame (t = 9.2, rendered with `?nocap=1`).
+- Needs the voice tier and the sample libraries: `sh tools/setup.sh deps voice`, `sh tools/fetch.sh instruments all`. The three fonts are fetched into `demo/fonts/` on the first run (`tools/fetch_fonts.sh`).
+- Steps: narration (`voice/lines.json` → TTS → `out/voice/`, `asr_check.py`), captions (`tools/cues.py`: line starts in `voice/vo.json` + clip lengths → `voice/cues.js` and `../pictogram-motion.srt`; it refuses a caption shorter than max(1.8 s, line + 0.6 s)), events, picture, `mix.py`, `mux.sh`, readcheck, poster and the gallery style frame (t = 9.2, rendered with `?nocap=1`).
 - The page takes `?a=&b=` (render a span of the film; `render(t)` always draws film second a + t) and `?nocap=1`.
 - `render(t)` keeps no state between frames. About 45 s for the whole film with two workers on an M-series Mac.
 - `readcheck.mjs` passes everything except two known kinds: the three pace-ladder cards (13.5–16.5, one second each by design, the narration says the same thing) and the TAKE ONE sign (1.5 s; it reads as a pictogram and the line "The depot opened every shelf" plays over it).

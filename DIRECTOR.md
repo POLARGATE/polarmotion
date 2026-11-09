@@ -15,12 +15,12 @@ The user gives a style and a topic, sometimes more (length, language, voice, mus
 - Voice and subtitles in the language the user writes in. Subtitles burned in and exported as `.srt`.
 - Loudness −14 LUFS.
 
-Say it in the questions when it matters: a good Chinese voice uses Microsoft's online service (edge-tts) and needs a connection; offline, Kokoro reads Chinese but sounds plain (TECHNIQUE.md §4).
+Say it in the questions when it matters: a good Chinese voice uses Microsoft's online service and needs a connection; offline, the local voice reads Chinese but sounds plain (TECHNIQUE.md §4).
 
 Requests that only change the plan:
 
 - **No voice, or no subtitles.** Drop those steps and say so in the treatment.
-- **Their own voice recording.** Use it as it is; transcribe it with faster-whisper for word timings.
+- **Their own voice recording.** Use it as it is; transcribe it with the speech check (`core/tts/asr_check.py`) for word timings.
 - **Their own material**: logos, photos, footage, and for styles built from real material (the Evidence Films) their own data, scans, imagery or CAD. Ask whether they have any; what they give comes first, and the sources in the `STYLE.md` are the fallback. Before you download from those sources, tell the user what you will fetch, from where and under which licence. Rights: section 12.
 
 ## 2. Find a benchmark first
@@ -119,7 +119,7 @@ Render 6–9 key shots with the real drawing code, tiled into one sheet (`core/r
 - Loudness about −14 LUFS; no black frames, no NaN frames; subtitles in sync and not covering key action.
 - Every row of the sound design table is actually in the mix.
 - Every map, globe or satellite view passes section 13, checked enlarged.
-- No LemoLab sign-off: `grep -rniE "lemo ?lab|opus 5\.5" <project folder>` finds nothing outside `LICENSE`, `CREDITS` and the library's path in `LIB=` lines, and you have watched the last seconds of the film (text drawn into an image can't be grepped).
+- No library or AI sign-off: `grep -rniE 'polargate|polarmotion|polar ai news|claude opus|opus 5.5' <project folder>` finds nothing outside `LICENSE`, `NOTICE`, `CREDITS` and the library's path in `LIB=` lines, and you have watched the last seconds of the film (text drawn into an image can't be grepped).
 
 **Deliver**, in the project folder (the complete list):
 

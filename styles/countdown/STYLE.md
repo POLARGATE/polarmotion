@@ -65,7 +65,7 @@ Orange means "now / synced / done". Grey means "pending / not synced". Nothing e
 Layers, top to bottom:
 
 1. **Native sound** — the event's own audio (commentary, radio loops, crowd), high-pass 90 Hz, compressed, always on top; never ducked.
-2. **Narrator** (sparingly, only in gaps of the native sound, never over it): clean and close, a different gender or accent from the event's voices; Kokoro, every line through `asr_check.py`.
+2. **Narrator** (sparingly, only in gaps of the native sound, never over it): clean and close, a different gender or accent from the event's voices; synthetic voice, every line through `asr_check.py`.
 3. **The clock**: a tick every whole second (two alternating pitches around 1.5–1.9 kHz, panned ±15 %), louder in the last ten seconds, a soft single pitch after zero.
 4. **Interface foley** from `window.EV`: re-layout whoosh + metallic snap; cell pop snap; checklist tock; event-flag whoosh; full-screen cut thump.
 5. **Score**, 60 BPM so one beat = one second = one tick: a low synth drone whose low-pass opens toward zero, a bass drum per beat, off-beat hats, a tom per spoken count, timpani roll into zero, silence, then a low brass major chord with bass drum, crash and tubular bell at zero; after zero a new texture (pizzicato bass ostinato, lighter tick). Low brass, timpani, toms, tubular bells, glockenspiel; no piano-and-strings pad.
@@ -114,7 +114,7 @@ Layers, top to bottom:
 
 **Facts**: a `FACTS.md` (claim, URL, quoted wording, or the measurement) covering every number, time, name and call on screen and in the narration; official sources only; planned times and actual (heard) times are kept apart. Check the script against it before the last render.
 
-**Engine** (copy into the project): `demo/index.html` (Canvas 2D: `LAY` layout keyframes with `grid` / `merge` / `cut` / `swap`, `camRegion()` usable regions, `crop()` cover framing, `drawClock()`, `drawTx()`, `drawCheck()`, `drawDoc()`, `drawProfile()`, `drawThrust()`, `window.EV` for the mix, `window.TEXTS` for `readcheck`, `window.SUBFIT` for the one-line subtitle check), `demo/tools/prep.sh` (the sync table → frames), `demo/tools/subs.mjs` (cues → `audio/cues.json`, one-line and duration check), `demo/audio/mix.py` (native sound, ticks, foley, score, ducking, pre-master), `demo/tools/final_asr.py` (Whisper on the finished film), `demo/tools/fetch_fonts.py`.
+**Engine** (copy into the project): `demo/index.html` (Canvas 2D: `LAY` layout keyframes with `grid` / `merge` / `cut` / `swap`, `camRegion()` usable regions, `crop()` cover framing, `drawClock()`, `drawTx()`, `drawCheck()`, `drawDoc()`, `drawProfile()`, `drawThrust()`, `window.EV` for the mix, `window.TEXTS` for `readcheck`, `window.SUBFIT` for the one-line subtitle check), `demo/tools/prep.sh` (the sync table → frames), `demo/tools/subs.mjs` (cues → `audio/cues.json`, one-line and duration check), `demo/audio/mix.py` (native sound, ticks, foley, score, ducking, pre-master), `demo/tools/final_asr.py` (speech check on the finished film), `demo/tools/fetch_fonts.py`.
 
 ## 11. Variation space
 

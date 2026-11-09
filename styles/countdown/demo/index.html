@@ -251,7 +251,6 @@ function drawPhoto(t, rect) {
     text(en, px, y + h - 14, `500 11px ${F_MONO}`, C.faint, 'center');
     g.globalAlpha = 1;
   });
-  text('NASA/John Kraus', x + w - 10, y + 62, `500 11px ${F_MONO}`, 'rgba(242,245,247,0.5)', 'right');
 }
 
 // ——— data cell: liftoff thrust (SLS 15% more than Saturn V) ———
@@ -499,9 +498,9 @@ function drawEnd(t) {
     [END + .10, () => text('COUNTING ITSELF DOWN', X0, 392, `600 40px ${F_NUM}`, C.ink, 'left', 8), 392],
     [END + .22, s => { g.fillStyle = C.org; g.fillRect(X0, 432, 420 * s, 3); }, 436],
     [END + .30, () => { text('实时倒计时分屏', X0, 496, `700 34px ${F_ZH}`, C.ink); text('LIVE COUNTDOWN SPLIT-SCREEN', X0 + tw('实时倒计时分屏', `700 34px ${F_ZH}`) + 22, 494, `600 22px ${F_NUM}`, C.dim, 'left', 3); }, 496],
-    [END + .38, () => text('LemoLab × Claude Opus 5.5', X0, 552, `600 26px ${F_LAT}`, C.org), 552],
-    [END + .46, () => text('素材：NASA · 公有领域 · 非官方作品', X0, 616, `500 22px ${F_ZH}`, 'rgba(242,245,247,0.82)'), 616],
-    [END + .52, () => text('FOOTAGE: NASA · PUBLIC DOMAIN · UNOFFICIAL', X0, 646, `500 15px ${F_MONO}`, C.dim), 646]
+    [END + .38, () => text('Polargate · PolarMotion', X0, 552, `600 26px ${F_LAT}`, C.org), 552],
+    [END + .46, () => text('非官方作品', X0, 616, `500 22px ${F_ZH}`, 'rgba(242,245,247,0.82)'), 616],
+    [END + .52, () => text('UNOFFICIAL', X0, 646, `500 15px ${F_MONO}`, C.dim), 646]
   ];
   for (const [ts, fn, by] of L) {
     const s = eo(seg(t, ts, ts + .38)); if (s <= 0) continue;
@@ -664,8 +663,8 @@ window.TEXTS = t => {
   for (let i = 0; i < DOC_ROWS.length; i++) { const r = DOC_ROWS[i], nx = DOC_ROWS[i + 1]; if (t >= r.t + .4 && t < (nx ? nx.t : 19.6)) { add('doc' + i, r.zh, [1300, 760, 300, 60]); add('doc-en' + i, r.en, [1500, 760, 380, 60]); } }
   for (const fl of FLAGS) if (t >= fl.t0 + .26 && t < fl.t1 - .3) { add(fl.id + '-zh', fl.zh, [40, 700, 400, 50]); add(fl.id + '-en', fl.en, [400, 700, 400, 50]); }
   if (t >= 42.7 && t < END) add('sep', '距助推器分离 TO BOOSTER SEP 预计 T+2:09 EXPECTED', [1290, 700, 600, 140]);
-  if (t >= END + .5) { add('end-title', '自己倒数 COUNTING ITSELF DOWN', [114, 200, 1000, 210]); add('end-style-zh', '实时倒计时分屏', [120, 460, 300, 40]); add('end-style-en', 'LIVE COUNTDOWN SPLIT-SCREEN', [420, 460, 700, 40]); add('end-sign', 'LemoLab × Claude Opus 5.5', [120, 525, 600, 35]); }
-  if (t >= END + .9) { add('end-cred-zh', '素材：NASA · 公有领域 · 非官方作品', [120, 590, 1000, 35]); add('end-cred-en', 'FOOTAGE: NASA · PUBLIC DOMAIN · UNOFFICIAL', [120, 630, 1000, 25]); }
+  if (t >= END + .5) { add('end-title', '自己倒数 COUNTING ITSELF DOWN', [114, 200, 1000, 210]); add('end-style-zh', '实时倒计时分屏', [120, 460, 300, 40]); add('end-style-en', 'LIVE COUNTDOWN SPLIT-SCREEN', [420, 460, 700, 40]); add('end-sign', 'Polargate · PolarMotion', [120, 525, 600, 35]); }
+  if (t >= END + .9) { add('end-cred-zh', '非官方作品', [120, 590, 1000, 35]); add('end-cred-en', 'UNOFFICIAL', [120, 630, 1000, 25]); }
   return out;
 };
 

@@ -208,8 +208,8 @@ function hud(t) {
     g.save(); g.globalAlpha = a; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#fff';
     g.font = '700 96px Fredoka'; g.fillText('Rocket from Spare Parts', W / 2, H / 2 - 40);
     brickIcon(W / 2 - 29, H / 2 + 40, 1);
-    g.font = '600 34px Fredoka'; g.fillStyle = '#f2cd37'; g.fillText('BRICK TOY  ·  LEMO-OPUSCAR', W / 2, H / 2 + 120);
-    g.font = '600 30px Fredoka'; g.fillStyle = '#fff'; g.fillText('LemoLab × Claude Opus 5.5', W / 2, H / 2 + 172);
+    g.font = '600 34px Fredoka'; g.fillStyle = '#f2cd37'; g.fillText('BRICK TOY', W / 2, H / 2 + 120);
+    g.font = '600 30px Fredoka'; g.fillStyle = '#fff'; g.fillText('Polargate · PolarMotion', W / 2, H / 2 + 172);
     g.font = '400 22px Fredoka'; g.fillStyle = 'rgba(255,255,255,.75)'; CREDITS.forEach((c, i) => g.fillText(c, W / 2, H - 110 + i * 34));
     g.restore();
   }

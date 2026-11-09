@@ -262,7 +262,7 @@ cues = dict(firstNote=3.0, secondNote=4.5, title=ev('letter'), carriages=ev('car
             tapeStop=[22.5, 24.0], silence=[24.0, 24.7], hops=ev('hop'), hopFail=tf, release=30.0, finalChord=34.0, fadeOut=[35.5, 38.0],
             firstNotePitch=FIRST, gated_steps=len(gate_log), gated_by_car=sum(1 for g in gate_log if g[1] == 'car'))
 json.dump(cues, open(os.path.join(HERE, 'cues.json'), 'w'), indent=1)
-open(os.path.join(HERE, 'CREDITS.txt'), 'w').write('\n'.join(S.credits(sorted(used))) + '\n')
+open(os.path.join(HERE, 'CREDITS.txt'), 'w').write('\n'.join(S.credits(sorted(used)) or ['Original score, played on sampled instruments.']) + '\n')
 
 # —— Self-check ——
 mono = mix.mean(1)

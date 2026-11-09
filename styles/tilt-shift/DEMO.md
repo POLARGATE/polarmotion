@@ -38,7 +38,7 @@ Sampled minimalist marimba ensemble (`demo/music/score.py`), 120 BPM, so the 8 H
 
 Sound design: time-lapse = music first with a faint granular sped-up city hiss, rail clacks, relay clicks; real time = idling engines, distant city, sparrows, tiny quacks and peeps, webbed feet patting asphalt; release = engines rev, wind sweeps up during the rise.
 
-Voice: relaxed American male, Kokoro `am_adam`, speed 0.9–0.95, 5–6 short lines, music ducked ~8 dB.
+Voice: relaxed American male, voice `am_adam`, speed 0.9–0.95, 5–6 short lines, music ducked ~8 dB.
 
 ## Palette & props
 
@@ -54,7 +54,7 @@ Voice: relaxed American male, Kokoro `am_adam`, speed 0.9–0.95, 5–6 short li
 
 - Subtitles: a green `#0f5e3c` rounded road-sign panel with an inset white keyline, Overpass 600 44 px white, a tiny traffic-light icon lit green on the left, 118 px above the bottom inside the lower blur band.
 - Time-lapse clock top-left (Overpass Mono): `07:12` with small seconds, `×24 TIME-LAPSE` in amber, `×1 REAL TIME` in green.
-- End card: the same road-sign language over the top-down town: the title, the style name and `LemoLab × Claude Opus 5.5`. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+- End card: the same road-sign language over the top-down town: the title, the style name and `Polargate · PolarMotion`. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -68,7 +68,7 @@ styles/tilt-shift/demo/
   music/score.py  sampled marimba score (skeleton + event gating)   subs.mjs  subtitle export
 ```
 
-1. `sh styles/tilt-shift/demo/build.sh` rebuilds everything from scratch: TTS → whisper → events → subtitles → score → mix → 912-frame render (~60–80 s on an M-series GPU with 3 workers) → mux (−14 LUFS, grain 1) → styleframe and poster.
+1. `sh styles/tilt-shift/demo/build.sh` rebuilds everything from scratch: TTS → speech check → events → subtitles → score → mix → 912-frame render (~60–80 s on an M-series GPU with 3 workers) → mux (−14 LUFS, grain 1) → styleframe and poster.
 2. Iterate with `node core/render/still.mjs styles/tilt-shift/demo <t…> --q noev` (`noev` skips the event scan). Debug flags: `nohud`, `nodof`, `nostep`, `az=<deg>`, `cam=x,y,z,lx,ly,lz,fov`, `aper=`, `bamp=`, `bmix=`.
 
 Pitfalls tied to this demo's props:

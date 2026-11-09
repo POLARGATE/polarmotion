@@ -307,7 +307,7 @@ const PH = {
   b3: { x: -1.55, y: -20.0, z: 0, t0: T.BRACKET + .15, t1: sh(12)[0] + .7, step: .1, scale: 1, lines: [[['快了三分多钟', 's']]] },
   ft12: { x: -6.2, y: -12.6, z: 0, t0: T.FT12, t1: sh(13)[0], step: .12, scale: 1.25, lines: [[['2012', 'n'], [' · 72 名乘客', 's']]] },
   ft13: { x: 2.3, y: 5.7, z: 0, t0: T.BAND + .2, t1: sh(14)[0], step: .14, scale: .85, lines: [[['同', 'A'], ['一段过道', 'B']]] },
-  end: { x: -3.2, y: -11.0, z: 0, t0: T.END0, t1: 99, step: .16, scale: 1.25, lines: [[['LemoLab', 'e'], [' × ', 'e'], ['Claude', 'e'], [' Opus', 'e'], [' 5.5', 'e']]] },
+  end: { x: -3.2, y: -11.0, z: 0, t0: T.END0, t1: 99, step: .16, scale: 1.25, lines: [[['Polargate', 'e'], [' · ', 'e'], ['PolarMotion', 'e']]] },
 };
 const LAY = {}; for (const k in PH) LAY[k] = phraseLayout(PH[k]);
 const typeAt = (g, t, Q, keys) => { if (!Q.has('notype')) for (const k of keys) floorType(g, t, PH[k], LAY[k]); };

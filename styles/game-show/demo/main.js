@@ -1323,10 +1323,10 @@ function buildAll() {
     const sup = el('g', {}, res); el('path', { d: starPath(12, 190, 140), fill: K.yellow, ...SO, 'stroke-width': 9 }, sup); gtext(sup, 'Superb', 0, 34, 110, { family: F.round, weight: 700, fill: K.red, sw: 18 });
     ev(E0(5), 'fanfare'); ev(E0(5), 'v:superb'); punch(E0(5), 0.05);
     const credit = el('g', {}, g);
-    // End credit: box height 360, first line LemoLab × Claude Opus 5.5, the two text lines below shifted down together
+    // End credit: box height 360, first line Polargate · PolarMotion, the two text lines below shifted down together
     el('rect', { x: -720, y: -180, width: 1440, height: 360, rx: 40, fill: K.cream, ...SO }, credit);
-    txt(credit, 'LemoLab × Claude Opus 5.5', { x: 0, y: -80, 'font-size': 66, 'font-family': F.round, 'font-weight': 700, fill: K.ol, 'text-anchor': 'middle' });
-    txt(credit, '本片由 Claude Opus 5.5 全程代码生成', { x: 0, y: 30, 'font-size': 60, 'font-family': F.sans, 'font-weight': 900, fill: K.ol, 'text-anchor': 'middle' });
+    txt(credit, 'Polargate · PolarMotion', { x: 0, y: -80, 'font-size': 66, 'font-family': F.round, 'font-weight': 700, fill: K.ol, 'text-anchor': 'middle' });
+    txt(credit, '本片由 PolarMotion 全程代码生成', { x: 0, y: 30, 'font-size': 60, 'font-family': F.sans, 'font-weight': 900, fill: K.ol, 'text-anchor': 'middle' });
     txt(credit, '下一关：正在训练中……', { x: 0, y: 118, 'font-size': 50, 'font-family': F.sans, 'font-weight': 900, fill: K.claude, 'text-anchor': 'middle' });
     ev(E0(6), 'end');
     return (t) => {

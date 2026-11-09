@@ -46,7 +46,7 @@ Judgement frames widen 1,768 → 1,945 → 2,361 → 3,205 board px (28 % → 50
 - Foley (procedural, `audio/mix.py`): felt-tip squeaks scaled to stroke length, nib taps, magnet clacks pitched per pier, two pin clacks after every landing, suction pops, print landings (board thump + paper slap, heavier for the suspension), the steel ruler's ring, eraser felt, rubber stamp, ship horn (far and near), diesel rumble, water lapping, whooshes, room tone with distant traffic.
 - J-cuts: the horn at 5.75 before the top-down ship is seen; the horn at 32.0 before the side-view ship comes out from behind the tower. L-cuts: the eraser over the move into the bench; the reveal horn over the whole pull-back.
 - Mix: music about 9 dB under the voice and ducked; foley ducked under speech; room tone (air conditioning on the right, traffic through the window on the left) about 20 dB under the voice and never ducked; silences gated to that room tone; −14 LUFS integrated.
-- Voice: Kokoro `af_heart`, nine lines; numbers spelled out for TTS and written as digits in the subtitles.
+- Voice: `af_heart`, nine lines; numbers spelled out for TTS and written as digits in the subtitles.
 
 ## Palette & props
 
@@ -58,7 +58,7 @@ Judgement frames widen 1,768 → 1,945 → 2,361 → 3,205 board px (28 % → 50
 
 ## Title card
 
-A printed card pinned at the bottom right of the wall from the start, seen only in the reveal: "船说了算", a red rule, "ENGINEERING / BRIEFING BOARD", "工程简报板", "LemoLab × Claude Opus 5.5". It is part of the final wall (the poster) and is on screen for the last three seconds. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+A printed card pinned at the bottom right of the wall from the start, seen only in the reveal: "船说了算", a red rule, "ENGINEERING / BRIEFING BOARD", "工程简报板", "Polargate · PolarMotion". It is part of the final wall (the poster) and is on screen for the last three seconds. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -71,14 +71,14 @@ demo/
                         redraw_suspension.py, repair_hangers.py, clean_lettering.py, ship_anchors.py,
                         make_print.py, rebuild_objects.sh; fetch_fonts.py, fetch_sources.py, kit_env.sh
   scenes/_gen_film.py   the film as data → scenes/film.json, audio/cues.json
-  audio/lines.json      narration (Kokoro)          audio/mix.py   score, foley, voice, mix
+  audio/lines.json      synthetic narration         audio/mix.py   score, foley, voice, mix
   tools/                camcheck.mjs + camplot.py, rescheck.mjs, subcheck.mjs, cuecheck.py, rhythm_report.py, final_asr.py
   sources/              candidates/candidates.json (every photo looked at: URL, author, licence, evidence;
                         the six used ones with sha256); photos, masks and derived/ are downloaded or rebuilt
 ```
 
-1. `sh demo/build.sh` (library set up with `setup.sh deps voice music`): fetches what git does not hold — fonts from Google Fonts (`fetch_fonts.py`: Archivo and IBM Plex Mono from github.com/google/fonts, the CJK subsets through the CSS API), the six photos from Commons (`fetch_sources.py`, ~470 MB), a private `demo/.venv` with onnxruntime and the BiRefNet model (`kit_env.sh`, ~970 MB unless cached), the voice model and the freepats / vsco2ce / vcsl samples — and cuts the objects again (`rebuild_objects.sh`); then speech check → scene → cue check → reading check → camera check (incl. judgement frames) → resolution check → events → render (960 frames, 5 workers) → mix → subtitles (+ one-line check) → mux (−14 LUFS, grain 1) → poster and styleframe → rhythm report → speech check on the final mix → camera plot.
-2. Objects: `sh demo/kit/tools/rebuild_objects.sh` recreates every cut-out from the photos at their own resolution (BiRefNet masks are cached in `sources/masks/`; a recomputed mask can differ by a pixel or two from ours).
+1. `sh demo/build.sh` (library set up with `setup.sh deps voice music`): fetches what git does not hold — fonts from Google Fonts (`fetch_fonts.py`: Archivo and IBM Plex Mono from github.com/google/fonts, the CJK subsets through the CSS API), the six photos from Commons (`fetch_sources.py`, ~470 MB), a private `demo/.venv` with onnxruntime and the BiRefNet model (`kit_env.sh`, ~970 MB unless cached), the voice model and the sample packs — and cuts the objects again (`rebuild_objects.sh`); then speech check → scene → cue check → reading check → camera check (incl. judgement frames) → resolution check → events → render (960 frames, 5 workers) → mix → subtitles (+ one-line check) → mux (−14 LUFS, grain 1) → poster and styleframe → rhythm report → speech check on the final mix → camera plot.
+2. Objects: `sh demo/kit/tools/rebuild_objects.sh` recreates every cut-out from the photos at their own resolution (the masks are cached in `sources/masks/`; a recomputed mask can differ by a pixel or two from ours).
 3. Stills and thumbnails: a scene JSON that `extends` `scenes/film.json` with its own `cam` and `t`, rendered by `node demo/kit/batch.mjs`.
 
 Bridge-specific choices: each landing is met close on a pylon top, an arch rib, the hangers or a pier's foot; stays, main cables and hangers are redrawn as clean lines at the positions measured in the photos. Pitfalls tied to this demo: the first cut rode each dimension line close and never showed the cable-stayed or suspension bridge whole; viewers lost what was being tested ("too fast"). The fix was the judgement frame per bridge, held, widening each time, with the voice and the verdict inside the hold. Text first glimpsed during a move failed the reading check, so every label block is pinned where the camera rests and each new row is framed with the previous row's result. The first cut-outs were downscaled and the close-ups upsampled them (a blocky ship); every object is now cut at full resolution and `rescheck.mjs` caps each zoom. Keyed stays turned into stair-steps and arch hangers vanished against the hills; stays and suspension cables are now measured and redrawn, the arch hangers continued to the deck. Name tags at a fixed offset overlapped the wider numbers; they are placed from the number's measured advance width. The stretched suspension photo allows z 1.38 at most, so its landing close-up is on the near tower, which is not stretched. The photographed suspension bridge has the proportions of a 500 m span; scaled uniformly to 2,023 m its towers would be far too tall, so only the main span is stretched. A road sign, a water-level gauge, a ship's name and container logos were removed (lettering). The pier clacks masked "piers" in the voice; they were lowered.

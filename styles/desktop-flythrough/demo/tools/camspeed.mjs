@@ -1,6 +1,6 @@
 // LIB=<library> node tools/camspeed.mjs [out.json] → camera speed (default out/camspeed.json): per-frame camera motion (view-direction turn rate + translation relative to subject distance)
 import fs from 'fs';
-const LIB = process.env.LIB || process.env.HOME + '/lemo-opuscar';
+const LIB = process.env.LIB || process.env.HOME + '/polarmotion';
 const { openDemo, closeServer } = await import(LIB + '/core/render/page.mjs');
 const dir = decodeURIComponent(new URL('..', import.meta.url).pathname).replace(/\/$/, '');
 const { browser, page } = await openDemo(dir);

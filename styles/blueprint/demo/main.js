@@ -100,7 +100,7 @@ window.render = t => {
     ov.strokeStyle = 'rgba(234,241,250,.9)'; ov.lineWidth = 1.5; ov.strokeRect(bx + .5, by + .5, bw, bh); ov.strokeRect(bx + 8.5, by + 8.5, bw - 16, bh - 16);
     ov.fillStyle = '#eaf1fa'; ov.font = '400 58px Architects'; ov.letterSpacing = '4px'; ov.fillText('THE CLOUD CATCHER', bx + 34, by + 84);
     ov.font = '700 26px B612'; ov.letterSpacing = '6px'; ov.fillText('PATENT PENDING', bx + 38, by + 134);
-    ov.font = '400 20px B612'; ov.letterSpacing = '3px'; ov.fillText('A BLUEPRINT FILM  ·  LemoLab × Claude Opus 5.5', bx + 38, by + 170); ov.letterSpacing = '0px';
+    ov.font = '400 20px B612'; ov.letterSpacing = '3px'; ov.fillText('A BLUEPRINT FILM  ·  Polargate · PolarMotion', bx + 38, by + 170); ov.letterSpacing = '0px';
   }
   comp(inkC, fxC, ovC, o);
 };

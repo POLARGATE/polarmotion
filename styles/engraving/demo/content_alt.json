@@ -35,8 +35,8 @@
   "caption": "Hold a real shell at the Discovery Table",
   "nat_size_label": "Natural size",
   "signature": {
-    "left": "Lemo del.",
-    "right": "Opus sculp."
+    "left": "Polargate del.",
+    "right": "PolarMotion sculp."
   },
   "voice": {
     "voice": "bm_fable",
@@ -66,8 +66,6 @@
     "film_title": "The Great Scallop, Plate XII",
     "style_name": "Copperplate Engraving",
     "credits": [
-      "Voice · Kokoro TTS (Apache-2.0)",
-      "Type · Bodoni Moda · Pinyon Script",
       "Score & sound · written in code"
     ]
   }

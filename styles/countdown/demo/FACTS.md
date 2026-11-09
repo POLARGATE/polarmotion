@@ -25,7 +25,7 @@ On-screen text is bilingual; it is quoted as it appears (Chinese / English). Chi
 | Narration N2 "Next on the clock: booster separation, at two minutes nine."; milestone cell "预计 T+2:09 EXPECTED" | Expected time of booster separation | F3 |
 | Milestone cells 升空 (liftoff) / 滚转、俯仰 (roll, pitch) / 休斯敦接管 (Houston takes over) (tick times) | The times called out in the source audio (measured for the film) | Measurement, F3 |
 | Control bar 地面 GLS → 火箭 ALS → 休斯敦 HOUSTON (ground GLS → rocket ALS → Houston) | GLS hands over to the automated launch sequencer; Houston takes over after liftoff | F2, F3, source audio |
-| End card: 素材 NASA · 公有领域 · 非官方作品 (footage NASA · public domain · unofficial work) | Footage licence | CREDITS |
+| End card: 非官方作品 (unofficial work) | Status of the film | CREDITS |
 
 ## F1 Launch date, time, pad, crew
 - NASA image caption "Artemis II Launch": https://www.nasa.gov/image-detail/artemis-ii-launch-5/
@@ -54,7 +54,7 @@ On-screen text is bilingual; it is quoted as it appears (Chinese / English). Chi
   > "Standing by for main engine throttle down to 85% ahead of solid rocket booster separation expected at the two minute nine second mark."
   > "Confirm separation."
 - Integrity is the name of this mission's Orion spacecraft; the source is the official transcript line above.
-- Commentary from the same broadcast at T−47 s (not used in the film; it supports the "control bar"): "The rocket will count itself down, but honor any holds that could come from the ground." "Now, shortly after liftoff, Houston will take control of the rocket." (broadcast excerpt in this film 0.0–9.7 s, Whisper transcription)
+- Commentary from the same broadcast at T−47 s (not used in the film; it supports the "control bar"): "The rocket will count itself down, but honor any holds that could come from the ground." "Now, shortly after liftoff, Houston will take control of the rocket." (broadcast excerpt in this film 0.0–9.7 s, machine transcription)
 
 ## F4 Thrust and engines
 - NASA RS-25 engine fact sheet: https://www.nasa.gov/sites/default/files/atoms/files/sls_rs25_engine_fs_508.pdf
@@ -72,8 +72,8 @@ On-screen text is bilingual; it is quoted as it appears (Chinese / English). Chi
 
 ## §T Transcription and timing measurements
 - T0 (film 32.5 s): the jump of the broadcast picture's countdown bug from T−0:00:32 to 31 + the word-level time of the commentary's "booster" (film 32.70); the two agree.
-- "GLS, go for ALS." (film 0.40): Whisper base.en / small hear it as "go for your left", and medium drops the line; it is judged to be "go for ALS" from the F2 T−33 milestone (GLS sends "go for automated launch sequencer") and the commentary that follows immediately, "Great call-out. The rocket is on its own." The time actually called out in the source audio is T−32.1 (the milestone table gives the planned T−33); the checklist marks the two separately.
-- "RS-25 engines lit": Whisper sometimes hears "lift"; NASA's official transcript (F3) has "lit".
+- "GLS, go for ALS." (film 0.40): the small speech-check models hear it as "go for your left", and the medium one drops the line; it is judged to be "go for ALS" from the F2 T−33 milestone (GLS sends "go for automated launch sequencer") and the commentary that follows immediately, "Great call-out. The rocket is on its own." The time actually called out in the source audio is T−32.1 (the milestone table gives the planned T−33); the checklist marks the two separately.
+- "RS-25 engines lit": The speech check sometimes hears "lift"; NASA's official transcript (F3) has "lit".
 - "Good roll, pitch." / "Roger, roll, pitch." at film 46.40 / 49.78 (T+13.9 / +17.3); "Houston, now controlling…" at film 53.78 (T+21.3).
 - Timing of the vehicle camera (CAM 3): the burned-in timer jumps from "001-04:17:27.3" to "002-00:00:01.0"; the "002" segment reaches zero at source 34.8 s, taken as T0. The broadcast soundtrack that comes with the same file is about 1 s off the picture, so its sound is not used for timing.
 - The control room (CAM 2) has no clock to sync to; it is labelled "同一时段 SAME WINDOW · 未逐帧同步" (not frame-synced).

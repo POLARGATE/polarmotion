@@ -65,7 +65,5 @@ export const SHOTS = [
 export const shotAt = t => SHOTS.find(s => t >= s[0] && t < s[1]) || SHOTS[SHOTS.length - 1];
 
 export const CREDITS = [
-  'Original score, sound design & animation: code-generated (numpy · Canvas · WebGL)',
-  'Voices: Kokoro TTS (Apache 2.0)',
-  'Fonts: Dela Gothic One, Kanit, Barlow Semi Condensed — SIL Open Font License',
+  'Original score, sound design & animation: code-generated',
 ];

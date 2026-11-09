@@ -35,7 +35,7 @@ export function endFrame(comp, t, api) {
     fill(TXT, cr, { col: K.yellow, p: 0.9, gap: 6, w: 8, seed: 320, over: 2 }); line(TXT, [...cr, cr[0]], { w: 6, seed: 321 });
     line(TXT, [[1352, 318], [1360, 326], [1370, 320]], { w: 5, seed: 322 }); }
   text(TXT, 'Crayon Picture Book', 960, 720, { size: 76, col: K.ink, seed: 312, p: 0.9 });
-  text(TXT, 'LemoLab × Claude Opus 5.5', 960, 830, { size: 60, col: K.ink, seed: 313, p: 0.8 });
+  text(TXT, 'Polargate · PolarMotion', 960, 830, { size: 60, col: K.ink, seed: 313, p: 0.8 });
   comp.paperCam(4100, 700, 1); comp.begin(PAL.paper); comp.crayon(TXT.c); comp.finish({ vig: 0, emb: 0.55 }); snap(pageEnd);
   // 4) back of the page being turned: a little of the front picture shows through (mirrored)
   comp.paperCam(700, 3100, 1); comp.begin(PAL.paper); comp.finish({ vig: 0, emb: 0.55 }); snap(pageBack);

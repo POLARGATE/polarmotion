@@ -72,7 +72,7 @@ Framing: the subject ≥ 1/3 of frame height at key moments; labels never cover 
 - **Ambience beds per station**, crossfaded (wind and birds, harbour, sea, city hum, machine room, crowd murmur).
 - **Foley by material**: fibre snap, fleshy thud, grains pouring, granular rattles, inharmonic steel partials for containers, paper tear, ceramic plink, liquid pour with rising pitch, servo whine, keyboard clicks.
 - **Silence**: digital zero or one faint sound; the first sound after it should be one of the most important in the film.
-- **Mix**: music ducked ~8 dB under voice, ambience ~7 dB; keep high-band beds (2.5–7 kHz) very low under speech or whisper mishears words. Final −14 LUFS.
+- **Mix**: music ducked ~8 dB under voice, ambience ~7 dB; keep high-band beds (2.5–7 kHz) very low under speech or the speech check mishears words. Final −14 LUFS.
 - **Voice**: clear, friendly explainer; short lines.
 
 ## 8. Native moves

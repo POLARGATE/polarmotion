@@ -71,7 +71,7 @@ The "camera" is a 2D matrix (centre, scale, rotation). It moves only with the pr
   - circle landing (58 Hz felt thump).
 
   The rule-breaker is the only element that *sings*: a sine glide that follows its position.
-- **Voice**: cool, crisp female narrator, Kokoro `af_sarah` at speed 1.0. It had ~7× the 3–8 kHz consonant energy of `af_kore`. Keep lines rule-like: "Rule one. Build a grid." Check every line with whisper (write numbers as `"asr": "Rule 1, …"`).
+- **Voice**: cool, crisp female narrator, voice `af_sarah` at speed 1.0. It had ~7× the 3–8 kHz consonant energy of `af_kore`. Keep lines rule-like: "Rule one. Build a grid." Check every line with the speech check (write numbers as `"asr": "Rule 1, …"`).
 - **Mix**: voice compressed, music ducked ~−10 dB under voice (voice ≥ 6 dB above music), −14 LUFS.
 
 ## Palette & props
@@ -91,10 +91,10 @@ The "camera" is a 2D matrix (centre, scale, rotation). It moves only with the pr
 
 ## Titles, subtitles & end card
 
-- **Subtitles are part of the layout**, not a bar at the bottom. Each line sits at column 1 on the spread's left page: the first sentence as a 30 px Medium grey lead-in, the rest as a 76 px Bold statement. Each word clip-reveals on its whisper timestamp. Non-rule lines use Regular weight ("Perfect. And a little dull."). In other shots the line sits at column 1 of that shot, at the artifact's headline baseline or under the wall like a museum label.
+- **Subtitles are part of the layout**, not a bar at the bottom. Each line sits at column 1 on the spread's left page: the first sentence as a 30 px Medium grey lead-in, the rest as a 76 px Bold statement. Each word clip-reveals on its speech-check timestamp. Non-rule lines use Regular weight ("Perfect. And a little dull."). In other shots the line sits at column 1 of that shot, at the artifact's headline baseline or under the wall like a museum label.
 - **Title card**: `Five Rules / for a Poster`, 120 px Bold, two lines flush left, sitting on the opening red line. A 19 px caption row with a 1 px rule above it (`A programme in five steps · 1961 · ♩ = 120`).
 - **Caption row + notes**: top of the left page (title / `Rule 0n / 05` / keyword); bottom of column 5: 2–3 technical notes per rule (`Columns 7 · Rows 16 · Module 91 × 40`). Bottom of column 7: a bar counter `bar 04.3`.
-- **End card**: the opening spread again. `Swiss Motion / Graphics` 120 px, red line under it, `LemoLab × Claude Opus 5.5` 36 px, notes at the bottom, hero poster on the right. The LemoLab sign-off belongs to this library's demo only: a user's film carries no LemoLab credit and no copy of this card.
+- **End card**: the opening spread again. `Swiss Motion / Graphics` 120 px, red line under it, `Polargate · PolarMotion` 36 px, notes at the bottom, hero poster on the right. The library sign-off belongs to this library's demo only: a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Pitfalls we hit (demo record)
 
@@ -103,7 +103,7 @@ The "camera" is a 2D matrix (centre, scale, rotation). It moves only with the pr
 - **Rotation reveal needs a stop.** Rotating and labelling at the same time read as noise. Order it: rotate (1.5 beats) → hold → grid lines → labels → playhead → sweep.
 - **Merged bars showed seams** after rotation and scaling (antialiasing between adjacent rects). Overdraw 1 px where cells join.
 - **Labels overlapping the header**: hide the caption row before the rotated shot.
-- **Word timings**: whisper splits or merges words ("type face"), and `asr_check` reports the first word at −0.6 s (padding). Align by letters and clamp to 0 (`tools/words.py`).
+- **Word timings**: The speech check splits or merges words ("type face"), and `asr_check` reports the first word at −0.6 s (padding). Align by letters and clamp to 0 (`tools/words.py`).
 - **Subtitle rule** (≥ voice + 0.6 s and ≥ 1.8 s): two lines missed by 2 ms. `tools/subs.py` asserts it, so fix by nudging start times.
 - **The wall cut must follow the line**: shrink the wall board from the side the red line enters, in screen space.
 - The other posters on the wall share the camera matrix, so draw them **only** during the wall shot. Otherwise they leak into other shots at ±786 px.
@@ -116,7 +116,7 @@ styles/swiss-motion/demo/
   score.json  grid = score: stiff / final melody, bass, circle, bleeds, timeline
   ease.js     cubic-bezier(.7,0,.2,1), snap(t, t_arrive, dur), steps(), track()
   film.js     layout system, rules, poster, circle, reveal, wall, end card, foley events
-  main.js     loads fonts, score, lines, whisper word times; ?nosub=1, ?poster=1
+  main.js     loads fonts, score, lines, speech-check word times; ?nosub=1, ?poster=1
   lines.json  voice script (af_sarah)          tools/words.py  word timings → subtitle reveal
   music/score.py  motorik score from score.json   mix.py  foley + ducked voice + music
   tools/subs.py   subtitle intervals (asserted) → srt     build.sh  one-shot rebuild

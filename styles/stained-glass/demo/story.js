@@ -204,7 +204,7 @@ export function state(t) {
   st.pts = pts;
   // title / end card carved in the stone band (a sweep of light reveals it)
   const endA = seg(t, 52.9, 53.5);
-  st.inscription = [['THE DRAGON OF THE EAST WINDOW', 60, 0, 1 - endA], ['STAINED GLASS', 64, -14, endA], ['LEMOLAB × CLAUDE OPUS 5.5', 30, 34, endA]];
+  st.inscription = [['THE DRAGON OF THE EAST WINDOW', 60, 0, 1 - endA], ['STAINED GLASS', 64, -14, endA], ['POLARGATE · POLARMOTION', 30, 34, endA]];
   st.gild = key(t, [[0, 0], [5.4, 0], [7.0, .85], [47, .85], [49, .35], [52.9, .35], [53.6, 0]]);
   const sw = seg(t, 5.2, 7.6), sw2 = seg(t, 52.9, 55.0);
   if (sw > 0 && sw < 1) st.sweep = [lerp(-1100, 1100, sw), 380, 1.9 * Math.sin(sw * Math.PI), BOT + 166];

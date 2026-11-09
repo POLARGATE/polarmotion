@@ -43,7 +43,7 @@ for i in range(4): hat(30.0 + i * .5, .3, .22)                     # 30–32 met
 for i in range(8): kick(32.0 + i * .5, .75, .85)                   # 32–36 quarters only
 kick(40.0, 1.0, 1.1); crash(40.0, 1.0, .7); crash(40.0, .8, .4, .3)
 
-# ---------------- bass (FreePats finger bass) ----------------
+# ---------------- bass (sampled finger bass) ----------------
 def bnote(t, m, d=.22, vel=.75, g=1.0): add(st['bass'], S.note('electric_bass', m, d, vel, release=.05), t, g, -.05)
 A1 = MIDI[0] - 24
 for t0 in np.arange(8.0, 24.0, BAR):                               # A pedal, octave jump on the last eighth

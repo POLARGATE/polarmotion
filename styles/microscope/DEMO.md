@@ -58,11 +58,11 @@ Mix (in `mix.py`): stems set against the voice by active RMS (music −11 dB, pu
 - Glass #F4F1EC (both the slide photo and the scan normalised to it), bench graphite #0B0D0F → #2A3036, ink #181B1F, frosted panels rgba(12,14,17,0.74) with a 1 px light rim, accent mint rgb(120,240,205) on stain and rgb(0,122,99) on glass.
 - The stain keeps its colour: trichrome red (hepatocyte cytoplasm) and blue (collagen).
 - Props: the slide photo (label and barcode as photographed, the maker's logo filled), the dimension line, two 1 mm circles with their counted-pixel masks, the verdict panel, the nucleus ring, the instrument panel (scale bar, field of view, magnification with a turning nosepiece glyph and a large flash of each new magnification), the source panel.
-- Narrator: Kokoro `af_heart`, speed 0.95.
+- Narrator: `af_heart`, speed 0.95.
 
 ## End card
 
-The camera climbs back until the glass fills the frame; on its empty cover glass, in ink: 量出来的蓝 (Noto Serif SC 600), *Measured Blue*, a rule drawn left to right, `MICROSCOPE STORY · 显微叙事`, `LemoLab × Claude Opus 5.5`, `数据：Ventana-1 · PathAI · CC0`; the tissue fleck sits to the right. 4.2 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The camera climbs back until the glass fills the frame; on its empty cover glass, in ink: 量出来的蓝 (Noto Serif SC 600), *Measured Blue*, a rule drawn left to right, `MICROSCOPE STORY · 显微叙事`, `Polargate · PolarMotion`, `数据：公开全切片数据集` (the dataset and its licence live in `demo/CREDITS`); the tissue fleck sits to the right. 4.2 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -82,6 +82,6 @@ demo/
 ```
 
 - `sh demo/build.sh` takes about 5 minutes on Apple silicon (the picture renders in ~20–90 s with 4 workers; the final speech check is the slowest step). In a fresh clone it first downloads the slide (227 MB), rebuilds the plates and measurements (about a minute) and fetches the fonts (Barlow Condensed and IBM Plex Mono from github.com/google/fonts, Noto Sans SC / Noto Serif SC subsets from the Google Fonts API); `FETCH=1` forces all of that again. The slide reader runs in its own `demo/.venv` (tifffile, imagecodecs).
-- Checks it runs: `asr_check.py` with `small.en` (decimals are written as Whisper writes them in each line's `asr`), the script's numbers against the measurements (`export.mjs` fails on a mismatch), the cue grid, single-line subtitle widths with the real fonts (widest 642 px against 960), `readcheck.mjs`, speech-to-text on the final mix, black frames.
+- Checks it runs: `asr_check.py` with `small.en` (decimals are written as the speech check writes them in each line's `asr`), the script's numbers against the measurements (`export.mjs` fails on a mismatch), the cue grid, single-line subtitle widths with the real fonts (widest 642 px against 960), `readcheck.mjs`, speech-to-text on the final mix, black frames.
 - Plates: slide photo 1251 × 3685 (21.2 µm/px), scan levels 5/4/3 whole with a 0.3 mm feather, level 2 whole (6144 × 5376, 1 µm/px), levels 1 and 0 as 5120 × 3584 crops around the nucleus. About 400 MB of decoded images per render worker.
 - Demo-specific pitfalls: the scanner tray's clips at the slide's far end could only be filled roughly, so that end stays out of frame in every shot; the slide photo's resolution tag was trusted only after the tissue's centroid matched the scan through AOI0 (19 µm); with fields between 2.6 and 2.8 mm the level-2 plate flips in and out, so the circles are held at 2.6–2.7 mm to keep the turret quiet during a reading; the scan direction of the counting mask is computed for the roll in `config.json` and must follow the camera if the roll changes.

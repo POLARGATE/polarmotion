@@ -314,10 +314,5 @@ json.dump(dict(keys=keys, gain_db=round(float(20 * np.log10(g)), 2), peak_dbfs=-
 
 used = sorted({r[1] for r in NOTES if not r[1].startswith('pulse')})
 with open(os.path.join(HERE, 'CREDITS_music.txt'), 'w') as f:
-    f.write('Music: "Room to Think" (dark-keynote demo) — original score, rendered by score.py\n\n')
-    f.write('Sampled instruments used: ' + ', '.join(used) + '\n')
-    f.write('Source: Versilian Community Sample Library (VCSL) by Versilian Studios / Sam Gossner — CC0 1.0 '
-            '(https://github.com/sgossner/VCSL) — attribution not required, credited with thanks.\n')
-    for line in S.credits(used): f.write(line + '\n')
-    f.write('\nSynthesized in numpy (no license): pad (detuned saw/triangle), riser (noise sweep), low sine pulse, noise shaker.\n')
+    f.write('\n'.join(S.credits(used) or ['Original score, played on sampled instruments.']) + '\n')
 print(f'score.wav {len(mix) / SR:.3f}s  gain {20 * np.log10(g):+.2f} dB  notes {len(NOTES)}  perc {len(PERC)}')

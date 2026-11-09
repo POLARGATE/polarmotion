@@ -1,5 +1,5 @@
 Visual Investigation — "The Hindenburg: Four Minutes, 32 Seconds" (library demo; an unofficial film)
-Every third-party asset in the film, with its source and licence. All archival material is in the public domain;
+Third-party material in the film, with its source and licence. All archival material is in the public domain;
 no CC BY material is used. build.sh downloads each file again into raw/ (SOURCES.jsonl keeps the licence trail).
 
 MOVING IMAGE AND ARCHIVAL SOUND
@@ -40,10 +40,8 @@ FONTS (SIL Open Font License 1.1; subsets from Google Fonts, fetched by tools/fo
 - Source Serif 4 (Adobe)
 
 VOICE
-- Narration: Kokoro-82M text-to-speech (Apache-2.0), voice am_michael, run offline with kokoro-onnx (MIT).
-- Speech check: faster-whisper (MIT).
+- Narration: synthetic voice.
 
 MUSIC AND SOUND
 - Original score and procedural sound design written for this film (audio/mix.py).
-- Samples (CC0 1.0): VS Chamber Orchestra: Community Edition and Versilian Community Sample Library (Versilian Studios)
-  (cellos, violas, violins, contrabass, harp, timpani, gran cassa, suspended cymbal, woodblock, glockenspiel, vibraphone).
+- Sampled cellos, violas, violins, contrabass, harp, timpani, gran cassa, suspended cymbal, woodblock, glockenspiel, vibraphone.

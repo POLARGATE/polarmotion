@@ -48,8 +48,8 @@ The voice reads one line per cue; Chinese and English start at the same moments,
 | 10 | 它们的保护级别，也终于从易危，降到了近危。 | Their status finally eased, from Vulnerable to Near Threatened. |
 | 11 | 虽然不再算作濒危物种了，但这群雪地里的精灵，依然需要人们的守护。 | No longer counted as endangered, these spirits of the snow still need people to look after them. |
 
-- English (the library demo): edge-tts `en-US-AvaNeural`, `+10%`; lines 1, 4, 5, 6 and 9 at `+25%`. In the spoken version only (`say` in `demo/lines_en.json`), line 1 drops "still", line 6 drops "Think back to", line 9 drops "had" and reads the number as "one thousand nine hundred twenty-seven", line 5 gets a pause after "daybreak".
-- Chinese: edge-tts `zh-CN-XiaoxiaoNeural`, `+25%`.
+- English (the library demo): voice `en-US-AvaNeural`, `+10%`; lines 1, 4, 5, 6 and 9 at `+25%`. In the spoken version only (`say` in `demo/lines_en.json`), line 1 drops "still", line 6 drops "Think back to", line 9 drops "had" and reads the number as "one thousand nine hundred twenty-seven", line 5 gets a pause after "daybreak".
+- Chinese: voice `zh-CN-XiaoxiaoNeural`, `+25%`.
 - Line starts (s): 1.0, 5.4, 11.11, 19.6, 24.6, 29.2, 34.2, 38.5, 41.9, 46.3, 52.0 (`VO` in `demo/timeline.js`, before the bridge slow-down; `window.EV` and the subtitles carry them through it).
 
 ## Score structure
@@ -62,11 +62,11 @@ Ink `#16171b`, paper `#ede5cd`, red `#c4332b` only on crowns (each with a thin p
 
 ## End card
 
-Cut into the day sky as an ink plate over the still wide shot, upper right and at least 5% inside the frame: 三十三只 / Thirty-Three Cranes / LemoLab × Claude Opus 5.5, from 56.8 to 60.0 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Cut into the day sky as an ink plate over the still wide shot, upper right and at least 5% inside the frame: 三十三只 / Thirty-Three Cranes / Polargate · PolarMotion, from 56.8 to 60.0 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
-- `sh styles/printed-long-take/demo/build.sh` makes `printed-long-take.mp4` with the English narration; `sh styles/printed-long-take/demo/build.sh zh` makes `printed-long-take-zh.mp4` with the Chinese one. Steps: font subset (`tools/subset.py`, Noto Serif SC 700 from github.com/google/fonts), narration with edge-tts into `voice/<lang>/` and `asr_check.py`, `events.mjs`, `audio.py [zh]` → `mix.wav`, `video.mjs`, `mux.sh`, `tools/srt.py` → `printed-long-take.srt`, `readcheck.mjs`, poster and style frame at 15.4 s.
+- `sh styles/printed-long-take/demo/build.sh` makes `printed-long-take.mp4` with the English narration; `sh styles/printed-long-take/demo/build.sh zh` makes `printed-long-take-zh.mp4` with the Chinese one. Steps: font subset (`tools/subset.py`, Noto Serif SC 700 from github.com/google/fonts), narration with the online voice into `voice/<lang>/` and `asr_check.py`, `events.mjs`, `audio.py [zh]` → `mix.wav`, `video.mjs`, `mux.sh`, `tools/srt.py` → `printed-long-take.srt`, `readcheck.mjs`, poster and style frame at 15.4 s.
 - Files: `index.html` → `scene.js` (renderer, print pass with the subtitle bar, flocks, cameras, sky state, the bridge slow-down `WARP`, `window.TEXTS`, `window.EV`), `timeline.js` (every time and `VO`), `world.js` (terrain, river, volcanoes, trees, bridge and pier, field, `Flock`), `look.js` (materials), `textures.js` (atlases), `props.js` (plate, dial, board, sky type), `audio.py` (narration, score, foley, ducking), `lines_zh.json`, `lines_en.json`, `voice/*/dur.json`, `FACTS.md`, `CREDITS`.
 - The subtitle bar is timed on the Chinese reading (`voice/zh/dur.json`) in both versions; English lines finish inside the same cues. Its band is 62% ink here, over a mostly dark picture; STYLE.md asks about 80% for pictures with more paper.
 - Rendered at 30 fps (`FPS=30` in `build.sh`), the style's output rate; the print pass's 12 Hz flicker is in `printMat` (`tf`), not tied to it.

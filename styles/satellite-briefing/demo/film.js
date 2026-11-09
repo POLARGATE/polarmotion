@@ -625,7 +625,7 @@ function drawEnd(t, cam) {
   hair(ctx, () => { ctx.moveTo(214, 572); ctx.lineTo(214 + 600 * a2, 572); }, { w: 1, alpha: a2 * 0.6, halo: 0 });
   const sw = text(ctx, 'SATELLITE BRIEFING', 214, 628, { font: '500 24px PM', track: 3, alpha: a3, halo: 6, id: 'style' });
   text(ctx, '·  卫星简报', 214 + sw + 14, 628, { font: '500 24px SC', track: 3, alpha: a3, halo: 6, id: 'style-cn' });
-  text(ctx, 'LemoLab × Claude Opus 5.5', 214, 676, { font: '400 22px PM', track: 2, alpha: a3 * 0.85, halo: 6, id: 'sign' });
+  text(ctx, 'Polargate · PolarMotion', 214, 676, { font: '400 22px PM', track: 2, alpha: a3 * 0.85, halo: 6, id: 'sign' });
 }
 
 // ------------------------------------------------------------------ sound and cue events (exported by events.mjs)

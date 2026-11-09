@@ -488,11 +488,10 @@ function sceneEnd(g, t) {
     g.font = font(34, 600); g.fillStyle = PAL.text; g.fillText('Room to Think', x, y);
     g.font = font(22, 500, 'mono'); g.fillStyle = PAL.dim;
     g.font = font(24, 500, 'mono'); g.fillText('a launch film for Tidy, a fictional app', x + 280, y);
-    y += 56; g.fillStyle = PAL.dim; g.fillText('Dark Tech Keynote  ·  Lemo-Opuscar', x, y);
-    y += 38; g.fillText('LemoLab × Claude Opus 5.5', x, y);
+    y += 56; g.fillStyle = PAL.dim; g.fillText('Dark Tech Keynote', x, y);
+    y += 38; g.fillText('Polargate · PolarMotion', x, y);
     y += 54; g.font = font(19, 500, 'mono'); g.fillStyle = PAL.mute;
-    g.fillText('Voice: Kokoro af_kore (Apache-2.0)  ·  Marimba / vibraphone / glockenspiel: VCSL (CC0)', x, y);
-    y += 30; g.fillText('Type: Inter, Inter Tight, JetBrains Mono (OFL)  ·  All UI, music and sound are original', x, y);
+    g.fillText('All UI, music and sound are original', x, y);
     g.globalAlpha = 1;
   }
   E.vignette(g, 0.5);

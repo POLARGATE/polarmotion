@@ -154,7 +154,7 @@ function endCard(t) {
   const s1 = 9, l1 = 'NIGHT SHIFT ORIENTATION'; osdText(ox, l1, (W - osdW(l1, s1)) / 2, 430, s1, '#ecece4', false);
   const s2 = 4, l2 = 'LIMINAL FOUND FOOTAGE'; osdText(ox, l2, (W - osdW(l2, s2)) / 2, 560, s2, '#b9b39a', false);
   ox.font = "500 34px 'IBM Plex Mono'"; ox.fillStyle = '#8f8b7c'; ox.textAlign = 'center'; ox.textBaseline = 'middle';
-  ox.fillText('LemoLab × Claude Opus 5.5', W / 2, 680); ox.textAlign = 'left'; ox.globalAlpha = 1;
+  ox.fillText('Polargate · PolarMotion', W / 2, 680); ox.textAlign = 'left'; ox.globalAlpha = 1;
 }
 
 // —— Events (sound effects / dialogue / subtitles) → events.json ——

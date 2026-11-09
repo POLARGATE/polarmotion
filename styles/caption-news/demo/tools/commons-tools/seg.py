@@ -2,7 +2,7 @@
 Usage: python3 seg.py "File:X.webm" name start_s duration_s "licence" "author" ["note"]"""
 import sys, json, subprocess, hashlib, urllib.parse, time, os
 from pathlib import Path
-UA = "lemo-opuscar/1.0 (https://github.com/lemomo-ai/lemo-opuscar)"
+UA = "PolarMotion/1.0 (https://github.com/POLARGATE/polarmotion)"
 t, name, ss, du, lic, credit = sys.argv[1:7]; note = sys.argv[7] if len(sys.argv) > 7 else ""
 fn = t.removeprefix("File:").replace(" ", "_"); h = hashlib.md5(fn.encode()).hexdigest()
 url = f"https://upload.wikimedia.org/wikipedia/commons/{h[0]}/{h[:2]}/{urllib.parse.quote(fn)}"

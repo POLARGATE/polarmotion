@@ -8,7 +8,7 @@ export const HIT = {
 };
 export const T = {
   bongo1: B(1, 3.5), bongo2: B(1, 4),
-  words: [B(2, 2), B(2, 3), B(2, 4)],       // A / LEMOLAB / PICTURE land
+  words: [B(2, 2), B(2, 3), B(2, 4)],       // A / POLARGATE / PICTURE land
   blinds: B(3, 3),                           // grid blinds flip open → velvet key
   wipe: B(4, 3),                             // courier trench-coat wipe
   agentIn: B(5), skid: B(5, 2), lookBack: B(5, 3), toCam: B(5, 3.5), dash: B(5, 4),

@@ -5,16 +5,13 @@ MUSIC
   "Wildflowers" by Scott Buckley — Creative Commons Attribution 4.0 (CC BY 4.0)
   https://www.scottbuckley.com.au/library/  (file: .../wp-content/uploads/2025/12/Wildflowers.mp3)
   Edited: one beat-aligned jump (61.23 s -> 265.61 s, 0.18 s crossfade), faded out; mixed under voice and SFX.
-  Credited on the end card: MUSIC "Wildflowers" by Scott Buckley · CC BY 4.0 · scottbuckley.com.au
+  Credited in this file (the end card carries no third-party credits).
 
 VOICE
-  Kokoro-82M text-to-speech (hexgrad/Kokoro-82M, Apache License 2.0), run locally with
-  kokoro-onnx (thewh1teagle/kokoro-onnx, MIT). Voice "af_heart", speed 0.93. Model files: core/tts/.
-  Transcription check: faster-whisper (SYSTRAN, MIT) with the OpenAI Whisper "base.en" model (MIT).
+  Synthetic narration, speed 0.93.
 
 MAP DATA
-  Coastline: Natural Earth 1:50m admin-0 countries (public domain, default view), via world-atlas 2.0.2
-  (Mike Bostock, ISC licence), read from the npm CDN by extract_aus.mjs and
+  Coastline: world-atlas 2.0.2 countries-50m (Mike Bostock, ISC licence), read from the npm CDN by extract_aus.mjs and
   decoded with topojson-client 3.1.0 (Mike Bostock, ISC licence) -> demo/vendor/topojson-client.min.cjs.
   Only the two Australian rings (mainland, Tasmania) are kept, in demo/aus.js; no borders are drawn.
   Licence texts in demo/vendor/.
@@ -39,4 +36,4 @@ FACTS (narration)
   Australian National Botanic Gardens). Rounded for narration.
 
 FILM
-  Directed and coded by Claude Opus 5.5 for LemoLab.
+  Made in code with PolarMotion.

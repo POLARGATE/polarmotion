@@ -20,7 +20,7 @@ CHUNK = 1400
 def http(url, data=None, tries=5, timeout=180):
     for k in range(tries):
         try:
-            req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json', 'User-Agent': 'lemo-opuscar-film/1.0'})
+            req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json', 'User-Agent': 'polarmotion-film/1.0'})
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.read()
         except Exception as e:

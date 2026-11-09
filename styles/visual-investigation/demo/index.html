@@ -216,7 +216,7 @@ function sPos(t) { // 12.3–18.6 position: USGS map → plan view (schematic) +
       txt('航空站', rx + 12, ry - 16, { s: 24, w: 700, c: '#0B0C0E', a: la, id: 'nas' }); }
     const bl = 150 * sc; hair(P.x + P.w - 40 - bl, P.y + P.h - 36, P.x + P.w - 40, P.y + P.h - 36, C.text, 2); // true scale bar: 1,000 ft = 150 source px
     txt('1,000 ft', P.x + P.w - 40, P.y + P.h - 48, { s: 15, f: F.mono, c: C.text, al: 'right' });
-    tag('USGS 1947', P.x, 76, { id: 'mapTag' });
+    tag('地图 · 1947', P.x, 76, { id: 'mapTag' });
   } else planPanel(t, P, 1);
   // top-right: mooring-mast reference photo (an earlier docking, NARA 518856; cropped to the bow and the mast only)
   const R1 = { x: 1100, y: 92, w: 760, h: 380 }; const k1 = seg(t, 13.0, 13.04);
@@ -323,7 +323,7 @@ function sOrigin(t) { // 23.8–31.8 point of ignition: five sources point to ga
     badge(P.x + P.w - 26, P.y + 26, t, 30.12); }
   // ③ photo (U.S. Navy · Pasquarella)
   const a3 = seg(t, 24.8, 24.85); if (a3 > 0) { const P = { x: 1420, y: 92, w: 440, h: 330 }, s = P.w / 2280;
-    tag('照片 · Pasquarella', P.x, 76, { id: 'pqTag' }); plate(IM.pasq, 60, 60, 2280, 1710, P.x, P.y, P.w, P.h, { flash: 1 - seg(t, 24.8, 24.95) });
+    tag('照片 · 1937', P.x, 76, { id: 'pqTag' }); plate(IM.pasq, 60, 60, 2280, 1710, P.x, P.y, P.w, P.h, { flash: 1 - seg(t, 24.8, 24.95) });
     ring(P.x + 1270 * s, P.y + 590 * s, 50, seg(t, 25.1, 25.5), '船尾上方', -1, null, 'sternTop');
     badge(P.x + P.w - 26, P.y + 26, t, 30.24); }
   // ④ source audio (newsreel commentary, 1937-05-10): waveform + words lighting up one by one
@@ -447,14 +447,10 @@ function sEnd(t) { // 55.6–60.0 end card: title / hairline / style name / cred
   txt('THE HINDENBURG: FOUR MINUTES, 32 SECONDS', 124, 436, { s: 24, f: F.mono, c: C.dim, ls: 1, a: k, id: 'e2' });
   x.save(); x.globalAlpha = k; hair(124, 480, lerp(124, 1000, eo(seg(t, 55.6, 56.1))), 480, C.dim, 1); x.restore();
   const k2 = seg(t, 55.8, 55.9); txt('视觉调查 · Visual Investigation', 124, 546, { s: 34, w: 500, a: k2, id: 'e3' });
-  txt('LemoLab × Claude Opus 5.5', 124, 600, { s: 24, f: F.mono, w: 600, c: C.text, a: k2, id: 'e4' });
+  txt('Polargate · PolarMotion', 124, 600, { s: 24, f: F.mono, w: 600, c: C.text, a: k2, id: 'e4' });
   const k3 = seg(t, 55.9, 56.0); const cr = [
-    '影像 / 原声  Universal Newsreel 特别版，1937-05-10（美国国家档案馆收藏，公有领域）',
-    '照片  U.S. Navy · Gus Pasquarella；NHHC NH 57973；NARA 518856（美国联邦政府作品，公有领域）',
-    '文件  FBI 兴登堡号档案（1937）；美国商务部《兴登堡号事故调查报告》，Air Commerce Bulletin 1937-08-15（公有领域）',
-    '地图  USGS Lakehurst 1:24,000 图幅，1947（公有领域）',
     '非官方作品。照片时刻、机位与影像对齐为本片推断，片中已标“≈ / 推断 / 示意”。' ];
-  cr.forEach((s, i) => txt(s, 124, 790 + i * 34, { s: 20, c: i === 4 ? C.dim : '#B9B6AE', a: k3 }));
+  cr.forEach((s, i) => txt(s, 124, 660 + i * 34, { s: 20, c: C.dim, a: k3 }));
   const ka = seg(t, 56.0, 56.1); x.save(); x.globalAlpha = ka;
   [d => full(IM.ff, d.x, d.y, d.w, d.h), d => plate(IM.p39, 150, 380, 1400, 1037, d.x, d.y, d.w, d.h, { doc: 1 }), d => full(IM.pasq, d.x, d.y, d.w, d.h), d => plate(IM.usgs, 700, 300, 1200, 889, d.x, d.y, d.w, d.h, { map: 1 })]
     .forEach((dr, i) => dr({ x: 1300 + (i % 2) * 290, y: 230 + Math.floor(i / 2) * 230, w: 270, h: 200 }));

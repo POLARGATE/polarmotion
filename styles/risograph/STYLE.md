@@ -80,7 +80,7 @@ Framing: lots of paper and solid ink, text on empty sky or a knockout strip. Tra
 - **Layering like plates** (an option): each new plate brings one instrument, and they can leave one by one.
 - **The machine is the signature foley**: feed "shhk", drum "ka-chunk" at a plate arrival, motor hum, a sheet landing on a stack, a guillotine cut. Other foley dry, close and papery, following the story's materials.
 - **Silence**: a held bar with reverb tails cut, at most ambience or one distant sound; it pairs with a registration drift, and the snap brings everything back.
-- **Mix**: dry and close; music ducks ~8 dB under voice; −14 LUFS. Voice relaxed and conversational, short lines, verified with whisper. No grain added at mux: it is in the print.
+- **Mix**: dry and close; music ducks ~8 dB under voice; −14 LUFS. Voice relaxed and conversational, short lines, verified with the speech check. No grain added at mux: it is in the print.
 
 ## 8. Native moves
 

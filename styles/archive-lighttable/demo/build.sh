@@ -28,7 +28,7 @@ if [ "${FETCH:-0}" = "1" ] || [ ! -f "$HERE/assets/tex/p1_fly.png" ]; then
   T=https://tile.loc.gov/storage-services/master/pnp
   for id in 00626 00629 00610; do curl -sSL -o "$RAW/loc_ppprs${id}u.tif" "$T/ppprs/00600/${id}u.tif"; done
   curl -sSL -o "$RAW/loc_cph3b18080u.tif" "$T/cph/3b10000/3b18000/3b18000/3b18080u.tif"
-  curl -sSL -A "LemoOpuscar/1.0" -o "$RAW/telegram_mcc061.jpg" "https://upload.wikimedia.org/wikipedia/commons/7/72/Telegram_Orville_Wright_17_dec_1903.jpg"
+  curl -sSL -A "PolarMotion/1.0" -o "$RAW/telegram_mcc061.jpg" "https://upload.wikimedia.org/wikipedia/commons/7/72/Telegram_Orville_Wright_17_dec_1903.jpg"
   "$PY" -I "$HERE/tools/prep.py" "$HERE"             # plates, masks, the Flyer / Wilbur layers and the cleaned background
 fi
 

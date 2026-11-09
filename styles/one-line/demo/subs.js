@@ -44,6 +44,6 @@ export function endCard(ctx, E, t, W, H) {
   ctx.save(); ctx.beginPath(); ctx.rect(x - 20, y - 180, (w + 60) * a1, 260); ctx.clip();
   ctx.fillStyle = INK + '0.9)'; ctx.fillText('The Line That', x, y - 70); ctx.fillText('Never Lifted', x + 40, y + 10); ctx.restore();
   ctx.globalAlpha = a2; ctx.font = '600 32px Caveat'; ctx.letterSpacing = '9px'; ctx.fillStyle = INK + '0.72)'; ctx.fillText('ONE-LINE DRAWING', x + 6, y + 92);
-  ctx.globalAlpha = a3; ctx.font = '500 30px Caveat'; ctx.letterSpacing = '2px'; ctx.fillStyle = INK + '0.58)'; ctx.fillText('LemoLab × Claude Opus 5.5', x + 6, y + 140);
+  ctx.globalAlpha = a3; ctx.font = '500 30px Caveat'; ctx.letterSpacing = '2px'; ctx.fillStyle = INK + '0.58)'; ctx.fillText('Polargate · PolarMotion', x + 6, y + 140);
   ctx.restore();
 }

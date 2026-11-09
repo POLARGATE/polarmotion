@@ -63,7 +63,7 @@ The demo's sprite is an **18×10** grid unfolded 1:1 from the terminal logo's qu
     - The split screen becomes a left/right duet (piano left, chiptune right).
     - The end-card words are chiptune notes; the final stomp opens the filter on a big major-9 chord.
 - **Foley:** keyboard (a thock plus a click, with human timing jitter), trackpad clicks, pane swishes, popup pops, CI ticks, a shutter for screenshots. Mascot steps, jumps and landings are 8-bit.
-- **VO:** calm, one feature per line, product names verified with whisper. Keep effects off word onsets: a keypress landing on "Start" masked the word.
+- **VO:** calm, one feature per line, product names verified with the speech check. Keep effects off word onsets: a keypress landing on "Start" masked the word.
 
 Tempo ~104 BPM (the treatment's plan). The end-card words are chiptune notes C5 E5 G5 C6 in `sound.py`.
 
@@ -75,7 +75,7 @@ Mascot timings in the demo: anticipation crouch 0.14 s with squash 0.28; walk at
 - **Eyes carry the acting:** n / l / r / u / d / wide / happy / shut / blink. They look at what matters: the popup, the cursor, the line being revised.
 - **Arms:** down / up (cheer) / wave. Props sit on the same grid.
 
-Voice: Kokoro `am_michael`, speed 1.0 (other voices read "Claude" as "Clod"). A keypress landing on "Start" masked the word, hence the rule to keep effects off word onsets.
+Voice: `am_michael`, speed 1.0 (other voices read "Claude" as "Clod"). A keypress landing on "Start" masked the word, hence the rule to keep effects off word onsets.
 
 ## Palette & props
 
@@ -85,7 +85,7 @@ The Claude app's light theme (ink `#1F1E1C`, clay `#D97757`, `--clay2` `#BD5D3A`
 
 ## End card
 
-Clawd hops across "Say it. Plan it. Review it. Ship it." word by word as it is spoken (Newsreader 64 px, the last word in clay italic), then "Claude Code · in the Claude app" and a small credit line (`film.js`, end-card function): "LemoLab × Claude Opus 5.5 · Unofficial fan film · Voice · Fonts", plus the sample credits (Salamander Grand Piano V3, MuldjordKit, Versilian Studios, Karoryfer). The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card (remove that line when adapting `film.js`).
+Clawd hops across "Say it. Plan it. Review it. Ship it." word by word as it is spoken (Newsreader 64 px, the last word in clay italic), then "Claude Code · in the Claude app" and a small line (`film.js`, end-card function): "Polargate · PolarMotion · Unofficial fan film". No third-party credits on screen; fonts, piano and drums are credited in `demo/CREDITS`. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (remove that line when adapting `film.js`).
 
 ## Build notes
 
@@ -96,7 +96,7 @@ Clawd hops across "Say it. Plan it. Review it. Ship it." word by word as it is s
 - `demo/sound.py` builds the score, foley and VO from `events.json`, with ducking.
 - Run everything with `sh styles/living-screencast/demo/build.sh`. The full render takes about 30 s.
 
-Other files: `demo/lines.json` (VO lines), `demo/tools/asr_check.py` (whisper check + word timestamps, `sh demo/build.sh --vo`), `demo/tools/mixcheck.py`, `demo/tools/subs.mjs` (captions → `.srt`). `build.sh` also renders the style frame (40.9 s) and the poster (8.9 s).
+Other files: `demo/lines.json` (VO lines), `demo/tools/asr_check.py` (speech check + word timestamps, `sh demo/build.sh --vo`), `demo/tools/mixcheck.py`, `demo/tools/subs.mjs` (captions → `.srt`). `build.sh` also renders the style frame (40.9 s) and the poster (8.9 s).
 
 Don'ts we wrote for this demo (now STYLE.md §9):
 

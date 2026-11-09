@@ -21,7 +21,7 @@ Everything else installs in tiers, from the library root (`$LIB` in skill mode).
 | Command | Adds | Size |
 |---|---|---|
 | `sh tools/setup.sh deps` | core: npm packages, headless browser, Python `.venv` (numpy, scipy, soundfile, soxr, pillow): render, synthesize sound, mux | ~350 MB |
-| `… setup.sh deps voice` | Kokoro + model (English and Spanish, offline), faster-whisper (voice check). edge-tts (Chinese, online) is not installed: it sends the text to Microsoft, so install it (`.venv/bin/python -m pip install edge-tts`) only if the user agrees | ~0.55 GB + a Whisper model on first check (~145 MB for English, ~480 MB for Chinese) |
+| `… setup.sh deps voice` | kokoro-onnx + voice model (English and Spanish, offline), faster-whisper (voice check). edge-tts (Chinese, online) is not installed: it sends the text to Microsoft, so install it (`.venv/bin/python -m pip install edge-tts`) only if the user agrees | ~0.55 GB + a speech-check model on first check (~145 MB for English, ~480 MB for Chinese) |
 | `… setup.sh deps music` | numba, for plucked strings (`pluck.py`); the sampler itself needs only the core | ~140 MB |
 | `sh tools/fetch.sh instruments <lib>` | a sample library: `freepats`, `karoryfer`, `salamander`, `vcsl`, `vsco2ce` or `all` | 70–400 MB each |
 | `sh tools/fetch.sh hdri` | HDRIs for 3D styles | 12 MB |
@@ -95,18 +95,18 @@ A small script (`cuecheck.py`, in `styles/<slug>/demo/tools/` of several demos) 
 ## 4. Voice
 
 - **TTS is only the default.** If the user brings a recording or names a voice, use that. Otherwise:
-  - **Spanish**: ask first for the user's own recording (or a voice they already pay for); it sounds far better. Kokoro's Spanish voices (`"lang": "es"`, `ef_dora`, `em_alex`, `em_santa`) work offline but sound robotic: use them only if the user accepts that, and say so. Check every line with `asr_check.py --lang es`.
-  - **English**: [Kokoro](https://github.com/thewh1teagle/kokoro-onnx), local, many voices (an unknown `voice` name makes `tts.py` print the full list; `af_` / `am_` are American, `bf_` / `bm_` British; cast the narrator for this film, not the demo's). `core/tts/tts.py lines.json out/` writes one WAV per line and a durations file. Its Chinese voices (`"lang": "cmn"`) work offline but sound plain.
-  - **Chinese**: only with the user's consent (it sends the text to Microsoft and edge-tts is not installed by default). `core/tts/tts_zh.py lines.json out/` uses [edge-tts](https://github.com/rany2/edge-tts) with Microsoft's neural voices (`zh-CN-XiaoxiaoNeural`, `zh-CN-YunxiNeural`…), with the same outputs as `tts.py`, a rate per line and the silence trimmed. **It needs a network connection.**
+  - **Spanish**: ask first for the user's own recording (or a voice they already pay for); it sounds far better. The local Spanish voices (`"lang": "es"`, `ef_dora`, `em_alex`, `em_santa`) work offline but sound robotic: use them only if the user accepts that, and say so. Check every line with `asr_check.py --lang es`.
+  - **English**: the local voice (`core/tts/tts.py`), many voices (an unknown `voice` name makes `tts.py` print the full list; `af_` / `am_` are American, `bf_` / `bm_` British; cast the narrator for this film, not the demo's). `core/tts/tts.py lines.json out/` writes one WAV per line and a durations file. Its Chinese voices (`"lang": "cmn"`) work offline but sound plain.
+  - **Chinese**: only with the user's consent (it sends the text to Microsoft and edge-tts is not installed by default). `core/tts/tts_zh.py lines.json out/` uses the `edge-tts` package with Microsoft's neural voices (`zh-CN-XiaoxiaoNeural`, `zh-CN-YunxiNeural`…), with the same outputs as `tts.py`, a rate per line and the silence trimmed. **It needs a network connection.**
 - Spell numbers out in the TTS text and write them as digits in the subtitles.
-- **Check every line**: `core/tts/asr_check.py` transcribes each WAV with faster-whisper and compares it with the script (`--lang zh`: numbers by value, so 十九 matches 19, and the rest character by character); re-generate until it exits 0. A misheard character in a short Chinese line is normal: listen, and if it is right, put what the model heard in the line's `asr` field. It also writes word timestamps for placing lines and subtitles.
+- **Check every line**: `core/tts/asr_check.py` transcribes each WAV with a local speech-recognition model and compares it with the script (`--lang zh`: numbers by value, so 十九 matches 19, and the rest character by character); re-generate until it exits 0. A misheard character in a short Chinese line is normal: listen, and if it is right, put what the model heard in the line's `asr` field. It also writes word timestamps for placing lines and subtitles.
 - **Before mixing**: TTS has a high peak-to-average ratio. Compress the voice first, then balance by RMS: voice about 10 dB above the music.
 
 ## 5. Music
 
 Write an original score from the cue map, in the instruments of the style's sound palette; no generic piano and strings.
 
-- **Samples**: `core/audio/sampler.py` plays real instruments from free libraries (VSCO 2 CE, VCSL, FreePats, Karoryfer, Salamander Grand Piano; list and licences in `core/audio/INSTRUMENTS.md`). Write the score as events `(time, instrument, pitch, duration, velocity, pan)`. Long notes are extended seamlessly, and round-robins avoid the machine-gun effect.
+- **Samples**: `core/audio/sampler.py` plays real instruments from free sample libraries (list and licences in `core/audio/INSTRUMENTS.md`). Write the score as events `(time, instrument, pitch, duration, velocity, pan)`. Long notes are extended seamlessly, and round-robins avoid the machine-gun effect.
 - **Plucked and folk strings** (guqin, pipa, shamisen, banjo…): `core/audio/pluck.py`, physical modelling (Karplus–Strong) with bends and vibrato.
 - **Synthesis** with numpy for chip tunes, drones and effects; no download needed.
 - **Balance the low end.** Synthetic scores get bass-heavy quickly. Measure energy per band after mixing; keep 20–120 Hz around −3 dB relative to the rest, skip pad notes below MIDI 48, and give the bass some 2nd and 3rd harmonics so it speaks on small speakers.
@@ -126,7 +126,7 @@ Write an original score from the cue map, in the instruments of the style's soun
 
 1. Contact sheets: a frame every 1–2 s with `still.mjs --range`, tiled with `core/render/sheet.py`. At least two full passes.
 2. Frame strips at 0.2 s for every key action: hand-overs, falls, hits.
-3. On the final file: `ffmpeg -af ebur128` (loudness), `blackdetect` (blank frames), whisper again on the final mix if it has voice.
+3. On the final file: `ffmpeg -af ebur128` (loudness), `blackdetect` (blank frames), the speech check again on the final mix if it has voice.
 4. Watch it once, at full speed, with sound.
 
 ## 9. 3D notes

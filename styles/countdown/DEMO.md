@@ -50,7 +50,7 @@ Sync per camera (source second `s`): broadcast `s = M + 46.8`; rocket camera `s 
 - Zero: gran cassa, bass drum, crash, timpani, tuba / trombones / horns in D major, tubular bell; half-time bass drum after; horns move to B3/G2 and A3/C♯4 under the two full screens. **Breath 41.7–42.0**: only the roar tail, then synthetic wind (J-cut into the rocket camera layout).
 - 42.0 →: contrabass pizzicato ostinato D–D–A–C on the beat, light hats, glockenspiel A5 on each ticked flight event. 53.78: tubular bells A4/D5, horn D4, timpani. End card: D major brass, glockenspiel D6–A5–F♯5.
 - Mix: the NASA broadcast audio is on top throughout; music ~8–10 dB under it before zero and ~6–7 dB under it after zero (lifted 3.5 dB from ignition on), ducked under speech; the narrator only in gaps of the broadcast. Ticks alternate 1,850 / 1,480 Hz (±15 % pan), louder in the last ten seconds, a soft 1,250 Hz after zero. Pre-master: normalised to −14 LUFS, then a linked look-ahead limiter (5 ms, 150 ms release, ceiling −3.3 dBFS) so the ignition keeps its punch (about 3 dB of reduction). −14.0 LUFS, true peak −1.9 dBFS.
-- Voice: Kokoro `bf_emma`, two lines, chosen to sound unlike the broadcast's voices.
+- Voice: `bf_emma`, two lines, chosen to sound unlike the broadcast's voices.
 
 ## Palette & props
 
@@ -64,7 +64,7 @@ Sync per camera (source second `s`): broadcast `s = M + 46.8`; rocket camera `s 
 
 Opening package (lower left of the first cell, 0.45–6.8 s): 自己倒数 / COUNTING ITSELF DOWN, then 阿尔忒弥斯二号 · 2026 年 4 月 1 日 · 39B 发射台 and the English line.
 
-End card (54.0–59.5 s, left-aligned over the rocket camera, the clock and transcript still running): 自己倒数 (Noto Sans SC 700, 112 px) / COUNTING ITSELF DOWN; a thin orange rule; 实时倒计时分屏 LIVE COUNTDOWN SPLIT-SCREEN; LemoLab × Claude Opus 5.5; 素材：NASA · 公有领域 · 非官方作品 / FOOTAGE: NASA · PUBLIC DOMAIN · UNOFFICIAL. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+End card (54.0–59.5 s, left-aligned over the rocket camera, the clock and transcript still running): 自己倒数 (Noto Sans SC 700, 112 px) / COUNTING ITSELF DOWN; a thin orange rule; 实时倒计时分屏 LIVE COUNTDOWN SPLIT-SCREEN; Polargate · PolarMotion; 非官方作品 / UNOFFICIAL (the footage and photo sources live in `demo/CREDITS`). The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -77,12 +77,12 @@ demo/
   tools/footage.py    search / fetch / record licences (NASA, Commons, Internet Archive) → SOURCES.md
   tools/subs.mjs      cues → audio/cues.json (+ one line per language, ≥ 1.8 s)
   tools/fetch_fonts.py  Barlow, Barlow Condensed, IBM Plex Mono, Noto Sans SC subset (OFL)
-  tools/final_asr.py  Whisper on the finished film
-  audio/lines.json    narrator (Kokoro)      audio/mix.py   native audio, ticks, foley, score, ducking, pre-master
+  tools/final_asr.py  speech check on the finished film
+  audio/lines.json    synthetic narrator     audio/mix.py   native audio, ticks, foley, score, ducking, pre-master
   FACTS.md · SOURCES.md · SOURCES.jsonl · CREDITS
   raw/ frames/ out/ fonts/ audio/vo/   downloaded or generated, not committed
 ```
 
-`sh demo/build.sh` (library set up with `setup.sh deps voice music`): fetches the NASA excerpts (~400 MB), fonts, voice model and the vsco2ce / vcsl samples if missing → narrator + speech check → frames (`prep.sh`) → subtitles + one-line check → `readcheck` → events → render (1,785 frames, 30 fps) → mix → mux (−14 LUFS, grain 1) → small cut → poster / style frame (t 28.5) → Whisper on the film.
+`sh demo/build.sh` (library set up with `setup.sh deps voice music`): fetches the NASA excerpts (~400 MB), fonts, voice model and the sample packs if missing → narrator + speech check → frames (`prep.sh`) → subtitles + one-line check → `readcheck` → events → render (1,785 frames, 30 fps) → mix → mux (−14 LUFS, grain 1) → small cut → poster / style frame (t 28.5) → speech check on the film.
 
-Demo-specific choices and pitfalls: the broadcast excerpt is a stream copy, so its zero (46.8 s) depends on the keyframe it starts on; re-measure after a re-fetch. The rocket camera's burned-in timer gave a frame-exact zero, but the same file's audio runs about 1 s early, so it was synced on picture only. The Firing Room reel has no clock: it is labelled "same window" and kept away from the seconds where its content could contradict the clock. "GLS, go for ALS" is heard by Whisper as "go for your left"; it is identified from NASA's countdown list and the commentary that follows (FACTS.md §T). The first cut showed the count's whole Chinese line ("…RS-25 点火") four seconds early; the count is now two cues. The 3×3 grid first opened with three black slots; they are now "standby" frames that each count opens. The fact-sheet annotation covered the page's own type; it moved into a dark band below the paper, and the paper window is a fixed 600 source px wide (scaled to fit, paper white above and below) so every row's text is whole. A static pad wide shot ran ten seconds; a punch-in on "sound suppression water" (from a 2,880-px extraction, no upscaling) breaks it.
+Demo-specific choices and pitfalls: the broadcast excerpt is a stream copy, so its zero (46.8 s) depends on the keyframe it starts on; re-measure after a re-fetch. The rocket camera's burned-in timer gave a frame-exact zero, but the same file's audio runs about 1 s early, so it was synced on picture only. The Firing Room reel has no clock: it is labelled "same window" and kept away from the seconds where its content could contradict the clock. "GLS, go for ALS" is heard by the speech check as "go for your left"; it is identified from NASA's countdown list and the commentary that follows (FACTS.md §T). The first cut showed the count's whole Chinese line ("…RS-25 点火") four seconds early; the count is now two cues. The 3×3 grid first opened with three black slots; they are now "standby" frames that each count opens. The fact-sheet annotation covered the page's own type; it moved into a dark band below the paper, and the paper window is a fixed 600 source px wide (scaled to fit, paper white above and below) so every row's text is whole. A static pad wide shot ran ten seconds; a punch-in on "sound suppression water" (from a 2,880-px extraction, no upscaling) breaks it.

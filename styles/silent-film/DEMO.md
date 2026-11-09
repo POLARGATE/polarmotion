@@ -47,7 +47,7 @@ Adapting any topic: find the object that escapes, the person it should end up wi
 ## Score structure
 
 - **No foley, no voice.** The piano *is* the sound design, as in a 1920s picture house: a nervous trill for the wobble, a descending glissando for the fall, a low "boing" for the bounce, a diminished sforzando for the double take, a high stab and an upward run for the grab, "plink … plonk" for the empty fist, a forearm cluster for the see-saw, an upward glissando for the melon, a swelling diminished tremolo for the wait, a falling glissando into a crash chord for the landing, a crisp minor second when the bread breaks, a grace note for the wink.
-- **Score**: original photoplay music on a period **upright piano** (VSCO 2 CE, CC0), stride left hand, following a cue sheet: Maestoso title → Andante "Loaf theme" (F major) → comic "uh-oh" + accelerando run → Hurry (A minor, 16th-note runs, 144 BPM) → stop-time suspense + Misterioso walk → Agitato tremolo → ritardando (88) → silence → **reed organ** (FreePats accordion, CC0) enters pp → Tenderly (the Loaf theme at 72 BPM) → finale. The theme is heard proud at the start and tender at the end.
+- **Score**: original photoplay music on a period **upright piano** (sampled), stride left hand, following a cue sheet: Maestoso title → Andante "Loaf theme" (F major) → comic "uh-oh" + accelerando run → Hurry (A minor, 16th-note runs, 144 BPM) → stop-time suspense + Misterioso walk → Agitato tremolo → ritardando (88) → silence → **reed organ** (a sampled accordion) enters pp → Tenderly (the Loaf theme at 72 BPM) → finale. The theme is heard proud at the start and tender at the end.
 - **The projector is the ambience**: a lamp click and motor spin-up before the curtain, a soft claw-and-motor purr under the reel, pushed forward as the *only* sound in the silence, and the tail of the film flapping on the take-up reel at the end.
 - **Silences**: (1) the stop-time in the chain gag, while the melon is out of frame (only a faint tremolo swelling); (2) the loaf stops, the projector alone for two seconds — the next sound is the reed organ.
 - Tame the piano's hammer transients with light compression before loudness normalisation (−14 LUFS). Put the grain in the picture; mux grain 1.
@@ -66,7 +66,7 @@ Adapting any topic: find the object that escapes, the person it should end up wi
 
 - The intertitles *are* the subtitles; the `.srt` lists their text. Each card holds 2.5–3.75 s.
 - Title: THE RUNAWAY LOAF / *a photoplay in one reel*.
-- End card (tender border): The End · title and style name · LEMO-OPUSCAR · LemoLab × Claude Opus 5.5 · asset credits; the curtains close over it. The LemoLab sign-off belongs to this library's demo only: a user's film carries no LemoLab credit and no copy of this card.
+- End card (tender border): The End · title and style name · Polargate · PolarMotion (the asset credits live in `demo/CREDITS`); the curtains close over it. The library sign-off belongs to this library's demo only: a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Pitfalls we hit (demo record)
 

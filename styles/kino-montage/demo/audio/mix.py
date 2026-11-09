@@ -3,7 +3,7 @@
     $LIB/.venv/bin/python <demo>/audio/mix.py
 
 Score: an original "machine" score in D minor, 120 BPM (1 beat = 0.5 s, 1 bar = 2 s), sampled instruments
-(core/audio/sampler.py; VSCO 2 CE, VCSL and FreePats, all CC0): spiccato cellos + staccato bassoon ostinato,
+(core/audio/sampler.py): spiccato cellos + staccato bassoon ostinato,
 staccato tuba/trombone on the beat, horns and trumpets for stabs and the motif, snare, gran cassa, timpani,
 xylophone, gong. Real recordings where we have them (rivet gun, steam whistle, construction site), procedural
 foley (core/audio/sfx.py) for paper, marker, slams. Every time comes from events.json (exported from the page).

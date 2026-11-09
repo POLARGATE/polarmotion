@@ -48,7 +48,7 @@ Performance beats: the elevator button pressed three times (once, twice, mash); 
 - **Orchestration as used**: piano lead (Salamander), clarinet (low trill + two-octave glissando curtain-raiser), strings (tremolo bed, upward rushes), muted trumpet commentary ("wah-wah" on the plaque), brushes → sticks in the Charleston, walking pizz bass, tubular bells (B♭) for midnight, harp/piano glissandi for each fan, trombone + sax for the final chorus.
 - **Planting the theme**: title = piano bar 1; street = muted trumpet tries two bars and is cut off; kitchen = the hero whistles the first four notes; finale = the full song.
 - **Distance automation**: the band plays on the 30th floor, so it is low-passed at 2.5 kHz on the street, 1.2 kHz in the lobby (through the floor), opens up as he climbs, full-range and dry on the roof.
-- **Announcer in five spaces** (Kokoro `bm_fable`): street horn (band-pass 320–3.8 kHz, soft drive, slap echo) → desk radio → stairwell PA (long reverb) → kitchen radio → live mic (full range). Heavy horn distortion made "five minutes to midnight" unintelligible in the full mix, so the drive was reduced.
+- **Announcer in five spaces** (voice `bm_fable`): street horn (band-pass 320–3.8 kHz, soft drive, slap echo) → desk radio → stairwell PA (long reverb) → kitchen radio → live mic (full range). Heavy horn distortion made "five minutes to midnight" unintelligible in the full mix, so the drive was reduced.
 - **Foley as used**: brass button click, bronze plaque clang + chain rattle, iron stair treads on eighth notes, marble heels, silver trays, wooden swing doors + spring twang, paper flutter, glove slap, knife-switch "chunk" + filament hum per letter, relay ticks for the chase, firework whistles.
 - **Silences**: after "Out of order?!" only the lobby clock ticks twice (next sound: the Charleston snare); after the tower clock clicks to XII only wind and the fluttering letter (next sound: the first bell, the most important sound in the film); one beat of held breath after bell 12 (next: tutti).
 - **J/L-cuts**: radio tuning noise before the arch opens; the echo of "Out of order?!" rolls up the stairwell; the kitchen radio starts during the stairwell; rooftop wind enters a bar before the kitchen doors; bell 12's tail rings into the tutti.
@@ -68,7 +68,7 @@ Performance beats: the elevator button pressed three times (once, twice, mash); 
 
 - Subtitle card speaker icons: a gold ribbon mic for the announcer, a burgundy pillbox cap for the hero.
 - Title: MIDNIGHT / AT THE STARLIGHT HOTEL in a gold title bar over the stepped arch, a 1930 diamond year badge, NEW YEAR'S EVE label.
-- End card: a lacquer plaque on the closed elevator doors: title, ART DECO, LEMO-OPUSCAR, "LemoLab × Claude Opus 5.5", asset credits. This sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+- End card: a lacquer plaque on the closed elevator doors: title, ART DECO, "Polargate · PolarMotion" and one line, "Score, sound and pictures made in code" (the asset credits live in `demo/CREDITS`). This sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -86,7 +86,7 @@ styles/art-deco/demo/
 ```
 1. Write the tempo grid and the cue table first; hand them to a music sub-agent and draw in parallel.
 2. Build the engine and the hero model sheet, then one scene per location, then one function per shot. Review single shots with `?scene=frames.shotTest&shot=<name>`.
-3. `sh demo/build.sh` rebuilds everything: timeline → TTS → pitch → whisper → score → cue check → mix → srt → render (≈15 s with 4 workers for 1401 frames) → mux (−14 LUFS, grain 3) → stills.
+3. `sh demo/build.sh` rebuilds everything: timeline → TTS → pitch → speech check → score → cue check → mix → srt → render (≈15 s with 4 workers for 1401 frames) → mux (−14 LUFS, grain 3) → stills.
 4. Review at 1 s intervals with `still.mjs --range 0:58:1` + `sheet.py`, then frame strips at 0.15–0.2 s for every key action.
 
 Pitfalls tied to this demo's props:
@@ -131,6 +131,6 @@ D.sunburst(g, 960, 540, { rays: 72, r1: 1400, mode: 'wedges' });
 D.drawShape(g, D.starPts(960, 540, 120, .22), { color: '#D97757', halo: 1, trail: { ang: Math.PI, len: 420, n: 4 } });
 
 // a bulb sign that lights letter by letter, in the same orange
-const sign = B.buildSign('LEMO', { size: 260, spacing: 20 });
-B.drawSign(g, sign, 560, 700, 1, { lit: B.litSequence(t, [0, .5, 1, 1.5], { chaseFrom: 2.5 }), color: '#D97757' });
+const sign = B.buildSign('POLAR', { size: 260, spacing: 20 });
+B.drawSign(g, sign, 560, 700, 1, { lit: B.litSequence(t, [0, .5, 1, 1.5, 2], { chaseFrom: 2.5 }), color: '#D97757' });
 ```

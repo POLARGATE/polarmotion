@@ -40,7 +40,7 @@ Camera settings used: azimuth 45° by default, elevation **30°** (build), **33�
 - Growth scheduled on the 16th grid: tiles on halves → quarters → eighths.
 - The boat's answering bell sits in a rest of the melody, filling the gap when the beam finds it.
 - **Foley** (`mix.py`): as in STYLE.md §7, plus gulls by day (downward-gliding FM chirps), windmill creak, crickets from dusk; the dock plank knock and lighthouse-ring stone thunk, glass tink for the lamp room, whump + hum on ignition. Floors: second knock 0.21 s after the first.
-- **Voice**: Kokoro `af_sky` (clear, gentle female), speed 0.86–0.92, 5 short lines. "Sea" was heard as "C" in a film about notes, so the narration says "ocean".
+- **Voice**: voice `af_sky` (clear, gentle female), speed 0.86–0.92, 5 short lines. "Sea" was heard as "C" in a film about notes, so the narration says "ocean".
 - **Mix**: voice compressed, ~10 dB over the music; music ducked −8 dB under the voice; −14 LUFS; grain 0.
 
 ## Palette & props
@@ -58,7 +58,7 @@ Camera settings used: azimuth 45° by default, elevation **30°** (build), **33�
 
 ## End card
 
-The night scale-reveal frame, darkened; the same title block (static), hex icon, `LOW-POLY ISLAND · LEMO-OPUSCAR`, `LemoLab × Claude Opus 5.5`, credits, laid out so the tiny lit island stays visible in a gap between the text blocks. The "LemoLab × Claude Opus 5.5" sign-off (and the LEMO-OPUSCAR line) belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The night scale-reveal frame, darkened; the same title block (static), hex icon, `LOW-POLY ISLAND`, `Polargate · PolarMotion`, a line on the music, sound and 3D (the font credits live in `demo/CREDITS`), laid out so the tiny lit island stays visible in a gap between the text blocks. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
