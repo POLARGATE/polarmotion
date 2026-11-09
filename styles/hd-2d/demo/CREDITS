@@ -13,7 +13,7 @@ Music
   Source file: music/src/sb_precipice.mp3 (direct link:
   https://www.scottbuckley.com.au/library/wp-content/uploads/2021/01/sb_precipice.mp3)
   Changes: cut, re-timed and level-automated for this film by music/edit.py (edit list in music/CUES.md).
-  Attribution is shown on screen in the title card and in music/CREDITS.txt.
+  Attribution is given in this file and in music/CREDITS.txt (not on screen).
 
 Fonts (SIL Open Font License 1.1; woff2 latin subsets from Google Fonts, license texts in fonts/)
 - Cinzel — The Cinzel Project Authors (Natanael Gama), fonts/h0.woff2 (500), fonts/h1.woff2 (700), fonts/OFL-Cinzel.txt

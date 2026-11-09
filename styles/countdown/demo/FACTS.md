@@ -25,7 +25,7 @@ On-screen text is bilingual; it is quoted as it appears (Chinese / English). Chi
 | Narration N2 "Next on the clock: booster separation, at two minutes nine."; milestone cell "预计 T+2:09 EXPECTED" | Expected time of booster separation | F3 |
 | Milestone cells 升空 (liftoff) / 滚转、俯仰 (roll, pitch) / 休斯敦接管 (Houston takes over) (tick times) | The times called out in the source audio (measured for the film) | Measurement, F3 |
 | Control bar 地面 GLS → 火箭 ALS → 休斯敦 HOUSTON (ground GLS → rocket ALS → Houston) | GLS hands over to the automated launch sequencer; Houston takes over after liftoff | F2, F3, source audio |
-| End card: 素材 NASA · 公有领域 · 非官方作品 (footage NASA · public domain · unofficial work) | Footage licence | CREDITS |
+| End card: 非官方作品 (unofficial work) | Status of the film | CREDITS |
 
 ## F1 Launch date, time, pad, crew
 - NASA image caption "Artemis II Launch": https://www.nasa.gov/image-detail/artemis-ii-launch-5/

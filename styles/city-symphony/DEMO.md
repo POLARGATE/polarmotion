@@ -67,7 +67,7 @@ Warm white `#EDE8DF`, secondary `#B0AAA0`, sodium orange `#D9772F` (rules, sourc
 
 ## End card
 
-Held 4.75 s over the last shot (darkened to 22 %, still moving), left-aligned, in this order: 纽约的一天 ONE DAY IN NEW YORK (one line) · a sodium rule · 延时交响 TIME-LAPSE SYMPHONY · Polargate · PolarMotion · footage credits: a header line with both licences (CC BY 3.0 and CC BY 2.0), their links and the changes made, then every CC BY work with author, full title and licence (two to a line), then the public-domain sources. The credit lines are fine print (16 px): they are written in full and legible but are not reported to `readcheck` (title, style name and sign-off are). The "Polargate · PolarMotion" line belongs to this library demo only; a user's film carries no credit of the library or of an AI and no watermark.
+Held 4.75 s over the last shot (darkened to 22 %, still moving), left-aligned, in this order: 纽约的一天 ONE DAY IN NEW YORK (one line) · a sodium rule · 延时交响 TIME-LAPSE SYMPHONY · Polargate · PolarMotion. No footage credits on screen: every CC BY work with author, full title, licence and the changes made, and the public-domain sources, live in `demo/CREDITS`. The "Polargate · PolarMotion" line belongs to this library demo only; a user's film carries no credit of the library or of an AI and no watermark.
 
 ## Build notes
 

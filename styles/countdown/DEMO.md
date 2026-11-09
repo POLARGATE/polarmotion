@@ -64,7 +64,7 @@ Sync per camera (source second `s`): broadcast `s = M + 46.8`; rocket camera `s 
 
 Opening package (lower left of the first cell, 0.45–6.8 s): 自己倒数 / COUNTING ITSELF DOWN, then 阿尔忒弥斯二号 · 2026 年 4 月 1 日 · 39B 发射台 and the English line.
 
-End card (54.0–59.5 s, left-aligned over the rocket camera, the clock and transcript still running): 自己倒数 (Noto Sans SC 700, 112 px) / COUNTING ITSELF DOWN; a thin orange rule; 实时倒计时分屏 LIVE COUNTDOWN SPLIT-SCREEN; Polargate · PolarMotion; 素材：NASA · 公有领域 · 非官方作品 / FOOTAGE: NASA · PUBLIC DOMAIN · UNOFFICIAL. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+End card (54.0–59.5 s, left-aligned over the rocket camera, the clock and transcript still running): 自己倒数 (Noto Sans SC 700, 112 px) / COUNTING ITSELF DOWN; a thin orange rule; 实时倒计时分屏 LIVE COUNTDOWN SPLIT-SCREEN; Polargate · PolarMotion; 非官方作品 / UNOFFICIAL (the footage and photo sources live in `demo/CREDITS`). The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

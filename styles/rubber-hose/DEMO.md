@@ -62,7 +62,7 @@ Voice: an old radio announcer calling the action like a horse race (Kokoro `bm_l
 
 ## End card
 
-Same sunburst, a wavy-edged sign with "The End", the style name, `Polargate · PolarMotion`, small credit lines at the bottom; it opens with an iris from black. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+Same sunburst, a wavy-edged sign with "The End", the style name, `Polargate · PolarMotion`, one small line at the bottom ("Original score & sound made in code"); it opens with an iris from black. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

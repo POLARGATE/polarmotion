@@ -44,7 +44,7 @@ On-screen text in the film is Chinese; it is quoted as it appears, with an Engli
 | Check "机上 97 人 · 遇难 35" (97 on board · 35 died); "据商务部报告" (per the Commerce Department report); dot grid "乘客 36" (passengers 36), "机组 61" (crew 61) | Number on board and deaths | R: "the personnel on board, including officers, numbered 61, of whom 22 died" / "36 persons besides the Crew were on board. Of these, 13 died" (61 + 36 = 97; 22 + 13 = 35) |
 | Check "另有地勤 1 人遇难" (plus 1 ground crew member died); dot grid ground crew 1 | Ground crew | R: "One member of the ground crew died as a result of burns received during the accident." |
 | VO8 "Thirty-six people died."; "36 人遇难" (36 died) | 35 + 1 = 36 | The two items above |
-| Map label "USGS 1947"; map credit on the end card | Date of the map | USGS Lakehurst NJ 1:24,000, 1947 edition (SOURCES.md) |
+| Map label "地图 · 1947" | Date of the map | USGS Lakehurst NJ 1:24,000, 1947 edition (SOURCES.md) |
 
 ## The film's inferences (all marked as such in the film)
 

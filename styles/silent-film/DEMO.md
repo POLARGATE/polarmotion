@@ -66,7 +66,7 @@ Adapting any topic: find the object that escapes, the person it should end up wi
 
 - The intertitles *are* the subtitles; the `.srt` lists their text. Each card holds 2.5–3.75 s.
 - Title: THE RUNAWAY LOAF / *a photoplay in one reel*.
-- End card (tender border): The End · title and style name · Polargate · PolarMotion · asset credits; the curtains close over it. The library sign-off belongs to this library's demo only: a user's film carries no credit of the library or of an AI and no copy of this card.
+- End card (tender border): The End · title and style name · Polargate · PolarMotion (the asset credits live in `demo/CREDITS`); the curtains close over it. The library sign-off belongs to this library's demo only: a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Pitfalls we hit (demo record)
 

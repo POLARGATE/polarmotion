@@ -12,7 +12,7 @@ This is an unofficial film made from real public material (USDA footage, photos 
 
 Shape: an inverted pyramid that turns at a quarter of the way in. Hook (0–5 s): the biggest number lands on frame 4 over rows of hives. Title sting (5–7.5 s). Setup (7.5–13 s): the loss as a proportion of the hives, then the viewer's question on a freeze frame, in silence. Turn (13–19 s): the report's own headline, highlighted — "Up 6 Percent" — and the count on a line chart, a text-only breath. Development (19–50 s): the ledger in two columns (lost vs added, counters racing), three ways to rebuild in a lit grid, the report's sentence on varroa mites and the mite itself under the electron microscope, the stressor ranking (a held judgement frame), the worst quarter (a spike on the loss line), the map (California) dissolving into an almond orchard through California's outline, and the rebuilding still going on. Ending (50–54.5 s): half a second of silence, then a two-part verdict on footage: "蜜蜂没有消失 / 是养蜂人在硬撑". End card (54.5–59.5 s).
 
-Formats spent, each once and each for a new fact: cold-open number hook; title sting that becomes the channel bug; caption cards with yellow keywords (one line per language); rolling counters; source tag; per-shot footage credits; proportion-by-darkness sweep; freeze frame with brackets and timecode; document close-up with highlighter (twice: a headline, then a sentence, with a pull-quote mark); line chart (twice: stock, then loss rate); split screen; three-panel grid; punch-in with circle callout; ranked bar chart; choropleth map with push-in; mask transition from map to photo; lower third (place and date); text-only beat; end card.
+Formats spent, each once and each for a new fact: cold-open number hook; title sting that becomes the channel bug; caption cards with yellow keywords (one line per language); rolling counters; source tag; proportion-by-darkness sweep; freeze frame with brackets and timecode; document close-up with highlighter (twice: a headline, then a sentence, with a pull-quote mark); line chart (twice: stock, then loss rate); split screen; three-panel grid; punch-in with circle callout; ranked bar chart; choropleth map with push-in; mask transition from map to photo; lower third (place and date); text-only beat; end card.
 
 ## Shots
 
@@ -59,7 +59,7 @@ Times in seconds; every cut on the 120 BPM half-beat grid.
 
 ## End card
 
-From 54.5 s, held five seconds over the blurred, darkened hive entrance: "蜜蜂账本" (150 px), "The Bee Ledger" (honey), a thin rule, "CAPTION NEWS · 字幕新闻", "Polargate · PolarMotion", then five lines of sources: the data (USDA NASS report, its scope, and that 2025 losses and additions are four quarters summed), every CC BY work with title, author and licence, and the public-domain sources. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+From 54.5 s, held five seconds over the blurred, darkened hive entrance: "蜜蜂账本" (150 px), "The Bee Ledger" (honey), a thin rule, "CAPTION NEWS · 字幕新闻", "Polargate · PolarMotion". No third-party credits on screen, neither on the end card nor per shot: the data source, every CC BY work with title, author and licence, and the public-domain sources live in `demo/CREDITS`. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

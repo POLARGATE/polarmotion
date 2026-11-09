@@ -4,7 +4,7 @@ No AI-generated images, no stock footage, no photographs. The model is extruded 
 light, colour, shadow, label and line is drawn by the page (three.js + 2D canvas). Download URLs are in build.sh
 (accessed 2026-10-16); the raw files are cached in assets/raw/.
 
-DATA (credited on screen top-left "3DBAG / BAG / BGT" and on the end card)
+DATA (credited in this file; not on screen)
 - 3DBAG, LOD1.3 building parts with roof heights reconstructed from AHN LiDAR, by 3DGI and the 3D geoinformation
   research group, TU Delft. https://3dbag.nl — licence CC BY 4.0. Fetched via the 3DBAG WFS (layer BAG3D:lod13).
   Used: footprints, roof heights (b3_h_70p − b3_h_maaiveld), building identifiers.

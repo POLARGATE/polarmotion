@@ -49,7 +49,7 @@ Place cards (top left): AUSTIN · MARCH 5, 1926; PHOTOPLAY · OCT. 1925; FORD FI
 
 ## End card
 
-50.4–54.6 s, inside a thin double frame: "膝盖警报 Knock-Knee Alert" on one line; a thin rule; "1920s 新闻影片 · 1920s NEWSREEL"; "Polargate · PolarMotion"; four lines of source credits (NARA Ford collection, the 1925 record and its UCSB transfer, the three print sources, Natural Earth; "All archive material public domain · An unofficial film"). The "Polargate · PolarMotion" line belongs to this library demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+50.4–54.6 s, inside a thin double frame: "膝盖警报 Knock-Knee Alert" on one line; a thin rule; "1920s 新闻影片 · 1920s NEWSREEL"; "Polargate · PolarMotion"; one line, "An unofficial film from public archives" (the archive, record, print and map sources live in `demo/CREDITS` and `demo/SOURCES.md`). The "Polargate · PolarMotion" line belongs to this library demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

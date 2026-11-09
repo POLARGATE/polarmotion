@@ -8,7 +8,7 @@ HARDWARE DATA (geometry, positions, counts, specifications)
   Files: pcbs/corne-cherry/hotswap/corne-cherry.kicad_pcb (rev 4.1.0); pcbs/corne-cherry/hotswap/jlcpcb/production_files/BOM-corne-cherry.csv;
   plates/3x6/pcb/plate-top-cherrymx.kicad_pcb; cases/3x6/left.step; docs/corne-cherry/v4/buildguide_en.md; README.md.
   Changes: left half only; panel tabs and the project logo dropped; coordinates unified; the case STEP triangulated;
-  the board outline taken from the plate outline inset 0.4 mm. Credited on the end card ("CAD：foostan/crkbd · CC BY 4.0").
+  the board outline taken from the plate outline inset 0.4 mm. Credited in this file and in NOTICE; the end card carries no third-party credits.
 - Component facts: RP2040 datasheet (Raspberry Pi Ltd), W25Q128JV datasheet (Winbond) — quoted in FACTS.md only;
   no logo or package marking is drawn.
 

@@ -71,7 +71,7 @@ Demo motion numbers: pen hop lift 35 % of the window max; gaps > 0.75 s send the
 - Title and end card are **written on the board** in the same single-line hand; the end card is written under the title so the film ends where it began.
 - Burned subtitles: off-white rounded label (90 %), Architects Daughter 44 px, dark ink text, a short orange marker dash bottom-left. Split at clauses, ≤ 44 chars per line, short clauses merged, two lines above 1250 px.
 
-The demo's end card is written under the title in the same hand (`demo/film.js`, block `END CARD`, from 103.3 s): "Whiteboard Explainer", "Polargate · PolarMotion" in orange, then lettering and sample credits in small type; the pen caps at 107.3 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (take those `credit()` lines out when reusing the code).
+The demo's end card is written under the title in the same hand (`demo/film.js`, block `END CARD`, from 103.3 s): "Whiteboard Explainer", "Polargate · PolarMotion" in orange (the lettering and sample credits live in `demo/CREDITS`); the pen caps at 107.3 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (take those `credit()` lines out when reusing the code).
 
 ## Build notes
 

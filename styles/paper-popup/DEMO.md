@@ -93,7 +93,7 @@ Depth of field (`post.js`): CoC in pixels, max 14, 64-tap golden-angle spiral ga
 
 ## End card
 
-`drawEnd`, from 123.4 s, over the live desk shot: title in Lilita One 96 px gold (y 170), Chinese title (y 262), italic "The End?" popping in (y 350), then from 127.6 s the sign-off and the asset credits (22 px, y 960/998/1036; the Chinese row uses `'"ZCOOL KuaiLe", Fredoka'`) fade in together; fade to black over the last 1.5 s.
+`drawEnd`, from 123.4 s, over the live desk shot: title in Lilita One 96 px gold (y 170), Chinese title (y 262), italic "The End?" popping in (y 350), then from 127.6 s the sign-off fades in (the asset credits live in `demo/CREDITS`, not on screen); fade to black over the last 1.5 s.
 
 The sign-off **"Polargate · PolarMotion"** belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card. In the demo it sits centred under "The End?" at y 430: Fredoka 600 36 px, cream `#fffaf0` fill with a 7 px `rgba(30,20,14,.75)` outline (it lies over the cream backdrop page, so the outline is what makes it read), fading in with the asset credits at 127.6 s, never covering the characters.
 

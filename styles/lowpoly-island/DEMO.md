@@ -58,7 +58,7 @@ Camera settings used: azimuth 45° by default, elevation **30°** (build), **33�
 
 ## End card
 
-The night scale-reveal frame, darkened; the same title block (static), hex icon, `LOW-POLY ISLAND`, `Polargate · PolarMotion`, credits, laid out so the tiny lit island stays visible in a gap between the text blocks. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+The night scale-reveal frame, darkened; the same title block (static), hex icon, `LOW-POLY ISLAND`, `Polargate · PolarMotion`, a line on the music, sound and 3D (the font credits live in `demo/CREDITS`), laid out so the tiny lit island stays visible in a gap between the text blocks. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

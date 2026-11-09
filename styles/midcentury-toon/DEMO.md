@@ -84,7 +84,7 @@ Demo numbers behind the STYLE.md rules: register offset `(6, 4)` px re-rolled at
 
 ## End card
 
-After the lockup, inside the iris circle: film title, style name, `Polargate · PolarMotion`, asset credits. The library sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+After the lockup, inside the iris circle: film title, style name, `Polargate · PolarMotion`, a line on the music and sound (the font credits live in `demo/CREDITS`). The library sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

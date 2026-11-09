@@ -80,7 +80,7 @@ Every shot change is a UI expand / collapse; no fades, no blank frames.
 
 ## End card
 
-**Title card** = the cursor typing the film title in the close-up, with a small mono overline `TIDY · A LAUNCH FILM`. **End card** = the typed tagline plus, left-aligned beneath it: film title, "a launch film for Tidy, a fictional app", style name, `Polargate · PolarMotion`, credits. Then everything fades except the cursor, which blinks twice and goes out.
+**Title card** = the cursor typing the film title in the close-up, with a small mono overline `TIDY · A LAUNCH FILM`. **End card** = the typed tagline plus, left-aligned beneath it: film title, "a launch film for Tidy, a fictional app", style name, `Polargate · PolarMotion`, "All UI, music and sound are original" (the sample and font credits live in `demo/CREDITS`). Then everything fades except the cursor, which blinks twice and goes out.
 
 The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 

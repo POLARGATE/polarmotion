@@ -75,7 +75,7 @@ No subtitles are needed. All text is **handwriting on the page**, written on wit
 
 The text stays in the world and moves with the camera, never as an overlay.
 
-End card (`demo/film.js`, `notes()`): the title "Where the wind went." written in Caveat 500 at 190 px in the lower-left margin (28.2–29.5 s), then the colophon in the same column: "Urban Sketch · Pen & Wash" (30.1–30.8 s), "Polargate · PolarMotion" in Caveat 600 (30.6–31.2 s), and the music, sample and font credits (31.0–31.8 s). The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (take those `handwrite()` lines out when reusing the code).
+End card (`demo/film.js`, `notes()`): the title "Where the wind went." written in Caveat 500 at 190 px in the lower-left margin (28.2–29.5 s), then the colophon in the same column: "Urban Sketch · Pen & Wash" (30.1–30.8 s), "Polargate · PolarMotion" in Caveat 600 (30.6–31.2 s), and "music & sound: original" (31.0–31.8 s); the sample and font credits live in `demo/CREDITS`. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (take those `handwrite()` lines out when reusing the code).
 
 ## Build notes
 

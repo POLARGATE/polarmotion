@@ -78,7 +78,7 @@ Palette-knife scrapes sit on every repaint.
 
 ## End card
 
-Knife-painted title on deep ultramarine, a red dot (an umbrella from above), and crisp DOM text for the credits (small text must stay legible): "an impasto palette-knife study", then "Polargate · PolarMotion", then the sample and font credits. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (the line lives in `demo/film.js`: remove it if you adapt that file).
+Knife-painted title on deep ultramarine, a red dot (an umbrella from above), and crisp DOM text for the credits (small text must stay legible): "an impasto palette-knife study", then "Polargate · PolarMotion", then "painted and scored in code" (the sample and font credits live in `demo/CREDITS`). The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (the line lives in `demo/film.js`: remove it if you adapt that file).
 
 ## Build notes
 

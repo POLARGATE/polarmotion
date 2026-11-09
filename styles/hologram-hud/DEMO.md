@@ -56,7 +56,7 @@ Motion numbers: the target box starts at 1.9× the rest-pose bounding box, at 30
 
 ## End card
 
-After the lockup: film title, SCI-FI HOLOGRAM HUD, Polargate · PolarMotion and credits, each line rolling in. The library sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+After the lockup: film title, SCI-FI HOLOGRAM HUD, Polargate · PolarMotion and one line on what was made in code, each line rolling in (the font credits live in `demo/CREDITS`). The library sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
