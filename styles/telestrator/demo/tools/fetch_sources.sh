@@ -3,7 +3,7 @@
 #   kald.webm   Wikimedia Commons, beIN SPORTS Türkiye, CC BY 3.0 (14 s clip of the third goal)
 #   yt/summary.mp4  full-match highlights published 2019-07-24 by the verified official beIN SPORTS Türkiye channel, marked CC BY on YouTube (first two goals);
 #                   native 720p rendition (format 232+140), not YouTube's AI-upscaled rendition. Needs uv (uvx yt-dlp).
-#   stadium.jpg Commons，Olos88，CC0      hak.jpg  Commons，Thomas Rodenbücher，CC BY 2.0
+#   stadium.jpg Commons，CC0      hak.jpg  Commons，Thomas Rodenbücher，CC BY 2.0
 set -e
 D=$(cd "$(dirname "$0")/.." && pwd); cd "$D"; mkdir -p raw/yt
 UA="PolarMotion/1.0 (https://github.com/POLARGATE/polarmotion)"
