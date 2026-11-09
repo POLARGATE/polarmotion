@@ -24,7 +24,7 @@ then download files directly from tile.loc.gov; many Library of Congress and Nat
 import argparse, json, os, re, subprocess, sys, time, urllib.parse, urllib.request
 from pathlib import Path
 
-UA = "lemo-opuscar/1.0 (https://github.com/lemomo-ai/lemo-opuscar)"
+UA = "PolarMotion/1.0 (https://github.com/POLARGATE/polarmotion)"
 LOG = Path("SOURCES.jsonl")
 
 

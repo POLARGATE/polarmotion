@@ -1,7 +1,7 @@
 """Commons PDF/DJVU page via thumbnail API. preview: pdfpage.py prev "File:X.pdf" outdir w p1 p2 ...
 fetch (recorded via footage.py): pdfpage.py fetch "File:X.pdf" page width name"""
 import json, sys, time, urllib.parse, urllib.request, os, re, subprocess
-UA = "lemo-opuscar/1.0 (https://github.com/lemomo-ai/lemo-opuscar)"
+UA = "PolarMotion/1.0 (https://github.com/POLARGATE/polarmotion)"
 def info(t, page, w):
     q = urllib.parse.urlencode({"action": "query", "titles": t, "prop": "imageinfo", "iiprop": "url|extmetadata",
                                 "iiurlwidth": w, "iiurlparam": f"page{page}-{w}px", "format": "json"})

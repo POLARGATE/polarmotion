@@ -2,7 +2,7 @@
 then download the two OFL fonts into fonts/. Existing files are skipped. Usage: python3 tools/fetch_sources.py"""
 import json, os, re, subprocess, sys, time, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__)); os.chdir(os.path.join(HERE, '..'))
-UA = 'LemoOpuscar/1.0 (https://github.com/lemomo-ai/lemo-opuscar)'
+UA = 'PolarMotion/1.0 (https://github.com/POLARGATE/polarmotion)'
 FONTS = {
     'fonts/Michroma-Regular.ttf': 'https://github.com/google/fonts/raw/main/ofl/michroma/Michroma-Regular.ttf',
     'fonts/OFL-Michroma.txt': 'https://github.com/google/fonts/raw/main/ofl/michroma/OFL.txt',

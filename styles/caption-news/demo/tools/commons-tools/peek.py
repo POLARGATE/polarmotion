@@ -1,6 +1,6 @@
 """Look at a video's content remotely through the Commons video thumbnail endpoint (seek=seconds), without downloading the whole file: python3 peek.py "File:X.webm" name duration_s count out_dir"""
 import sys, time, subprocess, os, hashlib, urllib.request, urllib.parse
-UA = "lemo-opuscar/1.0 (https://github.com/lemomo-ai/lemo-opuscar)"
+UA = "PolarMotion/1.0 (https://github.com/POLARGATE/polarmotion)"
 t, name, dur, n, out = sys.argv[1], sys.argv[2], float(sys.argv[3]), int(sys.argv[4]), sys.argv[5]
 fn = t.removeprefix("File:").replace(" ", "_"); h = hashlib.md5(fn.encode()).hexdigest(); q = urllib.parse.quote(fn)
 os.makedirs(out, exist_ok=True); fr = []

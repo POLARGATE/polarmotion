@@ -1,7 +1,7 @@
 """Commons thumbnail download (for when the original is rate-limited with 429): python3 tools/commons_thumb.py "File:X.jpg" name width
 Query imageinfo for thumburl + licence, then hand it to footage.py fetch <url> to record the source."""
 import json, sys, time, urllib.request, urllib.parse, subprocess, os, re
-UA = "lemo-opuscar/1.0 (https://github.com/lemomo-ai/lemo-opuscar)"
+UA = "PolarMotion/1.0 (https://github.com/POLARGATE/polarmotion)"
 t, name, w = sys.argv[1], sys.argv[2], sys.argv[3]
 # Commons reliably serves only standard thumbnail widths; other widths keep failing with 429/errors: snap to the nearest standard width (0 = original)
 STD = [330, 500, 960, 1280, 1920, 2560, 3840]

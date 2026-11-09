@@ -1,6 +1,6 @@
 """Commons file descriptions (with back-off): python3 -I tools/info.py "File:A" "File:B" ..."""
 import json, sys, time, re, urllib.request, urllib.parse
-UA = "lemo-opuscar/1.0 (https://github.com/lemomo-ai/lemo-opuscar)"
+UA = "PolarMotion/1.0 (https://github.com/POLARGATE/polarmotion)"
 q = urllib.parse.urlencode({"action": "query", "titles": "|".join(sys.argv[1:]), "prop": "imageinfo|videoinfo",
      "iiprop": "size|extmetadata|url", "viprop": "derivatives", "format": "json"})
 for k in range(6):
