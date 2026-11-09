@@ -793,10 +793,9 @@ function sceneEnd(ctx, t, s) {
   text(ctx, F.name || C.hook.kicker, W / 2, 380, { font: '700 96px Oleo', fill: COL.ink, plate: COL.hook, off: [5, 4], align: 'center', maxW: 760 });
   text(ctx, (F.style || '').toUpperCase(), W / 2, 450, { font: '600 28px Jost', fill: COL.accent, align: 'center', track: 8 });
   ink(ctx, [[W / 2 - 150, 490], [W / 2 + 150, 490]], 3, { seed: 952, breaks: 0.2 });
-  text(ctx, 'PolarMotion', W / 2, 560, { font: '44px Slab', fill: COL.ink, align: 'center' });
-  text(ctx, 'Polargate · PolarMotion', W / 2, 612, { font: '500 32px Jost', fill: COL.ink, align: 'center' });
+  text(ctx, 'Polargate · PolarMotion', W / 2, 560, { font: '500 32px Jost', fill: COL.ink, align: 'center' });
   const cf = fit(ctx, F.credits || '', '400 {px}px Jost', 21, 620, 4, 16);
-  cf.lines.forEach((l, i) => text(ctx, l, W / 2, 668 + i * cf.px * 1.35, { font: cf.font, fill: PAL.inkSoft, align: 'center' }));
+  cf.lines.forEach((l, i) => text(ctx, l, W / 2, 616 + i * cf.px * 1.35, { font: cf.font, fill: PAL.inkSoft, align: 'center' }));
   drawPip(ctx, W / 2, 882, { view: 'top', s: 0.34, ang: -Math.PI / 2, colors: colsOf() });
   ctx.restore();
 }

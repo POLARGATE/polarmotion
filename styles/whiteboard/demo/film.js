@@ -246,10 +246,9 @@ export async function build() {
   // ═════════ END CARD, written under the title
   const cr = [], credit = (s, y, h, o = {}) => cr.push(...T(s, 270, y, { h, w: Math.max(4, h * .13), ...o }));
   credit('Whiteboard Explainer', 1330, 50);
-  credit('PolarMotion', 1420, 50, { color: INK.orange });
-  credit('Polargate · PolarMotion', 1510, 50);
-  credit('lettering: EMS Tech (OFL)', 1600, 30);
-  credit('samples: VSCO 2 CE, VCSL, FreePats (CC0)', 1650, 30);
+  credit('Polargate · PolarMotion', 1420, 50, { color: INK.orange });
+  credit('lettering: EMS Tech (OFL)', 1510, 30);
+  credit('samples: VSCO 2 CE, VCSL, FreePats (CC0)', 1560, 30);
   const crT0 = 103.3;
   D(K, cr, crT0, crT0 + 2.8, { minGap: .01, maxGap: .04 });
   tl.cue(.3, 'cap'); tl.cue(crT0 + 4.0, 'capOn');

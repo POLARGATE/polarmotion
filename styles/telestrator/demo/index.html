@@ -467,13 +467,9 @@ async function endSlate(t) {
   marker(wob([[118, 470], [760, 462]], 2, 31), seg(t, T0 + .4, T0 + .75), COL.ink, 12);
   bugTop('ana', 1); bugScore({ fb: 3, min: '67′', g: 1 }, 1);   // also covers the broadcaster logo and URL watermark in the footage
 }
-// Shared end card: title (Chinese + English) → hairline → style name → credit → small footage credits. All text is in place before card.t0+0.52 and holds until t1−0.3 before fading out (holds 2.58 s)
+// Shared end card: title (Chinese + English) → hairline → style name → sign-off → one small disclaimer line (the asset credits live in demo/CREDITS). All text is in place before card.t0+0.52 and holds until t1−0.3 before fading out (holds 2.58 s)
 const CREDITS = [
-  'Match footage: beIN SPORTS Türkiye, “Beşiktaş 3 - 3 Fenerbahçe | Maç Özeti | 2018/19” (YouTube) and its Wikimedia Commons cut, CC BY 3.0',
-  '   edited, reversed, slowed and frozen, colour-graded, graphics added; the broadcaster’s logo and URL are covered',
-  'Player photo: Thomas Rodenbücher, via Wikimedia Commons, CC BY 2.0 — cropped',
-  'Drums: “MuldjordKit” by Lars Muldjord (drumgizmo.org), FreePats version, CC BY 4.0',
-  'CC0: stadium photo · samples FreePats, VSCO 2 CE, VCSL · unofficial fan analysis'
+  'Unofficial fan analysis'
 ];
 async function endCard(t) {
   const s = S('card'), T0 = s.t0, out = seg(t, s.t1 - .3, s.t1);
@@ -496,7 +492,7 @@ async function endCard(t) {
   X.letterSpacing = '1px'; X.fillStyle = 'rgba(255,255,255,0.8)'; X.font = `500 26px ${F_ZH}`; X.fillText('Polargate · PolarMotion', x0, 640);
   const a4 = A(.3, .52);
   X.globalAlpha = a4; X.letterSpacing = '0px'; X.font = `500 21px ${F_ZH}`; X.fillStyle = 'rgba(255,255,255,0.76)';
-  CREDITS.forEach((c, i) => { X.fillText(c, x0, 846 + i * 34); const w = X.measureText(c).width; if (x0 + w > 1360) console.warn('credit line too wide:', i, Math.round(w)); });
+  CREDITS.forEach((c, i) => { X.fillText(c, x0, 700 + i * 34); const w = X.measureText(c).width; if (x0 + w > 1360) console.warn('credit line too wide:', i, Math.round(w)); });
   X.restore();
   if (out > 0) { X.fillStyle = `rgba(0,0,0,${eio(out)})`; X.fillRect(0, 0, W, H); }   // last 0.3 s: fade to black together with the picture
 }

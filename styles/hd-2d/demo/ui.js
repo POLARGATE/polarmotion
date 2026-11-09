@@ -13,7 +13,7 @@ export async function overlayReady() {
   DURS = await (await fetch('voices/dur.json')).json();
 }
 export const CREDIT = { music: 'Music: “Precipice” by Scott Buckley — scottbuckley.com.au (CC BY 4.0)' };
-// End credits: on by default; ?nocredit=1 turns them off (the end then keeps only the music and voice credits)
+// End credits: on by default; ?nocredit=1 turns them off (the end then keeps only the music credit)
 const SHOW_TEAM = !new URLSearchParams(location.search).has('nocredit');
 CREDIT.team = 'Polargate · PolarMotion';
 

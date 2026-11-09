@@ -206,8 +206,7 @@ function drawEnd(t) {
   const cf = ss(seg(t, 105, 106.2)) * a;
   if (cf > 0) {
     ctx.save(); ctx.globalAlpha = cf; ctx.textAlign = 'center'; ctx.fillStyle = rgba(INK, .75); ctx.font = '400 15px "IBM Plex Mono"'; ctx.letterSpacing = '2px';
-    ctx.fillText('MUSIC  “Wildflowers” by Scott Buckley  ·  CC BY 4.0  ·  scottbuckley.com.au', 960, 930);
-    ctx.fillText('COASTLINE  Natural Earth   ·   RAINFALL BANDS ARE SCHEMATIC', 960, 960);
+    ctx.fillText('RAINFALL BANDS ARE SCHEMATIC', 960, 960);
     ctx.letterSpacing = '0px'; ctx.font = 'italic 500 30px "Cormorant Garamond"'; ctx.fillStyle = rgba(INK, .85);
     ctx.fillText('Polargate · PolarMotion', 960, 1010);
     ctx.restore();
