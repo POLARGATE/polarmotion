@@ -60,7 +60,7 @@ One continuous piece, F major, 96 BPM, a bar = 2.5 s, downbeat of bar 0 at 1.8 s
 
 ## End card
 
-No separate card: the film's own three lines under the frame carry it. At 39.3 s, over the lit dusk village, line 1 keeps the title and lines 2 and 3 change (the usual fade) to `Eian × Polargate · PolarMotion`, drawn in the title's ink at weight 600 so it is not missed (`strong2` in `drawText`), and 孟菲斯微缩景观 · MEMPHIS DIORAMA in the data line; they hold until the frame draws back in at 44 s and fade out with it. Eian made this style and its demo. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+No separate card: the film's own three lines under the frame carry it. At 39.3 s, over the lit dusk village, line 1 keeps the title and lines 2 and 3 change (the usual fade) to `Polargate · PolarMotion`, drawn in the title's ink at weight 600 so it is not missed (`strong2` in `drawText`), and 孟菲斯微缩景观 · MEMPHIS DIORAMA in the data line; they hold until the frame draws back in at 44 s and fade out with it. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

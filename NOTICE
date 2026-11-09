@@ -22,3 +22,5 @@ Nada de esto viene del repositorio del autor del original.
 Cambios de Polargate sobre el original: no descarga ni ejecuta nada del repositorio del autor (los recursos grandes salen de
 POLARGATE/polarmotion), edge-tts no se instala por defecto, rutas y nombres propios, índice de estilos en español, voz en español,
 y fuera la galería, la promoción y las herramientas de publicación del autor.
+
+Datos CAD de la demo teardown: teclado Corne (crkbd), de foostan, licencia CC BY 4.0 (https://github.com/foostan/crkbd, commit 63366fb7f51cf2a796462fdd90527e99dd126055); Polargate usa solo la mitad izquierda, con coordenadas unificadas y el STEP de la caja triangulado.
