@@ -10,7 +10,7 @@ Voices
 - Kokoro TTS (kokoro-v1.0, Apache-2.0), voices af_bella / am_michael
 
 Instrument samples (music/muzak.py, and the PA chime)
-- Vibraphone: Versilian Community Sample Library (VCSL), Versilian Studios, CC0 1.0
+- Vibraphone: Versilian Community Sample Library (VCSL), CC0 1.0
 - Clean electric guitar, finger electric bass: FreePats (freepats.zenvoid.org), CC0 1.0
 
-No third-party footage, images or recordings are used.
+No third-party footage or images are used. The sound effects are synthesized in code; the music plays VCSL and FreePats samples (CC0).

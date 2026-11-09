@@ -32,6 +32,6 @@ Both pieces of match footage come from **the same CC BY release by the same righ
 | Shot data | Frames counted by this film's author at 25 fps (ball received F035, strike F056, in the net ≈F078); strike distances converted with a perspective matrix computed from the penalty-area lines in each picture (`tools/homography.py`, residual ≤ 6 px) |
 | Changes (required by CC BY to be indicated) | `kald`, `summary`: edited, reversed, slow motion and freeze frames, split screen, perspective flattening, 1.5× scale-up, deblocking and grading, overlaid tactics graphics and programme package (bug and score bar cover the original logo and web address); `hak`: cropped and placed in a Polaroid frame |
 | English narration | Kokoro TTS (`core/tts/tts.py`, voice `bm_george`), checked line by line with ASR |
-| Score samples | Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); the rest CC0: FreePats, VS Chamber Orchestra: Community Edition, Versilian Community Sample Library (Versilian Studios) |
+| Score samples | Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); the rest CC0: FreePats, VS Chamber Orchestra: Community Edition, Versilian Community Sample Library |
 | Sound effects | Synthesised in code by `core/audio/sfx.py` and `tools/mix.py` |
 | Fonts | Google Fonts, OFL: Noto Sans SC, Barlow Condensed, IBM Plex Mono |

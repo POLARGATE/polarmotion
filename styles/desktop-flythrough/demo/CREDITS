@@ -9,7 +9,7 @@ Fonts (SIL Open Font License 1.1; licence texts in fonts/; downloaded by build.s
 
 Voice-over: Microsoft neural text-to-speech via edge-tts, zh-CN-XiaoxiaoNeural (Chinese) and en-US-AvaNeural (English); an online service, check Microsoft's terms before commercial use.
 
-Music samples (CC0 1.0, no attribution required; acknowledged): VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library (Versilian Studios).
+Music samples (CC0 1.0, no attribution required; acknowledged): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
   Instruments: marimba, vibraphone, glockenspiel, contrabass, contrabass pizz, cellos, cellos pizz, violas, violins pizz, horn, timpani, suspended cymbal, claps, shaker. Fetched with tools/fetch.sh.
 Kick drum and all foley: synthesised in code (audio/compose.py, audio/foley.py, core/audio/sfx.py).
 

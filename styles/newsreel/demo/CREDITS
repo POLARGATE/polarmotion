@@ -42,5 +42,4 @@ VOICE
 
 MUSIC AND SOUND
 - Original score and foley written for this film (core/audio/sampler.py, pluck.py, sfx.py).
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian
-  Studios), Versilian Community Sample Library (Versilian Studios). Banjo: physical model (core/audio/pluck.py).
+- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition, Versilian Community Sample Library. Banjo: physical model (core/audio/pluck.py).

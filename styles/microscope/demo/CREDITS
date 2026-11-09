@@ -36,7 +36,7 @@ MUSIC AND SOUND (original score and foley, made in code for this film: mix.py)
 - Sampled instruments through core/audio/sampler.py, all CC0 1.0:
   vibraphone, vibraphone_hard, vibraphone_bowed, marimba, glockenspiel — Versilian Community Sample Library (VCSL)
   glass (water glasses) — FreePats project https://freepats.zenvoid.org
-  timpani, bass_drum — VS Chamber Orchestra: Community Edition (Versilian Studios / Sam Gossner)
+  timpani, bass_drum — VS Chamber Orchestra: Community Edition
   gran_cassa, sus_cymbal — VCSL
 - Synthesized in numpy (no samples): pulse bass, objective turret click and servo, pen on glass, scan noise and
   counter ticks, focal sweep, whooshes, riser, room tone.

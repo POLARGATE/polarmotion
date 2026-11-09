@@ -14,8 +14,8 @@ Voice: Kokoro-82M v1.0 (hexgrad, Apache-2.0) via kokoro-onnx, voice bf_emma. Che
 
 Music (original score, music/compose.py) and sound (procedural foley and ambience, mix.py):
   guitar_nylon, accordion, world_perc (darbuka) — FreePats project (freepats.zenvoid.org), CC0
-  jazz_bass — Karoryfer Samples "Sneakybass" / sfzinstruments, CC0
-  glockenspiel, harmonica, snare2 (taps), shaker, cajon — Versilian Community Sample Library (Versilian Studios), CC0
-  sus_cymbal — Versilian Studios Chamber Orchestra 2 Community Edition (VSCO 2 CE), CC0
+  jazz_bass — Karoryfer Samples "Sneakybass", CC0
+  glockenspiel, harmonica, snare2 (taps), shaker, cajon — Versilian Community Sample Library, CC0
+  sus_cymbal — VS Chamber Orchestra 2 Community Edition (VSCO 2 CE), CC0
   Squeegee, ink, screen, paper, clamp, wind, water, birds, gulls, ferry horn, bicycle bell and crickets: synthesized in code
   (core/audio/sfx.py + mix.py).

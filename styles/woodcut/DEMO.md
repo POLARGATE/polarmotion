@@ -63,7 +63,7 @@ Demo action timings: hammer lean-back 4 frames → strike 2 frames → settle + 
 
 ## End card
 
-Title carved *mirrored* into the block (IM Fell English SC), readable only once the first print is pulled. End card: a fresh print: title carved out of a black panel, a small bell keeping the film's last copper highlight, then *A Woodcut Print*, PolarMotion, Polargate · PolarMotion and credits in letterpress. The final knife cut under the title echoes the first sound of the film. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+Title carved *mirrored* into the block (IM Fell English SC), readable only once the first print is pulled. End card: a fresh print: title carved out of a black panel, a small bell keeping the film's last copper highlight, then *A Woodcut Print*, Polargate · PolarMotion and *Carved in code* in letterpress (the asset credits live in `demo/CREDITS`). The final knife cut under the title echoes the first sound of the film. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

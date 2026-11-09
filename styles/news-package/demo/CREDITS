@@ -21,8 +21,8 @@ Map data
   separate shapes; all other land is merged into one shape with no borders inside it (tools/prep.py).
 
 Music samples
-- VS Chamber Orchestra: Community Edition, Versilian Studios / Sam Gossner — CC0 1.0
-- Versilian Community Sample Library, Versilian Studios — CC0 1.0
+- VS Chamber Orchestra: Community Edition — CC0 1.0
+- Versilian Community Sample Library, CC0 1.0
   Score composed for this film; sound effects synthesised in code (core/audio/sfx.py).
 
 Voice

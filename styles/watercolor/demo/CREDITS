@@ -5,7 +5,7 @@ MUSIC
   "Wildflowers" by Scott Buckley — Creative Commons Attribution 4.0 (CC BY 4.0)
   https://www.scottbuckley.com.au/library/  (file: .../wp-content/uploads/2025/12/Wildflowers.mp3)
   Edited: one beat-aligned jump (61.23 s -> 265.61 s, 0.18 s crossfade), faded out; mixed under voice and SFX.
-  Credited on the end card: MUSIC "Wildflowers" by Scott Buckley · CC BY 4.0 · scottbuckley.com.au
+  Credited in this file (the end card carries no third-party credits).
 
 VOICE
   Kokoro-82M text-to-speech (hexgrad/Kokoro-82M, Apache License 2.0), run locally with
@@ -39,4 +39,4 @@ FACTS (narration)
   Australian National Botanic Gardens). Rounded for narration.
 
 FILM
-  Directed and coded with PolarMotion, by Polargate.
+  Made in code with PolarMotion.

@@ -15,7 +15,7 @@ Speech check: faster-whisper base.en (MIT).
 Music (original score, music/score.py):
 - Guqin: physical-model plucked string, core/audio/pluck.py (synthesis, no samples)
 - Xiao (substitute), bass drum, timpani, frame drum, small gong, contrabass:
-  Samples (CC0): VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library (Versilian Studios)
+  Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library
 Sound effects: synthesized in mix.py / core/audio/sfx.py.
 
 Poem: the closing line paraphrases Li Bai (701–762), "抽刀断水水更流" (public domain); English wording written for this film.

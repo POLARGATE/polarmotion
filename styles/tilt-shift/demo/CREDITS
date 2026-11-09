@@ -9,7 +9,7 @@ Voice
 - Kokoro-82M TTS (voice am_adam), Apache-2.0, via kokoro-onnx
 
 Music (original composition, demo/music/score.py)
-- Samples (CC0): VS Chamber Orchestra: Community Edition (Versilian Studios / Sam Gossner), Versilian Community Sample Library (Versilian Studios)
+- Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library
 
 Sound effects
 - All synthesized in demo/mix.py with core/audio/sfx.py (no recorded samples)

@@ -11,8 +11,8 @@ Voice
 - Kokoro TTS v1.0 (Apache-2.0), voice am_michael
 
 Music samples (all CC0 1.0, via core/audio/sampler.py; instruments: gong2, sus_cymbal, crash, woodblock, frame_drum, bass_drum, log_drum, erhu, oboe, cellos, contrabass)
-- Karoryfer Samples / sfzinstruments (aliexpress-erhu)
-- VS Chamber Orchestra: Community Edition (Versilian Studios)
-- Versilian Community Sample Library (Versilian Studios)
+- Karoryfer Samples (aliexpress-erhu)
+- VS Chamber Orchestra: Community Edition
+- Versilian Community Sample Library
 
 Sound effects: synthesized (numpy / core/audio/sfx.py + demo/mix.py). Score: demo/music/score.py (original composition).

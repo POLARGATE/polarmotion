@@ -119,7 +119,7 @@ Render 6–9 key shots with the real drawing code, tiled into one sheet (`core/r
 - Loudness about −14 LUFS; no black frames, no NaN frames; subtitles in sync and not covering key action.
 - Every row of the sound design table is actually in the mix.
 - Every map, globe or satellite view passes section 13, checked enlarged.
-- No library or AI sign-off: `grep -rniE "Polargate · PolarMotion|Claude|Opus" <project folder>` finds nothing outside `LICENSE`, `CREDITS` and the library's path in `LIB=` lines, and you have watched the last seconds of the film (text drawn into an image can't be grepped).
+- No library or AI sign-off: `grep -rniE 'polargate|polarmotion|polar ai news|claude opus|opus 5.5' <project folder>` finds nothing outside `LICENSE`, `NOTICE`, `CREDITS` and the library's path in `LIB=` lines, and you have watched the last seconds of the film (text drawn into an image can't be grepped).
 
 **Deliver**, in the project folder (the complete list):
 

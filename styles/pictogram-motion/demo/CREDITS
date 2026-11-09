@@ -16,8 +16,8 @@ Voice
 Music and sound
 - Original score and foley (mix.py): numpy/scipy synthesis plus sampled instruments.
 - Samples (CC0): FreePats project (freepats.zenvoid.org) — electric_bass, world_perc (claves);
-  VS Chamber Orchestra: Community Edition (Versilian Studios) — crash, log_drum;
-  Versilian Community Sample Library (Versilian Studios) — marimba, vibraphone_bowed, glockenspiel, shaker, hihat, claps, frame_drum.
+  VS Chamber Orchestra: Community Edition — crash, log_drum;
+  Versilian Community Sample Library — marimba, vibraphone_bowed, glockenspiel, shaker, hihat, claps, frame_drum.
 
 Facts
 - None. The story is fiction; no statistic is claimed.

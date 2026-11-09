@@ -23,8 +23,8 @@ VOICE
   Speech check: faster-whisper (MIT) with the Whisper small.en model (MIT).
 
 MUSIC AND SOUND (original score and procedural foley in demo/mix.py)
-- Samples (CC0): VS Chamber Orchestra: Community Edition (Versilian Studios) — horn, trombone, timpani, bass drum, cellos;
-  Versilian Community Sample Library (Versilian Studios) — glockenspiel, marimba, vibraphone (soft, hard, bowed), harp, tubular bells, gran cassa;
+- Samples (CC0): VS Chamber Orchestra: Community Edition — horn, trombone, timpani, bass drum, cellos;
+  Versilian Community Sample Library — glockenspiel, marimba, vibraphone (soft, hard, bowed), harp, tubular bells, gran cassa;
   FreePats project (freepats.zenvoid.org) — glass harp.
   (Lines from core/audio/sampler.py credits(); all CC0.)
 - Synthesis and foley (pad, pulse bass, metal ticks, acrylic toks, punch, air, room tone): numpy/scipy, written for this film.

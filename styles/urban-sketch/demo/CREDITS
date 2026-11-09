@@ -4,7 +4,7 @@ Polargate · PolarMotion
 Picture: every line, wash, figure and letter is drawn by code in this folder (engine.js, world.js, film.js). No generated or third-party images.
 
 Music & sound: original composition and procedural foley (audio/score.py, audio/foley.py).
-Instrument samples (CC0 1.0): Versilian Studios — VS Chamber Orchestra Community Edition & Versilian Community Sample Library (Sam Gossner); Karoryfer Samples — "Sneakybass" upright bass.
+Instrument samples (CC0 1.0): VS Chamber Orchestra Community Edition & Versilian Community Sample Library; Karoryfer Samples ("Sneakybass" upright bass).
 
 Fonts (SIL Open Font License 1.1, files + licences in fonts/):
   Caveat — Impallari Type  (fonts/OFL-Caveat.txt)

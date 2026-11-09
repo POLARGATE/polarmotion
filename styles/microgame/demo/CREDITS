@@ -4,7 +4,7 @@ All characters, designs, animation, sound effects and music are original, genera
 MUSIC (music/score.py, original composition)
 Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 Piano: "Salamander Grand Piano V3" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
-Samples (CC0): Versilian Studios VSCO 2 CE & VCSL, Karoryfer Samples (alto sax), FreePats
+Samples (CC0): VSCO 2 CE & VCSL, Karoryfer Samples (alto sax), FreePats
 Synthesized in numpy / core/audio/pluck.py: slap bass, square & pulse waves, guqin (physical model), record scratch, heartbeat.
 Applause: VCSL "claps" (CC0) layered in mix.py.
 

@@ -6,8 +6,8 @@ Voice
   Kokoro-82M TTS, voice am_onyx (speed 0.88) — Apache-2.0 (hexgrad/Kokoro-82M)
 
 Music (original score, music/score.py)
-  VS Chamber Orchestra: Community Edition — Versilian Studios, CC0
-  Versilian Community Sample Library (VCSL) — Versilian Studios, CC0
+  VS Chamber Orchestra: Community Edition, CC0
+  Versilian Community Sample Library (VCSL), CC0
   Anvil: original numpy modal synthesis (no samples)
 
 Sound effects (mix.py)

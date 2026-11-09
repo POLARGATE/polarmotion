@@ -38,7 +38,7 @@ SOUND
 - Natural sound: "Рій на землі 02" by Сарапулов, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — the video's own audio (swarm buzz)
   https://commons.wikimedia.org/wiki/File:%D0%A0%D1%96%D0%B9_%D0%BD%D0%B0_%D0%B7%D0%B5%D0%BC%D0%BB%D1%96_02.webm
 - Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, CC BY 4.0
-- Other instruments: VS Chamber Orchestra: Community Edition (Versilian Studios / Sam Gossner), Versilian Community Sample
+- Other instruments: VS Chamber Orchestra: Community Edition, Versilian Community Sample
   Library, FreePats (electric bass) — CC0 1.0. Score and foley composed for this film (audio/mix.py, core/audio/sfx.py).
 - Voice: Kokoro TTS (kokoro-onnx, Apache 2.0), voice af_bella.
 

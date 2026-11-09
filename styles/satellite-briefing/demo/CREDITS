@@ -46,6 +46,5 @@ MUSIC & SOUND
   timpani, concert bass drum, gran cassa, tam-tam (reversed), gong, suspended cymbal (bowed, stick, crescendo,
   reversed hit), clash cymbals, closed hi-hat, vibraphone, bowed vibraphone, glass harp, French horn (sustain and
   staccato), trombone (sustain and staccato), tuba (sustain and staccato).
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian
-  Studios), Versilian Community Sample Library (Versilian Studios).
+- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
 - Procedural helpers (click, whoosh, creak, compress, limit) from the library's core/audio/sfx.py.

@@ -29,8 +29,8 @@ SOUND
   - "Chalkboard-writing.ogg" by Tomproberts (Commons) — CC0 1.0.
   - "WWS Chalk.ogg" by Work With Sounds / La Fonderie, provided by Work With Sounds in cooperation with Wikimedia
     Sverige (Commons) — CC BY 4.0 (creativecommons.org/licenses/by/4.0). Cut into grains, filtered and layered.
-- Music samples (CC0): VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library
-  (Versilian Studios) — marimba, pizzicato contrabass, vibraphone. Downloaded with sh tools/fetch.sh instruments
+- Music samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library
+  — marimba, pizzicato contrabass, vibraphone. Downloaded with sh tools/fetch.sh instruments
   vsco2ce | vcsl.
 - Guqin: physical model (core/audio/pluck.py). Panel roll, felt wipe, corridor bell, room tone: synthesised in audio.py.
 

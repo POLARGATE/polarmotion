@@ -24,8 +24,8 @@ This film uses no third-party footage or photographs. Everything on screen is dr
 
 | Asset | Source | Licence |
 |---|---|---|
-| Orchestral samples | VS Chamber Orchestra: Community Edition, Versilian Studios / Sam Gossner | CC0 1.0 |
-| Percussion and glockenspiel samples | Versilian Community Sample Library (Versilian Studios) | CC0 1.0 |
+| Orchestral samples | VS Chamber Orchestra: Community Edition | CC0 1.0 |
+| Percussion and glockenspiel samples | Versilian Community Sample Library | CC0 1.0 |
 | Foley | synthesised in code (`core/audio/sfx.py`) | — |
 | Voice | Doubao TTS 2.0 (Volcengine seed-tts-2.0), voice 解说小明 2.0 `zh_male_jieshuoxiaoming_uranus_bigtts`, via `tools/tts_doubao.py` (your own API key) | Volcengine service terms |
 

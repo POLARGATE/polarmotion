@@ -42,8 +42,8 @@ VOICE
 
 MUSIC AND SOUND
 - Original score and sound design, synthesised in mix.py (numpy/scipy) on the film's timeline.
-- Samples (CC0): VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library
-  (Versilian Studios) — marimba, bowed vibraphone, timpani, bass drum, gran cassa — through core/audio/sampler.py.
+- Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library
+  — marimba, bowed vibraphone, timpani, bass drum, gran cassa — through core/audio/sampler.py.
 
 SOFTWARE
 - three.js 0.170.0 (MIT), playwright-core + headless Chromium, FFmpeg; laspy + lazrs (BSD-2 / Apache-2.0),

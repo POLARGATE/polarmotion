@@ -9,7 +9,7 @@ Voice
 - Kokoro-82M (hexgrad), voice af_sarah — Apache License 2.0, via kokoro-onnx (MIT)
 
 Music (original composition, music/score.py)
-- Samples (CC0 1.0): VS Chamber Orchestra: Community Edition and Versilian Community Sample Library (Versilian Studios / Sam Gossner) — flute, dan tranh, woodblock, gong, frame drum
+- Samples (CC0 1.0): VS Chamber Orchestra: Community Edition and Versilian Community Sample Library — flute, dan tranh, woodblock, gong, frame drum
 - Erhu: Karoryfer Samples "aliexpress-erhu" (CC0 1.0)
 - Pipa: physical-model plucked string (core/audio/pluck.py), original synthesis
 

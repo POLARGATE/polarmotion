@@ -5,7 +5,7 @@ Made from openly licensed footage and photos; no AI-generated images, no stock f
 the shot map and the show packaging ("定格 FREEZE FRAME" is a fictional show) are drawn in code (index.html).
 beIN SPORTS did not make or endorse this film. Sources accessed 2026-10-18 and 2026-10-21; full records in
 SOURCES.md / SOURCES.jsonl; licence check in SOURCES.md ("许可核实") and tools/license-evidence.json.
-The first five lines below are also burned into the end card.
+The end card carries none of these credits, only the line "Unofficial fan analysis".
 
 FOOTAGE (CC BY 3.0) — both from the same release by the broadcaster's own verified YouTube channel
 - "Beşiktaş 3 - 3 Fenerbahçe | Maç Özeti | 2018/19" by beIN SPORTS Türkiye (YouTube, @beINSPORTSTürkiye),
@@ -30,8 +30,8 @@ PHOTOS
 MUSIC & SOUND (original score in tools/mix.py, sampled instruments through core/audio/sampler.py)
 - Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0
   (https://creativecommons.org/licenses/by/4.0/)
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian Studios),
-  Versilian Community Sample Library (Versilian Studios) — electric bass, trumpet and trombone staccato, timpani,
+- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition,
+  Versilian Community Sample Library — electric bass, trumpet and trombone staccato, timpani,
   horn, cellos, glockenspiel
 - Sound effects (marker squeak, shutter, thump, pen, whoosh, stopwatch, tape rewind): synthesised in tools/mix.py
   with core/audio/sfx.py
