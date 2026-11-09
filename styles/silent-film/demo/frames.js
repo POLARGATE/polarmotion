@@ -127,7 +127,7 @@ export async function redrawSample(g, t, q) {
   label(g, 'REDRAW MODE', W / 2, 78, { font: 'Playfair Display SC', w: 900, size: 44, color: '#ece5d5', spacing: 4 });
   label(g, 'input: a real video frame (CC0)', 40 + pw / 2, y0 + ph + 56, { italic: true, size: 26, color: '#cfc7b6' });
   label(g, 'output: ink lines (DoG) · five wash steps · boiling hatch · silver print + ageing', 980 + pw / 2, y0 + ph + 56, { italic: true, size: 26, color: '#cfc7b6' });
-  label(g, 'source: "DiagonalCrosswalkYongeDundas.webm", Raysonho, CC0, Wikimedia Commons (cropped below the shop signs)', W / 2, H - 50, { size: 20, color: '#8f887a' });
+  label(g, 'source: a public-domain street video (CC0), cropped below the shop signs', W / 2, H - 50, { size: 20, color: '#8f887a' });
   g.strokeStyle = '#cfc7b6'; g.lineWidth = 3; g.beginPath(); g.moveTo(944, y0 + ph / 2 - 18); g.lineTo(962, y0 + ph / 2); g.lineTo(944, y0 + ph / 2 + 18); g.stroke();
 }
 
