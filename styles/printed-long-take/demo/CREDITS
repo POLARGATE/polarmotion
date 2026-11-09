@@ -17,8 +17,6 @@ MUSIC & SOUND
   synthesised: no recording), plus sampled instruments through core/audio/sampler.py: bowed vibraphone, harp, horn,
   cellos, violas, violins (sustain, tremolo), contrabass (sustain, pizzicato), xylophone, glockenspiel, hand chimes,
   timpani, gran cassa.
-- Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
-  Downloaded with sh tools/fetch.sh instruments vsco2ce | vcsl.
 
 CODE
 - Rendering, speech, sampler and mastering tools from PolarMotion (MIT), used from the library. three.js (MIT).

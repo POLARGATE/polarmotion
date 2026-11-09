@@ -78,7 +78,7 @@ Puppets in profile; most of the cloth stays empty. When zoomed in, clamp the cam
 - **Techniques, as options**: a single tap inside a silence; one big gong per decisive hit; a heartbeat drum under dread; accelerating rolls into an entrance; one hit per visual step; a gong scrape to change space; a hard stop (≤ 30 ms, tails included).
 - **Silence**: hard-cut the whole bed; at most one sound inside (a breath, a tap, a sizzle).
 - **Foley follows the materials**: wooden clapper (醒木), match strike, lamp "fwoomp" and "pfft" + sizzle, rod taps on cloth, dry leather flaps on lift-off, leather steps, creaks of hide and wood props, leather thwacks, cloth rustle, backstage room tone.
-- **Voice**: a storyteller, few short lines, small-theatre reverb; music ducked ~12 dB, foley ~4 dB, voice ≥ 12 dB above the bed; −14 LUFS; check each line with whisper alone and on the final mix.
+- **Voice**: a storyteller, few short lines, small-theatre reverb; music ducked ~12 dB, foley ~4 dB, voice ≥ 12 dB above the bed; −14 LUFS; check each line with the speech check alone and on the final mix.
 
 ## 8. Native moves
 

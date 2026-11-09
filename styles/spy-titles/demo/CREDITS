@@ -14,7 +14,6 @@ VOICE
 
 MUSIC — original score by music/score.py, played with the repo sampler (core/audio):
 - Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
-- Samples (CC0): FreePats project (freepats.zenvoid.org), Karoryfer Samples, VS Chamber Orchestra: Community Edition
 
 SOUND EFFECTS — synthesized in mix.py (no recorded samples).
 

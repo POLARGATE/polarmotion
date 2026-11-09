@@ -1,5 +1,5 @@
 Constructivist Montage — "410 Days" (library demo)
-Every third-party asset in the film, with its source and licence. Download links and the seconds used: SOURCES.md / SOURCES.jsonl.
+Third-party material in the film, with its source and licence. Download links and the seconds used: SOURCES.md / SOURCES.jsonl.
 An unofficial film made from public archives; it is not affiliated with or endorsed by the Empire State Building or any company named here.
 
 MOVING IMAGE
@@ -12,7 +12,7 @@ MOVING IMAGE
   Changes: excerpts only, gate edge cropped, denoised, scaled (lanczos, at most 2.5x of the source on screen), graded to
   the ink / paper duotone; the film's own title, credit and end cards and its intertitles are not shown.
 
-PHOTOGRAPHS (Lewis Hine, 1930–31; graded to the duotone, cut out with u2net_human_seg and a paper border)
+PHOTOGRAPHS (Lewis Hine, 1930–31; graded to the duotone, cut out with a paper border)
 - "Photograph of a Workman on the Framework of the Empire State Building", Lewis Hine. U.S. National Archives,
   NAID 518290 (Records of the Work Projects Administration, RG 69). Public domain.
   https://commons.wikimedia.org/wiki/File:Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg
@@ -34,12 +34,9 @@ SOUND
 - "WWS Rivetingmachine" by Work With Sounds / Konrad Gutkowski, licensed under CC BY 4.0
   (https://creativecommons.org/licenses/by/4.0/). https://commons.wikimedia.org/wiki/File:WWS_Rivetingmachine.ogg
   Changes: short slices, levelled.
-- "Steam Whistle at Georgia Tech", CC0 1.0, Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Steam_Whistle_at_Georgia_Tech.ogg
-- "Construction", public domain, Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Construction.ogg (ambience bed)
 
 MUSIC
 - Original score written for this film (audio/mix.py).
-- Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
 
 VOICE
 - Narration: synthetic voice.
@@ -50,8 +47,6 @@ FONTS (SIL Open Font License 1.1; texts in fonts/; from github.com/google/fonts,
 - Space Mono, The Space Mono Project Authors
 
 TOOLS
-- Cut-outs: human-segmentation model u2net_human_seg (Apache-2.0, ONNX),
-  run through onnxruntime (MIT).
 - Rendering: headless Chromium (Playwright); ffmpeg.
 
 FACTS

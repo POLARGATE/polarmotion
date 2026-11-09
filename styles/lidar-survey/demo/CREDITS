@@ -13,7 +13,6 @@ POINT CLOUD
   Credit: U.S. Geological Survey. Accessed 2026-10-16.
 - Scouting only (not in the film): USGS 3DEP dynamic elevation service, exportImage,
   https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer (public domain).
-- Dataset index used to find the project: hobuinc/usgs-lidar, boundaries/resources.geojson.
 - Modifications: cropping, ground model triangulated from class-2 returns, local relief model, wall tracing and
   snapping, a wall cross-section, height above ground for every return, display exaggeration x2 of local relief.
 
@@ -41,8 +40,7 @@ VOICE
 
 MUSIC AND SOUND
 - Original score and sound design, synthesised in mix.py (numpy/scipy) on the film's timeline.
-- Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library
-  — marimba, bowed vibraphone, timpani, bass drum, gran cassa — through core/audio/sampler.py.
+- Sampled marimba, bowed vibraphone, timpani, bass drum, gran cassa, through core/audio/sampler.py.
 
 SOFTWARE
 - three.js 0.170.0 (MIT), playwright-core + headless Chromium, FFmpeg; laspy + lazrs (BSD-2 / Apache-2.0),

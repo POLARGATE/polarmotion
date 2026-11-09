@@ -32,7 +32,7 @@ Not a keynote (no gradients, no glow, no device renders), not kinetic typography
 
 - **One family for the whole film**, an OFL neo-grotesque (Archivo, Inter, Schibsted Grotesk, Instrument Sans…), several weights. Letter-spacing ~−2 % at ≥ 90 px. Headlines can be lowercase. Load every weight with `document.fonts.load` before drawing.
 - **Flush left, ragged right**; everything on a grid line; big white space is part of the layout. Giant numerals are **optically** flush left (subtract the glyph's left bearing).
-- **Subtitles are part of the layout**, not a bar at the bottom: each line sits at a column start in the current composition (a small grey lead-in + a large bold statement, or a caption like a museum label), each word clip-revealed on its whisper timestamp. Hold ≥ max(1.8 s, speech + 0.6 s); assert it in code.
+- **Subtitles are part of the layout**, not a bar at the bottom: each line sits at a column start in the current composition (a small grey lead-in + a large bold statement, or a caption like a museum label), each word clip-revealed on its speech-check timestamp. Hold ≥ max(1.8 s, speech + 0.6 s); assert it in code.
 - **Caption rows**: small (~19 px) medium-weight notes with a 1 px rule above; technical notes in a corner (module sizes, counts, a bar counter).
 
 ## 5. Motion quality
@@ -94,11 +94,11 @@ A menu: use the ones your story needs.
 - Elements that share the camera matrix leak into other shots → draw them only when on screen.
 - Canvas `letterSpacing` affects `measureText` → measure after setting the font.
 - Onsets that fall between frames flicker → put visual onsets on whole frames.
-- Whisper splits or merges words and pads the first word → align by letters, clamp to 0.
+- The speech check splits or merges words and pads the first word → align by letters, clamp to 0.
 
 ## 10. Engine
 
-In `demo/`: `ease.js` (`cubic-bezier(.7,0,.2,1)`, `snap(t, t_arrive, dur)`, `steps()`, `track()`), `film.js` (layout system, clip-reveal text, knife cuts, bars from a score, rotation reveal, wall of artifacts, caption rows), `main.js` (fonts, whisper word times, `?nosub=1`, `?poster=1`), `score.json` (the shared data file for picture and music), `tools/words.py` and `tools/subs.py` (word timings, asserted subtitle intervals). File list and build steps: [DEMO.md](DEMO.md) "Build notes".
+In `demo/`: `ease.js` (`cubic-bezier(.7,0,.2,1)`, `snap(t, t_arrive, dur)`, `steps()`, `track()`), `film.js` (layout system, clip-reveal text, knife cuts, bars from a score, rotation reveal, wall of artifacts, caption rows), `main.js` (fonts, speech-check word times, `?nosub=1`, `?poster=1`), `score.json` (the shared data file for picture and music), `tools/words.py` and `tools/subs.py` (word timings, asserted subtitle intervals). File list and build steps: [DEMO.md](DEMO.md) "Build notes".
 
 ## 11. Variation space
 

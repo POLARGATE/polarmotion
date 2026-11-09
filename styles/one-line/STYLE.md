@@ -69,7 +69,7 @@ No cuts. Transitions are morphs: the last stroke of one image is the first strok
 - **The pen on paper is the most important sound**, synthesised from the pen speed: band-passed noise (brighter when fast, duller when slow), random paper-fibre ticks with density ∝ speed, amplitude ∝ √speed, panned with the nib's screen position; broken up by dry gaps; lighter and jerkier for a young hand. Plus: a wooden tap on the first touch, a faint wet swell for a blot, a tiny rub for a handoff, a page lift.
 - **Silence is literal**: zero the music bus including reverb tails; drop room tone.
 - **Mix**: music ducks ~5 dB and the pen ~4 dB under voice; −14 LUFS; grain 0 (the paper is in the render).
-- **Voice**: warm, few short lines that leave space for the line; place key words on picture beats with whisper word timestamps.
+- **Voice**: warm, few short lines that leave space for the line; place key words on picture beats with speech-check word timestamps.
 
 ## 8. Native moves
 
@@ -93,7 +93,7 @@ A menu: use the ones your story needs.
 - Thin lines at wide zoom → clamp the width zoom.
 - Translucent hand shadows double-darken where they overlap → one layer per hand.
 - Titles collide with the drawing as the camera moves → check every frame of the title's window.
-- Whisper mishears short lines → rephrase rather than fight it.
+- The speech check mishears short lines → rephrase rather than fight it.
 
 ## 10. Engine
 

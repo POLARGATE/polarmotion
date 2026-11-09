@@ -91,7 +91,7 @@ A menu: use the ones your story needs.
 - Fish-scale reads as brickwork → lower half-circles row by row, each overlapping the previous row, plus an inner arc.
 - Door leaves over a flat "interior" read as a blank frame → draw only the leaves, closing over the live shot.
 - A gold point on pure black trips `blackdetect` → lift the background wedges and glow slightly.
-- Period loudspeaker distortion is unintelligible under music → gentle drive; whisper-check every line on the final mix.
+- Period loudspeaker distortion is unintelligible under music → gentle drive; speech-check every line on the final mix.
 
 ## 10. Engine
 

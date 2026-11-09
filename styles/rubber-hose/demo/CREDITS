@@ -5,9 +5,7 @@ Picture
 - All characters, props, backgrounds, film damage and titles drawn in code (Canvas2D) — original.
 
 Music (original composition, rendered with samples; see music/score.py)
-- VS Chamber Orchestra: Community Edition — CC0 1.0
-  (upright piano, trumpet incl. mute, trombone, clarinet, tuba, snare, kick, cymbals)
-- Versilian Community Sample Library (VCSL) — CC0 1.0 (xylophone, woodblock)
+- Sampled upright piano, trumpet incl. mute, trombone, clarinet, tuba, snare, kick, cymbals, xylophone, woodblock
 - Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version,
   licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) (toms)
 - Banjo: physical-modelling pluck (core/audio/pluck.py), slide whistle / spring / brush swish synthesized in numpy

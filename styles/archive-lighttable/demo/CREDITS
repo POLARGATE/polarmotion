@@ -29,8 +29,7 @@ restrictions" for the Wright Brothers Negatives; dates are from the catalogue re
 
 MUSIC (original score, mix.py, sampled instruments through core/audio/sampler.py)
 - Piano: "Salamander Grand Piano V3" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition,
-  Versilian Community Sample Library — strings, glass, bowed vibraphone, timpani, suspended cymbal
+- Sampled strings, glass, bowed vibraphone, timpani, suspended cymbal
 - Foley and beds (light-table hum, loupe on glass, paper, ticks, pen, wind, surf): synthesised in mix.py with core/audio/sfx.py
 
 VOICE

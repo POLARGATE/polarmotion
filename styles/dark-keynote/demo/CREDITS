@@ -13,7 +13,7 @@ Voice
 - Synthetic narration.
 
 Music (original composition, demo/music/score.py)
-- Samples: VCSL — Versilian Community Sample Library (CC0 1.0): marimba, vibraphone (hard mallets), vibraphone (bowed), glockenspiel
+- Sampled instruments: marimba, vibraphone (hard mallets), vibraphone (bowed), glockenspiel
 - Pad, pulse, shaker and rise are synthesised in numpy
 
 Sound design

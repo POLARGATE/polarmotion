@@ -14,4 +14,4 @@ Libraries
 - three.js r170 — MIT (MeshPhysicalMaterial transmission/dispersion, Reflector, RectAreaLight, UnrealBloomPass)
 - core/three/post.js (this repo): depth of field, bloom, grade
 
-No Poly Haven assets are used in this film (the studio environment is a procedural strip-light scene baked to PMREM every frame).
+No stock 3D assets are used in this film (the studio environment is a procedural strip-light scene baked to PMREM every frame).

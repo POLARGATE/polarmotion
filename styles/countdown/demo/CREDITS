@@ -1,5 +1,5 @@
 Live Countdown Split-screen — "Counting Itself Down" / 自己倒数 (library demo)
-Every third-party asset in the film, with its source and licence. Per-second usage is in SOURCES.md.
+Third-party material in the film, with its source and licence. Per-second usage is in SOURCES.md.
 
 This is an unofficial film made from NASA's own launch-day material. NASA did not make, review or endorse it.
 No NASA insignia is used as a graphic; NASA marks appear only where they are painted on the real rocket or
@@ -47,8 +47,7 @@ VOICE
 
 MUSIC AND SOUND
 - Original score and procedural sound design written for this film (audio/mix.py).
-- Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library
-  (timpani, gran cassa, bass drum, toms, snare, hi-hat, crash, tuba, trombone, horn, tubular bells, glockenspiel, contrabass pizzicato)
+- Sampled instruments (timpani, gran cassa, bass drum, toms, snare, hi-hat, crash, tuba, trombone, horn, tubular bells, glockenspiel, contrabass pizzicato)
 
 TOOLS
 - Rendering: headless Chromium (Playwright); ffmpeg.

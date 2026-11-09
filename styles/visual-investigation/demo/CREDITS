@@ -1,5 +1,5 @@
 Visual Investigation — "The Hindenburg: Four Minutes, 32 Seconds" (library demo; an unofficial film)
-Every third-party asset in the film, with its source and licence. All archival material is in the public domain;
+Third-party material in the film, with its source and licence. All archival material is in the public domain;
 no CC BY material is used. build.sh downloads each file again into raw/ (SOURCES.jsonl keeps the licence trail).
 
 MOVING IMAGE AND ARCHIVAL SOUND
@@ -44,5 +44,4 @@ VOICE
 
 MUSIC AND SOUND
 - Original score and procedural sound design written for this film (audio/mix.py).
-- Samples (CC0 1.0): VS Chamber Orchestra: Community Edition and Versilian Community Sample Library
-  (cellos, violas, violins, contrabass, harp, timpani, gran cassa, suspended cymbal, woodblock, glockenspiel, vibraphone).
+- Sampled cellos, violas, violins, contrabass, harp, timpani, gran cassa, suspended cymbal, woodblock, glockenspiel, vibraphone.

@@ -9,9 +9,6 @@ Voice
 - Synthetic narration.
 
 Music (original composition, demo/music/score.py) — sampled instruments via core/audio/sampler.py
-- FreePats project (freepats.zenvoid.org): guitar_nylon, kalimba, world_perc — CC0 1.0
-- Versilian Community Sample Library (VCSL): shaker, cajon, conga — CC0 1.0
-- Karoryfer Samples (Sneakybass): jazz_bass — CC0 1.0
 
 Sound effects
 - All foley and ambience synthesised in demo/mix.py (numpy/scipy), building on core/audio/sfx.py.

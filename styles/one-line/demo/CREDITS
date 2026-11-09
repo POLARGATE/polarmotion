@@ -7,8 +7,6 @@ Fonts (SIL Open Font License 1.1, license texts in fonts/):
   Sacramento — Astigmatic (github.com/google/fonts/tree/main/ofl/sacramento)
 
 Music: original score (music/score.py), rendered with core/audio/sampler.py
-  Samples (CC0 1.0): VS Chamber Orchestra: Community Edition (cellos, cellos_pizz)
-                     and Versilian Community Sample Library (hand_chimes)
 
 Voice: synthetic narration.
 Sound effects: synthesized in mix.py (pen on paper, tap, ink bloom, room tone).

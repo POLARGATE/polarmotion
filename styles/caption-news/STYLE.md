@@ -69,7 +69,7 @@ Vertical 9:16 is a different layout, not a crop: put the caption under a 1080×1
 
 | Layer | What | Level |
 |---|---|---|
-| Voice | one brisk narrator (Kokoro, speed 1.1–1.17), numbers spelled out in the TTS text | compressed, ≈ 8 dB over the music |
+| Voice | one brisk narrator (local voice, speed 1.1–1.17), numbers spelled out in the TTS text | compressed, ≈ 8 dB over the music |
 | Music | 120 BPM pulse in sampled instruments: kit (kick on the beat, hats on off-beats), eighth-note electric bass, a sixteenth-note marimba ostinato, vibraphone off-beat chords, glockenspiel accents, staccato brass stabs on the big numbers, timpani and suspended cymbal for turns | ducked ~45 % under the voice |
 | Structure | the hook hit on frame 4; a hard stop into silence before the turn (only natural sound and the question); the turn lands on a major-key brass hit; half-time and low strings for the threat; a snare build into the spike; a second short silence before the verdict; a major chord with bells on the verdict | |
 | Foley | every graphic action has a sound: chunk slam (click + thump), counter rattle (a tick every 45 ms), whoosh into each card, highlighter squeak, camera shutter on the freeze, stamp thump on a big number, pops for labels, ticks as map states fill, a riser into the map push | |
@@ -115,7 +115,7 @@ Copy `demo/` into the project and replace the content:
 
 - **Text that can't be read in its shot.** Chart titles ≤ 6 Chinese characters; ornamental stamps (datelines) must recur readably elsewhere; a label that changes text (a counter) is reported to `TEXTS` with its final value. Run `readcheck.mjs`.
 - **Two-line Chinese captions in 16:9** read as a slide. Split the sentence instead.
-- **The voice running to the cut**: lines that end on the cut feel rushed; speed the TTS (≤ 1.17 — faster, Kokoro starts to mangle names: "varroa" became "Veroa") or shorten the line.
+- **The voice running to the cut**: lines that end on the cut feel rushed; speed the TTS (≤ 1.17 — faster, the voice starts to mangle names: "varroa" became "Veroa") or shorten the line.
 - **Homophones in ASR**: "requeen the weak" was heard as "week"; "varroa mite" as "might". Rewrite the line ("give old ones a new queen", "varroa mites").
 - **Words stronger than the source**: the report says "stressor", not "killer"; quarterly losses summed are not "annual net loss". Write what the source says.
 - **Footage from elsewhere**: illustrative footage (here Dutch hives) never carries a place label it doesn't have; dates on photos (an almond orchard in 2014) are stated in the credit.

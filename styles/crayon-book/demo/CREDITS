@@ -2,9 +2,6 @@ The Moon Can't Sleep — Crayon Picture Book demo · Polargate · PolarMotion
 
 Story, characters, animation, crayon/watercolour engine, sound design: original (procedural code in this folder).
 Music: original score (demo/music/score.py). Lullaby melody, motifs and arrangement are original.
-  Samples (CC0 1.0): VS Chamber Orchestra: Community Edition
-    (flute, flute staccato, clarinet, clarinet staccato);
-    Versilian Community Sample Library (glockenspiel, harp).
   Music box: physical/modal synthesis, core/audio/pluck.py (no samples). Toy piano: numpy synthesis.
 Voice: synthetic narration.
 Fonts (SIL Open Font License 1.1, licence files in demo/fonts/):

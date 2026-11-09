@@ -8,8 +8,8 @@ Fonts
 Voice
 - Synthetic narration.
 
-Music (original composition, demo/music/score.py)
-- Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library
+Music
+- Original composition (demo/music/score.py)
 
 Sound effects
 - All synthesized in demo/mix.py with core/audio/sfx.py (no recorded samples)

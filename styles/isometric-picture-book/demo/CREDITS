@@ -23,8 +23,6 @@ MUSIC & SOUND
   violins pizzicato, shaker) and synthesis through core/audio/sfx.py (jet whine, brakes, chime, wheels, bin lids,
   paper flap, clock ticks, tug, beds of air).
 - Piano: "Salamander Grand Piano V3" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/).
-- Samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
-  Downloaded with sh tools/fetch.sh instruments vsco2ce | vcsl | salamander.
 
 FACTS
 - Steffen & Hotchkiss (2012), Journal of Air Transport Management 18(1): 64–67. Every number in the film: FACTS.md.

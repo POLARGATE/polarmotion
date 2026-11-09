@@ -9,8 +9,7 @@ Voice
 - Synthetic narration.
 
 Music (original composition, rendered with core/audio/sampler.py)
-- Harpsichord, harp: VCSL (CC0 1.0)
-- Bassoon staccato, violins/cellos spiccato, string sustains: VSCO 2 Community Edition (CC0 1.0)
+- Harpsichord, harp, bassoon staccato, violins/cellos spiccato, string sustains
 
 Sound effects
 - All synthesized in code (demo/mix.py, core/audio/sfx.py). No recorded samples.

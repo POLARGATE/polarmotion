@@ -41,7 +41,7 @@ Not a dashboard (one idea at a time), not a keynote with charts (no slides), nev
 
 ## 4. Type & subtitles
 
-- **The subtitle is the figure caption**: a text serif (Newsreader), ink colour, left-aligned with the chart, ≤ 2 lines, with a hairline rule above it and a small mono kicker for the range drawn so far. Words appear on their whisper timestamps over a paper-colour band. Hold ≥ max(1.8 s, speech + 0.6 s).
+- **The subtitle is the figure caption**: a text serif (Newsreader), ink colour, left-aligned with the chart, ≤ 2 lines, with a hairline rule above it and a small mono kicker for the range drawn so far. Words appear on their speech-check timestamps over a paper-colour band. Hold ≥ max(1.8 s, speech + 0.6 s).
 - The title is the **chart's own headline** (Newsreader), set in world space above the plot; it fades when the camera is close and returns with the full view.
 - No captions over a signature chart operation or a silence.
 

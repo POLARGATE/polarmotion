@@ -11,8 +11,7 @@ VOICE
   Synthetic narration, speed 0.93.
 
 MAP DATA
-  Coastline: Natural Earth 1:50m admin-0 countries (public domain, default view), via world-atlas 2.0.2
-  (Mike Bostock, ISC licence), read from the npm CDN by extract_aus.mjs and
+  Coastline: world-atlas 2.0.2 countries-50m (Mike Bostock, ISC licence), read from the npm CDN by extract_aus.mjs and
   decoded with topojson-client 3.1.0 (Mike Bostock, ISC licence) -> demo/vendor/topojson-client.min.cjs.
   Only the two Australian rings (mainland, Tasmania) are kept, in demo/aus.js; no borders are drawn.
   Licence texts in demo/vendor/.

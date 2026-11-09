@@ -24,15 +24,11 @@ PHOTOS
 - "Hasan Ali Kaldırım 2013 1.jpg" by Thomas Rodenbücher, via Wikimedia Commons, licensed under CC BY 2.0
   (https://creativecommons.org/licenses/by/2.0/). https://commons.wikimedia.org/wiki/File:Hasan_Ali_Kald%C4%B1r%C4%B1m_2013_1.jpg
   Changes: cropped and placed in a polaroid frame.
-- "Vodafone Park, Istanbul (from outside).jpg", via Wikimedia Commons, CC0.
-  https://commons.wikimedia.org/wiki/File:Vodafone_Park,_Istanbul_(from_outside).jpg — cropped to 16:9, darkened.
 
 MUSIC & SOUND (original score in tools/mix.py, sampled instruments through core/audio/sampler.py)
 - Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0
   (https://creativecommons.org/licenses/by/4.0/)
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition,
-  Versilian Community Sample Library — electric bass, trumpet and trombone staccato, timpani,
-  horn, cellos, glockenspiel
+- Sampled electric bass, trumpet and trombone staccato, timpani, horn, cellos, glockenspiel
 - Sound effects (marker squeak, shutter, thump, pen, whoosh, stopwatch, tape rewind): synthesised in tools/mix.py
   with core/audio/sfx.py
 

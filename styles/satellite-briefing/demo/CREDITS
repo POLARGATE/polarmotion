@@ -21,9 +21,8 @@ IMAGERY (burned-in credit, bottom right, whole film: "影像 Landsat · USGS/NAS
   grey, water masks and shorelines derived from the imagery. The credits above still apply.
 
 VECTORS
-- Natural Earth, ne_10m_lakes_historic ("Aral Sea", historic extent) and ne_10m_rivers_lake_centerlines (Amu Darya,
-  Syr Darya) — the printed-map layer (paper, waterlines and graticule are drawn in the shader). Public domain.
-  https://github.com/nvkelso/natural-earth-vector
+- The printed-map layer: the Aral Sea's historic extent and the Amu Darya and Syr Darya centrelines from public map
+  data; paper, waterlines and graticule are drawn in the shader.
 
 FACTS
 - See FACTS.md: NASA Earth Observatory, USGS EROS Earthshots, NASA MODIS gallery, World Bank (Feature Story 2008;
@@ -45,5 +44,4 @@ MUSIC & SOUND
   timpani, concert bass drum, gran cassa, tam-tam (reversed), gong, suspended cymbal (bowed, stick, crescendo,
   reversed hit), clash cymbals, closed hi-hat, vibraphone, bowed vibraphone, glass harp, French horn (sustain and
   staccato), trombone (sustain and staccato), tuba (sustain and staccato).
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
 - Procedural helpers (click, whoosh, creak, compress, limit) from the library's core/audio/sfx.py.

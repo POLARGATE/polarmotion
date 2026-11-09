@@ -23,14 +23,9 @@ VOICE
 
 SOUND
 - Chalk recordings from Wikimedia Commons, cut into grains by tools/foley_lib.py (foley/lib):
-  - "chalk-on-chalkboard" (freesound.org, sound 264944; Commons file
-    "264944 chalk-on-chalkboard.wav") — CC0 1.0.
-  - "Chalkboard-writing.ogg" (Commons) — CC0 1.0.
   - "WWS Chalk.ogg" by Work With Sounds / La Fonderie, provided by Work With Sounds in cooperation with Wikimedia
     Sverige (Commons) — CC BY 4.0 (creativecommons.org/licenses/by/4.0). Cut into grains, filtered and layered.
-- Music samples (CC0): VS Chamber Orchestra: Community Edition, Versilian Community Sample Library
-  — marimba, pizzicato contrabass, vibraphone. Downloaded with sh tools/fetch.sh instruments
-  vsco2ce | vcsl.
+- Music: sampled marimba, pizzicato contrabass, vibraphone.
 - Guqin: physical model (core/audio/pluck.py). Panel roll, felt wipe, corridor bell, room tone: synthesised in audio.py.
 
 FACTS

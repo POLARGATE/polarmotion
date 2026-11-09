@@ -133,7 +133,7 @@ styles/iso-infographic/demo/
 ```
 1. Write `timeline.js` and the cue map first. Draw the board as a square in world units (S = 240). Lay out the Z route, then the stations.
 2. Build the station scenes, reviewing each at its zoom with `?k=…&cx=…&cy=…` stills. Render the two hero close-ups on their own (`?test=hero`, `?test=hero&end=1`) until they match.
-3. `sh demo/build.sh` rebuilds everything in about 2 minutes: TTS → speech check → score → events → cue check → mix → srt → render (1,411 frames in about 35 s with 2 workers) → mux (−14 LUFS, grain 0) → final whisper → stills.
+3. `sh demo/build.sh` rebuilds everything in about 2 minutes: TTS → speech check → score → events → cue check → mix → srt → render (1,411 frames in about 35 s with 2 workers) → mux (−14 LUFS, grain 0) → final speech check → stills.
 4. Review with `bash demo/tools/review.sh out/revN 6 $(seq 0.3 1 58.3)` at least twice, plus frame strips of the dive, the snap-out, the landing and the pour taken from the muxed mp4.
 
 ## Engine reference

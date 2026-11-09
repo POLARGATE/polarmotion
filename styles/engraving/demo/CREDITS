@@ -3,7 +3,6 @@ All drawings, lettering layout, animation, sound effects and music are original 
 
 MUSIC (music/score.py, original composition, D major, 96 BPM)
 Harpsichord; solo violin, violins, violas, cellos, contrabass (pizzicato and arco).
-Samples (CC0): VS Chamber Orchestra: Community Edition and the Versilian Community Sample Library.
 
 SOUND EFFECTS
 Synthesised in mix.py with numpy / core/audio/sfx.py: burin scrape and plate ring, swarf pings, press roller,

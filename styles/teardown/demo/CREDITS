@@ -12,17 +12,13 @@ HARDWARE DATA (geometry, positions, counts, specifications)
 - Component facts: RP2040 datasheet (Raspberry Pi Ltd), W25Q128JV datasheet (Winbond) — quoted in FACTS.md only;
   no logo or package marking is drawn.
 
-LIGHT
-- photo_studio_loft_hall_2k.hdr — Poly Haven, CC0 — https://polyhaven.com/a/photo_studio_loft_hall (library core/assets/polyhaven)
-
 FONTS (SIL Open Font License 1.1, licence texts in fonts/; Noto Sans SC subset with the Google Fonts API &text=)
 - Noto Sans SC — Google / Adobe (names, Chinese subtitle line, title)
 - JetBrains Mono — JetBrains (specs, numbers, dimensions)
 - Inter — The Inter Project Authors (English subtitle line, English title)
 
 MUSIC (original score, demo/mix.py; samples via the library's core/audio/sampler.py)
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition,
-  Versilian Community Sample Library. Instruments: marimba, bowed vibraphone, glass, glockenspiel,
+- Sampled instruments: marimba, bowed vibraphone, glass, glockenspiel,
   electric bass, hi-hat, claves. Kick, foley and room tone are synthesised in code.
 
 VOICE

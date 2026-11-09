@@ -35,7 +35,6 @@ MUSIC & SOUND
   library's core/audio/sampler.py: bowed vibraphone, vibraphone, marimba, glockenspiel, hand chimes, glass harp,
   tubular bells, contrabass, cellos, violins pizzicato, French horn, trombone, tuba, soft organ, timpani,
   gran cassa, concert bass drum, gong, suspended cymbal.
-- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition, Versilian Community Sample Library.
 - Procedural helpers (click, clack, thump, compress) from the library's core/audio/sfx.py.
 
 CODE

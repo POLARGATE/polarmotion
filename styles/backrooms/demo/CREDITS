@@ -9,8 +9,4 @@ Fonts
 Voices
 - Synthetic narration.
 
-Instrument samples (music/muzak.py, and the PA chime)
-- Vibraphone: Versilian Community Sample Library (VCSL), CC0 1.0
-- Clean electric guitar, finger electric bass: FreePats (freepats.zenvoid.org), CC0 1.0
-
-No third-party footage or images are used. The sound effects are synthesized in code; the music plays VCSL and FreePats samples (CC0).
+No third-party footage or images are used. The sound effects are synthesized in code.

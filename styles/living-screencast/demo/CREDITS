@@ -5,5 +5,4 @@ Voice: synthetic narration.
 Fonts (SIL OFL 1.1): Inter (Rasmus Andersson), Newsreader (Production Type), JetBrains Mono (JetBrains). Licences in fonts/.
 Piano: "Salamander Grand Piano V3" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
 Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
-Samples (CC0): Karoryfer Samples (jazz bass), VS Chamber Orchestra: Community Edition and Versilian Community Sample Library — glockenspiel, violins, claps, shaker.
 Chiptune voice of Clawd, UI foley and all sound effects: synthesised in sound.py.

@@ -9,8 +9,7 @@ Voice
 - Synthetic narration.
 
 Music (original composition, music/score.py)
-- Samples (CC0 1.0): VS Chamber Orchestra: Community Edition and Versilian Community Sample Library — flute, dan tranh, woodblock, gong, frame drum
-- Erhu: Karoryfer Samples "aliexpress-erhu" (CC0 1.0)
+- Sampled instruments: flute, dan tranh, woodblock, gong, frame drum, erhu
 - Pipa: physical-model plucked string (core/audio/pluck.py), original synthesis
 
 Sound effects

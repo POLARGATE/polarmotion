@@ -57,7 +57,7 @@ Thirteen lines, each starting with its shot (the start times below); the subtitl
 
 - Chinese (the library film): voice `zh-CN-XiaoxiaoNeural`, rate +25 %. The line lengths are written into `VO_DUR` in `film.js`, which builds the 14 shots from them.
 - English (`build.sh en`): voice `en-US-AvaNeural`, rate +10 % (V02 and V08 at +25 %, V06 at +20 % to fit their shots), each line starting with its Chinese line; same picture, score and subtitles.
-- Spoken-only spellings (`say`, the subtitle text is unchanged): V05 has short pauses so 相邻 and 全挤 are clear; V12 reads the year as 二零一二年 (English: "twenty twelve"); English V02 has two short pauses. Speech check: `asr_check.py` with the medium Whisper models; `asr` fields give Whisper's spelling where it writes digits (6分54秒, 3分36秒, 2012, 72) and where it hears 全挤 as the near-homophone 拳击.
+- Spoken-only spellings (`say`, the subtitle text is unchanged): V05 has short pauses so 相邻 and 全挤 are clear; V12 reads the year as 二零一二年 (English: "twenty twelve"); English V02 has two short pauses. Speech check: `asr_check.py` with the medium models; `asr` fields give the speech check's spelling where it writes digits (6分54秒, 3分36秒, 2012, 72) and where it hears 全挤 as the near-homophone 拳击.
 
 ## Score structure
 
@@ -73,7 +73,7 @@ On the stand, "Polargate · PolarMotion" lands word by word in the floor-type se
 
 ## Build notes
 
-- `sh styles/isometric-picture-book/demo/build.sh` (Chinese, `isometric-picture-book.mp4`) or `build.sh en` (`isometric-picture-book-en.mp4`, reusing the rendered picture): fonts (downloaded from google/fonts, Noto Serif SC subset by `tools/subset.py`) → sample packs → narration (edge-tts, online) + speech check → `tools/vo_lengths.py` (the Chinese voice must still match `VO_DUR`) → events → `audio.py` (narration, score, foley, ducking, loudness) → picture → master → readcheck → `tools/srt.py` (bilingual .srt) → poster and gallery still.
+- `sh styles/isometric-picture-book/demo/build.sh` (Chinese, `isometric-picture-book.mp4`) or `build.sh en` (`isometric-picture-book-en.mp4`, reusing the rendered picture): fonts (downloaded from google/fonts, Noto Serif SC subset by `tools/subset.py`) → sample packs → narration (online voice) + speech check → `tools/vo_lengths.py` (the Chinese voice must still match `VO_DUR`) → events → `audio.py` (narration, score, foley, ducking, loudness) → picture → master → readcheck → `tools/srt.py` (bilingual .srt) → poster and gallery still.
 - Files: `engine.js`, `kit.js` (style kit, two-line subtitles), `plane.js`, `places.js`, `film.js` (timeline from the narration, queue simulation, 14 shot functions, `texts()`, `events()`), `main.js` / `index.html`, `audio.py`, `lines.json` / `lines_en.json`, `FACTS.md`, `tools/`.
 - Checks: readcheck passes on all world text (the subtitle cues follow the narration and go to the .srt); `tools/motion_check.mjs` reports no jumps, no stop-start stepping and no two standing people closer than 0.35 m. Render ≈ 30–60 ms per 1080p frame.
 - Demo-prop notes: the terminal glass is cut to a parapet in every shot that looks past it; type beside the fuselage stays between the jet bridge and the wing (single line, scaled down where needed); the verdict bars sit far enough ahead of the nose that the nose never covers the cabin icons; the gate's seat numbers and group signs show only in their own shots.

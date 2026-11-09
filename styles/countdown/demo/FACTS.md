@@ -54,7 +54,7 @@ On-screen text is bilingual; it is quoted as it appears (Chinese / English). Chi
   > "Standing by for main engine throttle down to 85% ahead of solid rocket booster separation expected at the two minute nine second mark."
   > "Confirm separation."
 - Integrity is the name of this mission's Orion spacecraft; the source is the official transcript line above.
-- Commentary from the same broadcast at T−47 s (not used in the film; it supports the "control bar"): "The rocket will count itself down, but honor any holds that could come from the ground." "Now, shortly after liftoff, Houston will take control of the rocket." (broadcast excerpt in this film 0.0–9.7 s, Whisper transcription)
+- Commentary from the same broadcast at T−47 s (not used in the film; it supports the "control bar"): "The rocket will count itself down, but honor any holds that could come from the ground." "Now, shortly after liftoff, Houston will take control of the rocket." (broadcast excerpt in this film 0.0–9.7 s, machine transcription)
 
 ## F4 Thrust and engines
 - NASA RS-25 engine fact sheet: https://www.nasa.gov/sites/default/files/atoms/files/sls_rs25_engine_fs_508.pdf

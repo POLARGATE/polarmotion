@@ -17,8 +17,8 @@ kit/
   tools/
     kit_env.sh      the cut-out tools' private venv (demo/.venv: numpy, scipy, Pillow, onnxruntime) and the BiRefNet model
     fetch_sources.py the source photos listed as used in sources/candidates/candidates.json (Commons URLs, licences)
-    prep_object.py  photo → cut-out object (BiRefNet ONNX mask, or a polygon / mask image without it; sky key, clean edge, shared grade)
-    sky_key.py      a mask for thin things shot against a clear sky (cables, stays), to add to BiRefNet's
+    prep_object.py  photo → cut-out object (segmentation-model ONNX mask, or a polygon / mask image without it; sky key, clean edge, shared grade)
+    sky_key.py      a mask for thin things shot against a clear sky (cables, stays), to add to the model's
     redraw_stays.py      stay cables measured from the sky key and redrawn as clean lines (pylon stays in front)
     redraw_suspension.py main cables (fitted parabolas) and hangers (measured) redrawn as clean lines
     repair_hangers.py    hangers lost against a busy background continued down to the deck

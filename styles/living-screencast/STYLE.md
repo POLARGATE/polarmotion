@@ -78,7 +78,7 @@ Framing: the thing being discussed and its caption never overlap; the mascot nev
 - Options: a low-passed "night" version of the band for a dark theme; a tom fill and crash at chapter seams; dropping the drums to build tension; the mascot's notes on words it lands on; a stereo split for split screens; a single held pad under a freeze.
 - **Foley**: keyboard (a thock plus a click, human timing jitter), trackpad clicks, pane swishes, popup pops, notification chimes, CI ticks, a shutter for screenshots. Mascot steps, jumps and landings are 8-bit.
 - **Silence**: a short drop to room tone before the key promise makes it land.
-- **Voice**: calm, one feature per line; product names verified with whisper. Keep effects off word onsets. Duck music under voice; −14 LUFS.
+- **Voice**: calm, one feature per line; product names verified with the speech check. Keep effects off word onsets. Duck music under voice; −14 LUFS.
 
 ## 8. Native moves
 
@@ -102,8 +102,8 @@ A menu: use the ones your walkthrough needs.
 - Blur-filter "fake depth" on text you want read, or zooming out past the screen → rack focus only on panes not being read; zoom ≥ 1.
 - A hand, arm or finger on screen → the cursor is the user.
 - Motion blur applied to a transformed layer smears the pixel sprite wrong → blur an untransformed wrapper, and only on whips.
-- A keypress or pop landing on a product name masks it → shift foley off word onsets; re-check with whisper on the final mix.
-- TTS mispronounces the product name → try voices and spellings, verify with whisper.
+- A keypress or pop landing on a product name masks it → shift foley off word onsets; re-check with the speech check on the final mix.
+- TTS mispronounces the product name → try voices and spellings, verify with the speech check.
 
 ## 10. Engine
 

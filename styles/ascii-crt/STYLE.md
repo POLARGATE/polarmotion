@@ -34,7 +34,7 @@ The mood is cold, patient and machine-calm: typed text, a blinking cursor as sus
 
 ## 4. Type & subtitles
 
-- **Subtitles are terminal output.** A reserved **LOG strip** at the bottom: a dim separator, an inverse-video tag, then a prompt and the line in uppercase at ~45 px. It is **typed word by word in sync with the voice** (whisper word timestamps) and holds ≥ max(1.8 s, speech + 0.6 s). It lives outside the zooming grid, like a status line, with the same scanlines and glow. When nobody speaks it can show system state (a progress bar, a waiting message).
+- **Subtitles are terminal output.** A reserved **LOG strip** at the bottom: a dim separator, an inverse-video tag, then a prompt and the line in uppercase at ~45 px. It is **typed word by word in sync with the voice** (speech-check word timestamps) and holds ≥ max(1.8 s, speech + 0.6 s). It lives outside the zooming grid, like a status line, with the same scanlines and glow. When nobody speaks it can show system state (a progress bar, a waiting message).
 - **On-screen text that the story shows** is picture, not subtitle; in the `.srt` it appears as `[SCREEN] …`.
 - **Titles** are typed with key clicks, as a filename, a command or a header.
 
@@ -71,7 +71,7 @@ Opening and ending come from the topic. Framing: text stays in the safe area ins
 - **Silence is the main instrument**: room tone alone under typing and blinking cursors; a short near-silence before a transformation.
 - **Foley** (all synthesised): relay click and degauss hum (mains hum plus harmonics with a thump); buckling-spring keys (plastic click, spring ping, key-cap thock; duller space bar, heavier Enter); teletype ticks for remote text; modem and phone-line tones (answer tone, FSK, band-limited noise); square-wave error beeps and BEL; clusters of tiny high ticks for particles; a dot-matrix printer or tape drive as options; room tone (fan, low hum, a **very quiet** flyback whine).
 - **Mix**: music ducked about −8 dB under the voice; master −14 LUFS with no grain in the mux (the noise lives in the picture).
-- **Voice**: when a machine speaks, process it (light ring modulation, a short comb, a telephone-ish band-pass, soft saturation) and check that whisper still reads every line. Few short lines.
+- **Voice**: when a machine speaks, process it (light ring modulation, a short comb, a telephone-ish band-pass, soft saturation) and check that the speech check still reads every line. Few short lines.
 
 ## 8. Native moves
 

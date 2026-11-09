@@ -27,7 +27,7 @@ This film uses no third-party footage or photographs. Everything on screen is dr
 | Orchestral samples | VS Chamber Orchestra: Community Edition | CC0 1.0 |
 | Percussion and glockenspiel samples | Versilian Community Sample Library | CC0 1.0 |
 | Foley | synthesised in code (`core/audio/sfx.py`) | — |
-| Voice | Synthetic narration from an online service, voice 解说小明 2.0 `zh_male_jieshuoxiaoming_uranus_bigtts`, via `tools/tts_doubao.py` (your own API key) | that service's terms |
+| Voice | Synthetic narration from an online service, voice 解说小明 2.0 `zh_male_jieshuoxiaoming_uranus_bigtts` (your own API key) | that service's terms |
 
 ## Fonts
 

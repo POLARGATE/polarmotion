@@ -2,7 +2,7 @@
 
 One example among many. Don't reuse its story, arc, shots, props or timings.
 
-**"One Day in New York" (纽约的一天)**, 52 s, 1920×1080 at 30 fps, 1.85:1 matte inside the frame, no voice, original score. An unofficial film made from real footage and records: CC BY time-lapses, street footage and aerials from Wikimedia Commons and Flickr (each with a passed licence review or a source page that still shows the licence), U.S. Marine Corps Fleet Week footage (public domain, DVIDS), a public-domain Edison film of 1899 from the Library of Congress, a NASA photograph from the International Space Station, Carol M. Highsmith's public-domain photographs (Library of Congress) and a scan of Walt Whitman's *Leaves of Grass* (1860, Internet Archive). No person or institution in it endorses the film. Facts: [`demo/FACTS.md`](demo/FACTS.md). Assets: [`demo/CREDITS`](demo/CREDITS), [`demo/SOURCES.md`](demo/SOURCES.md).
+**"One Day in New York" (纽约的一天)**, 52 s, 1920×1080 at 30 fps, 1.85:1 matte inside the frame, no voice, original score. An unofficial film made from real footage and records: CC BY time-lapses, street footage and aerials from Wikimedia Commons and Flickr (each with a passed licence review or a source page that still shows the licence), U.S. Marine Corps Fleet Week footage (public domain, DVIDS), a public-domain Edison film of 1899 from the Library of Congress, a NASA photograph from the International Space Station, public-domain photographs from the Library of Congress and a scan of Walt Whitman's *Leaves of Grass* (1860, Internet Archive). No person or institution in it endorses the film. Facts: [`demo/FACTS.md`](demo/FACTS.md). Assets: [`demo/CREDITS`](demo/CREDITS), [`demo/SOURCES.md`](demo/SOURCES.md).
 
 ## Story & structure
 
@@ -17,30 +17,30 @@ Structure (chosen over a "clock face" structure and a "people vs machines" struc
 | Time (s) | Bar.beat | Shot | Speed / treatment | Text |
 |---|---|---|---|---|
 | 0.0–4.0 | 0–1 | ISS047 night photo of New York | falling push 1.0 → 1.3 in 0.35 s, then accelerating to ×2 | 纽约的一天 / ONE DAY IN NEW YORK |
-| 4.0–6.0 | 2 | Schwab 36th-floor camera, night → dawn | 40×, blend 30 (light river) | day ring appears |
+| 4.0–6.0 | 2 | 36th-floor skyline camera, night → dawn | 40×, blend 30 (light river) | day ring appears |
 | 6.0–7.0 | 3 | aerial, Bethesda Terrace in Central Park, early morning | 3× | |
 | 7.0–7.5 | 3.2 | Grand Central clock (video) | 1× | |
-| 7.5–8.0 | 3.3 | Grand Central clock (Highsmith photo) | punch-in match cut | |
+| 7.5–8.0 | 3.3 | Grand Central clock (photo) | punch-in match cut | |
 | 8.0–9.0 | 4 | Oculus corridor | ramp 1× → 6× | |
 | 9.0–10.0 | 4.2 | straight down on Central Park West, a street full of people | 2× | |
 | 10.0–12.0 | 5 | Oculus hall | 2.1×; crowd → sodium tracks | |
 | 12.0–14.0 | 6 | street, a tunnel drive, Fifth Avenue, the N train over the Manhattan Bridge (1 beat each) | 2–3× | |
 | 14.0–16.0 | 7 | 8 shots, half a beat each (Lower Manhattan from the water, the Park Avenue Viaduct, the Rockefeller Center flags, a tower from below among them) | 1.2–3× | |
-| 16.0–20.0 | 8–9 | Schwab camera, noon clouds | 37.5×, blend 24 | **8,804,190** locks on sixteenths |
+| 16.0–20.0 | 8–9 | skyline camera, noon clouds | 37.5×, blend 24 | **8,804,190** locks on sixteenths |
 | 20.0–24.0 | 10–11 | the grid: 1×2 → 2×2 → 3×3 → 4×4, each stage re-tiling over the last in 0.3 s; last beat re-cuts every sixteenth | pool of 16 one-second clips | |
 | 24.0–27.0 | 12–13.2 | giant soap bubble, Washington Square | ramp 2.2× → 0.3×, motion-compensated | ring freezes, dims |
 | 27.0–31.0 | 13.2–15.2 | split: 1899 train on the Brooklyn Bridge \| the towers today | 0.75× / 0.72×, frame crossfade | 1899; **103,051 / 28,845 / 5,504** a day |
-| 31.0–32.0 | 15.2 | Highsmith long exposure of Grand Central (people as ghosts) | slow push | |
+| 31.0–32.0 | 15.2 | long-exposure photo of Grand Central (people as ghosts) | slow push | |
 | 32.0–33.0 | 16 | Brooklyn Bridge at sunset | 3× | |
 | 33.0–34.0 | 16.2 | ferry skyline, an empty street under a pink sunset | 2–3× | |
-| 34.0–35.0 | 17 | Schwab camera, one-second nightfall | 75×, blend 30 | |
+| 34.0–35.0 | 17 | skyline camera, one-second nightfall | 75×, blend 30 | |
 | 35.0–35.5 | 17.2 | day/night flicker, same camera | 2-frame alternation | |
 | 35.5–36.0 | 17.3 | Times Square photo pair | 2-frame alternation | |
 | 36.0–40.0 | 18–19 | looking down on 42nd Street at Times Square (time-lapse, ramp 1× → 7×), the TKTS steps at night, the same street at 5× (traffic → light), Times Square from above at night, the steps again | 3–7×, blend up to 7 | **≈220,000** people a day |
 | 40.0–42.0 | 20 | the day in reverse: 8 cuts × 4 frames, 14 × 2 frames | | ring spins backwards |
 | 42.0 | 21 | hard stop | dry cut | |
 | 42.3–43.25 | 21.0.6 | *Leaves of Grass* (1860) p. 380, reading light on the line | | |
-| 43.25–47.25 | 21.2.5 | Schwab camera, the next dawn (night → blue → morning) | 8×, blend 8, slow push | 我也曾在人群里。/ …I WAS ONE OF A CROWD, / source |
+| 43.25–47.25 | 21.2.5 | skyline camera, the next dawn (night → blue → morning) | 8×, blend 8, slow push | 我也曾在人群里。/ …I WAS ONE OF A CROWD, / source |
 | 47.25–52.0 | 23.2.5 | the same shot, darkened to 22 % | | end card |
 
 ## Score structure
