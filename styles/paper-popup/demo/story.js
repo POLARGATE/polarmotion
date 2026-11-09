@@ -38,11 +38,7 @@ export const CHAPTERS = [
 ];
 
 export const TITLE_CN = '小精灵冒险记';
-export const CREDITS = [
-  'Music: “Dreamy Flashback” · “Jaunty Gumption” · “Heartwarming” — Kevin MacLeod (incompetech.com) · CC BY 4.0',
-  'Room, desk & props: Poly Haven (CC0)',
-  '音乐：Kevin MacLeod · 场景素材：Poly Haven',
-];
+export const CREDITS = [];   // on-screen end card carries no third-party credits; full attributions in CREDITS
 
 // Book mechanism timings
 export const OPEN = [10.0, 12.6];                                  // cover opens

@@ -533,10 +533,7 @@ function sceneEndCard(c, t) {
   c.font = '600 30px Oswald'; c.letterSpacing = '5px'; c.fillStyle = '#cfc7b8'; c.fillText('Polargate · PolarMotion', GW / 2, 600);
   c.font = '400 21px Oswald'; c.letterSpacing = '1.5px'; c.fillStyle = '#a9a192';
   const CR = [
-    'Archive film: U.S. National Archives, Ford Motor Company Film Collection (1924–27)',
-    'Record: “Charleston”, Golden Gate Orchestra, Edison 1925 — transfer: UC Santa Barbara Library',
-    'Print: The Austin Statesman, Mar. 5, 1926 · Photoplay, Oct. 1925 · “Good Morning”, Dearborn Publishing Co., 1926',
-    'Map data: Natural Earth · All archive material public domain · An unofficial film',
+    'An unofficial film from public archives',
   ];
   CR.forEach((s, i) => c.fillText(s, GW / 2, 700 + i * 36));
   c.restore();

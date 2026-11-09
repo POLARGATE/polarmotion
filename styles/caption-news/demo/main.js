@@ -22,24 +22,24 @@ const GRADE = 'contrast(1.07) saturate(0.92) brightness(0.98)';     // one grade
 
 // ---------- timeline (every cut on the 120 BPM half-beat grid) ----------
 const SHOTS = [
-  { a: 0.0, b: 1.5, k: 'vid', fr: 'h1', n: 48, z: [1.0, 1.035], cr: '视频 Altena TV · CC BY 3.0' },
-  { a: 1.5, b: 3.0, k: 'vid', fr: 'h2', n: 49, z: [1.0, 1.0], cr: '视频 USDA · 公有领域' },
-  { a: 3.0, b: 5.0, k: 'vid', fr: 'h3', n: 64, z: [1.0, 1.05], cr: '视频 Phonon.b · CC BY 4.0' },
-  { a: 5.0, b: 7.5, k: 'sting', cr: '视频 Midsummer Bees · CC BY 3.0' },
-  { a: 7.5, b: 10.5, k: 'half', cr: '视频 Altena TV · CC BY 3.0' },
-  { a: 10.5, b: 13.0, k: 'freeze', cr: '视频 Martin J. Calabrese · CC BY 3.0' },
+  { a: 0.0, b: 1.5, k: 'vid', fr: 'h1', n: 48, z: [1.0, 1.035] },
+  { a: 1.5, b: 3.0, k: 'vid', fr: 'h2', n: 49, z: [1.0, 1.0] },
+  { a: 3.0, b: 5.0, k: 'vid', fr: 'h3', n: 64, z: [1.0, 1.05] },
+  { a: 5.0, b: 7.5, k: 'sting' },
+  { a: 7.5, b: 10.5, k: 'half' },
+  { a: 10.5, b: 13.0, k: 'freeze' },
   { a: 13.0, b: 16.0, k: 'doc6' },
   { a: 16.0, b: 19.0, k: 'stock' },
-  { a: 19.0, b: 23.5, k: 'split', cr: '视频 Altena TV · CC BY 3.0 ｜ USDA · 公有领域' },
-  { a: 23.5, b: 27.5, k: 'grid', cr: '视频 USDA ｜ 照片 vastateparksstaff · CC BY 2.0 ｜ USGS' },
+  { a: 19.0, b: 23.5, k: 'split' },
+  { a: 23.5, b: 27.5, k: 'grid' },
   { a: 27.5, b: 30.0, k: 'quote' },
-  { a: 30.0, b: 33.0, k: 'sem', cr: '电镜照片 USDA ARS · 公有领域' },
+  { a: 30.0, b: 33.0, k: 'sem' },
   { a: 33.0, b: 37.5, k: 'stress' },
   { a: 37.5, b: 41.5, k: 'loss' },
   { a: 41.5, b: 45.5, k: 'map' },
-  { a: 45.5, b: 46.5, k: 'almond', cr: '照片 USDA · 加州杏仁园 2014 · 公有领域' },
-  { a: 46.5, b: 50.0, k: 'vid', fr: 'rb', n: 109, z: [1.0, 1.03], cr: '视频 USDA · 公有领域', lt: ['USDA 屋顶蜂场 · 华盛顿', 'USDA rooftop apiary, Washington, D.C. · 2013'] },
-  { a: 50.0, b: 54.5, k: 'vid', fr: 'vd', n: 123, z: [1.0, 1.06], cr: '视频 Martin J. Calabrese · CC BY 3.0' },
+  { a: 45.5, b: 46.5, k: 'almond' },
+  { a: 46.5, b: 50.0, k: 'vid', fr: 'rb', n: 109, z: [1.0, 1.03], lt: ['USDA 屋顶蜂场 · 华盛顿', 'USDA rooftop apiary, Washington, D.C. · 2013'] },
+  { a: 50.0, b: 54.5, k: 'vid', fr: 'vd', n: 123, z: [1.0, 1.06] },
   { a: 54.5, b: 59.5, k: 'end' },
 ];
 // captions, voice starts and music marks live in timeline.json (shared with audio/mix.py and the .srt)
@@ -132,7 +132,7 @@ function sourceTag(t, t0, label = 'USDA NASS · 2026.08.03') {   // source tag: 
   ctx.fillStyle = C.ink; ctx.fillRect(x, y, w1, 36); text('来源', x + 10, y + 26, `900 22px ${F.zh9}`, C.bg);
   ctx.fillStyle = 'rgba(14,14,12,.82)'; ctx.fillRect(x + w1, y, w2, 36); text(label, x + w1 + 11, y + 25, `500 21px ${F.n5}`, C.ink); ctx.restore();
 }
-function credit(s) {   // per-shot footage credit, top right ("Video:" tag); CC BY attribution on every shot it applies to
+function credit(s) {   // optional per-shot tag, top right; the demo passes none (its asset credits live in demo/CREDITS)
   if (!s) return; const f = `500 19px ${F.zh5}`; const w = tw(s, f);
   ctx.fillStyle = 'rgba(14,14,12,.5)'; ctx.fillRect(W - 72 - w - 16, 54, w + 16, 30); text(s, W - 80, 75, f, 'rgba(247,245,239,.86)', 'right');
 }
@@ -517,13 +517,7 @@ function shotEnd(s, t) {
   text('Polargate · PolarMotion', L + 4, 584, `500 32px ${F.n5}`, C.dim);
   ctx.restore();
   const k3 = eo(seg(t, s.a + .6, s.a + .9)); ctx.save(); ctx.globalAlpha = k3 * .92;
-  const CR = [
-    '数据 Data: USDA NASS, Honey Bee Colonies (Aug 3, 2026), operations with 5+ colonies; 2025 losses and additions are four quarters summed — public domain',
-    'Video: "Te veel bijen in de Biesbosch…" by Altena TV, CC BY 3.0 · "Apis mellifera flying x40 SlowMotion01" by Phonon.b, CC BY 4.0',
-    'Video: "Slow Motion Bee Flight – Close-up video of honey bees" by Martin J. Calabrese, CC BY 3.0 · "Bees flying in HD in slow motion" by Midsummer Bees, CC BY 3.0',
-    'Photo: "Three bee packages for Park" by vastateparksstaff, CC BY 2.0 · Sound: "Рій на землі 02" by Сарапулов, CC BY 4.0 · Drums: "MuldjordKit" by Lars Muldjord, CC BY 4.0',
-    'Public domain: USDA (apiary video, almond photo), USDA ARS (micrograph), USGS (queen photo), Natural Earth (map) · All via Wikimedia Commons, cropped and colour-graded',
-  ];
+  const CR = [];   // no third-party credits on screen; sources and licences live in demo/CREDITS
   CR.forEach((l, i) => text(l, L + 4, 860 + i * 34, `500 20px ${F.n5}`, C.dim));
   ctx.restore();
   if (t > s.a + .3) { TX.push({ id: 'endT', text: '蜜蜂账本', x0: L, y0: 200, x1: 760, y1: 350 }); TX.push({ id: 'endE', text: 'The Bee Ledger', x0: L, y0: 360, x1: 760, y1: 430 }); TX.push({ id: 'endS', text: 'CAPTION NEWS · 字幕新闻', x0: L, y0: 490, x1: 760, y1: 540 }); TX.push({ id: 'endL', text: 'Polargate · PolarMotion', x0: L, y0: 550, x1: 760, y1: 600 }); }

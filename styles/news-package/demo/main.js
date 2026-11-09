@@ -182,7 +182,7 @@ const CREDITS_ON = [
   [6.0, 13.0, 'SOURCE: GOOGLE GEMINI API CHANGELOG', '来源：Google · Gemini API 更新日志'],
   [13.0, 20.0, 'KRX DATA VIA NAVER · KOREA HERALD', '韩国交易所数据 · Korea Herald'],
   [20.0, 24.0, 'SOURCE: KOREA HERALD · BLOOMBERG', '来源：Korea Herald · Bloomberg'],
-  [24.0, 30.5, 'REPORTED BY EURONEWS · NATURAL EARTH', '据 Euronews 报道 · 地图 Natural Earth'],
+  [24.0, 30.5, 'REPORTED BY EURONEWS', '据 Euronews 报道'],
   [30.5, 35.5, 'SOURCE: EUROPEAN COMMISSION SPEECH', '来源：欧盟委员会 讲话全文'],
   [35.5, 45.0, 'SOURCE: META AI RESEARCH BLOG', '来源：Meta AI 研究博客'],
 ]
@@ -799,9 +799,7 @@ function shotEnd(t) {
   ctx.globalAlpha = m(39.65, 39.9); text('Polargate · PolarMotion', x, 604, F.b6(38), C.gold, 'left', 1.5, 'e4'); ctx.globalAlpha = 1;
   const sm = m(39.8, 40.1); ctx.globalAlpha = sm;
   ctx.fillStyle = C.line; ctx.fillRect(x, 816, 1620, 1);
-  [['新闻来源：Google · Meta · Korea Herald · Bloomberg · Euronews', 'e5'], ['数据：韩国交易所 · 讲话原文：欧盟委员会', 'e5b'],
-   ['配乐采样 VSCO 2 CE、VCSL（CC0）· 地图 Natural Earth（公有领域）', 'e6'], ['字体 Noto Sans SC、Barlow Condensed、IBM Plex Mono（OFL）', 'e6b'],
-   ['机房、晶圆背景为 AI 生成示意图', 'e7b']].forEach(([s, id], i) => text(s, x, 854 + i * 31, F.sc7(20), C.grey, 'left', 0, id));
+  [['机房、晶圆背景为 AI 生成示意图', 'e7b']].forEach(([s, id], i) => text(s, x, 854 + i * 31, F.sc7(20), C.grey, 'left', 0, id));
   ctx.globalAlpha = 1;
   // Station logo
   const la = m(39.3, 39.6); ctx.globalAlpha = la;

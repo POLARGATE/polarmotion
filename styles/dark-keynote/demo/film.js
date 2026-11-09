@@ -491,8 +491,7 @@ function sceneEnd(g, t) {
     y += 56; g.fillStyle = PAL.dim; g.fillText('Dark Tech Keynote', x, y);
     y += 38; g.fillText('Polargate · PolarMotion', x, y);
     y += 54; g.font = font(19, 500, 'mono'); g.fillStyle = PAL.mute;
-    g.fillText('Marimba / vibraphone / glockenspiel: VCSL (CC0)', x, y);
-    y += 30; g.fillText('Type: Inter, Inter Tight, JetBrains Mono (OFL)  ·  All UI, music and sound are original', x, y);
+    g.fillText('All UI, music and sound are original', x, y);
     g.globalAlpha = 1;
   }
   E.vignette(g, 0.5);

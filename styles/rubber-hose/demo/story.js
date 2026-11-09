@@ -79,5 +79,4 @@ export const CUES = [
 
 export const CREDITS = [
   'Original score & sound effects made in code',
-  'Fonts: Shrikhand, Limelight, IM Fell English SC (SIL OFL 1.1)',
 ];

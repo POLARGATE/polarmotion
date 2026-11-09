@@ -579,8 +579,7 @@ function fullMap(g, iso, t, nocard) {
   g.fillStyle = '#3C7FB1'; g.fillRect(lx + 270, ly - 14, 14, 14); haloText(g, 'sea 10,500', lx + 292, ly, { font: `500 18px ${FONT}`, halo: false });
   g.fillStyle = PAL.ink; g.fillRect(x + 30, y + 312, w - 60, 1.5);
   haloText(g, 'Polargate  ·  PolarMotion', x + 30, y + 346, { font: `600 20px ${FONT}`, halo: false });
-  haloText(g, 'Font Jost (OFL)', x + 30, y + 370, { font: `400 15px ${FONT}`, halo: false, color: '#6E5E50' });
-  haloText(g, 'Samples FreePats · VCSL · Karoryfer (CC0)  ·  score & sound original', x + 30, y + 390, { font: `400 15px ${FONT}`, halo: false, color: '#6E5E50' });
+  haloText(g, 'Score & sound original', x + 30, y + 370, { font: `400 15px ${FONT}`, halo: false, color: '#6E5E50' });
   g.restore();
 }
 

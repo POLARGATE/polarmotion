@@ -57,5 +57,5 @@ export const LABELS = {
   title: '两条螺旋', titleEn: 'Two Spirals',
   style: 'DATA PHYSICALIZATION · 数据实物化',
   sign: 'Polargate · PolarMotion',
-  source: '数据：IRENA (2026)，经 Our World in Data 整理 · CC BY 4.0',
+  source: '数据：IRENA (2026)',
 };

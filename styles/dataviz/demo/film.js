@@ -440,10 +440,7 @@ function endCard(g, t, cam) {
   E.setType(g, '1926', MINI.x0, MINI.y1 + 20, { size: 14, progress: p(69.9) });
   E.setType(g, '2026', MINI.x0 + 101 * MINI.w, MINI.y1 + 20, { size: 14, progress: p(69.9), align: 'right' });
   E.setType(g, 'Polargate  ·  PolarMotion', L, 12, { size: 30, font: 'Newsreader', weight: 400, color: P.ink, progress: p(70.2) });
-  const cr = ['Data: NASA GISS Surface Temperature Analysis (GISTEMP v4), global land–ocean, June–August',
-    'anomaly vs 1951–80, public domain. 2026 value preliminary, retrieved 2026-09-26.',
-    'Fonts: Newsreader, Caveat, IBM Plex Mono (SIL OFL)',
-    'Music, sound and pictures: original, made in code.'];
+  const cr = ['Music, sound and pictures: original, made in code.'];
   cr.forEach((s, i) => E.setType(g, s, L, 62 + i * 26, { size: 16, color: P.inkSoft, progress: p(70.6 + i * .15) }));
   const hf = seg(k, 71.6, 73.0);
   if (hf > 0) E.handText(g, 'Her story is fiction. Every number is real.', L, 232, { size: 34, color: P.blue, progress: hf, zoom: cam.zoom });

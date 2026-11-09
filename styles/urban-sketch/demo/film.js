@@ -296,7 +296,7 @@ function notes(t) {
   const ex = 175, ey = 2870;   // small colophon text below the title (left-aligned, in the same column as the title)
   handwrite(ctx, 'Urban Sketch \u00b7 Pen & Wash', ex, ey, 74, seg(t, 30.1, 30.8), { font: 'Caveat', alpha: .88 });
   handwrite(ctx, 'Polargate \u00b7 PolarMotion', ex, ey + 100, 92, seg(t, 30.6, 31.2), { font: 'Caveat', weight: 600 });
-  handwrite(ctx, 'music & sound: original, played on CC0 samples (VSCO 2 CE \u00b7 VCSL \u00b7 Karoryfer)   \u00b7   fonts: Caveat, Reenie Beanie (OFL)', ex, ey + 180, 48, seg(t, 31.0, 31.8), { font: 'Caveat', alpha: .78 });
+  handwrite(ctx, 'music & sound: original', ex, ey + 180, 48, seg(t, 31.0, 31.8), { font: 'Caveat', alpha: .78 });
 }
 
 window.DUR = DUR;
