@@ -66,7 +66,7 @@ Demo motion numbers: exploded parts leave one every ~0.055 of the progress on ei
   - The catch resolves to G on the downbeat.
   - Rain uses harp and harpsichord arpeggios.
   - A short full cadence lands on the stamp, and the theme returns in augmentation for the end card.
-  - Rendered with `core/audio/sampler.py`: VCSL harpsichord and harp, VSCO 2 CE bassoon, strings and spiccato.
+  - Rendered with `core/audio/sampler.py`: sampled harpsichord, harp, bassoon, strings and spiccato.
 - **Foley follows materials**:
   - Paper: roll unroll crackle and slap, T-square wood slide, technical pen scratch (2–6 kHz grain, length = stroke length), lettering (bursts of short strokes), compass squeak, hatching (13 strokes/s).
   - Brass and wood: part clicks (3.1 / 5.2 kHz resonances), escapement ticks, chain rattle, bellows breath, wind-down ticks that slow by ×1.35.

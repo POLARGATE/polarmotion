@@ -114,7 +114,7 @@ export function frameCard(g, t, q) {
   theatre(g, W, H, { x: 240, y: 0, w: FW, h: FH }, FP43.mean);
   g.save(); g.beginPath(); g.roundRect(240, 0, FW, FH, 22); g.clip(); g.drawImage(dev, 240, 0); damage(g, 240, 0, FW, FH, 91, .6); g.restore();
 }
-// redraw sample: a real (CC0) video frame → silent-film drawing, before / after
+// redraw sample: a real video frame → silent-film drawing, before / after
 export async function redrawSample(g, t, q) {
   const img = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.src = 'assets/redraw_src.jpg'; });
   RD43 = RD43 || new Redraw(FW, FH); FP43 = FP43 || new FilmPost(FW, FH);
@@ -125,9 +125,9 @@ export async function redrawSample(g, t, q) {
   g.drawImage(img, 40, y0, pw, ph);
   g.save(); g.beginPath(); g.roundRect(980, y0, pw, ph, 14); g.clip(); g.drawImage(dev, 980, y0, pw, ph); damage(g, 980, y0, pw, ph, 12, .55); g.restore();
   label(g, 'REDRAW MODE', W / 2, 78, { font: 'Playfair Display SC', w: 900, size: 44, color: '#ece5d5', spacing: 4 });
-  label(g, 'input: a real video frame (CC0)', 40 + pw / 2, y0 + ph + 56, { italic: true, size: 26, color: '#cfc7b6' });
+  label(g, 'input: a real video frame', 40 + pw / 2, y0 + ph + 56, { italic: true, size: 26, color: '#cfc7b6' });
   label(g, 'output: ink lines (DoG) · five wash steps · boiling hatch · silver print + ageing', 980 + pw / 2, y0 + ph + 56, { italic: true, size: 26, color: '#cfc7b6' });
-  label(g, 'source: a public-domain street video (CC0), cropped below the shop signs', W / 2, H - 50, { size: 20, color: '#8f887a' });
+  label(g, 'source: a street video, cropped below the shop signs', W / 2, H - 50, { size: 20, color: '#8f887a' });
   g.strokeStyle = '#cfc7b6'; g.lineWidth = 3; g.beginPath(); g.moveTo(944, y0 + ph / 2 - 18); g.lineTo(962, y0 + ph / 2); g.lineTo(944, y0 + ph / 2 + 18); g.stroke();
 }
 

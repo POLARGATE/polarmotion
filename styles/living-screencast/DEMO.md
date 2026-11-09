@@ -85,7 +85,7 @@ The Claude app's light theme (ink `#1F1E1C`, clay `#D97757`, `--clay2` `#BD5D3A`
 
 ## End card
 
-Clawd hops across "Say it. Plan it. Review it. Ship it." word by word as it is spoken (Newsreader 64 px, the last word in clay italic), then "Claude Code · in the Claude app" and a small line (`film.js`, end-card function): "Polargate · PolarMotion · Unofficial fan film". No third-party credits on screen; fonts, piano, drums and samples are credited in `demo/CREDITS`. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (remove that line when adapting `film.js`).
+Clawd hops across "Say it. Plan it. Review it. Ship it." word by word as it is spoken (Newsreader 64 px, the last word in clay italic), then "Claude Code · in the Claude app" and a small line (`film.js`, end-card function): "Polargate · PolarMotion · Unofficial fan film". No third-party credits on screen; fonts, piano and drums are credited in `demo/CREDITS`. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (remove that line when adapting `film.js`).
 
 ## Build notes
 

@@ -106,7 +106,7 @@ A small script (`cuecheck.py`, in `styles/<slug>/demo/tools/` of several demos) 
 
 Write an original score from the cue map, in the instruments of the style's sound palette; no generic piano and strings.
 
-- **Samples**: `core/audio/sampler.py` plays real instruments from free libraries (VSCO 2 CE, VCSL, FreePats, Karoryfer, Salamander Grand Piano; list and licences in `core/audio/INSTRUMENTS.md`). Write the score as events `(time, instrument, pitch, duration, velocity, pan)`. Long notes are extended seamlessly, and round-robins avoid the machine-gun effect.
+- **Samples**: `core/audio/sampler.py` plays real instruments from free sample libraries (list and licences in `core/audio/INSTRUMENTS.md`). Write the score as events `(time, instrument, pitch, duration, velocity, pan)`. Long notes are extended seamlessly, and round-robins avoid the machine-gun effect.
 - **Plucked and folk strings** (guqin, pipa, shamisen, banjo…): `core/audio/pluck.py`, physical modelling (Karplus–Strong) with bends and vibrato.
 - **Synthesis** with numpy for chip tunes, drones and effects; no download needed.
 - **Balance the low end.** Synthetic scores get bass-heavy quickly. Measure energy per band after mixing; keep 20–120 Hz around −3 dB relative to the rest, skip pad notes below MIDI 48, and give the bass some 2nd and 3rd harmonics so it speaks on small speakers.

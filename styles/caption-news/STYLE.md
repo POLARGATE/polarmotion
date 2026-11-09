@@ -118,7 +118,7 @@ Copy `demo/` into the project and replace the content:
 - **The voice running to the cut**: lines that end on the cut feel rushed; speed the TTS (≤ 1.17 — faster, the voice starts to mangle names: "varroa" became "Veroa") or shorten the line.
 - **Homophones in ASR**: "requeen the weak" was heard as "week"; "varroa mite" as "might". Rewrite the line ("give old ones a new queen", "varroa mites").
 - **Words stronger than the source**: the report says "stressor", not "killer"; quarterly losses summed are not "annual net loss". Write what the source says.
-- **Footage from elsewhere**: illustrative footage (here Dutch hives) never carries a place label it doesn't have; dates on photos (an almond orchard in 2014) are stated in the credit.
+- **Footage from elsewhere**: illustrative footage (here Dutch hives) never carries a place label it doesn't have; dates on photos (an almond orchard in 2014) are recorded in the sources file (`demo/SOURCES.md`).
 - **Blank first frames on transitions**: start split/grid/sting animations 0.1–0.15 s before the cut so frame 1 already has picture.
 - **Station logos**: crop them out; never park a caption over a logo.
 

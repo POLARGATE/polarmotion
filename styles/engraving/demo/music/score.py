@@ -362,7 +362,7 @@ sf.write(os.path.join(MOUT, 'score.wav'), mix, SR, subtype='PCM_24')
 os.makedirs(os.path.join(MOUT, 'stems'), exist_ok=True)
 for k in STEMS: sf.write(os.path.join(MOUT, 'stems', k + '.wav'), np.clip(bus[k] * GAIN[k] * sc, -1, 1).astype(np.float32), SR, subtype='PCM_24')
 json.dump(sorted(CUES, key=lambda c: c['t']), open(os.path.join(MOUT, 'cues.json'), 'w'), indent=1, ensure_ascii=False)
-open(os.path.join(MOUT, 'CREDITS_music.txt'), 'w').write('\n'.join(S.credits(sorted(USED)) or ['Music and sound: original, made in code.']) + '\n')
+open(os.path.join(MOUT, 'CREDITS_music.txt'), 'w').write('\n'.join(S.credits(sorted(USED)) or ['Original score, played on sampled instruments.']) + '\n')
 
 # ════════════════════════════════════════════════════════════════════
 # hit-point check: on the matching stem (after reverb) find the largest energy jump within ±60 ms of the cue (5 ms frames, log-energy difference)

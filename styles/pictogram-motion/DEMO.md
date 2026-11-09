@@ -90,7 +90,7 @@ Navy pattern whose rows stop one by one, the yellow umbrella opening on its stag
 
 `sh styles/pictogram-motion/demo/build.sh` (`WORKERS=3` for more render workers, `VOICE=1` to regenerate the narration, `sh demo/build.sh 28 36` for a span).
 
-- Needs the voice tier and three sample libraries: `sh tools/setup.sh deps voice`, `sh tools/fetch.sh instruments vcsl`, `… vsco2ce`, `… freepats`. The three fonts are fetched into `demo/fonts/` on the first run (`tools/fetch_fonts.sh`).
+- Needs the voice tier and the sample libraries: `sh tools/setup.sh deps voice`, `sh tools/fetch.sh instruments all`. The three fonts are fetched into `demo/fonts/` on the first run (`tools/fetch_fonts.sh`).
 - Steps: narration (`voice/lines.json` → TTS → `out/voice/`, `asr_check.py`), captions (`tools/cues.py`: line starts in `voice/vo.json` + clip lengths → `voice/cues.js` and `../pictogram-motion.srt`; it refuses a caption shorter than max(1.8 s, line + 0.6 s)), events, picture, `mix.py`, `mux.sh`, readcheck, poster and the gallery style frame (t = 9.2, rendered with `?nocap=1`).
 - The page takes `?a=&b=` (render a span of the film; `render(t)` always draws film second a + t) and `?nocap=1`.
 - `render(t)` keeps no state between frames. About 45 s for the whole film with two workers on an M-series Mac.

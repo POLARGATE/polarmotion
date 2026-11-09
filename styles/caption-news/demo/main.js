@@ -517,7 +517,7 @@ function shotEnd(s, t) {
   text('Polargate · PolarMotion', L + 4, 584, `500 32px ${F.n5}`, C.dim);
   ctx.restore();
   const k3 = eo(seg(t, s.a + .6, s.a + .9)); ctx.save(); ctx.globalAlpha = k3 * .92;
-  const CR = [];   // no third-party credits on screen; sources and licences live in demo/CREDITS
+  const CR = [];   // no third-party credits on screen; credits live in demo/CREDITS, provenance in demo/SOURCES.md
   CR.forEach((l, i) => text(l, L + 4, 860 + i * 34, `500 20px ${F.n5}`, C.dim));
   ctx.restore();
   if (t > s.a + .3) { TX.push({ id: 'endT', text: '蜜蜂账本', x0: L, y0: 200, x1: 760, y1: 350 }); TX.push({ id: 'endE', text: 'The Bee Ledger', x0: L, y0: 360, x1: 760, y1: 430 }); TX.push({ id: 'endS', text: 'CAPTION NEWS · 字幕新闻', x0: L, y0: 490, x1: 760, y1: 540 }); TX.push({ id: 'endL', text: 'Polargate · PolarMotion', x0: L, y0: 550, x1: 760, y1: 600 }); }

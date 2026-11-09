@@ -442,7 +442,7 @@ json.dump({'sr': SR, 'dur': DUR, 'keys': KEY}, open(os.path.join(HERE, 'score.js
 USED = ['contrabass', 'cellos', 'cellos_spic', 'contrabass_pizz', 'violas', 'log_drum', 'woodblock', 'frame_drum',
         'gran_cassa', 'timpani', 'gong', 'tubular_bells', 'hand_chimes']
 open(os.path.join(HERE, 'CREDITS.txt'), 'w').write(
-    '\n'.join(S.credits(USED) or ['Music and sound: original, made in code.']) + '\n')
+    '\n'.join(S.credits(USED) or ['Original score, played on sampled instruments.']) + '\n')
 
 # ============================================================================
 # self-check

@@ -1,5 +1,5 @@
 """Original in-scene elevator music "Hold Music No. 9": 88 BPM, F major, 8-bar loop ×3
-Vibraphone (soft mallets) melody + clean electric guitar lightly strumming chords on beats 2 and 4 + fingerstyle electric bass (root/fifth). All CC0 samples (VCSL / FreePats).
+Vibraphone (soft mallets) melody + clean electric guitar lightly strumming chords on beats 2 and 4 + fingerstyle electric bass (root/fifth). All sampled.
 Writes music/muzak_raw.wav (original speed, dry); tape-speed change, through-the-wall filtering and reverb are done in mix.py."""
 import sys, os
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../..'))

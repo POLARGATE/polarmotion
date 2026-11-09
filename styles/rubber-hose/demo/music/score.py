@@ -1,6 +1,6 @@
 """Original score for "Coffee Cup Chase": 1930s big band / ragtime (144 BPM, 4/4, 30 bars = 50.0 s)
 Run: .venv/bin/python styles/rubber-hose/demo/music/score.py
-Instruments: core/audio/sampler.py samples (VSCO 2 CE trumpet/muted trumpet/clarinet/tuba/upright piano/snare/cymbals/bass drum; VCSL xylophone/woodblock/suspended cymbal)
+Instruments: core/audio/sampler.py samples (trumpet/muted trumpet/clarinet/tuba/upright piano/snare/cymbals/bass drum, xylophone/woodblock/suspended cymbal)
       + core/audio/pluck.py banjo (physical model) + numpy-synthesised slide whistle, spring "boing", snare brush sweeps
 Output: score.wav (48 kHz stereo), stems/*.wav, score.json (hit points + cues + self-check)
 All times are computed with story.js's bar(b, beat) (1-based)."""

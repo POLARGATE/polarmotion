@@ -35,7 +35,7 @@ Times in seconds; every cut on the 120 BPM half-beat grid.
 | 13 | 33.0–37.5 | ledger card: stressors, Jan–Mar 2026 | bars grow, varroa first; held 3 s complete | judgement frame |
 | 14 | 37.5–41.5 | ledger card: share lost per quarter | line draws; spike ring + "16%" 39.75, "六个季度最高" | |
 | 15 | 41.5–45.5 | ledger card: state loss rates, Jan–Mar 2026 | states fill west → east; California outlined + label 42.3; push 43.6–44.9; **mask**: the almond photo grows out of California 44.9–45.5 | |
-| 16 | 45.5–46.5 | bee on an almond blossom, California, 2014 | slow push; date in the credit | |
+| 16 | 45.5–46.5 | bee on an almond blossom, California, 2014 | slow push; date in `demo/SOURCES.md` | |
 | 17 | 46.5–50.0 | rooftop apiary, beekeeper at a hive | lower third "USDA 屋顶蜂场 · 华盛顿 · 2013" | |
 | 18 | 50.0–54.5 | bees on dandelions | silence 50.0–50.5; verdict captions 50.4 and 52.2 at 1.25× size | silence 2 |
 | 19 | 54.5–59.5 | end card over the blurred hive entrance | see below | |
@@ -59,7 +59,7 @@ Times in seconds; every cut on the 120 BPM half-beat grid.
 
 ## End card
 
-From 54.5 s, held five seconds over the blurred, darkened hive entrance: "蜜蜂账本" (150 px), "The Bee Ledger" (honey), a thin rule, "CAPTION NEWS · 字幕新闻", "Polargate · PolarMotion". No third-party credits on screen, neither on the end card nor per shot: the data source, every CC BY work with title, author and licence, and the public-domain sources live in `demo/CREDITS`. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+From 54.5 s, held five seconds over the blurred, darkened hive entrance: "蜜蜂账本" (150 px), "The Bee Ledger" (honey), a thin rule, "CAPTION NEWS · 字幕新闻", "Polargate · PolarMotion". No third-party credits on screen, neither on the end card nor per shot: the data source, every CC BY work with title, author and licence, and the fonts are credited in `demo/CREDITS`; the provenance of every file is in `demo/SOURCES.md`. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -67,7 +67,7 @@ From 54.5 s, held five seconds over the blurred, darkened hive entrance: "蜜蜂
 demo/
   index.html, main.js     the page: SHOTS, one function per format, sync draw + lazy frame loading, TEXTS for readcheck
   timeline.json           captions (zh chunks + en), voice starts, silences, hits — shared by page, .srt and mix
-  audio/lines.json        narration (synthetic voice)  audio/mix.py   score, foley, voice, natural sound, mix
+  audio/lines.json        narration (synthetic voice)   audio/mix.py   score, foley, voice, natural sound, mix
   tools/fetch_sources.sh  downloads raw/ (~410 MB; Commons, USDA, Natural Earth) and extracts the swarm audio
   tools/prep.sh           footage → 30 fps JPEGs at display size (crop, lanczos, unsharp, delogo), report page, photos, map
   tools/map_prep.py       Natural Earth states → Albers-projected polygons
@@ -78,6 +78,6 @@ demo/
   FACTS.md, SOURCES.md, SOURCES.jsonl, CREDITS
 ```
 
-`sh demo/build.sh` (library set up with `setup.sh deps voice music`, sample packs freepats / vsco2ce / vcsl): sources → fonts → frames → voice + speech check → cues → reading check → events → render (1,785 frames, 30 fps) → mix → .srt → master (−14 LUFS, grain 1) → `caption-news-small.mp4` (1280 px, CRF 24) → poster and styleframe (22.3 s, the split screen) → final checks.
+`sh demo/build.sh` (library set up with `setup.sh deps voice music`, sample packs from `sh tools/fetch.sh instruments all`): sources → fonts → frames → voice + speech check → cues → reading check → events → render (1,785 frames, 30 fps) → mix → .srt → master (−14 LUFS, grain 1) → `caption-news-small.mp4` (1280 px, CRF 24) → poster and styleframe (22.3 s, the split screen) → final checks.
 
-Demo-specific choices and pitfalls: the hive-rows footage is Dutch and is used only as "a box is a colony", never labelled as a US location; its station logo is cropped out and two hive stencils with a beekeeper's phone number are blurred. The almond photo is from 2014 and says so. The report's own wording sets the words: "stressor", not "killer"; "four quarters summed", not "annual net loss"; the report's page-1 figure for varroa in April–June 2026 (26.3 %) disagrees with its own table (22.2 %), so only January–March is used. A first draft spent a bar chart on "11–12 % every quarter" and later a line chart with the same quarters — the same fact twice; the bar chart was cut. Chart titles longer than six characters failed the reading check and were shortened; the California label was moved earlier so it holds 2.5 s before the push.
+Demo-specific choices and pitfalls: the hive-rows footage is Dutch and is used only as "a box is a colony", never labelled as a US location; its station logo is cropped out and two hive stencils with a beekeeper's phone number are blurred. The almond photo is from 2014; its date is recorded in `demo/SOURCES.md`. The report's own wording sets the words: "stressor", not "killer"; "four quarters summed", not "annual net loss"; the report's page-1 figure for varroa in April–June 2026 (26.3 %) disagrees with its own table (22.2 %), so only January–March is used. A first draft spent a bar chart on "11–12 % every quarter" and later a line chart with the same quarters — the same fact twice; the bar chart was cut. Chart titles longer than six characters failed the reading check and were shortened; the California label was moved earlier so it holds 2.5 s before the push.

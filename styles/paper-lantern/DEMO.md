@@ -43,7 +43,7 @@ Film time; dissolves are 0.6 s.
 - Flute tune over the harp on the viaduct and again by the river; strings tremolo in D minor into the tunnel, cut to silence for the blink; an open D major chord with a harp sweep on the way out; solo violin and strings at the sea; harp and strings under the end card.
 - Foley: snow wind, river, sea, room tone; lamp clicks, horn (two detuned saws, band-passed), brake hiss, wheel clacks and rumble, whooshes in and out of the tunnel, paper for the ticket. Everything stops during the blink.
 - Mix (`demo/mix.py`): voice compressed, RMS −18 dB; music ducked 5 dB under speech with a 300 Hz–4 kHz dip; peak-limited; `core/render/mux.sh` to −14 LUFS, true peak −1.2 dB.
-- Instruments from VSCO 2 CE, VCSL (CC0) and Salamander Grand Piano (CC BY 3.0) through `core/audio/sampler.py`.
+- Sampled instruments and the Salamander Grand Piano (CC BY 3.0) through `core/audio/sampler.py`.
 
 ## Palette & props
 
@@ -72,7 +72,7 @@ LIB=<library root> sh styles/paper-lantern/demo/build.sh          # fonts, voice
 LIB=<library root> sh styles/paper-lantern/demo/build.sh 40 51    # only a span of the film → demo/out/cut_40-51.mp4
 ```
 
-On a fresh clone, first: `sh tools/setup.sh deps voice`, `sh tools/fetch.sh instruments vsco2ce`, `sh tools/fetch.sh instruments vcsl`, `sh tools/fetch.sh instruments salamander`. `demo/tools/fonts.py` downloads the two OFL fonts and subsets Noto Serif SC to the film's characters. The narration WAVs are regenerated from `demo/voices/lines.json` when missing, then checked with `asr_check.py`.
+On a fresh clone, first: `sh tools/setup.sh deps voice`, `sh tools/fetch.sh instruments all`. `demo/tools/fonts.py` downloads the two OFL fonts and subsets Noto Serif SC to the film's characters. The narration WAVs are regenerated from `demo/voices/lines.json` when missing, then checked with `asr_check.py`.
 
 `demo/tools/timeline.py` is the one timeline: narration starts, subtitle cues, every action's time (`HIT`: the lamp, each window, the departure, the tunnel, the stop, each window going out, the card) and the shot list. The page (`timeline.json`) and `mix.py` read it; it writes `paper-lantern.srt`. Query options: `?from=a&to=b` renders a span, `?nosub=1` hides the subtitles (for stills). About 40 s for 1 530 frames with 2 workers on an M-series Mac.
 

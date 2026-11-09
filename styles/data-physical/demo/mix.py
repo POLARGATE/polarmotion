@@ -1,6 +1,6 @@
 """《两条螺旋》Two Spirals: score + sound effects + voice-over → out/mix.wav (and out/stems/)
 Reads out/timeline.json (written by tools/export.mjs) and events.json (written by core/render/events.mjs).
-96 BPM, D major. Instruments: VSCO 2 CE / VCSL samples (CC0) + numpy synthesis; all sound effects are procedural.
+96 BPM, D major. Instruments: sampled instruments + numpy synthesis; all sound effects are procedural.
 A metal sheet landing = a bright, short metallic tick; acrylic = a duller plastic tok; a brass tick sheet = a pitched note (solar: glockenspiel, wind: glass harmonica),
 stepping up the D major pentatonic scale one degree per "which 100 GW it is".
 """

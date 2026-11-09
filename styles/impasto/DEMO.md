@@ -78,7 +78,7 @@ Palette-knife scrapes sit on every repaint.
 
 ## End card
 
-Knife-painted title on deep ultramarine, a red dot (an umbrella from above), and crisp DOM text for the credits (small text must stay legible): "an impasto palette-knife study", then "Polargate · PolarMotion", then "painted and scored in code" (the sample and font credits live in `demo/CREDITS`). The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (the line lives in `demo/film.js`: remove it if you adapt that file).
+Knife-painted title on deep ultramarine, a red dot (an umbrella from above), and crisp DOM text for the credits (small text must stay legible): "an impasto palette-knife study", then "Polargate · PolarMotion", then "painted and scored in code" (the font credits live in `demo/CREDITS`). The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card (the line lives in `demo/film.js`: remove it if you adapt that file).
 
 ## Build notes
 
@@ -88,7 +88,7 @@ styles/impasto/demo/
   timeline.js        BPM grids, cut times, melodies (MEL_A, MEL_B), pops
   scenes/*.js        sets as reference illustrations (Ref.fill/line/text/tint) → paintRef()
   film.js            shots, cameras, transitions (EDIT table), post looks, end card
-  music/score.py     sampler score (CC0 instruments)   mix.py  foley + ambience + ducking + true silence
+  music/score.py     score on sampled instruments      mix.py  foley + ambience + ducking + true silence
   tools/dump_timeline.mjs  timeline → out/timeline.json    build.sh
 ```
 

@@ -140,7 +140,7 @@ Where the moves live in `main.js`:
 | spec card | `shotStory4()` with the `S4` timing table |
 | end card | `shotEnd()`, shifted as `END` |
 
-`sh demo/build.sh` needs the library set up with `setup.sh deps voice music` and the vsco2ce / vcsl sample packs.
+`sh demo/build.sh` needs the library set up with `setup.sh deps voice music` and the sample packs (`sh tools/fetch.sh instruments all`).
 
 1. Fonts.
 2. Plates and map.

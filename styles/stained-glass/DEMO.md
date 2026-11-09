@@ -51,7 +51,7 @@ Staging in pane IV: close-ups at 1.3–2.3× on a 300-unit lancet; knight lower-
 
 ## Score structure
 
-Original score (`demo/music/score.py`), medieval / plainchant feel, **D Dorian** (the raised 6th, B♮, gives the colour), 80 BPM for the metred cues. Instruments: `recorder`, `organ_soft` / `organ` / `organ_pedal`, `harp`, `hand_chimes`, `tubular_bells`, `timpani`, `glass` (water glass, "the light"), `glockenspiel` (dust glints, rare). All CC0 (VSCO 2 CE / VCSL / FreePats). Bus reverb `room(size=.8, mix≈.3)`; the bell alone at `size≈.95`.
+Original score (`demo/music/score.py`), medieval / plainchant feel, **D Dorian** (the raised 6th, B♮, gives the colour), 80 BPM for the metred cues. Instruments: `recorder`, `organ_soft` / `organ` / `organ_pedal`, `harp`, `hand_chimes`, `tubular_bells`, `timpani`, `glass` (water glass, "the light"), `glockenspiel` (dust glints, rare). All sampled. Bus reverb `room(size=.8, mix≈.3)`; the bell alone at `size≈.95`.
 
 | Cue | Time | Tempo | Orchestration | Sync |
 |---|---|---|---|---|
@@ -86,7 +86,7 @@ The carved inscription on the stone string course changes from *THE DRAGON OF TH
 
 ## Rights
 
-Original story, characters, window design and score. References (see STYLE.md header) were studied for grammar only; no Chartres window subject or religious imagery is reproduced. Samples are CC0; fonts are OFL (see `demo/CREDITS`).
+Original story, characters, window design and score. References (see STYLE.md header) were studied for grammar only; no Chartres window subject or religious imagery is reproduced. Fonts are OFL (see `demo/CREDITS`).
 
 ## Build notes
 

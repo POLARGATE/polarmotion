@@ -314,5 +314,5 @@ json.dump(dict(keys=keys, gain_db=round(float(20 * np.log10(g)), 2), peak_dbfs=-
 
 used = sorted({r[1] for r in NOTES if not r[1].startswith('pulse')})
 with open(os.path.join(HERE, 'CREDITS_music.txt'), 'w') as f:
-    f.write('\n'.join(S.credits(used) or ['Music and sound: original, made in code.']) + '\n')
+    f.write('\n'.join(S.credits(used) or ['Original score, played on sampled instruments.']) + '\n')
 print(f'score.wav {len(mix) / SR:.3f}s  gain {20 * np.log10(g):+.2f} dB  notes {len(NOTES)}  perc {len(PERC)}')

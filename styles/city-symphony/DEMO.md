@@ -45,7 +45,7 @@ Structure (chosen over a "clock face" structure and a "people vs machines" struc
 
 ## Score structure
 
-`demo/tools/music.py`, sampled instruments (CC0): organ (full, soft, pedal), flute and clarinet staccato, strings, horns, bass drum, suspended cymbal, glockenspiel, bowed vibraphone.
+`demo/tools/music.py`, sampled instruments: organ (full, soft, pedal), flute and clarinet staccato, strings, horns, bass drum, suspended cymbal, glockenspiel, bowed vibraphone.
 
 | Bars | Time | Harmony | Texture |
 |---|---|---|---|
@@ -67,7 +67,7 @@ Warm white `#EDE8DF`, secondary `#B0AAA0`, sodium orange `#D9772F` (rules, sourc
 
 ## End card
 
-Held 4.75 s over the last shot (darkened to 22 %, still moving), left-aligned, in this order: 纽约的一天 ONE DAY IN NEW YORK (one line) · a sodium rule · 延时交响 TIME-LAPSE SYMPHONY · Polargate · PolarMotion. No footage credits on screen: every CC BY work with author, full title, licence and the changes made, and the public-domain sources, live in `demo/CREDITS`. The "Polargate · PolarMotion" line belongs to this library demo only; a user's film carries no credit of the library or of an AI and no watermark.
+Held 4.75 s over the last shot (darkened to 22 %, still moving), left-aligned, in this order: 纽约的一天 ONE DAY IN NEW YORK (one line) · a sodium rule · 延时交响 TIME-LAPSE SYMPHONY · Polargate · PolarMotion. No footage credits on screen: every CC BY work with author, full title, licence and the changes made, and the fonts are credited in `demo/CREDITS`; the provenance of every file is in `demo/SOURCES.md`. The "Polargate · PolarMotion" line belongs to this library demo only; a user's film carries no credit of the library or of an AI and no watermark.
 
 ## Build notes
 

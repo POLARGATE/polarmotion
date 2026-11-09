@@ -89,7 +89,7 @@ Structure to keep when you change the brand: one accent + one gold-like secondar
 | Foley | whoosh on wipes, flap clicks on split-flaps, stamp thump + clack, trading-room ticks under market charts, map clicks per lit country, a sonar ping on a city, paper and typewriter ticks on documents, click + glockenspiel on ticks | |
 | Room | server-room hum under a tech plate, soft air under maps | very low |
 
-Master −14 LUFS, true peak −1.2 dB (`core/render/mux.sh`). Samples: VSCO 2 CE and VCSL (CC0); foley synthesised (`core/audio/sfx.py`).
+Master −14 LUFS, true peak −1.2 dB (`core/render/mux.sh`). Sampled instruments; foley synthesised (`core/audio/sfx.py`).
 
 ## 9. Native moves
 

@@ -37,7 +37,7 @@ The hesitation beat before the leap, as held-frame acting: crouch (hold) → eye
 
 ## Score structure
 
-Original big-band score (`demo/music/score.py`, VSCO 2 CE / VCSL samples via `core/audio/sampler.py`, banjo via `pluck.py`). **144 BPM, 4/4 → 1 beat = 10 frames**, 1 bar = 1.667 s, 28 bars. One original 4-bar syncopated theme, stated for the title, the chase, a slow solo-clarinet version for the tender beat, and a key-change full-band out-chorus for the climax.
+Original big-band score (`demo/music/score.py`, sampled instruments via `core/audio/sampler.py`, banjo via `pluck.py`). **144 BPM, 4/4 → 1 beat = 10 frames**, 1 bar = 1.667 s, 28 bars. One original 4-bar syncopated theme, stated for the title, the chase, a slow solo-clarinet version for the tender beat, and a key-change full-band out-chorus for the climax.
 
 Stops (hard silence including reverb tails) on the lock-eyes beat, on the suspense before a gag, and a full 2 beats of silence right after the stretch; stingers on every gag; slide whistle for every stretch / slide / fall; the xylophone *is* the plates. The projector clatter is the only sound inside the silence.
 
@@ -74,7 +74,7 @@ styles/rubber-hose/demo/
   story.js   144 BPM bar grid, VO times, subtitle cards, shots, key moments, music cues  (single source of truth)
   scenes.js  every shot: camera, props, acting            events.js  foley event list → events.json
   ui.js      title lettering, announcer title card        sheet.js   model sheets (?mode=sheet / ?mode=kitchen)
-  music/score.py  original big-band score (VSCO 2 CE / VCSL samples via core/audio/sampler.py, banjo via pluck.py)
+  music/score.py  original big-band score (sampled instruments via core/audio/sampler.py, banjo via pluck.py)
   mix.py     foley synthesis + radio-voice chain + ducking + optical-track aging
   build.sh   one-command rebuild (≈9 min, mostly TTS/speech check/sample loading; frames render in ~50 s)
 ```

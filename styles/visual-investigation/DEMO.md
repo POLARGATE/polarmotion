@@ -45,7 +45,7 @@ Cuts sit on a 0.5 s grid except where they follow the voice. Layouts fill y 60�
 
 ## Sound & score
 
-Score from VSCO 2 CE / VCSL samples (CC0), D minor. A timpani and gran-cassa hit on the opening freeze; a low D drone from the title; a pizzicato ostinato in eighths (Dm → Dm7 → B♭ → Gm → A) through the wait and the position; a pendulum tick every 0.5 s; in the four minutes the ostinato stops, the tick gets louder and a tremolo minor second (E5/F5) builds over a heartbeat-like bass pulse, cut to silence 0.2 s before the origin hit. During the newsreel commentary only the drone stays. Five rising glockenspiel notes for the ✓ badges. The 32-second run has one tick per event second (32 ticks in 4.3 s, the first 7 faster) and a rising string swell; one deep thump on impact, then near silence. The inquiry is four slow string-and-harp chords (Dm – B♭ – Gm – A) under teletype chatter. People: one cello note. The evidence map resolves on D minor add9 with a vibraphone arpeggio; the end card ends on harp. Foley is procedural: paper, shutter, Morse, keys, rewind, pencil, thump. Voice: `am_michael`, eight lines; newsreel commentary twice (3.5 s and 4.3 s). −14 LUFS, true peak about −2.4 dB (4× oversampled peak limiter in `mix.py`).
+Score from sampled instruments, D minor. A timpani and gran-cassa hit on the opening freeze; a low D drone from the title; a pizzicato ostinato in eighths (Dm → Dm7 → B♭ → Gm → A) through the wait and the position; a pendulum tick every 0.5 s; in the four minutes the ostinato stops, the tick gets louder and a tremolo minor second (E5/F5) builds over a heartbeat-like bass pulse, cut to silence 0.2 s before the origin hit. During the newsreel commentary only the drone stays. Five rising glockenspiel notes for the ✓ badges. The 32-second run has one tick per event second (32 ticks in 4.3 s, the first 7 faster) and a rising string swell; one deep thump on impact, then near silence. The inquiry is four slow string-and-harp chords (Dm – B♭ – Gm – A) under teletype chatter. People: one cello note. The evidence map resolves on D minor add9 with a vibraphone arpeggio; the end card ends on harp. Foley is procedural: paper, shutter, Morse, keys, rewind, pencil, thump. Voice: `am_michael`, eight lines; newsreel commentary twice (3.5 s and 4.3 s). −14 LUFS, true peak about −2.4 dB (4× oversampled peak limiter in `mix.py`).
 
 ## Palette & props
 
@@ -61,7 +61,7 @@ Left-aligned on the ground, held 4.4 s: "兴登堡号：四分钟与三十二秒
 demo/
   index.html          the page: render(t), TEXTS(t) for readcheck, SUBCHECK() for subtitles; all drawing helpers
   film.json           sections, voice starts, original-sound clips, bilingual subtitles (page, mix and .srt read it)
-  audio/lines.json    narration (synth. voice)audio/mix.py   score, foley, original sound, voice, ducking, limiter
+  audio/lines.json    synthetic narration      audio/mix.py   score, foley, original sound, voice, ducking, limiter
   tools/footage.py    search / fetch / licence log (writes SOURCES.jsonl, SOURCES.md)
   tools/prep.sh       raw/ → assets/ (newsreel frames, freezes, sound clips, FBI pages, photos, USGS crop)
   tools/wave.py       waveform peaks of the sound clips      tools/fonts.py   OFL subsets from Google Fonts

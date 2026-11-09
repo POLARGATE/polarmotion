@@ -104,7 +104,7 @@ Frame so the subject is at least 1/3 of the frame height at key moments (the han
 
 - **The subtitle is a map label.** A cream `#FBF4E6` card with 10 px radius and a 2 px ink border, a tiny coffee-red iso cube as the legend chip, Jost 500 at 42 px in ink. It sits bottom-centre, 64 px from the bottom edge. The border draws in first (0.2 s) and the text wipes left to right; on exit it slides down 8 px and fades.
 - Hold each line ≥ max(1.8 s, speech + 0.6 s). Lines never overlap each other, the title or the end card.
-- **End card = the map's legend**, shown in the empty cream corner: title, style name, total with the Isotype bar, "Polargate · PolarMotion", "Score & sound original" (the font and sample credits live in `demo/CREDITS`). "NOT TO SCALE" is honest and a small joke. The "Polargate · PolarMotion" sign-off belongs to this library's demo only: a user's film carries no credit of the library or of an AI and no copy of this card.
+- **End card = the map's legend**, shown in the empty cream corner: title, style name, total with the Isotype bar, "Polargate · PolarMotion", "Score & sound original" (the font credits live in `demo/CREDITS`). "NOT TO SCALE" is honest and a small joke. The "Polargate · PolarMotion" sign-off belongs to this library's demo only: a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Pitfalls we hit (demo record)
 

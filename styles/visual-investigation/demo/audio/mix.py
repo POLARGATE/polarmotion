@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Mix of score, sound effects, source audio and narration for 《兴登堡号：四分钟与三十二秒》 ("Hindenburg: Four Minutes and Thirty-two Seconds") → out/mix.wav (48 kHz stereo).
-All timings come from ../film.json. The score uses core/audio/sampler (VSCO 2 CE / VCSL, CC0); sound effects use core/audio/sfx (procedurally synthesized).
+All timings come from ../film.json. The score uses core/audio/sampler (sampled instruments); sound effects use core/audio/sfx (procedurally synthesized).
 Layers (bottom → top): bass drone → rhythm (pendulum tick / pizzicato ostinato) → harmonic pad → sound effects → source audio / narration (music ducks)."""
 import json, os, sys
 import numpy as np, soundfile as sf, soxr

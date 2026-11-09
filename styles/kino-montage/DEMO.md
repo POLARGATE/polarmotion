@@ -6,7 +6,7 @@ Demo: *410 Days* (410 天, 60.0 s) · `kino-montage.mp4` · subtitles `kino-mont
 
 The Empire State Building went from first steel (17 March 1930) to opening day (1 May 1931) in 410 days. Its own 1931 brochure has a column headed "The Men Who Did the Job" that lists owners, directors and contractors. The film asks that heading as a question and answers it with the construction film and Lewis Hine's photographs: 2,500 men a day, up to about 4,000.
 
-It is an unofficial film made entirely from public archives and real documents: a 1930–31 construction film by the steel fabricator (American Bridge Company / U.S. Steel, *Empires of Steel*), three Lewis Hine photographs (U.S. National Archives; The Metropolitan Museum of Art, CC0), and the 1931 brochure *What Everybody Wants to Know About Empire State* (Columbia University Libraries). It is not affiliated with or endorsed by the building or any company named in it. Every fact is sourced in [`demo/FACTS.md`](demo/FACTS.md), every asset in [`demo/CREDITS`](demo/CREDITS) and [`demo/SOURCES.md`](demo/SOURCES.md).
+It is an unofficial film made entirely from public archives and real documents: a 1930–31 construction film by the steel fabricator (American Bridge Company / U.S. Steel, *Empires of Steel*), three Lewis Hine photographs (U.S. National Archives; The Metropolitan Museum of Art), and the 1931 brochure *What Everybody Wants to Know About Empire State* (Columbia University Libraries). It is not affiliated with or endorsed by the building or any company named in it. Every fact is sourced in [`demo/FACTS.md`](demo/FACTS.md), every asset in [`demo/CREDITS`](demo/CREDITS) and [`demo/SOURCES.md`](demo/SOURCES.md).
 
 ## Story & structure
 
@@ -47,9 +47,9 @@ Narration (voice `am_michael`, eleven short lines) and bilingual subtitles: 5.15
 
 ## Score structure
 
-- 120 BPM, D minor, turning to D major at the chart's winner and staying there for the result. Instruments (VSCO 2 CE, VCSL; CC0): spiccato cellos, staccato bassoon, staccato tuba and trombone, horns, trumpets, contrabass, violins, violas, snare, gran cassa, timpani, xylophone, suspended cymbal, clash, gong, tubular bells.
+- 120 BPM, D minor, turning to D major at the chart's winner and staying there for the result. Sampled instruments: spiccato cellos, staccato bassoon, staccato tuba and trombone, horns, trumpets, contrabass, violins, violas, snare, gran cassa, timpani, xylophone, suspended cymbal, clash, gong, tubular bells.
 - Arc: strike (gran cassa, timpani, tuba, trombone) → trombone D–F–A under the stamped digits → the machine ostinato (D D F D A D E F in eighths) → half band under the map → timpani roll into the iris → full machine under the grid (one xylophone note per lit cell, rising) → trumpet motif over the strips → one held chord on the freeze, timpani on the jump-in → horn stabs on the brochure, ostinato an octave up → up a fourth for the 80 hours with motif and a timpani roll → **everything stops at 28** except one boom → the rivet gun alone → strings swell under the answer → pizzicato ticks under the chart, one brass chord per building (Dm, F, A, D major) held under the comparison → tutti D-major stab on the verdict → the machine rebuilds → the tower: one rising xylophone / violin note per floor, trombone chords stepping up each bar, snare roll → brass fanfare on the crown → **half a bar of silence** → D-major tutti with gong and gran cassa → strings under the last lines → a low D and tubular bell under the end card.
-- Foley (procedural, `audio/mix.py`): slams (thump + steel clank), stamps, whooshes for wipes and the iris, marker scrubs, paper rustles, pitched clanks for cells, strips and floors, a freeze click. Real recordings: the rivet gun (CC BY 4.0), a steam whistle (CC0), a construction site ambience (public domain).
+- Foley (procedural, `audio/mix.py`): slams (thump + steel clank), stamps, whooshes for wipes and the iris, marker scrubs, paper rustles, pitched clanks for cells, strips and floors, a freeze click. Real recordings: the rivet gun (CC BY 4.0), a steam whistle and a construction site ambience.
 - Mix: music ducked 70 % under the voice (about 10 dB under it), foley 35 %, ambience about 20 dB under the voice and out for the silence; mastered to −14 LUFS with peaks at −1.8 dBFS before `mux.sh`.
 
 ## Palette & props
@@ -58,7 +58,7 @@ Red `#D52B1E`, ink `#141210`, paper `#EDE4D0`; axis −18°, wipe band 72°. Typ
 
 ## End card
 
-Paper ground; "410 天" / "410 DAYS"; a red rule; "构成主义蒙太奇 / CONSTRUCTIVIST MONTAGE"; "Polargate · PolarMotion"; one line, "Unofficial film from public archives" (the archive, CC BY, font and sample credits live in `demo/CREDITS`); a still of the rider and the returning red girder. Held 4 s. The "Polargate · PolarMotion" sign-off belongs to this library demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
+Paper ground; "410 天" / "410 DAYS"; a red rule; "构成主义蒙太奇 / CONSTRUCTIVIST MONTAGE"; "Polargate · PolarMotion"; one line, "Unofficial film from public archives" (the archive, CC BY and font credits live in `demo/CREDITS`); a still of the rider and the returning red girder. Held 4 s. The "Polargate · PolarMotion" sign-off belongs to this library demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
