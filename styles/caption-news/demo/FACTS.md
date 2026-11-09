@@ -116,7 +116,7 @@ California row, source wording:
 
 ## Notes on the pictures (not statements of fact, but they must be honest)
 
-- The almond orchard photo was taken in February 2014 (USDA, McFarland, California); its corner label reads "加州杏仁园 2014" (California almond orchard 2014). It stands for the apiary setting in California, not the scene of the 2026 losses.
+- The almond orchard photo was taken in February 2014 (USDA, McFarland, California); it carries no date label on screen (the date is in demo/SOURCES.md). It stands for the apiary setting in California, not the scene of the 2026 losses.
 - The rooftop apiary video was shot in 2013 (on the roof of USDA headquarters in Washington); the lower third gives the place and year.
 - The rows-of-hives video was shot in the Netherlands (Altena TV); in the film it serves only as a picture of "one hive = one colony", carries no place label and is not presented as a US scene.
 - The channel "简闻" (Jianwen) is fictional. The film is an unofficial work and has nothing to do with USDA.
