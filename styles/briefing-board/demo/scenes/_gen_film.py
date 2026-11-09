@@ -250,7 +250,7 @@ el(type='card', id='endcard', xy=[CARD['x'], CARD['y']], w=CARD['w'], h=CARD['h'
           dict(text='ENGINEERING', font='mono', weight=600, size=72, x=72, y=-40, color='graphite', track=3),
           dict(text='BRIEFING BOARD', font='mono', weight=600, size=72, x=72, y=48, color='graphite', track=3),
           dict(text='工程简报板', font='sc', weight=700, size=78, x=72, y=160, color='graphite', track=10),
-          dict(text='LemoLab × Claude Opus 5.5', font='mono', weight=500, size=60, x=72, y=290, color='grey', track=1)])
+          dict(text='Polargate · PolarMotion', font='mono', weight=500, size=60, x=72, y=290, color='grey', track=1)])
 
 # ================================================================= camera
 r1, r2, r3, r4 = (rows[n] for n in ('beam', 'arch', 'cable', 'suspension'))

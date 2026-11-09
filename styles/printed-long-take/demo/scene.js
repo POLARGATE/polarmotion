@@ -416,7 +416,7 @@ const TITLE = skyTypeCanvas([
 const ENDC = skyTypeCanvas([
   { id: 'end-cn', text: '三十三只', px: 150, y: 170 },
   { id: 'end-en', text: 'Thirty-Three Cranes', px: 92, y: 300, x: 44 },
-  { id: 'end-sign', text: 'LemoLab × Claude Opus 5.5', px: 112, y: 470, x: 44 },
+  { id: 'end-sign', text: 'Polargate · PolarMotion', px: 112, y: 470, x: 44 },
 ], 2000, 540);
 skyMat.uniforms.tType1.value = canvasTex(TITLE.c); skyMat.uniforms.uRect1.value.set(2 * DEG, 7.6 * DEG, 26 * DEG, (7.6 + 24 * 560 / 2400) * DEG);
 skyMat.uniforms.tType2.value = canvasTex(ENDC.c); skyMat.uniforms.uRect2.value.set(2 * DEG, 11.4 * DEG, 29 * DEG, (11.4 + 27 * 540 / 2000) * DEG);

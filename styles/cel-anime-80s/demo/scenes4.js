@@ -226,7 +226,7 @@ export function endcard(S) {
   g.fillStyle = gr; g.fillText('CITY LIGHTS', W / 2, 410);
   g.font = 'italic 900 90px Kanit'; g.fillStyle = '#ff2a3a'; g.strokeStyle = '#1a0610'; g.lineWidth = 10; g.strokeText('1987', W / 2 + 430, 500); g.fillText('1987', W / 2 + 430, 500);
   g.font = '600 46px "Barlow SC"'; g.fillStyle = '#ffe98a'; g.letterSpacing = '10px'; g.fillText('80s CEL ANIME', W / 2, 610); g.letterSpacing = '0px';
-  g.font = '600 36px "Barlow SC"'; g.fillStyle = '#ffffff'; g.fillText('LemoLab  ×  Claude Opus 5.5', W / 2, 670);
+  g.font = '600 36px "Barlow SC"'; g.fillStyle = '#ffffff'; g.fillText('Polargate · PolarMotion', W / 2, 670);
   g.font = '500 29px "Barlow SC"'; g.fillStyle = rgba('#e8e0ff', .85);
   ['inspired by 1980s Japanese cel animation · all characters, vehicles and places are original', ...CREDITS].forEach((c, i) => g.fillText(c, W / 2, 790 + i * 44));
   g.restore();

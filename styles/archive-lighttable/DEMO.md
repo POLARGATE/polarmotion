@@ -63,7 +63,7 @@ Mix (in `mix.py`): music about 11 dB under the voice before ducking, ducked a fu
 
 ## End card
 
-Over the pulled-back table, bottom left: 差两秒 (Noto Serif SC), *Two Seconds Short*, a signal-orange rule, `ARCHIVE LIGHT TABLE` 档案灯台, `LemoLab × Claude Opus 5.5`; the archive index on the right. 3.7 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Over the pulled-back table, bottom left: 差两秒 (Noto Serif SC), *Two Seconds Short*, a signal-orange rule, `ARCHIVE LIGHT TABLE` 档案灯台, `Polargate · PolarMotion`; the archive index on the right. 3.7 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

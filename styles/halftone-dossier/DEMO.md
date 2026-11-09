@@ -111,7 +111,7 @@ Demo motion numbers: CHUBBY letters fall 700 px in 0.2 s each, 0.25 s apart (one
 
 ## End card
 
-**End card**: the case folder with the file label, the sleeping mascot, the 结案 stamp, and a speech bubble with the closing joke (「本片由 Claude 用代码一帧一帧画完。胖橘表示：全程没有配合。」). Our demo ends with "LemoLab × Claude Opus 5.5" (× = U+00D7). This sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card or its closing joke. In the demo it is a single centred line at the bottom of the end card (added 2026-09-26, `index.html` S10): `txt(g, 'LemoLab × Claude Opus 5.5', {x: 960, y: 1040, 'font-size': 30, 'font-family': F.mono, 'font-weight': 800, fill: C.navy, 'text-anchor': 'middle', 'letter-spacing': 3})`, faded in with a 12 px rise over 27.6–27.9 s (0.3 s after the bubble pops) and held until the navy fade. Keep it in the empty band under the folder; never cover the mascot or the stamp. Write the string literally in the source so `init()` preloads its glyphs.
+**End card**: the case folder with the file label, the sleeping mascot, the 结案 stamp, and a speech bubble with the closing joke (「本片由 PolarMotion 用代码一帧一帧画完。胖橘表示：全程没有配合。」). Our demo ends with "Polargate · PolarMotion" (× = U+00D7). This sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card or its closing joke. In the demo it is a single centred line at the bottom of the end card (added 2026-09-26, `index.html` S10): `txt(g, 'Polargate · PolarMotion', {x: 960, y: 1040, 'font-size': 30, 'font-family': F.mono, 'font-weight': 800, fill: C.navy, 'text-anchor': 'middle', 'letter-spacing': 3})`, faded in with a 12 px rise over 27.6–27.9 s (0.3 s after the bubble pops) and held until the navy fade. Keep it in the empty band under the folder; never cover the mascot or the stamp. Write the string literally in the source so `init()` preloads its glyphs.
 
 ## Making an English version
 
@@ -128,7 +128,7 @@ styles/halftone-dossier/demo/
   fonts/ fonts.css  local font slices (OFL)       CREDITS   licences
   stills/           styleframe.jpg                   out/     intermediates (gitignored)
 ```
-Run from the repo root (`lemo-opuscar/`); all paths inside the scripts are relative to `demo/`.
+Run from the repo root (`polarmotion/`); all paths inside the scripts are relative to `demo/`.
 
 1. (Only when changing fonts) `cd styles/halftone-dossier/demo && node fetch_fonts.mjs` — needs network; rewrites `fonts/` + `fonts.css`.
 2. Voice/TTS: none in this style (skip). If you add narration, time scenes to it first.

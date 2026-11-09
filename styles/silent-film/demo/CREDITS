@@ -1,8 +1,8 @@
-The Runaway Loaf — Lemo-Opuscar · 1920s Silent Film demo
-LemoLab × Claude Opus 5.5
+The Runaway Loaf — PolarMotion · 1920s Silent Film demo
+Polargate · PolarMotion
 
 Picture: everything drawn in code (Canvas2D tonal painting → WebGL2 ink redraw → WebGL2 film-print post), no generated images.
-Story, characters, score and sound design: original (Lemo-Opuscar). No narration; intertitles only.
+Story, characters, score and sound design: original (PolarMotion). No narration; intertitles only.
 
 Fonts (SIL Open Font License 1.1, licence texts in fonts/):
   Playfair Display / Playfair Display SC — Claus Eggers Sørensen

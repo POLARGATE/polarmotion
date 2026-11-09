@@ -280,7 +280,7 @@ SILK.push(
 LABELS.push(
   { id: 'tb', text: '七毫秒', x: TITLE.x + 34, y: TITLE.y + 26, cap: 90, sw: 7, align: 'left' },
   { id: 'tbE', text: 'SEVEN MILLISECONDS', x: TITLE.x + 36, y: TITLE.y + 140, cap: 30, sw: 3.8, align: 'left' },
-  { id: 'sign', text: 'LemoLab × Claude Opus 5.5', x: TITLE.x + 38, y: TITLE.y + 214, cap: 30, sw: 3.8, align: 'left' },
+  { id: 'sign', text: 'Polargate · PolarMotion', x: TITLE.x + 38, y: TITLE.y + 214, cap: 30, sw: 3.8, align: 'left' },
 );
 DESIG.push({ text: 'REV A', x: TITLE.x + TITLE.w - 24, y: TITLE.y + 22, cap: 14, align: 'right' }, { text: 'SHEET 1 OF 1', x: TITLE.x + TITLE.w - 24, y: TITLE.y + 44, cap: 9, align: 'right' });
 

@@ -1,4 +1,4 @@
-Volt · Spec Scan — Sci-fi Hologram HUD · Lemo-Opuscar · LemoLab × Claude Opus 5.5
+Volt · Spec Scan — Sci-fi Hologram HUD · Polargate · PolarMotion
 
 Picture
 - Every wireframe, HUD element, grid and light effect is drawn in code (demo/engine/holo.js, demo/engine/hud.js). No generated or stock images.

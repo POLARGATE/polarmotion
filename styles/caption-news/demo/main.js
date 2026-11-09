@@ -514,7 +514,7 @@ function shotEnd(s, t) {
   text('The Bee Ledger', L + 4, 418, `800 62px ${F.n8}`, C.honey);
   ctx.fillStyle = 'rgba(247,245,239,.5)'; ctx.fillRect(L + 4, 462, 720 * eo(seg(t, s.a + .4, s.a + .8)), 2);
   text('CAPTION NEWS', L + 4, 528, `800 32px ${F.n8}`, C.ink); text('· 字幕新闻', L + 4 + tw('CAPTION NEWS', `800 32px ${F.n8}`) + 14, 528, `900 32px ${F.zh9}`, C.ink);
-  text('LemoLab × Claude Opus 5.5', L + 4, 584, `500 32px ${F.n5}`, C.dim);
+  text('Polargate · PolarMotion', L + 4, 584, `500 32px ${F.n5}`, C.dim);
   ctx.restore();
   const k3 = eo(seg(t, s.a + .6, s.a + .9)); ctx.save(); ctx.globalAlpha = k3 * .92;
   const CR = [
@@ -526,7 +526,7 @@ function shotEnd(s, t) {
   ];
   CR.forEach((l, i) => text(l, L + 4, 860 + i * 34, `500 20px ${F.n5}`, C.dim));
   ctx.restore();
-  if (t > s.a + .3) { TX.push({ id: 'endT', text: '蜜蜂账本', x0: L, y0: 200, x1: 760, y1: 350 }); TX.push({ id: 'endE', text: 'The Bee Ledger', x0: L, y0: 360, x1: 760, y1: 430 }); TX.push({ id: 'endS', text: 'CAPTION NEWS · 字幕新闻', x0: L, y0: 490, x1: 760, y1: 540 }); TX.push({ id: 'endL', text: 'LemoLab × Claude Opus 5.5', x0: L, y0: 550, x1: 760, y1: 600 }); }
+  if (t > s.a + .3) { TX.push({ id: 'endT', text: '蜜蜂账本', x0: L, y0: 200, x1: 760, y1: 350 }); TX.push({ id: 'endE', text: 'The Bee Ledger', x0: L, y0: 360, x1: 760, y1: 430 }); TX.push({ id: 'endS', text: 'CAPTION NEWS · 字幕新闻', x0: L, y0: 490, x1: 760, y1: 540 }); TX.push({ id: 'endL', text: 'Polargate · PolarMotion', x0: L, y0: 550, x1: 760, y1: 600 }); }
 }
 
 // ---------- main render ----------

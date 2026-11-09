@@ -56,6 +56,6 @@ export const LABELS = {
   puck: '2025 · 太阳能装机是风电的 1.86 倍',
   title: '两条螺旋', titleEn: 'Two Spirals',
   style: 'DATA PHYSICALIZATION · 数据实物化',
-  sign: 'LemoLab × Claude Opus 5.5',
+  sign: 'Polargate · PolarMotion',
   source: '数据：IRENA (2026)，经 Our World in Data 整理 · CC BY 4.0',
 };

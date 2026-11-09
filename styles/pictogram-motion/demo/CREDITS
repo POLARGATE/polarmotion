@@ -1,5 +1,5 @@
-LEFT BEHIND 被落下的伞 — Pictogram Motion (象形运动图形) demo of the Lemo-Opuscar library
-LemoLab × Claude Opus 5.5
+LEFT BEHIND 被落下的伞 — Pictogram Motion (象形运动图形) demo of the PolarMotion library
+Polargate · PolarMotion
 
 Picture
 - Made entirely in code (Canvas2D): engine.js, film.js. No generated images, no photos, no third-party artwork.

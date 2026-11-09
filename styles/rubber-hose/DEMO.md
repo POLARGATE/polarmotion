@@ -62,7 +62,7 @@ Voice: an old radio announcer calling the action like a horse race (Kokoro `bm_l
 
 ## End card
 
-Same sunburst, a wavy-edged sign with "The End", the style name, `LemoLab × Claude Opus 5.5`, small credit lines at the bottom; it opens with an iris from black. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Same sunburst, a wavy-edged sign with "The End", the style name, `Polargate · PolarMotion`, small credit lines at the bottom; it opens with an iris from black. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

@@ -7,8 +7,8 @@ export const CARDS = {
   END: { level: 2, dy: -10, lines: [
     { text: 'The End', font: 'Playfair Display SC', weight: 900, size: 104 },
     { text: 'The Runaway Loaf  ·  1920s Silent Film', italic: true, size: 34, spacing: 1 },
-    { text: 'LEMO-OPUSCAR', font: 'Playfair Display SC', weight: 700, size: 30, spacing: 8 },
-    { text: 'LemoLab × Claude Opus 5.5', size: 30 },
+    { text: 'POLARMOTION', font: 'Playfair Display SC', weight: 700, size: 30, spacing: 8 },
+    { text: 'Polargate · PolarMotion', size: 30 },
     { text: 'Piano: VSCO 2 CE upright  ·  Reed organ: FreePats  (CC0)', italic: true, size: 24 },
     { text: 'Fonts: Playfair Display, Old Standard TT (OFL)', italic: true, size: 24 },
   ], gap: 1.55 },

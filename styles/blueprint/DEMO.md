@@ -107,7 +107,7 @@ Demo motion numbers: exploded parts leave one every ~0.055 of the progress on ei
 
 ## End card
 
-**End card**: the title block. The last row is lettered in: STYLE: BLUEPRINT / DRAWN BY: LemoLab × Claude Opus 5.5. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+**End card**: the title block. The last row is lettered in: STYLE: BLUEPRINT / DRAWN BY: Polargate · PolarMotion. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

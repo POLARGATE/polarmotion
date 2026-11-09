@@ -1,4 +1,4 @@
-Measured Blue (量出来的蓝) — Microscope Story (Lemo-Opuscar) · LemoLab × Claude Opus 5.5
+Measured Blue (量出来的蓝) — Microscope Story · Polargate · PolarMotion
 
 No AI-generated images, no stock footage. Every pixel of glass and tissue is one real whole-slide scan and the
 scanner's own photo of that slide; every line, label and number is drawn in code from the file's metadata.
@@ -35,10 +35,8 @@ VOICE
 MUSIC AND SOUND (original score and foley, made in code for this film: mix.py)
 - Sampled instruments through core/audio/sampler.py, all CC0 1.0:
   vibraphone, vibraphone_hard, vibraphone_bowed, marimba, glockenspiel — Versilian Community Sample Library (VCSL)
-  https://github.com/sgossner/VCSL
   glass (water glasses) — FreePats project https://freepats.zenvoid.org
   timpani, bass_drum — VS Chamber Orchestra: Community Edition (Versilian Studios / Sam Gossner)
-  https://github.com/sgossner/VSCO-2-CE
   gran_cassa, sus_cymbal — VCSL
 - Synthesized in numpy (no samples): pulse bass, objective turret click and servo, pen on glass, scan noise and
   counter ticks, focal sweep, whooshes, riser, room tone.

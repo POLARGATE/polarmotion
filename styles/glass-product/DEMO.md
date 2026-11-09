@@ -58,7 +58,7 @@ Voice: Kokoro `am_michael`, speed 0.86–0.88, 3–4 very short lines. "Aura." a
 
 ## End card
 
-The title stays; credits (style name, `LemoLab × Claude Opus 5.5`) fade in at the bottom over a soft dark gradient while the camera pulls back to make room; fade to black in the last 0.6 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The title stays; credits (style name, `Polargate · PolarMotion`) fade in at the bottom over a soft dark gradient while the camera pulls back to make room; fade to black in the last 0.6 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Rights
 

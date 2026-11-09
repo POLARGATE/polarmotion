@@ -62,7 +62,7 @@ Mix (`demo/mix.py`): music balanced to sit 10 dB under the voice while it speaks
 
 ## End card
 
-Over the white model as the house lights return, a left block: 被炸平的城市怎样长回来 (Noto Sans SC 500, 64 px), *How a Flattened City Grew Back* (Inter Tight 200), an amber rule, `白模投影 · PROJECTION ON WHITE MODEL`, `3DBAG · BAG · BGT · 鹿特丹市档案馆`, `LemoLab × Claude Opus 5.5`. 35.7–40.0 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Over the white model as the house lights return, a left block: 被炸平的城市怎样长回来 (Noto Sans SC 500, 64 px), *How a Flattened City Grew Back* (Inter Tight 200), an amber rule, `白模投影 · PROJECTION ON WHITE MODEL`, `3DBAG · BAG · BGT · 鹿特丹市档案馆`, `Polargate · PolarMotion`. 35.7–40.0 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

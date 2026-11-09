@@ -902,13 +902,13 @@ function buildAll() {
     el('rect', { x: -420, y: -95, width: 840, height: 190, rx: 30, fill: C.navy, transform: 'translate(12 12)' }, bub);
     el('rect', { x: -420, y: -95, width: 840, height: 190, rx: 30, fill: C.cream, stroke: C.navy, 'stroke-width': 6 }, bub);
     el('rect', { x: -318, y: 58, width: 80, height: 22, fill: C.cream }, bub);
-    txt(bub, '本片由 Claude 用代码一帧一帧画完。', { x: 0, y: -14, 'font-size': 44, 'font-family': F.sans, 'font-weight': 900, fill: C.navy, 'text-anchor': 'middle' });
+    txt(bub, '本片由 PolarMotion 用代码一帧一帧画完。', { x: 0, y: -14, 'font-size': 44, 'font-family': F.sans, 'font-weight': 900, fill: C.navy, 'text-anchor': 'middle' });
     const l2 = txt(bub, '', { x: 0, y: 50, 'font-size': 44, 'font-family': F.sans, 'font-weight': 900, fill: C.navy, 'text-anchor': 'middle' });
     l2.innerHTML = '胖橘表示：<tspan fill="#E8384F">全程没有配合。</tspan>';
     const meow = el('g', {}, g);
     txt(meow, '喵', { x: 0, y: 0, 'font-size': 64, 'font-family': F.cute, fill: C.pink, 'text-anchor': 'middle', stroke: C.navy, 'stroke-width': 8, 'paint-order': 'stroke' });
     // end credit line
-    const credit = txt(g, 'LemoLab × Claude Opus 5.5', { x: 960, y: 1040, 'font-size': 30, 'font-family': F.mono, 'font-weight': 800, fill: C.navy, 'text-anchor': 'middle', 'letter-spacing': 3 });
+    const credit = txt(g, 'Polargate · PolarMotion', { x: 960, y: 1040, 'font-size': 30, 'font-family': F.mono, 'font-weight': 800, fill: C.navy, 'text-anchor': 'middle', 'letter-spacing': 3 });
     return (t) => {
       op(credit, seg(t, 27.6, 27.9)); tf(credit, 0, 12 * (1 - E.out(seg(t, 27.6, 27.9))));
       tf(folder, 960, lerp(1400, 720, E.back(seg(t, 26.0, 26.45))), 1, -2);

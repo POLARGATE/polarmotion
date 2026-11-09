@@ -62,7 +62,7 @@ Ink `#16171b`, paper `#ede5cd`, red `#c4332b` only on crowns (each with a thin p
 
 ## End card
 
-Cut into the day sky as an ink plate over the still wide shot, upper right and at least 5% inside the frame: 三十三只 / Thirty-Three Cranes / LemoLab × Claude Opus 5.5, from 56.8 to 60.0 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Cut into the day sky as an ink plate over the still wide shot, upper right and at least 5% inside the frame: 三十三只 / Thirty-Three Cranes / Polargate · PolarMotion, from 56.8 to 60.0 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

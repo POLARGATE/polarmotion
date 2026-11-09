@@ -8,7 +8,7 @@ const GW = GS * .4, GH = GS * .8, BASE = GS * .64;   // atlas cell 64×128, base
 const PAD = 4;                  // padding between atlas cells so scaled sampling doesn't bleed between glyphs
 const CHARS = [];
 for (let c = 32; c < 127; c++) CHARS.push(String.fromCharCode(c));
-CHARS.push('\u00d7');   // the × on the end card
+CHARS.push('\u00b7');   // the · on the end card
 export const COLS_ATLAS = 16;
 
 export let ATLAS = null;        // { red, green, alpha:Uint8 per glyph, cov:{ch:coverage} }

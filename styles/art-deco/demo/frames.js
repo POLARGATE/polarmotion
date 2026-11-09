@@ -50,7 +50,7 @@ export function kit(g) {
   D.fan(g, 1815, 755, 60, { ribs: 9, fill: '#4a0c17', open: .7 });
   // 6 bulb sign
   panel(g, 30, 790, 1100, 270, '06 · BULB MARQUEE   buildSign(text) + drawSign(g, sign, x, y, s, {lit})');
-  const sign = B.buildSign('LEMO-OPUSCAR', { size: 200, spacing: 17 });
+  const sign = B.buildSign('POLARMOTION', { size: 200, spacing: 17 });
   const s = 1040 / sign.w;
   B.drawSign(g, sign, 60, 830, s, { lit: (li, bi, gi) => li < 6 ? (gi % 5 === 0 ? 1.3 : 1) : li === 6 ? (bi < 6 ? 1 : 0) : 0 });
   // 7 subtitle + one colour
@@ -188,6 +188,6 @@ export function oneColour(g, t) {
   g.fillStyle = D.C.black; g.fillRect(0, 0, 1920, 1080);
   D.sunburst(g, 960, 540, { rays: 72, r1: 1400, mode: 'wedges' });
   D.drawShape(g, D.starPts(960, 440, 120, .22), { color: '#D97757', halo: 1, trail: { ang: Math.PI, len: 420, n: 4 } });
-  const sign = B.buildSign('LEMO', { size: 260, spacing: 20 });
-  B.drawSign(g, sign, 560, 700, 1, { lit: B.litSequence(t, [0, .5, 1, 1.5], { chaseFrom: 2.5 }), color: '#D97757' });
+  const sign = B.buildSign('POLAR', { size: 260, spacing: 20 });
+  B.drawSign(g, sign, 560, 700, 1, { lit: B.litSequence(t, [0, .5, 1, 1.5, 2], { chaseFrom: 2.5 }), color: '#D97757' });
 }

@@ -103,7 +103,7 @@ export function makeOverlay(canvas) {
     g.save(); g.globalAlpha = a; g.fillStyle = '#ffa13d'; g.fillRect(X, Y + 96, 120 * k, 2); g.restore();
     txt('end_style', '白模投影 · PROJECTION ON WHITE MODEL', X, Y + 140, 'mono', 22, 'rgba(230,234,240,.85)', a, { ls: 2 });
     txt('end_data', '3DBAG · BAG · BGT · 鹿特丹市档案馆', X, Y + 176, 'sc3', 21, 'rgba(225,230,236,.7)', a, { ls: 1 });
-    txt('end_sign', 'LemoLab × Claude Opus 5.5', X, Y + 236, 'num4', 26, '#ffffff', a);
+    txt('end_sign', 'Polargate · PolarMotion', X, Y + 236, 'num4', 26, '#ffffff', a);
   }
 
   return { g, begin, txt, width, env, scrims, readout, pin, rangeLine, subtitle, endCard, texts: () => TX };

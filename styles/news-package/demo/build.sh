@@ -1,5 +1,5 @@
 #!/bin/sh
-# Broadcast News Package — "The Week in AI" (本周 AI 四件事, "four AI stories this week"), LEMO AI NEWS week 42: one-command build.
+# Broadcast News Package — "The Week in AI" (本周 AI 四件事, "four AI stories this week"), POLAR AI NEWS week 42: one-command build.
 # fonts → plates grade + map projections → voice (+ speech check) → reading check → events → picture → mix → master → .srt → stills
 # Needs the library set up with `setup.sh deps voice music` and the vsco2ce / vcsl sample packs; the voice uses Doubao TTS (optional, see below).
 # The two illustrative plates are committed in assets/plates/ (AI-generated, see CREDITS); tools/gen_plates.sh makes new ones.

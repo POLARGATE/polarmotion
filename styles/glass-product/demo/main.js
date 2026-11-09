@@ -289,7 +289,7 @@ function hud(t) {
     g.save(); g.globalAlpha = ss(seg(t, T.end + .3, T.end + 1.0));
     g.fillStyle = 'rgba(255,255,255,.22)'; g.fillRect(W / 2 - 60, H - 118, 120, 1);
     g.fillStyle = '#c3ccd5'; spaced('GLASS PRODUCT RENDER', W / 2, H - 86, '500 19px "Inter Tight"', 8);
-    g.fillStyle = '#8f9aa6'; spaced('LemoLab × Claude Opus 5.5', W / 2, H - 50, '300 21px "Inter Tight"', 2);
+    g.fillStyle = '#8f9aa6'; spaced('Polargate · PolarMotion', W / 2, H - 50, '300 21px "Inter Tight"', 2);
     g.restore();
     const fo = seg(t, DUR - .6, DUR); if (fo > 0) { g.fillStyle = `rgba(0,0,0,${ss(fo)})`; g.fillRect(0, 0, W, H); }
   }

@@ -358,7 +358,7 @@ def texts(t, f):
         L.rect([x0 + 2, 350, x0 + 2 + int(640 * ease(u / .5)), 351], SODIUM, out)
         L.text('s_style_cn', x0, 376, '延时交响', font(F_SC, 26, 350), INK, .14, fd(.05))
         L.text('s_style_en', x0 + 132, 384, 'TIME-LAPSE SYMPHONY', font(F_LAT, 15), DIM, .3, fd(.05))
-        L.text('s_lemo', x0, 432, 'LemoLab × Claude Opus 5.5', font(F_SC, 24, 400), INK, .04, fd(.1))
+        L.text('s_sign', x0, 432, 'Polargate · PolarMotion', font(F_SC, 24, 400), INK, .04, fd(.1))
         fc = font(F_SC, 16, 380); y = 530
         for k, line in enumerate(CREDIT_LINES):
             L.text(f's_cr{k}', x0, y + k * 29, line, fc, (196, 190, 180), .01, fd(.1), final=False)

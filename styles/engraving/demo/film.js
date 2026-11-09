@@ -291,8 +291,8 @@ export function makeFilm(C, voiceDur = {}) {
     const e0 = T.end[0] + 0.3, E = C.end || {}, q = (a, b) => seg(t, e0 + a, e0 + b);
     engraveText(ctx, String(E.film_title || C.title || '').toUpperCase(), 960, 420, { size: 46, weight: 600, track: 0.14, p: q(0, 0.5) });
     engraveText(ctx, E.style_name || 'Copperplate Engraving', 960, 478, { size: 27, italic: true, p: q(0.05, 0.45) });
-    engraveText(ctx, 'LEMO-OPUSCAR', 960, 580, { size: 20, weight: 600, track: 0.3, p: q(0.1, 0.45) });
-    engraveText(ctx, 'LemoLab × Claude Opus 5.5', 960, 622, { size: 23, italic: true, p: q(0.1, 0.45) });
+    engraveText(ctx, 'POLARMOTION', 960, 580, { size: 20, weight: 600, track: 0.3, p: q(0.1, 0.45) });
+    engraveText(ctx, 'Polargate · PolarMotion', 960, 622, { size: 23, italic: true, p: q(0.1, 0.45) });
     (E.credits || []).forEach((c, i) => engraveText(ctx, c, 960, 720 + i * 30, { size: 17, weight: 500, track: 0.04, p: q(0.15, 0.5) }));
     ctx.restore();
   }

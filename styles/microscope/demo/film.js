@@ -460,7 +460,7 @@ function card(c, t) {
   line([[x + 4, y + 104], [x + 4 + 520 * rl, y + 104]], 'rgba(24,27,31,0.55)', null, 1.4, a);
   const b = a * ss(seg(t, T.card + 0.35, T.card + 0.75));
   text('MICROSCOPE STORY · 显微叙事', x + 4, y + 146, '500 22px PM', 'rgba(24,27,31,0.8)', { alpha: b, id: 'c3' });
-  text('LemoLab × Claude Opus 5.5', x + 4, y + 184, '400 24px BC', 'rgba(24,27,31,0.8)', { alpha: b, id: 'c4' });
+  text('Polargate · PolarMotion', x + 4, y + 184, '400 24px BC', 'rgba(24,27,31,0.8)', { alpha: b, id: 'c4' });
   text('数据：Ventana-1 · PathAI · CC0', x + 4, y + 220, '400 20px SC', 'rgba(24,27,31,0.6)', { alpha: b, id: 'c5' });
 }
 

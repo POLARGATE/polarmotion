@@ -62,7 +62,7 @@ Paper mat #e2e8f5 with dots #c4cde3 on light oak; cards and screens near-white, 
 
 ## End card
 
-Over the closing wide view, under the title card in the middle of the desk, from 57.0 s: LemoLab × Claude Opus 5.5 in a light plate at the subtitle position, to the end, over the held final chord. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Over the closing wide view, under the title card in the middle of the desk, from 57.0 s: Polargate · PolarMotion in a light plate at the subtitle position, to the end, over the held final chord. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

@@ -150,7 +150,7 @@ export function drawOverlay(t, cam, ctx) {
       { id: 'cardE', font: `300 36px ${LAT}`, col: INK, text: '21 Keys, Opened', y: 528, d: .25 },
       { id: 'cardS', font: `400 17px ${MONO}`, col: DIM, text: '产品拆解 · EXPLODED TEARDOWN', y: 600, d: .45 },
       { id: 'cardC', font: `400 15px ${MONO}`, col: DIM, text: 'CAD：foostan/crkbd · CC BY 4.0', y: 632, d: .55 },
-      { id: 'cardL', font: `500 18px ${MONO}`, col: INK, text: 'LemoLab × Claude Opus 5.5', y: 700, d: .75 },
+      { id: 'cardL', font: `500 18px ${MONO}`, col: INK, text: 'Polargate · PolarMotion', y: 700, d: .75 },
     ];
     g.globalAlpha = fade(t, k0, .5); g.fillStyle = ACC; g.fillRect(150, 378, 46 * eo(seg(t, k0, k0 + .6)), 4);
     for (const it of items) {

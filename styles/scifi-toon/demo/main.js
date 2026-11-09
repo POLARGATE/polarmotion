@@ -453,7 +453,7 @@ function endCard(t) {
   const b = ss(seg(t, T.end + .5, T.end + 1));
   g.globalAlpha = b;
   text('SCI-FI SITCOM TOON', 960, 452, { font: '400 66px VT323', fill: '#ffe066', outlineW: 9 });
-  text('LemoLab × Claude Opus 5.5', 960, 880, { font: '800 44px "Baloo 2"', fill: '#fff', outlineW: 8 });
+  text('Polargate · PolarMotion', 960, 880, { font: '800 44px "Baloo 2"', fill: '#fff', outlineW: 8 });
   CREDITS.forEach((c, i) => text(c, 960, 948 + i * 36, { font: '700 25px "Baloo 2"', fill: 'rgba(255,255,255,.82)' }));
   g.globalAlpha = 1;
 }

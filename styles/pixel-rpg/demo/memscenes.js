@@ -285,7 +285,7 @@ export function endCard(fb, t, lt) {
   textOutlined(fb, s1, Math.round((W - textW(s1, 2)) / 2), 64, c2, C.ink, 2);
   const cont = 'CONTINUE';
   if (lt > .6) { text(fb, cont, 160 - Math.round(textW(cont) / 2) + 4, 94, C.white, C.navy); if (Math.floor(t * 2.5) % 2 === 0) text(fb, '▶', 160 - Math.round(textW(cont) / 2) - 8, 94, C.yellow); }
-  const l1 = '16-BIT PIXEL RPG · LEMO-OPUSCAR', l2 = 'LemoLab × Claude Opus 5.5';
+  const l1 = '16-BIT PIXEL RPG · POLARMOTION', l2 = 'Polargate · PolarMotion';
   text(fb, l1, Math.round((W - textW(l1)) / 2), 132, C.steel, C.ink);
   text(fb, l2, Math.round((W - textW(l2)) / 2), 146, C.silver, C.ink);
   // A red scarf drifts across from the lower left on the wind

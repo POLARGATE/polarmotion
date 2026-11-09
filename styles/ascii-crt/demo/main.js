@@ -550,7 +550,7 @@ function sBase(s, amp, innerFn) {
   g.globalAlpha = 1; g.drawImage(inner, x0, y0, SCR.w * s, SCR.h * s);
   g.restore();
 }
-const CARD1 = 'ASCII / CRT TERMINAL', CARD2 = 'LemoLab × Claude Opus 5.5';
+const CARD1 = 'ASCII / CRT TERMINAL', CARD2 = 'Polargate · PolarMotion';
 regTyping(CARD1, T.card, .06); regTyping(CARD2, T.card + .8, .035, 'keyLight');
 ev(T.off0, 'poweroff');
 function sCard(t) {
@@ -606,7 +606,7 @@ window.render = t => {
   else if (f === 'poster') {                       // poster: Earthrise + title
     begin(); sPicture(40.2);
     text(g, TITLE, 0, 0, { ox: 120, oy: 110, cw: 46 }, 1.1); cursor(g, TITLE.length, 0, { ox: 120, oy: 110, cw: 46 }, 1);
-    text(g, 'ASCII / CRT TERMINAL  -  LemoLab \u00d7 Claude Opus 5.5', 0, 0, { ox: 124, oy: 216, cw: 14 }, .7);
+    text(g, 'ASCII / CRT TERMINAL  -  Polargate \u00b7 PolarMotion', 0, 0, { ox: 124, oy: 216, cw: 14 }, .7);
   }
   else if (f === 'base') { begin(); sBase(1, 1, () => { sPicture(51); sSmile(52.5); }); }
   else P = film(t);

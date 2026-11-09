@@ -58,7 +58,7 @@ Mix (`demo/mix.py`): stems set against the voice's active RMS (music −10.9 dB,
 
 ## End card
 
-Left third over the turning dial: 两条螺旋 (Noto Serif SC), *Two Spirals*, a rule, `DATA PHYSICALIZATION · 数据实物化`, `LemoLab × Claude Opus 5.5`; above it the accent line with its leader to the puck; the data source stays in the top-right corner from the crane on. 4.6 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Left third over the turning dial: 两条螺旋 (Noto Serif SC), *Two Spirals*, a rule, `DATA PHYSICALIZATION · 数据实物化`, `Polargate · PolarMotion`; above it the accent line with its leader to the puck; the data source stays in the top-right corner from the crane on. 4.6 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

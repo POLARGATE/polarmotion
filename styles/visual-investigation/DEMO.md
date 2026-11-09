@@ -53,7 +53,7 @@ Exactly the style palette: `#0B0C0E` ground, `#141619` panels, greyscale sources
 
 ## End card
 
-Left-aligned on the ground, held 4.4 s: "兴登堡号：四分钟与三十二秒", "THE HINDENBURG: FOUR MINUTES, 32 SECONDS", a thin rule, "视觉调查 · Visual Investigation", "LemoLab × Claude Opus 5.5", then the source lines (newsreel and sound; photos; documents; map; "unofficial film; photo times, camera positions and the film alignment are our inferences"). Four evidence thumbnails on the right. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Left-aligned on the ground, held 4.4 s: "兴登堡号：四分钟与三十二秒", "THE HINDENBURG: FOUR MINUTES, 32 SECONDS", a thin rule, "视觉调查 · Visual Investigation", "Polargate · PolarMotion", then the source lines (newsreel and sound; photos; documents; map; "unofficial film; photo times, camera positions and the film alignment are our inferences"). Four evidence thumbnails on the right. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

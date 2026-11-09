@@ -404,5 +404,5 @@ sf.write(os.path.join(HERE, 'score.wav'), mix, SR)
 motif_json = [[bp_, p, d] for bp_, p, d in MOTIF]
 json.dump({'keys': {k: round(float(v), 4) for k, v in KEYS.items()}, 'motif': motif_json, 'motif_key': 'Bb major (song finale transposed +3 to Db)',
            'bpm': 116, 'dur': DUR}, open(os.path.join(HERE, 'score.json'), 'w'), indent=1)
-open(os.path.join(HERE, 'CREDITS_music.txt'), 'w').write('Original score "Midnight at the Starlight" (Lemo-Opuscar art-deco demo), composed in code.\n' + '\n'.join(S.credits(sorted(USED))) + '\n')
+open(os.path.join(HERE, 'CREDITS_music.txt'), 'w').write('Original score "Midnight at the Starlight" (PolarMotion art-deco demo), composed in code.\n' + '\n'.join(S.credits(sorted(USED))) + '\n')
 print('score.wav', round(len(mix) / SR, 3), 's  gain', round(g, 3), ' instruments:', ', '.join(sorted(USED)))

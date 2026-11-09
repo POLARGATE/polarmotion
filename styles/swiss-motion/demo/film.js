@@ -374,17 +374,17 @@ function drawEndCard(g, t, opt = {}) {
   if (t < T.home - E8) return;
   const p = snap(t, T.home + E8, E8);
   if (opt.poster) {      // poster: the film title as main headline
-    captionRow(g, 0, 1, 0, 'Swiss Motion Graphics', 'A Lemo-Opuscar film', 'LemoLab \u00d7 Claude Opus 5.5');
+    captionRow(g, 0, 1, 0, 'Swiss Motion Graphics', 'A PolarMotion film', 'Polargate \u00b7 PolarMotion');
     font(g, 700, 120); g.fillStyle = C.ink; g.fillText('Five Rules', fx(0), 168); g.fillText('for a Poster', fx(0), 276);
     font(g, 500, 19); ['Typeface Archivo', 'Score A dorian \u00b7 120 bpm', 'Grid 7 \u00d7 16'].forEach((s, i) => g.fillText(s, fx(4), 992 + i * 26));
     g.fillRect(fx(4), 962, FC * 2 + FG, 1);
     return;
   }
-  captionRow(g, 0, p, 0, 'Five Rules for a Poster', 'A Lemo-Opuscar film', '2026');
+  captionRow(g, 0, p, 0, 'Five Rules for a Poster', 'A PolarMotion film', '2026');
   font(g, 700, 120); g.fillStyle = C.ink;
   let x = fx(0); ['Swiss', 'Motion'].forEach((w, i) => { revealText(g, w, x, 168, 120, snap(t, T.home + E8 + i * E8, E16)); x += textW(g, w + ' '); });
   x = fx(0); revealText(g, 'Graphics', x, 276, 120, snap(t, T.home + E8 + 2 * E8, E16));
-  font(g, 600, 36); revealText(g, 'LemoLab × Claude Opus 5.5', fx(0), 372, 36, snap(t, T.home + BEAT * 2, E16));
+  font(g, 600, 36); revealText(g, 'Polargate · PolarMotion', fx(0), 372, 36, snap(t, T.home + BEAT * 2, E16));
   font(g, 500, 19); g.fillStyle = C.ink;
   ['Typeface Archivo', 'Score A dorian · 120 bpm', 'Voice Kokoro af_sarah'].forEach((s, i) => revealText(g, s, fx(4), 992 + i * 26, 19, snap(t, T.home + BEAT * 3 + i * E16, E16)));
   g.fillRect(fx(4), 962, (FC * 2 + FG) * snap(t, T.home + BEAT * 3, E8), 1);

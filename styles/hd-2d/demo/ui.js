@@ -15,7 +15,7 @@ export async function overlayReady() {
 export const CREDIT = { music: 'Music: “Precipice” by Scott Buckley — scottbuckley.com.au (CC BY 4.0)   ·   Voices: Kokoro TTS' };
 // End credits: on by default; ?nocredit=1 turns them off (the end then keeps only the music and voice credits)
 const SHOW_TEAM = !new URLSearchParams(location.search).has('nocredit');
-CREDIT.team = 'LemoLab × Claude Opus 5.5';
+CREDIT.team = 'Polargate · PolarMotion';
 
 // Thin gold line + diamond ornament
 function ornament(cx, y, w, a) {

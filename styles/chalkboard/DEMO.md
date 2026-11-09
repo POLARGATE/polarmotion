@@ -58,7 +58,7 @@ Slate #0f1c15 with slow mottling; white chalk, orange chalk (the bow, 身, the �
 
 ## End card
 
-The front panel slides back over the rewritten board; on the clean right panel 汉字的故事 / The Story of Chinese Characters and "LemoLab × Claude Opus 5.5" are written in chalk and held about 3.5 s. The sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The front panel slides back over the rewritten board; on the clean right panel 汉字的故事 / The Story of Chinese Characters and "Polargate · PolarMotion" are written in chalk and held about 3.5 s. The sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

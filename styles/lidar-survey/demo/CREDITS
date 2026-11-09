@@ -1,4 +1,4 @@
-The Fields Under the Forest (林下的田) — LiDAR Survey (Lemo-Opuscar) · LemoLab × Claude Opus 5.5
+The Fields Under the Forest (林下的田) — LiDAR Survey · Polargate · PolarMotion
 
 No AI-generated images, no stock footage, no commercial basemaps. Every point and every surface in the film is
 computed from public-domain airborne lidar; the opening photograph is a public-domain aerial; every line, label
@@ -47,4 +47,4 @@ MUSIC AND SOUND
 
 SOFTWARE
 - three.js 0.170.0 (MIT), playwright-core + headless Chromium, FFmpeg; laspy + lazrs (BSD-2 / Apache-2.0),
-  NumPy, SciPy, scikit-image, fontTools; Lemo-Opuscar core/ (render, tts, audio).
+  NumPy, SciPy, scikit-image, fontTools; PolarMotion core/ (render, tts, audio).

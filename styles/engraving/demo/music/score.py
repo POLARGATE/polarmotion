@@ -363,7 +363,7 @@ os.makedirs(os.path.join(MOUT, 'stems'), exist_ok=True)
 for k in STEMS: sf.write(os.path.join(MOUT, 'stems', k + '.wav'), np.clip(bus[k] * GAIN[k] * sc, -1, 1).astype(np.float32), SR, subtype='PCM_24')
 json.dump(sorted(CUES, key=lambda c: c['t']), open(os.path.join(MOUT, 'cues.json'), 'w'), indent=1, ensure_ascii=False)
 open(os.path.join(MOUT, 'CREDITS_music.txt'), 'w').write(
-    'Original score for "The Honeybee, Plate VII" (Copperplate Engraving demo, Lemo-Opuscar), composed in code (music/score.py).\n'
+    'Original score for "The Honeybee, Plate VII" (Copperplate Engraving demo, PolarMotion), composed in code (music/score.py).\n'
     'Instruments: harpsichord; violin, violins, violas, cellos, contrabass (pizzicato and arco).\n'
     + '\n'.join(S.credits(sorted(USED))) + '\n')
 

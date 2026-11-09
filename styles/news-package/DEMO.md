@@ -4,7 +4,7 @@ One example among many. Don't reuse its story, arc, shots, props or timings.
 
 Demo: *The Week in AI* (本周 AI 四件事, 53.5 s) · `news-package.mp4` · subtitles `news-package.srt` (external only, Chinese + English) · source in [`demo/`](demo/)
 
-LEMO AI NEWS, LemoLab's own channel, reports four stories from the week of 12–18 October 2026, with a Chinese anchor voice:
+POLAR AI NEWS, an invented channel, reports four stories from the week of 12–18 October 2026, with a Chinese anchor voice:
 
 1. Google opens Gemini 4 Argon to every developer, at an introductory price that doubles on 1 December.
 2. Korea's Kospi falls 7.57 % in a day, the seventh losing session in a row, and ends more than 20 % below its September high.
@@ -89,23 +89,23 @@ Times in seconds; cuts and wipes on the 120 BPM grid (beat 0 = 1.5 s).
 
 ## Palette & props
 
-- **Colours:** ink `#121417`, cards `#1B1E23` / `#22262C`, lemon `#F2CF1D` (light `#F8DE4A`, dark `#D8B30C`), gold `#D4B064`, paper `#F4F1E8`. Breaking orange `#FE6B3D` is reserved and unused. The colours are LemoLab's own brand.
+- **Colours:** ink `#121417`, cards `#1B1E23` / `#22262C`, lemon `#F2CF1D` (light `#F8DE4A`, dark `#D8B30C`), gold `#D4B064`, paper `#F4F1E8`. Breaking orange `#FE6B3D` is reserved and unused. The colours are the invented channel's own.
 - **Type:** Noto Sans SC 900/700, Barlow Condensed 800/600/600 italic, IBM Plex Mono 500 (OFL subsets in `demo/fonts/`).
-- **Props:** the LEMO plate (sting, bug, end card), the rundown, the strap, request letters, stamps, the spec card.
+- **Props:** the POLAR plate (sting, bug, end card), the rundown, the strap, request letters, stamps, the spec card.
 
 ## End card
 
 From 47.5 s, held six seconds:
 
-1. Dateline "LEMO AI NEWS · WEEK 42 · 12–18 OCT 2026".
+1. Dateline "POLAR AI NEWS · WEEK 42 · 12–18 OCT 2026".
 2. "本周 AI 四件事" (120 px), then "The Week in AI" (lemon italic).
 3. A thin rule.
-4. "LEMO AI NEWS · 电视新闻包装 BROADCAST NEWS PACKAGE".
-5. "LemoLab × Claude Opus 5.5".
+4. "POLAR AI NEWS · 电视新闻包装 BROADCAST NEWS PACKAGE".
+5. "Polargate · PolarMotion".
 6. The large plate and wordmark on the right.
 7. Six lines: news sources; data and speech sources; CC0 samples and public-domain map data; OFL fonts; the Doubao voice; the two AI-generated plates.
 
-There is no CC BY material in this film. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card. No mascot, no watermark.
+There is no CC BY material in this film. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card. No mascot, no watermark.
 
 ## Build notes
 

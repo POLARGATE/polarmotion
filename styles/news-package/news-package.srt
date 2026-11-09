@@ -1,7 +1,7 @@
 1
 00:00:01,600 --> 00:00:04,800
-这里是 Lemo AI 新闻，本周 AI 四件事。
-This is Lemo AI News: four stories from the week in AI.
+这里是 Polar AI 新闻，本周 AI 四件事。
+This is Polar AI News: four stories from the week in AI.
 
 2
 00:00:06,000 --> 00:00:06,100
@@ -100,5 +100,5 @@ and it runs on two Mac Studios.
 
 21
 00:00:45,100 --> 00:00:48,000
-本周就到这里。这里是 Lemo AI 新闻。
-That's the week. This is Lemo AI News.
+本周就到这里。这里是 Polar AI 新闻。
+That's the week. This is Polar AI News.

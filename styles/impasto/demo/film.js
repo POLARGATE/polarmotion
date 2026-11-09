@@ -34,7 +34,7 @@ export async function setup(canvas) {
   P.title = up(buildTitle(), 1500, 330); P.end = up(buildEnd(), 1920, 1080);
   credits = document.createElement('div');
   credits.style.cssText = 'position:fixed;left:0;right:0;top:640px;text-align:center;font-family:"Cormorant SC",serif;color:#efe2c4;letter-spacing:.08em;opacity:0;line-height:1.5;text-shadow:0 2px 6px rgba(0,0,0,.5)';
-  credits.innerHTML = '<div style="font-size:38px">an impasto palette-knife study</div><div style="font-size:30px;margin-top:22px;color:#f6d690">Lemo-Opuscar &nbsp;·&nbsp; LemoLab × Claude Opus 5.5</div><div style="font-size:21px;margin-top:26px;color:#b8b4c8;font-family:\'Cormorant Garamond\',serif;font-style:italic;letter-spacing:.02em">painted and scored in code · samples: VS Chamber Orchestra CE &amp; VCSL (Versilian Studios), FreePats — CC0 · type: Cormorant (OFL)</div>';
+  credits.innerHTML = '<div style="font-size:38px">an impasto palette-knife study</div><div style="font-size:30px;margin-top:22px;color:#f6d690">Polargate &nbsp;·&nbsp; PolarMotion</div><div style="font-size:21px;margin-top:26px;color:#b8b4c8;font-family:\'Cormorant Garamond\',serif;font-style:italic;letter-spacing:.02em">painted and scored in code · samples: VS Chamber Orchestra CE &amp; VCSL (Versilian Studios), FreePats — CC0 · type: Cormorant (OFL)</div>';
   document.body.appendChild(credits);
   window.DUR = DUR;
   return frame;

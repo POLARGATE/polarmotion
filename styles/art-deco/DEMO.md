@@ -68,7 +68,7 @@ Performance beats: the elevator button pressed three times (once, twice, mash); 
 
 - Subtitle card speaker icons: a gold ribbon mic for the announcer, a burgundy pillbox cap for the hero.
 - Title: MIDNIGHT / AT THE STARLIGHT HOTEL in a gold title bar over the stepped arch, a 1930 diamond year badge, NEW YEAR'S EVE label.
-- End card: a lacquer plaque on the closed elevator doors: title, ART DECO, LEMO-OPUSCAR, "LemoLab × Claude Opus 5.5", asset credits. This sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+- End card: a lacquer plaque on the closed elevator doors: title, ART DECO, POLARMOTION, "Polargate · PolarMotion", asset credits. This sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 
@@ -131,6 +131,6 @@ D.sunburst(g, 960, 540, { rays: 72, r1: 1400, mode: 'wedges' });
 D.drawShape(g, D.starPts(960, 540, 120, .22), { color: '#D97757', halo: 1, trail: { ang: Math.PI, len: 420, n: 4 } });
 
 // a bulb sign that lights letter by letter, in the same orange
-const sign = B.buildSign('LEMO', { size: 260, spacing: 20 });
-B.drawSign(g, sign, 560, 700, 1, { lit: B.litSequence(t, [0, .5, 1, 1.5], { chaseFrom: 2.5 }), color: '#D97757' });
+const sign = B.buildSign('POLAR', { size: 260, spacing: 20 });
+B.drawSign(g, sign, 560, 700, 1, { lit: B.litSequence(t, [0, .5, 1, 1.5, 2], { chaseFrom: 2.5 }), color: '#D97757' });
 ```

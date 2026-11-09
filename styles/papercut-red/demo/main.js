@@ -500,7 +500,7 @@ function shotReveal(g, t) {
     g.save(); g.shadowColor = 'rgba(40,10,5,.45)'; g.shadowBlur = 12; g.shadowOffsetX = 5; g.shadowOffsetY = 8;
     g.fillStyle = PAL.sub; const y0 = 26 + drop; g.beginPath(); trace(g, Pl([[960 - bwid / 2, y0], [960 + bwid / 2, y0], [960 + bwid / 2 - 30, y0 + 64], [960 + bwid / 2, y0 + 128], [960 - bwid / 2, y0 + 128], [960 - bwid / 2 + 30, y0 + 64]], true, .8, 3)); g.fill(); g.restore();
     put(g, REAL.title, [1, 0, 0, 1, 960 - REAL.title.w / 2, 26 + drop + 10], { shadow: .6 });
-    g.save(); g.globalAlpha = E_(t, T.end + .4, T.end + .9); g.font = '600 38px "Fraunces"'; g.fillStyle = '#4a1a10'; g.textAlign = 'center'; g.fillText('LemoLab × Claude Opus 5.5', 960, 1050); g.restore();
+    g.save(); g.globalAlpha = E_(t, T.end + .4, T.end + .9); g.font = '600 38px "Fraunces"'; g.fillStyle = '#4a1a10'; g.textAlign = 'center'; g.fillText('Polargate · PolarMotion', 960, 1050); g.restore();
   }
 }
 
@@ -517,7 +517,7 @@ function render(t) {
     g.save(); g.shadowColor = 'rgba(20,4,8,.5)'; g.shadowBlur = 14; g.shadowOffsetX = 5; g.shadowOffsetY = 8; g.fillStyle = PAL.sub;
     g.beginPath(); trace(g, Pl([[x0, 40], [x0 + w, 40], [x0 + w - 36, 110], [x0 + w, 180], [x0, 180], [x0 + 36, 110]], true, .8, 3)); g.fill(); g.restore();
     put(g, tp, [1, 0, 0, 1, 960 - tp.w / 2, 52], { shadow: .5 });
-    g.save(); g.font = 'italic 500 30px "Fraunces"'; g.fillStyle = '#fff1d6'; g.textAlign = 'center'; g.shadowColor = 'rgba(0,0,0,.6)'; g.shadowBlur = 8; g.fillText('Red Paper-cut  ·  LemoLab × Claude Opus 5.5', 960, 222); g.restore();
+    g.save(); g.font = 'italic 500 30px "Fraunces"'; g.fillStyle = '#fff1d6'; g.textAlign = 'center'; g.shadowColor = 'rgba(0,0,0,.6)'; g.shadowBlur = 8; g.fillText('Red Paper-cut  ·  Polargate · PolarMotion', 960, 222); g.restore();
   }
 }
 // events (foley / narration)

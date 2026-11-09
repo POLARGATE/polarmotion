@@ -85,7 +85,7 @@ Whisper hears "Nian" as "Nyan"/"Nion", the correct pronunciation of nián, so it
 
 ## End card
 
-Couplet strips slide in beside the window, a red banner with cream cut letters "RED PAPER-CUT" drops in above, gold-foil flecks, and the credit line "LemoLab × Claude Opus 5.5" below in ink. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Couplet strips slide in beside the window, a red banner with cream cut letters "RED PAPER-CUT" drops in above, gold-foil flecks, and the credit line "Polargate · PolarMotion" below in ink. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 Title and subtitles as built: cut letters in Fraunces 800 on rice paper with sawtooth border strips, a red seal with the character 年 cut as a hole, an italic subline. Subtitle banner `#a8111f`, gold flecks, Fraunces SemiBold 44 px in cream `#fff1d6`, centred 70 px from the bottom, hold ≥ voice + 0.7 s and ≥ 1.8 s.
 

@@ -1,7 +1,7 @@
 Broadcast News Package (电视新闻包装) — library demo
-本周 AI 四件事 · The Week in AI — LEMO AI NEWS, week 42 (12–18 Oct 2026)
-LemoLab × Claude Opus 5.5
-An unofficial film. LEMO AI NEWS is LemoLab's own channel brand; no company in the news made or endorsed it.
+本周 AI 四件事 · The Week in AI — POLAR AI NEWS, week 42 (12–18 Oct 2026)
+Polargate · PolarMotion
+An unofficial film. POLAR AI NEWS is an invented channel; no company in the news made or endorsed it.
 
 News sources (per fact, with quoted wording: FACTS.md)
 - Google: Gemini API changelog and latest-model page (ai.google.dev); blog.google "Gemini 4 Argon" (30 Sep 2026)
@@ -21,8 +21,8 @@ Map data
   separate shapes; all other land is merged into one shape with no borders inside it (tools/prep.py).
 
 Music samples
-- VS Chamber Orchestra: Community Edition, Versilian Studios / Sam Gossner — CC0 1.0 (github.com/sgossner/VSCO-2-CE)
-- Versilian Community Sample Library, Versilian Studios — CC0 1.0 (github.com/sgossner/VCSL)
+- VS Chamber Orchestra: Community Edition, Versilian Studios / Sam Gossner — CC0 1.0
+- Versilian Community Sample Library, Versilian Studios — CC0 1.0
   Score composed for this film; sound effects synthesised in code (core/audio/sfx.py).
 
 Voice
@@ -38,5 +38,5 @@ Images
   (image_gen) from the prompts in tools/gen_plates.sh; committed as assets/plates/plate_datacenter.jpg and
   assets/plates/plate_wafer.jpg. They are illustrations, not news pictures: they show no real place, event,
   person, text or logo, and carry an "ILLUSTRATION / 示意 · AI 生成画面" tag whenever they are on screen.
-- Charts, maps, documents, the quote card, the spec card and the LEMO plate are drawn in code. No third-party logos;
+- Charts, maps, documents, the quote card, the spec card and the POLAR plate are drawn in code. No third-party logos;
   company names are set in type.

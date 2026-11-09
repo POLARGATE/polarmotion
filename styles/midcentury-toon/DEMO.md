@@ -84,7 +84,7 @@ Demo numbers behind the STYLE.md rules: register offset `(6, 4)` px re-rolled at
 
 ## End card
 
-After the lockup, inside the iris circle: film title, style name, `Lemo-Opuscar`, `LemoLab × Claude Opus 5.5`, asset credits. The LemoLab sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+After the lockup, inside the iris circle: film title, style name, `PolarMotion`, `Polargate · PolarMotion`, asset credits. The library sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

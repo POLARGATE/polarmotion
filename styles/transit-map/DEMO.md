@@ -60,7 +60,7 @@ Mix (`audio.py`): music × 0.9 under the effects; 38 Hz high-pass and a −5 dB 
 
 ## End card
 
-In the sheet's lower-right corner, inked at the end: a red line runs to a terminus ring; 6 公里 / 6 Kilometres; 地铁线路图 / Transit Map; LemoLab × Claude Opus 5.5; 非官方致敬片，与运营方无关 / Unofficial fan film, not affiliated with the operator. 3.0 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+In the sheet's lower-right corner, inked at the end: a red line runs to a terminus ring; 6 公里 / 6 Kilometres; 地铁线路图 / Transit Map; Polargate · PolarMotion; 非官方致敬片，与运营方无关 / Unofficial fan film, not affiliated with the operator. 3.0 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 Two places where this demo is narrower than STYLE.md §4: its title 《6 公里》 is printed only on this end card (the north-west cartouche names the network, 上海地铁 / Shanghai Metro), and its last shot is this corner of the sheet after the veiled network. A new film prints its title on the map at the start and closes on the whole network, with its end title printed in a margin of that view. The demo's data and its sources are the model for `FACTS.md` (STYLE.md §11): every on-screen figure with its quoted source, plus the figures checked and not used.
 

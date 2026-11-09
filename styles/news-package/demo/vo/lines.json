@@ -1,8 +1,8 @@
 [
  {
   "id": "v1",
-  "text": "这里是 Lemo AI 新闻，本周 AI 四件事。",
-  "say": "这里是 Lemo AI 新闻，本周 AI 四件事。",
+  "text": "这里是 Polar AI 新闻，本周 AI 四件事。",
+  "say": "这里是 Polar AI 新闻，本周 AI 四件事。",
   "speech_rate": 10
  },
  {
@@ -45,8 +45,8 @@
  },
  {
   "id": "v8",
-  "text": "本周就到这里。这里是 Lemo AI 新闻。",
-  "say": "本周就到这里。这里是 Lemo AI 新闻。",
+  "text": "本周就到这里。这里是 Polar AI 新闻。",
+  "say": "本周就到这里。这里是 Polar AI 新闻。",
   "speech_rate": 0
  }
 ]

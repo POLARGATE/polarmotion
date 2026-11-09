@@ -279,7 +279,7 @@ const SHOT = {
     text('SUNDAY RIDE', 960 + sl, 470 + sl * .4, '800 170px Bricolage', [0, 0, 1], 'center', 'alphabetic', 6);
     over(() => { text('SUNDAY RIDE', 960 - sl, 470 - sl * .4, '800 170px Bricolage', [.8, 0, 0], 'center', 'alphabetic', 6); });
     text('RISOGRAPH PRINT', 960, 575, '600 44px Jost', [1, 0, 0], 'center', 'alphabetic', 14);
-    text('LemoLab × Claude Opus 5.5', 960, 650, '500 34px Jost', [0, 0, 1], 'center', 'alphabetic', 3);
+    text('Polargate · PolarMotion', 960, 650, '500 34px Jost', [0, 0, 1], 'center', 'alphabetic', 3);
     // registration crosses
     const cross = (x, y) => { line([[x - 22, y], [x + 22, y]], 3, [1, 0, 0]); line([[x, y - 22], [x, y + 22]], 3, [1, 0, 0]); g.beginPath(); g.arc(x, y, 10, 0, 7); g.lineWidth = 3; g.strokeStyle = inkA([1, 0, 0]); g.stroke(); };
     cross(80, 80); cross(W - 80, 80); cross(80, H - 80); cross(W - 80, H - 80);

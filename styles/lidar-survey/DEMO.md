@@ -61,7 +61,7 @@ Mix (in `mix.py`): music −10 dB under the voice and ducked ~5 dB while it spea
 
 ## End card
 
-Left third over the dimmed field system while the canopy regrows: 林下的田 (Noto Sans SC 500), *The Fields Under the Forest*, a short amber rule, `LIDAR SURVEY · 点云测绘`, `LemoLab × Claude Opus 5.5`. 4.1 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Left third over the dimmed field system while the canopy regrows: 林下的田 (Noto Sans SC 500), *The Fields Under the Forest*, a short amber rule, `LIDAR SURVEY · 点云测绘`, `Polargate · PolarMotion`. 4.1 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

@@ -456,8 +456,8 @@ export function register(SHOTS, H) {
       const a = ss(seg(t, 55.6, 55.9)), b = ss(seg(t, 56.0, 56.3));
       m.save(); m.textAlign = 'center'; m.textBaseline = 'middle';
       m.font = 'italic 400 46px "IM Fell English"'; m.fillStyle = `rgba(0,0,0,${a})`; m.fillText('A Woodcut Print', 924, 572);
-      m.font = '400 38px "IM Fell English SC"'; m.fillText('Lemo-Opuscar', 924, 640);
-      m.font = '400 34px "IM Fell English"'; m.fillText('LemoLab × Claude Opus 5.5', 924, 690);
+      m.font = '400 38px "IM Fell English SC"'; m.fillText('PolarMotion', 924, 640);
+      m.font = '400 34px "IM Fell English"'; m.fillText('Polargate · PolarMotion', 924, 690);
       m.font = 'italic 400 24px "IM Fell English"'; m.fillStyle = `rgba(0,0,0,${b})`;
       m.fillText('Voice: Kokoro (am_onyx) · Samples: VS Chamber Orchestra CE & VCSL, CC0 (Versilian Studios)', 924, 764);
       m.fillText('Type: IM Fell English, SIL OFL (Igino Marini) · Walnut table: Poly Haven, CC0 · everything else carved in code', 924, 798);

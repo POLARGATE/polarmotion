@@ -195,7 +195,7 @@ function DATAend(c, t, K) { const { F, INK, MUTED } = K;
   c.font = F(600, 44); c.fillText('6 Kilometres', x, y + 248); rt(c, K, 'end-title-en', '6 Kilometres', x, y + 248, 44, A);
   c.fillStyle = INK; c.fillRect(x, y + 290, 120, 5);
   c.font = F(700, 30); c.fillText('地铁线路图', x, y + 344); rt(c, K, 'end-style', '地铁线路图', x, y + 344, 30, A); c.font = F(600, 26); c.fillText('Transit Map', x, y + 380); rt(c, K, 'end-style-en', 'Transit Map', x, y + 380, 26, A);
-  c.font = F(500, 30); c.fillText('LemoLab × Claude Opus 5.5', x, y + 436); rt(c, K, 'end-credit', 'LemoLab × Claude Opus 5.5', x, y + 436, 30, A);
+  c.font = F(500, 30); c.fillText('Polargate · PolarMotion', x, y + 436); rt(c, K, 'end-credit', 'Polargate · PolarMotion', x, y + 436, 30, A);
   c.font = F(500, 21); c.fillStyle = MUTED; c.fillText('非官方致敬片，与运营方无关', x, y + 484); rt(c, K, 'end-note', '非官方致敬片，与运营方无关', x, y + 484, 21, A); c.fillText('Unofficial fan film, not affiliated with the operator', x, y + 512); rt(c, K, 'end-note-en', 'Unofficial fan film, not affiliated with the operator', x, y + 512, 21, A);
   c.restore();
 }

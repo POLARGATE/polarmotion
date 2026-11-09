@@ -488,7 +488,7 @@ function drawEnd(t) {
   text('e2', 'The Fields Under the Forest', x, y + 56, `400 38px ${COND}`, C.dim, a);
   g2.save(); g2.globalAlpha = a; g2.fillStyle = C.amber; g2.fillRect(x, y + 88, 64 * eo(seg(t, T.end + .2, T.end + .9)) + 1, 2); g2.restore();
   text('e3', 'LIDAR SURVEY · 点云测绘', x, y + 132, `400 22px ${MONO}`, C.dim, a);
-  text('e4', 'LemoLab × Claude Opus 5.5', x, y + 168, `400 22px ${MONO}`, C.dim, a * seg(t, T.end + .4, T.end + 1.0));
+  text('e4', 'Polargate · PolarMotion', x, y + 168, `400 22px ${MONO}`, C.dim, a * seg(t, T.end + .4, T.end + 1.0));
 }
 
 // ---------------- events for the mixer ----------------

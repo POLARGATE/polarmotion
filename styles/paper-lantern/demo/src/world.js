@@ -191,7 +191,7 @@ export function signStrip(U, z, x, y) {
     c.fillStyle = '#efd9aa'; c.beginPath(); c.moveTo(-w / 2, -h / 2); c.lineTo(w / 2 - h * .25, -h / 2); c.lineTo(w / 2, 0); c.lineTo(w / 2 - h * .25, h / 2); c.lineTo(-w / 2, h / 2); c.closePath(); c.fill();
     c.fillStyle = '#b3302a'; c.fillRect(-w / 2 + h * .3, -h * .3, h * .6, h * .6);
     text(c, '车', -w / 2 + h * .6, -h * .02, h * .42, '"NotoSerifSC"', { fill: '#f7e6c8', weight: 700 });
-    text(c, 'LemoLab × Claude Opus 5.5', -w / 2 + h * 1.15, -h * .04, h * .5, '"Cormorant"', { fill: '#2a1d14', weight: 600, align: 'left' });
+    text(c, 'Polargate · PolarMotion', -w / 2 + h * 1.15, -h * .04, h * .5, '"Cormorant"', { fill: '#2a1d14', weight: 600, align: 'left' });
   } });
   m.userData.reveal = k => { k = clamp(k, .0001, 1); m.scale.x = k; m.material.map.repeat.x = k; m.visible = k > .002; };
   return m;

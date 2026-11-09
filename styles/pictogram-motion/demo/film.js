@@ -730,7 +730,7 @@
     G.maskText(ctx, 'PICTOGRAM MOTION', x, 624, F.mono(26), fg, inv(0.35, 0.8, lt), { ls: '3px' });
     ctx.save(); ctx.font = F.mono(26); ctx.letterSpacing = '3px'; const pw = ctx.measureText('PICTOGRAM MOTION').width; ctx.restore();
     G.maskText(ctx, '象形运动图形', x + pw + 28, 626, F.zh(700, 30), fg, inv(0.4, 0.85, lt), { ls: '3px' });
-    G.maskText(ctx, 'LemoLab × Claude Opus 5.5', x, 690, F.mono(28), fg, inv(0.5, 0.95, lt), { ls: '2px' });
+    G.maskText(ctx, 'Polargate · PolarMotion', x, 690, F.mono(28), fg, inv(0.5, 0.95, lt), { ls: '2px' });
   }
 
   // ───────── HUD + subtitles ─────────

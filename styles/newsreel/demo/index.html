@@ -530,7 +530,7 @@ function sceneEndCard(c, t) {
   c.font = '500 36px "Noto Sans SC"'; c.letterSpacing = '6px'; c.fillStyle = '#e4ddd0'; c.fillText(s1, xs, 520);
   c.font = '500 34px Oswald'; c.letterSpacing = '6px'; c.fillText(s2, xs + m1 + 24, 519);
   c.textAlign = 'center';
-  c.font = '600 30px Oswald'; c.letterSpacing = '5px'; c.fillStyle = '#cfc7b8'; c.fillText('LemoLab × Claude Opus 5.5', GW / 2, 600);
+  c.font = '600 30px Oswald'; c.letterSpacing = '5px'; c.fillStyle = '#cfc7b8'; c.fillText('Polargate · PolarMotion', GW / 2, 600);
   c.font = '400 21px Oswald'; c.letterSpacing = '1.5px'; c.fillStyle = '#a9a192';
   const CR = [
     'Archive film: U.S. National Archives, Ford Motor Company Film Collection (1924–27)',
@@ -779,7 +779,7 @@ window.TEXTS = (t) => {
     { id: 'end-zh', text: '本期完', x0: GX + 500, y0: 690, x1: GX + GW - 500, y1: 760 });
   if (t > SEC.endcard.t0 + .55) out.push({ id: 'title', text: '膝盖警报 Knock-Knee Alert', x0: GX + 120, y0: 290, x1: GX + GW - 120, y1: 400 },
     { id: 'style', text: '1920s 新闻影片 1920s NEWSREEL', x0: GX + 200, y0: 480, x1: GX + GW - 200, y1: 535 },
-    { id: 'credit', text: 'LemoLab × Claude Opus 5.5', x0: GX + 400, y0: 565, x1: GX + GW - 400, y1: 610 });
+    { id: 'credit', text: 'Polargate · PolarMotion', x0: GX + 400, y0: 565, x1: GX + GW - 400, y1: 610 });
   return out.filter(b => b.x0 >= 0);
 };
 window.EV = [

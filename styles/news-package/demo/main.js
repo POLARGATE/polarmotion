@@ -1,10 +1,10 @@
-// LEMO AI NEWS · 本周 AI 四件事 ("four AI stories this week", 2026-10-12 to 10-18) — Broadcast News Package library demo
+// POLAR AI NEWS · 本周 AI 四件事 ("four AI stories this week", 2026-10-12 to 10-18) — Broadcast News Package library demo
 // Canvas 2D, deterministic render(t). Cuts land on a 120 BPM beat grid with beat 0 = 1.5 s (shot list in DEMO.md).
 // No burned-in subtitles, no ticker: the strap stays at the bottom from the first story to the recap; subtitles only as a sidecar .srt (CUES → tools/subs.py).
 const W = 1920, H = 1080, DUR = 53.5;
 const cv = document.getElementById('out'); let ctx = cv.getContext('2d');
 
-// —— Palette (LemoLab's own brand colours) ——
+// —— Palette (the channel's own invented colours) ——
 const C = {
   ink: '#121417', ink2: '#1B1E23', ink3: '#22262C', line: '#454B55',
   lemon: '#F2CF1D', lemonL: '#F8DE4A', lemonD: '#D8B30C', gold: '#D4B064',
@@ -76,7 +76,7 @@ function grain(t, a = .07) {
   ctx.restore();
 }
 
-// —— Station logo: lemon-yellow parallelogram + black/gold vertical bars on the left + "LEMO" ——
+// —— Station logo: lemon-yellow parallelogram + black/gold vertical bars on the left + "POLAR" ——
 function plate(cx, cy, s, glint = -1, drop = 1) {
   const w = 520 * s, h = 180 * s, k = h * .28;
   ctx.save(); ctx.translate(cx, cy);
@@ -87,10 +87,10 @@ function plate(cx, cy, s, glint = -1, drop = 1) {
   const gx = -w / 2 - k;
   ctx.fillStyle = C.ink; ctx.beginPath(); ctx.moveTo(gx + 2 * k, -h / 2); ctx.lineTo(gx + 2 * k + w * .085, -h / 2); ctx.lineTo(gx + w * .085, h / 2); ctx.lineTo(gx, h / 2); ctx.fill();
   ctx.fillStyle = C.gold; ctx.beginPath(); ctx.moveTo(gx + 2 * k + w * .085, -h / 2); ctx.lineTo(gx + 2 * k + w * .11, -h / 2); ctx.lineTo(gx + w * .11, h / 2); ctx.lineTo(gx + w * .085, h / 2); ctx.fill();
-  const letters = ['L', 'E', 'M', 'O']; ctx.font = F.b8(h * .8); ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
-  let x = -w * .25;
+  const letters = ['P', 'O', 'L', 'A', 'R']; ctx.font = F.b8(h * .8); ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+  let x = -w * .30;
   letters.forEach((L, i) => {
-    const d = clamp(drop * 4 - i); const yy = h * .29 + (1 - eo(d)) * -h * 1.1;
+    const d = clamp(drop * 5 - i); const yy = h * .29 + (1 - eo(d)) * -h * 1.1;
     ctx.globalAlpha *= 1; ctx.save(); ctx.globalAlpha = ctx.globalAlpha * clamp(d * 3); ctx.fillStyle = C.ink; ctx.fillText(L, x, yy); ctx.restore();
     x += ctx.measureText(L).width - h * .01;
   });
@@ -102,11 +102,11 @@ function plate(cx, cy, s, glint = -1, drop = 1) {
   ctx.restore(); ctx.restore();
 }
 function wordmark(x, y, size, align = 'center', id = null) {
-  const parts = [['LEMO ', C.white], ['AI ', C.lemon], ['NEWS', C.white]], ls = size * .14;
+  const parts = [['POLAR ', C.white], ['AI ', C.lemon], ['NEWS', C.white]], ls = size * .14;
   const tot = parts.reduce((a, [s]) => a + tw(s, F.b8(size), ls), 0);
   let cx = align === 'center' ? x - tot / 2 : align === 'right' ? x - tot : x;
   for (const [s, c] of parts) cx += text(s, cx, y, F.b8(size), c, 'left', ls);
-  if (id) TX.push({ id, text: 'LEMO AI NEWS', x0: cx - tot, y0: y - size, x1: cx, y1: y + 8 });
+  if (id) TX.push({ id, text: 'POLAR AI NEWS', x0: cx - tot, y0: y - size, x1: cx, y1: y + 8 });
 }
 
 // ============ Wrapper elements ============
@@ -131,7 +131,7 @@ function strap(t) {
   ctx.fillStyle = 'rgba(0,0,0,.3)'; ctx.fillRect(x0 + 8, by + 8, bw, bh);
   ctx.fillStyle = C.paper; ctx.fillRect(x0, by, bw, bh);
   ctx.fillStyle = C.lemon; ctx.fillRect(x0, by, 14, bh);
-  ctx.fillStyle = C.ink; ctx.fillRect(x0 + bw, by, 120, bh); ctx.fillStyle = C.lemon; ctx.fillRect(x0 + bw, by, 120, 6); text('LEMO', x0 + bw + 60, by + 68, F.b8(40), C.lemon, 'center', 1);
+  ctx.fillStyle = C.ink; ctx.fillRect(x0 + bw, by, 120, bh); ctx.fillStyle = C.lemon; ctx.fillRect(x0 + bw, by, 120, 6); text('POLAR', x0 + bw + 60, by + 68, F.b8(40), C.lemon, 'center', 1);
   ctx.save(); ctx.beginPath(); ctx.rect(x0 + 14, by, bw - 14, bh); ctx.clip();
   text(S.cn, x0 + 44, by + 58, F.sc9(50), C.ink, 'left', 0, 'strap'); text(S.en, x0 + 46, by + 92, F.b6(27), '#6E5A1E', 'left', 1.5, 'strape');
   ctx.restore();
@@ -160,7 +160,7 @@ function bug(t) {
 
 // Sidecar subtitles (.srt): one Chinese line / one English line; nothing burned into the picture. Timings cut to the English narration (vo/words.json)
 const CUES = [
-  [1.6, 4.8, '这里是 Lemo AI 新闻，本周 AI 四件事。', 'This is Lemo AI News: four stories from the week in AI.'],
+  [1.6, 4.8, '这里是 Polar AI 新闻，本周 AI 四件事。', 'This is Polar AI News: four stories from the week in AI.'],
   [6.1, 9.3, '谷歌向全部开发者开放了 Gemini 4 Argon，', 'Google has opened Gemini 4 Argon to every developer,'],
   [9.3, 12.8, '入门价每百万输入 token 2 美元，12 月起翻倍。', 'at $2 per million input tokens, doubling from December.'],
   [13.1, 17.0, '在首尔，韩国综合股价指数单日跌超 7.5%，', 'In Seoul, the Kospi fell more than 7.5% in a day,'],
@@ -174,7 +174,7 @@ const CUES = [
   [38.2, 40.2, '总参数 8160 亿，', '816B parameters in total,'],
   [40.2, 42.3, '每个 token 只激活 420 亿，', 'only 42B active per token,'],
   [42.3, 43.9, '两台 Mac Studio 就能跑。', 'and it runs on two Mac Studios.'],
-  [45.1, 48.0, '本周就到这里。这里是 Lemo AI 新闻。', "That's the week. This is Lemo AI News."],
+  [45.1, 48.0, '本周就到这里。这里是 Polar AI 新闻。', "That's the week. This is Polar AI News."],
 ]
 let t_ = 0;
 // Small source credit: bottom right, on the same line as the strap
@@ -791,12 +791,12 @@ function shotEnd(t) {
   const m = (a, b) => eo(seg(t, a, b));
   const r = (y, h, k, fn) => { if (k <= 0) return; ctx.save(); ctx.beginPath(); ctx.rect(0, y - h, 1120, h + 30); ctx.clip(); ctx.translate(0, (1 - k) * (h + 30)); fn(); ctx.restore(); };
   const x = 150;
-  ctx.globalAlpha = m(39.1, 39.3); text('LEMO AI NEWS · WEEK 42 · 12–18 OCT 2026', x, 210, F.mono(24), C.gold, 'left', 3, 'e0'); ctx.globalAlpha = 1;
+  ctx.globalAlpha = m(39.1, 39.3); text('POLAR AI NEWS · WEEK 42 · 12–18 OCT 2026', x, 210, F.mono(24), C.gold, 'left', 3, 'e0'); ctx.globalAlpha = 1;
   r(350, 130, m(39.12, 39.42), () => text('本周 AI 四件事', x - 4, 350, F.sc9(120), C.white, 'left', 4, 'e1'));
   r(440, 80, m(39.25, 39.52), () => text('The Week in AI', x, 440, F.b6i(76), C.lemon, 'left', 2, 'e2'));
   const lk = eio(seg(t, 39.4, 39.7)); ctx.fillStyle = C.lemon; ctx.fillRect(x, 482, 880 * lk, 2);
-  ctx.globalAlpha = m(39.55, 39.8); text('LEMO AI NEWS · 电视新闻包装 BROADCAST NEWS PACKAGE', x, 548, F.sc7(30), C.white, 'left', 1, 'e3'); ctx.globalAlpha = 1;
-  ctx.globalAlpha = m(39.65, 39.9); text('LemoLab × Claude Opus 5.5', x, 604, F.b6(38), C.gold, 'left', 1.5, 'e4'); ctx.globalAlpha = 1;
+  ctx.globalAlpha = m(39.55, 39.8); text('POLAR AI NEWS · 电视新闻包装 BROADCAST NEWS PACKAGE', x, 548, F.sc7(30), C.white, 'left', 1, 'e3'); ctx.globalAlpha = 1;
+  ctx.globalAlpha = m(39.65, 39.9); text('Polargate · PolarMotion', x, 604, F.b6(38), C.gold, 'left', 1.5, 'e4'); ctx.globalAlpha = 1;
   const sm = m(39.8, 40.1); ctx.globalAlpha = sm;
   ctx.fillStyle = C.line; ctx.fillRect(x, 816, 1620, 1);
   [['新闻来源：Google · Meta · Korea Herald · Bloomberg · Euronews', 'e5'], ['数据：韩国交易所 · 讲话原文：欧盟委员会', 'e5b'],

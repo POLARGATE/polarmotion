@@ -54,7 +54,7 @@ export function titleBlock(o = {}) {
   const ul = o.last ?? 0;
   if (ul > 0) {
     text('BLUEPRINT', x0 + 22, rows[4] + 60, { size: 38, font: FONT.tech, weight: 700, ls: 6, u: clamp(ul * 2) });
-    text('LemoLab × Claude Opus 5.5', c5 + 20, rows[4] + 58, { size: 33, font: FONT.hand, u: clamp(ul * 2 - .8) });
+    text('Polargate · PolarMotion', c5 + 20, rows[4] + 58, { size: 33, font: FONT.hand, u: clamp(ul * 2 - .8) });
   }
   return { rows, x0, x1 };
 }

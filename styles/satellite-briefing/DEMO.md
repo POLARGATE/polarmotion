@@ -66,7 +66,7 @@ Mix (in `mix.py`): stem gains frozen (music 10 dB under the voice while it speak
 
 ## End card
 
-The lock brackets open from the North Aral into a frame on the left: 地图上还写着海 (Noto Serif SC, the map's voice), *The Map Still Says Sea*, a rule, `SATELLITE BRIEFING · 卫星简报`, `LemoLab × Claude Opus 5.5`, over the dimmed Earth turning; a last satellite pass sweeps down behind it. 3.6 s. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The lock brackets open from the North Aral into a frame on the left: 地图上还写着海 (Noto Serif SC, the map's voice), *The Map Still Says Sea*, a rule, `SATELLITE BRIEFING · 卫星简报`, `Polargate · PolarMotion`, over the dimmed Earth turning; a last satellite pass sweeps down behind it. 3.6 s. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

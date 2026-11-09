@@ -84,7 +84,7 @@ Type: Inter Tight 900 titles (150–270 px, −0.02 em), Noto Sans SC 900 second
 
 ## End card
 
-Navy pattern whose rows stop one by one, the yellow umbrella opening on its stage disc, and the type sliding up from 46.5 s, fully in place from about 47.5 s to 50.0 s: LEFT BEHIND / 被落下的伞, a hairline, PICTOGRAM MOTION 象形运动图形, and "LemoLab × Claude Opus 5.5". The last narration line runs under it at the bottom until 49.05 s. The sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Navy pattern whose rows stop one by one, the yellow umbrella opening on its stage disc, and the type sliding up from 46.5 s, fully in place from about 47.5 s to 50.0 s: LEFT BEHIND / 被落下的伞, a hairline, PICTOGRAM MOTION 象形运动图形, and "Polargate · PolarMotion". The last narration line runs under it at the bottom until 49.05 s. The sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build
 

@@ -33,7 +33,7 @@ Native moves spent: floor type (title, key words, numbers, sign-off); domino sta
 | 11 | 41.6–46.6 | pull out to the apron (0.55 s, the bars already drawing): 6:54 long in ink, 3:36 short in persimmon, each with a small cabin icon; held still 2.5 s, then a dashed bracket marks the time saved | **signature 3**: bars on the ground |
 | 12 | 46.6–51.6 | the bars fade as the camera pans: 72 passengers appear on the concrete in the cabin's own 12 × (3 + 3) layout; 2012 · 72 名乘客 | people as the sample |
 | 13 | 51.6–56.7 | back in the jammed cabin: the stretch of aisle where everyone waits is lit persimmon; 同一段过道 | callback |
-| 14 | 56.7–59.8 | the stand: LemoLab × Claude Opus 5.5 lands on the concrete and holds | end card |
+| 14 | 56.7–59.8 | the stand: Polargate · PolarMotion lands on the concrete and holds | end card |
 
 ## Narration
 
@@ -69,7 +69,7 @@ Palette as in STYLE.md §3 (paper, concrete, carpet, ink, persimmon accent, subj
 
 ## End card
 
-On the stand, "LemoLab × Claude Opus 5.5" lands word by word in the floor-type serif and holds 3 s, fully inside the frame. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+On the stand, "Polargate · PolarMotion" lands word by word in the floor-type serif and holds 3 s, fully inside the frame. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

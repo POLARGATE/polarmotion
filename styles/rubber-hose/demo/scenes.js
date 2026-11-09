@@ -588,7 +588,7 @@ export function shotEnd(t) {
   fatTitle(g, 'The End', 960, 470, 170, { bounce: hopL });
   g.fillStyle = P.ink; g.textAlign = 'center'; g.textBaseline = 'alphabetic';
   g.font = '38px Limelight'; g.fillText('RUBBER  HOSE  ·  1930s  CARTOON  STYLE', 960, 650);
-  g.font = '40px "IM Fell English SC"'; g.fillText('LemoLab  ×  Claude Opus 5.5', 960, 722);
+  g.font = '40px "IM Fell English SC"'; g.fillText('Polargate · PolarMotion', 960, 722);
   g.restore();
   g.save(); g.fillStyle = '#F4F1EA'; g.strokeStyle = 'rgba(10,10,8,.85)'; g.lineWidth = 5; g.font = '22px "IM Fell English SC"'; g.textAlign = 'center';
   const cr = ['Original score & sound made in code  ·  Samples: VSCO 2 CE, VCSL (CC0)  ·  Voice: Kokoro TTS', 'Drums: "MuldjordKit" by Lars Muldjord (drumgizmo.org), CC BY 4.0  ·  Fonts: Shrikhand, Limelight, IM Fell English SC (OFL)'];

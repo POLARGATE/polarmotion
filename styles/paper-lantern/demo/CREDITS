@@ -1,5 +1,5 @@
-The Last Night Train · 末班夜车 — Paper-cut Lightbox 纸雕灯影 (Lemo-Opuscar demo)
-LemoLab × Claude Opus 5.5
+The Last Night Train · 末班夜车 — Paper-cut Lightbox 纸雕灯影 (PolarMotion demo)
+Polargate · PolarMotion
 
 Story, picture, score and sound are made in code in this folder. Every paper layer, the train, the stations and the end card
 are drawn by src/ (Canvas2D paper layers + three.js renderer). No photos, footage or generated images are used.

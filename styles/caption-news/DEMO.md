@@ -59,7 +59,7 @@ Times in seconds; every cut on the 120 BPM half-beat grid.
 
 ## End card
 
-From 54.5 s, held five seconds over the blurred, darkened hive entrance: "蜜蜂账本" (150 px), "The Bee Ledger" (honey), a thin rule, "CAPTION NEWS · 字幕新闻", "LemoLab × Claude Opus 5.5", then five lines of sources: the data (USDA NASS report, its scope, and that 2025 losses and additions are four quarters summed), every CC BY work with title, author and licence, and the public-domain sources. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+From 54.5 s, held five seconds over the blurred, darkened hive entrance: "蜜蜂账本" (150 px), "The Bee Ledger" (honey), a thin rule, "CAPTION NEWS · 字幕新闻", "Polargate · PolarMotion", then five lines of sources: the data (USDA NASS report, its scope, and that 2025 losses and additions are four quarters summed), every CC BY work with title, author and licence, and the public-domain sources. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

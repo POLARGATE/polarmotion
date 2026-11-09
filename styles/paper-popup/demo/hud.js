@@ -128,9 +128,9 @@ export function drawEnd(x, t) {
   x.restore();
   if (k2 > 0) { x.save(); x.translate(960, 350); x.scale(k2, k2); x.rotate(-.05); x.font = 'italic 64px "IM Fell English"'; x.lineWidth = 8; x.strokeStyle = 'rgba(30,20,14,.7)'; x.strokeText('The End?', 0, 0); x.fillStyle = '#fffaf0'; x.fillText('The End?', 0, 0); x.restore(); }
   if (k3 > 0) {
-    // LemoLab credit: below The End?, dark outline (the background is the cream page), fades in together with the asset credits
+    // Library credit: below The End?, dark outline (the background is the cream page), fades in together with the asset credits
     x.save(); x.globalAlpha = fo * k3; x.font = '600 36px Fredoka'; x.lineWidth = 7; x.strokeStyle = 'rgba(30,20,14,.75)';
-    x.strokeText('LemoLab × Claude Opus 5.5', 960, 430); x.fillStyle = '#fffaf0'; x.fillText('LemoLab × Claude Opus 5.5', 960, 430); x.restore();
+    x.strokeText('Polargate · PolarMotion', 960, 430); x.fillStyle = '#fffaf0'; x.fillText('Polargate · PolarMotion', 960, 430); x.restore();
     x.globalAlpha = fo * k3; x.font = '26px Fredoka'; x.fillStyle = 'rgba(255,248,235,.92)'; x.shadowColor = 'rgba(0,0,0,.6)'; x.shadowBlur = 10;
     CREDITS.forEach((l, i) => { x.font = i === 2 ? '22px "ZCOOL KuaiLe", Fredoka' : '22px Fredoka'; x.fillText(l, 960, 960 + i * 38); });
   }

@@ -246,8 +246,8 @@ export async function build() {
   // ═════════ END CARD, written under the title
   const cr = [], credit = (s, y, h, o = {}) => cr.push(...T(s, 270, y, { h, w: Math.max(4, h * .13), ...o }));
   credit('Whiteboard Explainer', 1330, 50);
-  credit('Lemo-Opuscar', 1420, 50, { color: INK.orange });
-  credit('LemoLab × Claude Opus 5.5', 1510, 50);
+  credit('PolarMotion', 1420, 50, { color: INK.orange });
+  credit('Polargate · PolarMotion', 1510, 50);
   credit('voice: Kokoro (bm_george)  ·  lettering: EMS Tech (OFL)', 1600, 30);
   credit('samples: VSCO 2 CE, VCSL, FreePats (CC0)', 1650, 30);
   const crT0 = 103.3;

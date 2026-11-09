@@ -84,7 +84,7 @@ export function drawPrint(ctx, P, st) {
   }, val, [X, Y + 380, Wd, 130]);
   // ---- optional printer's imprint, bottom right (page option ?sign=1; off in the film) ----
   const ip = st.imprint ? prog('sign') : 0;
-  if (ip > 0) ink(ctx, { paint: (c) => { c.font = `600 26px ${FONT_T}`; c.letterSpacing = '4px'; c.textAlign = 'right'; c.textBaseline = 'alphabetic'; c.fillText('LemoLab × Claude Opus 5.5', AW - 52, AH - 30); } },
+  if (ip > 0) ink(ctx, { paint: (c) => { c.font = `600 26px ${FONT_T}`; c.letterSpacing = '4px'; c.textAlign = 'right'; c.textBaseline = 'alphabetic'; c.fillText('Polargate · PolarMotion', AW - 52, AH - 30); } },
     { color: pickInk(pal.near, ['#F3EAD8', pal.sky1], 4.5), reg: R2(P.seed + 95, reg), clip: ip < 1 ? wipeRegion([AW - 520, AH - 70, 500, 60], 'right', ip, 41, 24) : null });
   if (st.finish !== false) inkFinish(ctx, st.T, -BLEED, -BLEED, AW + 2 * BLEED, AH + 2 * BLEED, .6, 1);
 }
@@ -198,7 +198,7 @@ export function drawEndCard(ctx, pal, T, p1, p2) {
       c.fillStyle = lo; c.font = `600 26px ${FONT_T}`; c.letterSpacing = '5px'; c.fillText('SILKSCREEN TRAVEL POSTER', lx, Y + 372);
       c.font = `600 30px ${FONT_C}`; c.letterSpacing = '6px'; c.fillText('丝印旅行海报', lx, Y + 420);
       c.fillStyle = key; c.fillRect(lx, Y + 456, Wd - 88, 5);
-      c.fillStyle = hi; c.font = `600 30px ${FONT_T}`; c.letterSpacing = '3px'; c.fillText('LemoLab × Claude Opus 5.5', lx, Y + 520);
+      c.fillStyle = hi; c.font = `600 30px ${FONT_T}`; c.letterSpacing = '3px'; c.fillText('Polargate · PolarMotion', lx, Y + 520);
     } }, { color: hi, reg: [1.2, .6], clip: p2 < 1 ? wipeRegion([X, Y, Wd, Hd], 'right', p2, 9, 50) : null });
   }
   if (p1 > 0) { ctx.save(); ctx.clip(rectPath(X, Y, Wd, Hd)); inkFinish(ctx, T, X - 30, Y - 20, Wd + 60, Hd + 40, .6, 1); ctx.restore(); }

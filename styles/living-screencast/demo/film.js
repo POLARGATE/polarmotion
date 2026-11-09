@@ -426,7 +426,7 @@ function endCard(t) {
     return `<span data-a="ew-${i}" style="display:inline-block;margin:0 14px;opacity:${p};transform:translateY(${(1 - back(p)) * 18}px);${i === 3 ? 'color:var(--clay2);font-style:italic' : 'color:var(--ink)'}">${w}</span>`; }).join('')}</div>`;
   const c = seg(t, T.card, T.card + .6), d = seg(t, T.card + .8, T.card + 1.4);
   h += `<div class="end" style="top:716px;font-size:26px;font-weight:500;color:var(--mute);opacity:${c}">Claude Code · in the Claude app</div>`;
-  h += `<div class="end" style="top:966px;font-size:15px;line-height:1.6;color:var(--faint);opacity:${d}">LemoLab × Claude Opus 5.5 · Unofficial fan film · Voice: Kokoro · Fonts: Inter, Newsreader, JetBrains Mono (OFL)<br>Piano: Salamander Grand Piano V3, Alexander Holm (CC BY 3.0) · Drums: MuldjordKit, Lars Muldjord (CC BY 4.0) · Samples: Versilian Studios, Karoryfer (CC0)</div>`;
+  h += `<div class="end" style="top:966px;font-size:15px;line-height:1.6;color:var(--faint);opacity:${d}">Polargate · PolarMotion · Unofficial fan film · Voice: Kokoro · Fonts: Inter, Newsreader, JetBrains Mono (OFL)<br>Piano: Salamander Grand Piano V3, Alexander Holm (CC BY 3.0) · Drums: MuldjordKit, Lars Muldjord (CC BY 4.0) · Samples: Versilian Studios, Karoryfer (CC0)</div>`;
   return h;
 }
 function hud(F, t) {

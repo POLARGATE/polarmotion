@@ -83,7 +83,7 @@ Why this route, for this story: the title typed as a file the machine opens made
 
 ## End card
 
-Typed over the final room shot (`ASCII / CRT TERMINAL`, `LemoLab × Claude Opus 5.5`), followed by the CRT power-off. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+Typed over the final room shot (`ASCII / CRT TERMINAL`, `Polargate · PolarMotion`), followed by the CRT power-off. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

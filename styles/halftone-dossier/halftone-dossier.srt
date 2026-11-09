@@ -85,5 +85,5 @@ CASE CLOSED
 
 18
 00:00:27,300 --> 00:00:30,000
-本片由 Claude 用代码一帧一帧画完。胖橘表示：全程没有配合。
-Drawn frame by frame in code by Claude. Chubby states: no cooperation whatsoever.
+本片由 PolarMotion 用代码一帧一帧画完。胖橘表示：全程没有配合。
+Drawn frame by frame in code with PolarMotion. Chubby states: no cooperation whatsoever.

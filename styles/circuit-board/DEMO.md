@@ -25,7 +25,7 @@ Native moves spent: flow becomes current (dam), pulse-path explainer (the whole 
 | 9 | 34.6–42.1 | 而当你插上手机充电器时… | out of the charger's pin: the whole charger (plug, fuse, bridge, capacitor, transformer, USB-C), 充电器 / CHARGER; push in to the bridge: 整流桥, 交流 → 直流 | reverse out, hold, push | |
 | 10 | 42.1–52.9 | 说出来你可能不信… / 只不过… | detail callout: Butuo's bridge beside DB1 at the same size; 换流站; "=" and 同一个电路原理 at 47.6; 功率差 4 亿倍 at 49.4 | locked | verdict held 5.4 s before "=" |
 | 11 | 52.9–54.5 | 你手机里的每一格电… | one pull-out from the charger to the whole board, the main line glowing | log zoom | |
-| 12 | 54.5–60 | — | the whole board on a desk, noon window light; title block: 七毫秒 / SEVEN MILLISECONDS, LemoLab × Claude Opus 5.5 | slow push, 2° turn | end card |
+| 12 | 54.5–60 | — | the whole board on a desk, noon window light; title block: 七毫秒 / SEVEN MILLISECONDS, Polargate · PolarMotion | slow push, 2° turn | end card |
 
 ## Voice-over
 
@@ -55,7 +55,7 @@ Mask greens #05190F / #1C6A44 / #4AA977, gold #D9B25B, bare-copper dam bar #C978
 
 ## End card
 
-The board's own title block, top right of the corridor board, plotted at 54.8: 七毫秒 (≈ 75 px) / SEVEN MILLISECONDS; at 56.0 the row LemoLab × Claude Opus 5.5 (≈ 25 px caps); REV A / SHEET 1 OF 1 in its corner. No voice after 57.0; held to 60.0 under the window light. The "LemoLab × Claude Opus 5.5" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.
+The board's own title block, top right of the corridor board, plotted at 54.8: 七毫秒 (≈ 75 px) / SEVEN MILLISECONDS; at 56.0 the row Polargate · PolarMotion (≈ 25 px caps); REV A / SHEET 1 OF 1 in its corner. No voice after 57.0; held to 60.0 under the window light. The "Polargate · PolarMotion" sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI and no copy of this card.
 
 ## Build notes
 

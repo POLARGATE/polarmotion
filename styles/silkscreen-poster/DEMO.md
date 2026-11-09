@@ -78,7 +78,7 @@ Landmarks are stylised silhouettes, built from paths in `engine/scenes.js`, not 
 
 ## End card
 
-At 46.2 s a wider ticket (560×600) is pulled over the right side of the night print, then its type: THE LONG WAY HOME / 绕远路回家, SILKSCREEN TRAVEL POSTER / 丝印旅行海报 and `LemoLab × Claude Opus 5.5`. It holds to the end (3 s). The sign-off belongs to this library's demo only; a user's film carries no LemoLab credit.
+At 46.2 s a wider ticket (560×600) is pulled over the right side of the night print, then its type: THE LONG WAY HOME / 绕远路回家, SILKSCREEN TRAVEL POSTER / 丝印旅行海报 and `Polargate · PolarMotion`. It holds to the end (3 s). The sign-off belongs to this library's demo only; a user's film carries no credit of the library or of an AI.
 
 ## Build
 
