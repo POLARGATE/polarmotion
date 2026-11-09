@@ -342,6 +342,6 @@ core/audio/
     karoryfer/          erhu / Sneakybass / Weresax  74 MB
 ```
 
-Source links: VSCO 2 CE and VCSL · Salamander https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html · FreePats https://freepats.zenvoid.org/ · Karoryfer Samples (aliexpress-erhu / karoryfer.sneakybass / karoryfer.weresax)
+Sources: VSCO 2 CE and VCSL · Salamander https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html · FreePats https://freepats.zenvoid.org/ · Karoryfer Samples (aliexpress-erhu / karoryfer.sneakybass / karoryfer.weresax)
 
 Availability: the sample libraries must be downloaded first (`sh tools/fetch.sh instruments <lib>`, see the top of this file). When a library that hasn't been downloaded is used, `sampler` raises an error naming the command to run. `sampler.py` needs only the core-tier Python packages; `pluck.py` needs numba (`setup.sh deps music`).

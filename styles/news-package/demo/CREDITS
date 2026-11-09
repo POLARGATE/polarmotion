@@ -34,8 +34,8 @@ Fonts (SIL Open Font License 1.1, subsets from Google Fonts)
 - Noto Sans SC (Google); Barlow Condensed (Jeremy Tribby); IBM Plex Mono (IBM)
 
 Images
-- Two illustrative background plates (data-centre aisle, silicon wafer): AI-generated with the Codex CLI image tool
-  (image_gen) from the prompts in tools/gen_plates.sh; committed as assets/plates/plate_datacenter.jpg and
+- Two illustrative background plates (data-centre aisle, silicon wafer): synthetic illustrations made from the prompts in
+  tools/gen_plates.sh; committed as assets/plates/plate_datacenter.jpg and
   assets/plates/plate_wafer.jpg. They are illustrations, not news pictures: they show no real place, event,
   person, text or logo, and carry an "ILLUSTRATION / 示意 · AI 生成画面" tag whenever they are on screen.
 - Charts, maps, documents, the quote card, the spec card and the POLAR plate are drawn in code. No third-party logos;
